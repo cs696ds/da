@@ -11,67 +11,137 @@
    - [X] Mike
 
 ** Agenda
-   - Comments and corrections to last meting notes
-   - Reports from the sub teams
+   - Logistics 
+   - Project Intro
    - Discussion
-   - Final round
+
 ** Notes
 *** Goal: Publish a paper
 *** Topic: NLP Data Augmentation
 **** Approach
-   - Find existing examples within large corpus such as Common Crawl using embedding
-   - Generating from scratch(May not efficient)
-   - Modifying existing data(Style Transfer, …)
+     - Find existing examples within large corpus such as Common Crawl using embedding
+     - Generating from scratch(May not efficient)
+     - Modifying existing data(Style Transfer, …)
 
 *** Focus on Classification Tasks
 **** Ari's suggestion: 
-   - Intent Classification on banking domain (Open a bank account)
-   - Sentiment Classification(3 classes)
+     - Intent Classification on banking domain (Open a bank account)
+     - Sentiment Classification(3 classes)
 **** Kalpesh: 
-   - Citation intent classification
-   - Topic Classification
+     - Citation intent classification
+     - Topic Classification
 
 *** Evaluation:
-  - Held-out Test Accuracy
-  - Adversarial held-out accuracy
-  - Checklist Evaluation for Linguistic Generalization
-  - Kalpesh: 10-15 Test Datasets for generalization - Which paper?
+    - Held-out Test Accuracy
+    - Adversarial held-out accuracy
+    - Checklist Evaluation for Linguistic Generalization
+    - Kalpesh: 10-15 Test Datasets for generalization - Which paper?
 
-*** Dataset: IMDB
-*** TODO Create a Jupyter Notebook for Baseline 
-- Sentiment Classification on IMDB
 *** Shared Vector Embedding space is enormous. Focus on a small subset. 
-  - Linguistic phenomena
-  - TF-IDF
-  - Prefix String
-  - Kalpesh: Dense Embedding(DPR)
+    - Linguistic phenomena
+    - TF-IDF
+    - Prefix String
+    - Kalpesh: Dense Embedding(DPR)
 
 *** Will discuss further after setting up toy retrieval pipeline
-*** Oracle’s previous approach 
-  - Collecting the farthest embedding.
-  - May collect irrelevant data. Thus, think about other way 
-  - e.g. Collect task-relevant examples and take the farthest embedding
+*** May be able to get Oracle’s previous research on retrieval
+    - Collecting the farthest embedding.
+    - May collect irrelevant data. Thus, think about other way 
+    - e.g. Collect task-relevant examples and take the farthest embedding
 *** Kalpesh suggested Don’t stop Pretraining embedding an additional pretraining with relevant topic
-  - 
-*** Get better semantic representation(embedding) by pre-training with relevant domain corpus
-  - ROBERTA-DAPT and ROBERTA-TAPT are available online.
 
-  https://huggingface.co/allenai
-
-*** Ari suggested two papers on data augmentation strategy
-
-**** DONE Don’s stop pretraining (Last chapters)
-   - They augment data by using VAMPIRE, a variational auto encoder with simple bag-of-words
-   - Replication(Pretraining) Failed. But the dataset, model, and classification task is good
-   - Definitely good for a baseline
-
-Unsupervised Clustering https://arxiv.org/pdf/2004.02105.pdf
-
-*** Additional Papers
-**** VAMPIRE(https://github.com/allenai/vampire)
-   - This is the augmentation method for the previous paper "don't stop pretraining" 
-   - Got it working without any issue.
 
 * ACTIONS
 
+* Action #1 Choose Data                                                  :#1:
+** DONE Toy Classification Data
+   |------+-----------------------------------------------------------------------------------------+
+   | IMDB | https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/train.jsonl |
+   |      | https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/test.jsonl  |
+   |      | https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/dev.jsonl   |
+   |------+-----------------------------------------------------------------------------------------+
 
+** IN-PROGRESS Augmentation Data
+   - Common Crawl raw text: https://commoncrawl.s3.amazonaws.com/contrib/depcc/CC-MAIN-2016-07/index.html
+   - Downloaded raw text on UMass gypsum cluster(468 GB with compression)
+   - Need to tokenize it at a paragraph level
+   - Sentence Level: gypsum:://mnt/nfs/work1/miyyer/datasets/depcc
+   - Other Data: https://github.com/EleutherAI/the-pile
+
+
+* Action #2 Select Embedding                                             :#2:
+** DONE Get better semantic representation(embedding) by pre-training with relevant domain corpus
+   - ROBERTA, ROBERTA-DAPT, and ROBERTA-TAPT are available online.
+   - https://huggingface.co/allenai
+
+* Action #3 Build Basic Classification Pipeline                          :#3:
+** IN-PROGRESS Fine-tune ROBERTA with hyperparameters
+
+* Action #4 Retrieval Strategy                                           :#4:
+** IN-PROGRESS Oracle's previous research
+** Sudarshan's Previous work on KNN Cosine Similarity Retrieval
+  #+BEGIN_SRC python
+#This function reduces the size of the context by selecting top k passages in the context and concatenates them
+def get_final_context_strings(questions, answers, context):
+  top_k = 3 # Choose number of top passages to concatenate. Typical is 3 for Longformer.
+  context_embeddings = get_context_embeddings(context)
+  num_questions = len(questions)
+  num_answers = len(answers)
+  final_contexts = [[] for i in range(num_questions)]
+  final_context_strings = ["" for i in range(num_questions)]
+  top_k_sentences = []
+
+  with torch.no_grad():
+    question_embeddings = torch.from_numpy(model_ir.encode(questions)) # -> Tensor, Size: Number of Questions x Embedding Size
+  cos_sim_sentences = util.pytorch_cos_sim(question_embeddings, context_embeddings) # Use cosine simularity to rate sentences. -> Tensor, Size: Number of Questions x Number of Passages in Context
+  top_k_sentences = torch.topk(cos_sim_sentences,top_k)[1] #Indices Tensor (Size: Number of Questions x Indices of Top k Values in Context) - Discard values tensor at index 0
+  sorted_indices = torch.sort(top_k_sentences,dim=-1)[0] ## Sort sentences into document order to preserve structure, removing extra indices tensor from sort fxn. -> Indices Tensor (Size: Number of Questions x Indices of Top k Values in Context)
+  sorted_indices_list = sorted_indices.tolist()
+
+  for qxn in range(num_questions): # Build all the final contexts
+    for chunk in sorted_indices_list[qxn]:
+      final_contexts[qxn].append(sentences[chunk])
+    final_context_strings[qxn] = " ".join(final_contexts[qxn])
+  
+  return final_context_strings
+  #+END_SRC
+
+* IN-PROGRESS Action #5 Acquire Previous Work from Oracle                :#5:
+  - Waiting for response
+
+* Action #6 Retrieval Strategy                                           :#6:
+** IN-PROGRESS Don’s stop pretraining (Last chapters)
+     - They augment data by using VAMPIRE, a variational auto encoder with simple bag-of-words
+     - Replication(Pretraining) Failed. But the dataset, model, and classification task is good
+     - Definitely good for a baseline
+
+** DONE VAMPIRE(https://github.com/allenai/vampire)
+     - This is the augmentation method for the previous paper "don't stop pretraining"
+     - Got it working without any issue.
+
+** TODO Unsupervised Clustering https://arxiv.org/pdf/2004.02105.pdf
+
+
+* IN-PROGRESS Action #7 Collect Relevant Papers                          :#7:
+** Pre-trained Embedding
+   - [[../papers/1810.04805.pdf][Bert: Pre-training of deepbidirectional transformers for language understand-ing.(2019)]]
+   - [[../papers/1907.11692.pdf][RoBERTa: A Robustly Optimized BERT Pretraining Approach(2019)]]
+   - [[../papers/2004.10964.pdf][Don’t stop pretraining:Adapt language models to domains and tasks.(2020)]]
+
+** Retrieval Strategy
+   - [[../papers/1906.02242.pdf][VAMPIRE:Variational Pretraining for Semi-supervised Text Classification(2019)]]
+   - [[../papers/2004.02105.pdf][Unsupervised domain clusters in pretrained language models.(2020)]]
+   - [[../papers/1707.07328.pdf][Adversarial examples for evaluating reading comprehension systems.(2017)]]
+    -[[../papers/2004.04906.pdf][Dense Passage Retrieval for Open-Domain Question Answering]]
+
+** Robustness
+   - [[../papers/1804.07998.pdf][Generating natural language adversarial examples.(2018)]]
+   - [[../papers/1909.12434.pdf][Learning the difference that makes a difference with counterfactually-augmented data.(2019)]]
+   - [[../papers/1804.06059.pdf][Adversarial example generation with syntactically controlled paraphrase networks.(2018)]]
+
+** Linguistic Generalization
+   - [[../papers/2005.04118.pdf][Beyond Accuracy: Behavioral Testing of NLP Models with CheckList(2020)]]
+   - [[../papers/2004.11999.pdf][Syntacticdata augmentation increases robustness to inference heuristics.(2020)]]
+
+** Style Transfer
+   - [[../papers/2010.05700.pdf][Reformulating Unsupervised Style Transferas Paraphrase Generation(2020)]]
