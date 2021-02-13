@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-02-13 Sat 13:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Project State</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Hee Hwang (Peter)(hhwang@cs.umass.edu)" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Project State</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org8cf4a83">Week1 Notes <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-02-02 Tue&gt;</span></span></a>
+<ul>
+<li><a href="#org674c974">Present at meeting <code>[6/6]</code></a></li>
+<li><a href="#orgb575d83">Agenda</a></li>
+<li><a href="#orgde7b740">Notes</a>
+<ul>
+<li><a href="#org9077bc1">Goal: Publish a paper</a></li>
+<li><a href="#org6070e50">Topic: NLP Data Augmentation</a></li>
+<li><a href="#org9f1a46b">Focus on Classification Tasks</a></li>
+<li><a href="#org2611170">Evaluation:</a></li>
+<li><a href="#orgb1c25d4">Shared Vector Embedding space is enormous. Focus on a small subset.</a></li>
+<li><a href="#orgd3fc12e">Will discuss further after setting up toy retrieval pipeline</a></li>
+<li><a href="#org97dd436">May be able to get Oracle’s previous research on retrieval</a></li>
+<li><a href="#org4668900">Don’t stop Pretraining embedding</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org673e1aa"><span class="done DONE">DONE</span> Action #1 Choose Data <code>[100%]</code></a></li>
+<li><a href="#org6c519e5"><span class="done DONE">DONE</span> Action #2 Select Embedding <code>[100%]</code></a></li>
+<li><a href="#orgd8ead0d"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #3 Build Basic Classification Pipeline <code>[50%]</code></a></li>
+<li><a href="#orgdc5e606"><span class="todo TODO">TODO</span> Action #4 Retrieval Strategy <code>[40%]</code></a></li>
+<li><a href="#orgcc30609"><span class="todo WAITING">WAITING</span> Action #5 Acquire Previous Work from Oracle <code>[0%]</code></a></li>
+<li><a href="#org2f23d1e"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #6 Collect Relevant Papers <code>[60%]</code></a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8cf4a83" class="outline-2">
+<h2 id="org8cf4a83">Week1 Notes <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-02-02 Tue&gt;</span></span></h2>
+<div class="outline-text-2" id="text-org8cf4a83">
+</div>
+<div id="outline-container-org674c974" class="outline-3">
+<h3 id="org674c974">Present at meeting <code>[6/6]</code></h3>
+<div class="outline-text-3" id="text-org674c974">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Peter</li>
+<li class="on"><code>[X]</code> Sudarshan</li>
+<li class="on"><code>[X]</code> Kalpesh</li>
+<li class="on"><code>[X]</code> Ari</li>
+<li class="on"><code>[X]</code> Sweta</li>
+<li class="on"><code>[X]</code> Mike</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb575d83" class="outline-3">
+<h3 id="orgb575d83">Agenda</h3>
+<div class="outline-text-3" id="text-orgb575d83">
+<ul class="org-ul">
+<li>Logistics</li>
+<li>Project Intro</li>
+<li>Discussion</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgde7b740" class="outline-3">
+<h3 id="orgde7b740">Notes</h3>
+<div class="outline-text-3" id="text-orgde7b740">
+</div>
+<div id="outline-container-org9077bc1" class="outline-4">
+<h4 id="org9077bc1">Goal: Publish a paper</h4>
+</div>
+<div id="outline-container-org6070e50" class="outline-4">
+<h4 id="org6070e50">Topic: NLP Data Augmentation</h4>
+<div class="outline-text-4" id="text-org6070e50">
+</div>
+<ul class="org-ul">
+<li><a id="org84c5a05"></a>Approach<br />
+<div class="outline-text-5" id="text-org84c5a05">
+<ul class="org-ul">
+<li>Find existing examples within large corpus such as Common Crawl using embedding</li>
+<li>Generating from scratch(May not efficient)</li>
+<li>Modifying existing data(Style Transfer, …)</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org9f1a46b" class="outline-4">
+<h4 id="org9f1a46b">Focus on Classification Tasks</h4>
+<div class="outline-text-4" id="text-org9f1a46b">
+</div>
+<ul class="org-ul">
+<li><a id="org2e17d89"></a>Ari's suggestion:<br />
+<div class="outline-text-5" id="text-org2e17d89">
+<ul class="org-ul">
+<li>Intent Classification on banking domain (Open a bank account)</li>
+<li>Sentiment Classification(3 classes)</li>
+</ul>
+</div>
+</li>
+<li><a id="org1078aae"></a>Kalpesh:<br />
+<div class="outline-text-5" id="text-org1078aae">
+<ul class="org-ul">
+<li>Citation intent classification</li>
+<li>Topic Classification</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org2611170" class="outline-4">
+<h4 id="org2611170">Evaluation:</h4>
+<div class="outline-text-4" id="text-org2611170">
+<ul class="org-ul">
+<li>Held-out Test Accuracy</li>
+<li>Adversarial held-out accuracy</li>
+<li>Checklist Evaluation for Linguistic Generalization</li>
+<li>Kalpesh: 10-15 Test Datasets for generalization - Which paper?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb1c25d4" class="outline-4">
+<h4 id="orgb1c25d4">Shared Vector Embedding space is enormous. Focus on a small subset.</h4>
+<div class="outline-text-4" id="text-orgb1c25d4">
+<ul class="org-ul">
+<li>Linguistic phenomena</li>
+<li>TF-IDF</li>
+<li>Prefix String</li>
+<li>Kalpesh: Dense Embedding(DPR)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd3fc12e" class="outline-4">
+<h4 id="orgd3fc12e">Will discuss further after setting up toy retrieval pipeline</h4>
+</div>
+<div id="outline-container-org97dd436" class="outline-4">
+<h4 id="org97dd436">May be able to get Oracle’s previous research on retrieval</h4>
+<div class="outline-text-4" id="text-org97dd436">
+<ul class="org-ul">
+<li>Collecting the farthest embedding.</li>
+<li>May collect irrelevant data. Thus, think about other way</li>
+<li>e.g. Collect task-relevant examples and take the farthest embedding</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4668900" class="outline-4">
+<h4 id="org4668900">Don’t stop Pretraining embedding</h4>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org673e1aa" class="outline-2">
+<h2 id="org673e1aa"><span class="done DONE">DONE</span> Action #1 Choose Data <code>[100%]</code></h2>
+<div class="outline-text-2" id="text-org673e1aa">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> <p>
+Toy Classification Data
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">IMDB</td>
+<td class="org-left"><a href="https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/train.jsonl">https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/train.jsonl</a></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/test.jsonl">https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/test.jsonl</a></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/dev.jsonl">https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/dev.jsonl</a></td>
+</tr>
+</tbody>
+</table></li>
+<li class="on"><code>[X]</code> Augmentation Data
+<ul class="org-ul">
+<li>Common Crawl raw text: <a href="https://commoncrawl.s3.amazonaws.com/contrib/depcc/CC-MAIN-2016-07/index.html">https://commoncrawl.s3.amazonaws.com/contrib/depcc/CC-MAIN-2016-07/index.html</a></li>
+<li>Downloaded raw text on UMass gypsum cluster(468 GB with compression)</li>
+<li>Need to tokenize it at a paragraph level</li>
+<li>Sentence Level: gypsum:://mnt/nfs/work1/miyyer/datasets/depcc</li>
+<li>Other Data: <a href="https://github.com/EleutherAI/the-pile">https://github.com/EleutherAI/the-pile</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6c519e5" class="outline-2">
+<h2 id="org6c519e5"><span class="done DONE">DONE</span> Action #2 Select Embedding <code>[100%]</code></h2>
+<div class="outline-text-2" id="text-org6c519e5">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Get better semantic representation(embedding) by pre-training with relevant domain corpus
+<ul class="org-ul">
+<li>ROBERTA, ROBERTA-DAPT, and ROBERTA-TAPT are available online.</li>
+<li><a href="https://huggingface.co/allenai">https://huggingface.co/allenai</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd8ead0d" class="outline-2">
+<h2 id="orgd8ead0d"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #3 Build Basic Classification Pipeline <code>[50%]</code></h2>
+<div class="outline-text-2" id="text-orgd8ead0d">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Download IMDB Data(train/test/dev) used in <a href="https://github.com/allenai/dont-stop-pretraining">https://github.com/allenai/dont-stop-pretraining</a></li>
+<li class="off"><code>[&#xa0;]</code> Fine-tune ROBERTA with hyperparameters from <a href="https://github.com/allenai/dont-stop-pretraining/blob/master/environments/hyperparameters.py">https://github.com/allenai/dont-stop-pretraining/blob/master/environments/hyperparameters.py</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdc5e606" class="outline-2">
+<h2 id="orgdc5e606"><span class="todo TODO">TODO</span> Action #4 Retrieval Strategy <code>[40%]</code></h2>
+<div class="outline-text-2" id="text-orgdc5e606">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Don’s stop pretraining (Focus on last few chapters)
+<ul class="org-ul">
+<li>They augment data by using VAMPIRE, a variational auto encoder with simple bag-of-words</li>
+<li>Replication(Pretraining) Failed. But the dataset, model, and classification task is good</li>
+<li>Definitely good for a baseline</li>
+</ul></li>
+<li class="on"><code>[X]</code> VAMPIRE(<a href="https://github.com/allenai/vampire">https://github.com/allenai/vampire</a>)
+<ul class="org-ul">
+<li>This is the augmentation method for the previous paper "don't stop pretraining"</li>
+<li>Got it working without any issue.</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Unsupervised Clustering <a href="https://arxiv.org/pdf/2004.02105.pdf">https://arxiv.org/pdf/2004.02105.pdf</a></li>
+<li class="off"><code>[&#xa0;]</code> Better Retrieval Strategy</li>
+<li class="on"><code>[X]</code> <p>
+Sudarshan's Previous work on KNN Cosine Similarity Retrieval
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #6A9955;">#</span><span style="color: #6A9955;">This function reduces the size of the context by selecting top k passages in the context and concatenates them</span>
+<span style="color: #569cd6;">def</span> <span style="color: #DCDCAA;">get_final_context_strings</span>(questions, answers, context):
+  <span style="color: #9cdcfe;">top_k</span> = 3 <span style="color: #6A9955;"># </span><span style="color: #6A9955;">Choose number of top passages to concatenate. Typical is 3 for Longformer.</span>
+  <span style="color: #9cdcfe;">context_embeddings</span> = get_context_embeddings(context)
+  <span style="color: #9cdcfe;">num_questions</span> = <span style="color: #C586C0;">len</span>(questions)
+  <span style="color: #9cdcfe;">num_answers</span> = <span style="color: #C586C0;">len</span>(answers)
+  <span style="color: #9cdcfe;">final_contexts</span> = [[] <span style="color: #569cd6;">for</span> i <span style="color: #569cd6;">in</span> <span style="color: #C586C0;">range</span>(num_questions)]
+  <span style="color: #9cdcfe;">final_context_strings</span> = [<span style="color: #CE9178;">""</span> <span style="color: #569cd6;">for</span> i <span style="color: #569cd6;">in</span> <span style="color: #C586C0;">range</span>(num_questions)]
+  <span style="color: #9cdcfe;">top_k_sentences</span> = []
+
+  <span style="color: #569cd6;">with</span> torch.no_grad():
+    <span style="color: #9cdcfe;">question_embeddings</span> = torch.from_numpy(model_ir.encode(questions)) <span style="color: #6A9955;"># </span><span style="color: #6A9955;">-&gt; Tensor, Size: Number of Questions x Embedding Size</span>
+  <span style="color: #9cdcfe;">cos_sim_sentences</span> = util.pytorch_cos_sim(question_embeddings, context_embeddings) <span style="color: #6A9955;"># </span><span style="color: #6A9955;">Use cosine simularity to rate sentences. -&gt; Tensor, Size: Number of Questions x Number of Passages in Context</span>
+  <span style="color: #9cdcfe;">top_k_sentences</span> = torch.topk(cos_sim_sentences,top_k)[1] <span style="color: #6A9955;">#</span><span style="color: #6A9955;">Indices Tensor (Size: Number of Questions x Indices of Top k Values in Context) - Discard values tensor at index 0</span>
+  <span style="color: #9cdcfe;">sorted_indices</span> = torch.sort(top_k_sentences,dim=-1)[0] <span style="color: #6A9955;">## </span><span style="color: #6A9955;">Sort sentences into document order to preserve structure, removing extra indices tensor from sort fxn. -&gt; Indices Tensor (Size: Number of Questions x Indices of Top k Values in Context)</span>
+  <span style="color: #9cdcfe;">sorted_indices_list</span> = sorted_indices.tolist()
+
+  <span style="color: #569cd6;">for</span> qxn <span style="color: #569cd6;">in</span> <span style="color: #C586C0;">range</span>(num_questions): <span style="color: #6A9955;"># </span><span style="color: #6A9955;">Build all the final contexts</span>
+    <span style="color: #569cd6;">for</span> chunk <span style="color: #569cd6;">in</span> sorted_indices_list[qxn]:
+      final_contexts[qxn].append(sentences[chunk])
+    <span style="color: #9cdcfe;">final_context_strings</span>[qxn] = <span style="color: #CE9178;">" "</span>.join(final_contexts[qxn])
+
+  <span style="color: #569cd6;">return</span> final_context_strings
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcc30609" class="outline-2">
+<h2 id="orgcc30609"><span class="todo WAITING">WAITING</span> Action #5 Acquire Previous Work from Oracle <code>[0%]</code></h2>
+<div class="outline-text-2" id="text-orgcc30609">
+<ul class="org-ul">
+<li>For better retrieval</li>
+<li class="off"><code>[&#xa0;]</code> Waiting for response</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2f23d1e" class="outline-2">
+<h2 id="org2f23d1e"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #6 Collect Relevant Papers <code>[60%]</code></h2>
+<div class="outline-text-2" id="text-org2f23d1e">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Pre-trained Embedding
+<ul class="org-ul">
+<li><a href="./papers/1810.04805.pdf">Bert: Pre-training of deepbidirectional transformers for language understand-ing.(2019)</a></li>
+<li><a href="./papers/1907.11692.pdf">RoBERTa: A Robustly Optimized BERT Pretraining Approach(2019)</a></li>
+<li><a href="./papers/2004.10964.pdf">Don’t stop pretraining:Adapt language models to domains and tasks.(2020)</a></li>
+</ul></li>
+
+<li class="on"><code>[X]</code> Retrieval Strategy
+<ul class="org-ul">
+<li><a href="./papers/1906.02242.pdf">VAMPIRE:Variational Pretraining for Semi-supervised Text Classification(2019)</a></li>
+<li><a href="./papers/2004.02105.pdf">Unsupervised domain clusters in pretrained language models.(2020)</a></li>
+<li><a href="./papers/1707.07328.pdf">Adversarial examples for evaluating reading comprehension systems.(2017)</a></li>
+<li><a href="./papers/2004.04906.pdf">Dense Passage Retrieval for Open-Domain Question Answering(2020)</a></li>
+</ul></li>
+
+<li class="on"><code>[X]</code> Robustness
+<ul class="org-ul">
+<li><a href="./papers/1804.07998.pdf">Generating natural language adversarial examples.(2018)</a></li>
+<li><a href="./papers/1909.12434.pdf">Learning the difference that makes a difference with counterfactually-augmented data.(2019)</a></li>
+<li><a href="./papers/1804.06059.pdf">Adversarial example generation with syntactically controlled paraphrase networks.(2018)</a></li>
+</ul></li>
+
+<li class="off"><code>[&#xa0;]</code> Linguistic Generalization
+<ul class="org-ul">
+<li><a href="./papers/2005.04118.pdf">Beyond Accuracy: Behavioral Testing of NLP Models with CheckList(2020)</a></li>
+<li><a href="./papers/2004.11999.pdf">Syntacticdata augmentation increases robustness to inference heuristics.(2020)</a></li>
+</ul></li>
+
+<li class="off"><code>[&#xa0;]</code> Style Transfer
+<ul class="org-ul">
+<li><a href="./papers/2010.05700.pdf">Reformulating Unsupervised Style Transferas Paraphrase Generation(2020)</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2021-02-13 Sat 00:00</p>
+<p class="author">Author: Hee Hwang (Peter)(hhwang@cs.umass.edu)</p>
+<p class="date">Created: 2021-02-13 Sat 13:17</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
