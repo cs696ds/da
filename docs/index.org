@@ -3,8 +3,8 @@
 # #+OPTIONS: tasks:t
 
 #+title:  Project State
-#+author: Hee Hwang (Peter)(hhwang@cs.umass.edu)
-#+date:   <2021-02-13 Sat>
+# #+author: Hee Hwang (Peter)(hhwang@cs.umass.edu)
+# #+date:   <2021-02-13 Sat>
 
 
 * Week1 Notes <2021-02-02 Tue>
