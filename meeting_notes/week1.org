@@ -1,0 +1,90 @@
+* Notes from <2011-03-16 Wed>                                       :ARCHIVE:
+* Notes from <2011-03-23 Wed>                                       :ARCHIVE:
+* Notes from <2021-02-02 Tue>
+** Present at meeting
+,   - [X] Peter
+,   - [X] Sudarshan
+,   - [X] Kalpesh
+,   - [X] Ari
+,   - [X] Sweta
+,   - [X] Mike
+
+** Agenda
+,   - Comments and corrections to last meting notes
+,   - Reports from the sub teams
+,   - Discussion
+,   - Final round
+** Notes
+,   ...
+, 
+* ACTIONS
+,  This is the general list of Actions
+** DONE Action #1 Inventory of equipment                           :#1:Sarah:
+** DONE Action #2 Definition of main goals                         :#2:Peter:
+** TODO Action #4 Talk to companies                                  :#4:Sam:
+
+
+
+
+
+
+
+
+
+
+* Goal: Publish a paper
+* Topic: NLP Data Augmentation
+** Approach
+   - Find existing examples within large corpus such as Common Crawl using embedding
+   - Generating from scratch(May not efficient)
+   - Modifying existing data(Style Transfer, …)
+
+* Focus on Classification Tasks
+** Ari's suggestion: 
+   - Intent Classification on banking domain (Open a bank account)
+   - Sentiment Classification(3 classes)
+** Kalpesh: 
+   - Citation intent classification
+   - Topic Classification
+
+* Evaluation:
+  - Held-out Test Accuracy
+  - Adversarial held-out accuracy
+  - Checklist Evaluation for Linguistic Generalization
+  - Kalpesh: 10-15 Test Datasets for generalization - Which paper?
+
+* Dataset: IMDB
+* TODO Create a Jupyter Notebook for Baseline 
+- Sentiment Classification on IMDB
+* Shared Vector Embedding space is enormous. Focus on a small subset. 
+  - Linguistic phenomena
+  - TF-IDF
+  - Prefix String
+  - Kalpesh: Dense Embedding(DPR)
+
+* Will discuss further after setting up toy retrieval pipeline
+* Oracle’s previous approach 
+  - Collecting the farthest embedding.
+  - May collect irrelevant data. Thus, think about other way 
+  - e.g. Collect task-relevant examples and take the farthest embedding
+* Kalpesh suggested Don’t stop Pretraining embedding an additional pretraining with relevant topic
+  - 
+* Get better semantic representation(embedding) by pre-training with relevant domain corpus
+  - ROBERTA-DAPT and ROBERTA-TAPT are available online.
+
+  https://huggingface.co/allenai
+
+* Ari suggested two papers on data augmentation strategy
+
+** DONE Don’s stop pretraining (Last chapters)
+   - They augment data by using VAMPIRE, a variational auto encoder with simple bag-of-words
+   - Replication(Pretraining) Failed. But the dataset, model, and classification task is good
+   - Definitely good for a baseline
+
+Unsupervised Clustering https://arxiv.org/pdf/2004.02105.pdf
+
+* Additional Papers
+** VAMPIRE(https://github.com/allenai/vampire)
+   - This is the augmentation method for the previous paper "don't stop pretraining" 
+   - Got it working without any issue.
+
