@@ -1,5 +1,6 @@
-* Notes from <2011-03-16 Wed>                                       :ARCHIVE:
-* Notes from <2011-03-23 Wed>                                       :ARCHIVE:
+#+TODO: TODO(t) IN-PROGRESS(i) | CANCELED(c) DONE(d)
+#+OPTIONS: tasks:todo
+
 * Notes from <2021-02-02 Tue>
 ** Present at meeting
 ,   - [X] Peter
@@ -17,18 +18,6 @@
 ** Notes
 ,   ...
 , 
-* ACTIONS
-,  This is the general list of Actions
-** DONE Action #1 Inventory of equipment                           :#1:Sarah:
-** DONE Action #2 Definition of main goals                         :#2:Peter:
-** TODO Action #4 Talk to companies                                  :#4:Sam:
-
-
-
-
-
-
-
 
 
 
@@ -88,3 +77,11 @@ Unsupervised Clustering https://arxiv.org/pdf/2004.02105.pdf
    - This is the augmentation method for the previous paper "don't stop pretraining" 
    - Got it working without any issue.
 
+
+
+* ACTIONS
+,  This is the general list of Actions
+** DONE Action #1 Inventory of equipment                           :#1:Sarah:
+** DONE Action #2 Definition of main goals                         :#2:Peter:
+** TODO Action #4 Talk to companies                                  :#4:Sam:
+** TODO Action #5 foo                                                    :#5:Me:
