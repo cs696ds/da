@@ -1,0 +1,151 @@
+% Created 2021-02-13 Sat 08:51
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{DESKTOP-VOO1MVE}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={DESKTOP-VOO1MVE},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.3 (Org mode 9.1.9)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
+
+\section{Notes from \textit{<2021-02-02 Tue>}}
+\label{sec:org73b79a1}
+\subsection{Present at meeting}
+\label{sec:orgd7b5d68}
+,   - [X] Peter
+,   - [X] Sudarshan
+,   - [X] Kalpesh
+,   - [X] Ari
+,   - [X] Sweta
+,   - [X] Mike
+
+\subsection{Agenda}
+\label{sec:org775534e}
+,   - Comments and corrections to last meting notes
+,   - Reports from the sub teams
+,   - Discussion
+,   - Final round
+\subsection{Notes}
+\label{sec:orgbdf7fde}
+,   \ldots{}
+, 
+
+
+
+\section{Goal: Publish a paper}
+\label{sec:orgc2e43cb}
+\section{Topic: NLP Data Augmentation}
+\label{sec:orgf1c8e34}
+\subsection{Approach}
+\label{sec:org8a4d7f1}
+\begin{itemize}
+\item Find existing examples within large corpus such as Common Crawl using embedding
+\item Generating from scratch(May not efficient)
+\item Modifying existing data(Style Transfer, …)
+\end{itemize}
+
+\section{Focus on Classification Tasks}
+\label{sec:org2bd142d}
+\subsection{Ari's suggestion:}
+\label{sec:orga1e349c}
+\begin{itemize}
+\item Intent Classification on banking domain (Open a bank account)
+\item Sentiment Classification(3 classes)
+\end{itemize}
+\subsection{Kalpesh:}
+\label{sec:org3fb8490}
+\begin{itemize}
+\item Citation intent classification
+\item Topic Classification
+\end{itemize}
+
+\section{Evaluation:}
+\label{sec:org92e193f}
+\begin{itemize}
+\item Held-out Test Accuracy
+\item Adversarial held-out accuracy
+\item Checklist Evaluation for Linguistic Generalization
+\item Kalpesh: 10-15 Test Datasets for generalization - Which paper?
+\end{itemize}
+
+\section{Dataset: IMDB}
+\label{sec:orgaaee572}
+\section{{\bfseries\sffamily TODO} Create a Jupyter Notebook for Baseline}
+\label{sec:org4ad8aa5}
+\begin{itemize}
+\item Sentiment Classification on IMDB
+\end{itemize}
+\section{Shared Vector Embedding space is enormous. Focus on a small subset.}
+\label{sec:orgc8c117a}
+\begin{itemize}
+\item Linguistic phenomena
+\item TF-IDF
+\item Prefix String
+\item Kalpesh: Dense Embedding(DPR)
+\end{itemize}
+
+\section{Will discuss further after setting up toy retrieval pipeline}
+\label{sec:org07088de}
+\section{Oracle’s previous approach}
+\label{sec:orgdee6c8f}
+\begin{itemize}
+\item Collecting the farthest embedding.
+\item May collect irrelevant data. Thus, think about other way
+\item e.g. Collect task-relevant examples and take the farthest embedding
+\end{itemize}
+\section{Kalpesh suggested Don’t stop Pretraining embedding an additional pretraining with relevant topic}
+\label{sec:org4869a95}
+\begin{itemize}
+\item 
+\end{itemize}
+\section{Get better semantic representation(embedding) by pre-training with relevant domain corpus}
+\label{sec:org487271c}
+\begin{itemize}
+\item ROBERTA-DAPT and ROBERTA-TAPT are available online.
+\end{itemize}
+
+\url{https://huggingface.co/allenai}
+
+\section{Ari suggested two papers on data augmentation strategy}
+\label{sec:org7b2f8d5}
+
+\section{Additional Papers}
+\label{sec:orgd416c23}
+\subsection{VAMPIRE(\url{https://github.com/allenai/vampire})}
+\label{sec:orge428bed}
+\begin{itemize}
+\item This is the augmentation method for the previous paper "don't stop pretraining" 
+\item Got it working without any issue.
+\end{itemize}
+
+
+
+\section{ACTIONS}
+\label{sec:org2f99e2f}
+,  This is the general list of Actions
+\subsection{{\bfseries\sffamily TODO} Action \#4 Talk to companies\hfill{}\textsc{\#4:Sam}}
+\label{sec:org17fd625}
+\subsection{{\bfseries\sffamily TODO} Action \#5 foo\hfill{}\textsc{\#5:Me}}
+\label{sec:org1aafa3b}
+\end{document}
