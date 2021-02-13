@@ -1,5 +1,6 @@
-#+TODO: TODO(t) IN-PROGRESS(i) | CANCELED(c) DONE(d)
-#+OPTIONS: tasks:todo
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+# #+OPTIONS: tasks:todo
+# #+OPTIONS: tasks:t
 
 * Notes from <2021-02-02 Tue>
 ** Present at meeting
@@ -48,10 +49,8 @@
     - Collecting the farthest embedding.
     - May collect irrelevant data. Thus, think about other way 
     - e.g. Collect task-relevant examples and take the farthest embedding
-*** Kalpesh suggested Don’t stop Pretraining embedding an additional pretraining with relevant topic
+*** Don’t stop Pretraining embedding
 
-
-* ACTIONS
 
 * Action #1 Choose Data                                                  :#1:
 ** DONE Toy Classification Data
@@ -61,26 +60,36 @@
    |      | https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/dev.jsonl   |
    |------+-----------------------------------------------------------------------------------------+
 
-** IN-PROGRESS Augmentation Data
+** IN PROGRESS Augmentation Data
    - Common Crawl raw text: https://commoncrawl.s3.amazonaws.com/contrib/depcc/CC-MAIN-2016-07/index.html
    - Downloaded raw text on UMass gypsum cluster(468 GB with compression)
    - Need to tokenize it at a paragraph level
    - Sentence Level: gypsum:://mnt/nfs/work1/miyyer/datasets/depcc
    - Other Data: https://github.com/EleutherAI/the-pile
 
-
 * Action #2 Select Embedding                                             :#2:
-** DONE Get better semantic representation(embedding) by pre-training with relevant domain corpus
+** Get better semantic representation(embedding) by pre-training with relevant domain corpus
    - ROBERTA, ROBERTA-DAPT, and ROBERTA-TAPT are available online.
    - https://huggingface.co/allenai
 
 * Action #3 Build Basic Classification Pipeline                          :#3:
-** IN-PROGRESS Fine-tune ROBERTA with hyperparameters
+** Fine-tune ROBERTA with hyperparameters(Sudarshan)
 
 * Action #4 Retrieval Strategy                                           :#4:
-** IN-PROGRESS Oracle's previous research
+** IN PROGRESS Don’s stop pretraining (Focus on last few chapters)
+   - They augment data by using VAMPIRE, a variational auto encoder with simple bag-of-words
+   - Replication(Pretraining) Failed. But the dataset, model, and classification task is good
+   - Definitely good for a baseline
+
+** IN PROGRESS VAMPIRE(https://github.com/allenai/vampire)
+   - This is the augmentation method for the previous paper "don't stop pretraining"
+   - Got it working without any issue.
+
+** IN PROGRESS Unsupervised Clustering https://arxiv.org/pdf/2004.02105.pdf
+
+** TODO Better Retrieval Strategy
 ** Sudarshan's Previous work on KNN Cosine Similarity Retrieval
-  #+BEGIN_SRC python
+   #+BEGIN_SRC python
 #This function reduces the size of the context by selecting top k passages in the context and concatenates them
 def get_final_context_strings(questions, answers, context):
   top_k = 3 # Choose number of top passages to concatenate. Typical is 3 for Longformer.
@@ -104,25 +113,12 @@ def get_final_context_strings(questions, answers, context):
     final_context_strings[qxn] = " ".join(final_contexts[qxn])
   
   return final_context_strings
-  #+END_SRC
+   #+END_SRC
 
-* IN-PROGRESS Action #5 Acquire Previous Work from Oracle                :#5:
-  - Waiting for response
+* Action #5 Acquire Previous Work from Oracle                            :#5:
+** WAITING Waiting for response
 
-* Action #6 Retrieval Strategy                                           :#6:
-** IN-PROGRESS Don’s stop pretraining (Last chapters)
-     - They augment data by using VAMPIRE, a variational auto encoder with simple bag-of-words
-     - Replication(Pretraining) Failed. But the dataset, model, and classification task is good
-     - Definitely good for a baseline
-
-** DONE VAMPIRE(https://github.com/allenai/vampire)
-     - This is the augmentation method for the previous paper "don't stop pretraining"
-     - Got it working without any issue.
-
-** TODO Unsupervised Clustering https://arxiv.org/pdf/2004.02105.pdf
-
-
-* IN-PROGRESS Action #7 Collect Relevant Papers                          :#7:
+* Action #6 Collect Relevant Papers                                      :#6:
 ** Pre-trained Embedding
    - [[../papers/1810.04805.pdf][Bert: Pre-training of deepbidirectional transformers for language understand-ing.(2019)]]
    - [[../papers/1907.11692.pdf][RoBERTa: A Robustly Optimized BERT Pretraining Approach(2019)]]
@@ -132,7 +128,7 @@ def get_final_context_strings(questions, answers, context):
    - [[../papers/1906.02242.pdf][VAMPIRE:Variational Pretraining for Semi-supervised Text Classification(2019)]]
    - [[../papers/2004.02105.pdf][Unsupervised domain clusters in pretrained language models.(2020)]]
    - [[../papers/1707.07328.pdf][Adversarial examples for evaluating reading comprehension systems.(2017)]]
-    -[[../papers/2004.04906.pdf][Dense Passage Retrieval for Open-Domain Question Answering]]
+   - [[../papers/2004.04906.pdf][Dense Passage Retrieval for Open-Domain Question Answering]]
 
 ** Robustness
    - [[../papers/1804.07998.pdf][Generating natural language adversarial examples.(2018)]]
