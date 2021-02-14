@@ -74,6 +74,9 @@
   - [X] Get better semantic representation(embedding) by pre-training with relevant domain corpus
     - ROBERTA, ROBERTA-DAPT, and ROBERTA-TAPT are available online.
     - https://huggingface.co/allenai
+  - [X] VAMPIRE(https://github.com/allenai/vampire)
+    - This is the augmentation method for the previous paper "don't stop pretraining"
+    - Got it working without any issue.
 
 * IN PROGRESS Action #3 Build Basic Classification Pipeline [50%]
   - [X] Download IMDB Data(train/test/dev) used in https://github.com/allenai/dont-stop-pretraining 
@@ -84,12 +87,10 @@
     - They augment data by using VAMPIRE, a variational auto encoder with simple bag-of-words
     - Replication(Pretraining) Failed. But the dataset, model, and classification task is good
     - Definitely good for a baseline
-  - [X] VAMPIRE(https://github.com/allenai/vampire)
-    - This is the augmentation method for the previous paper "don't stop pretraining"
-    - Got it working without any issue.
+
   - [ ] Unsupervised Clustering https://arxiv.org/pdf/2004.02105.pdf
-  - [ ] Better Retrieval Strategy
-  - [X] Sudarshan's Previous work on KNN Cosine Similarity Retrieval
+
+  - [X] Base: Sudarshan's Previous work on KNN Cosine Similarity Retrieval
     #+BEGIN_SRC python
 #This function reduces the size of the context by selecting top k passages in the context and concatenates them
 def get_final_context_strings(questions, answers, context):
@@ -120,28 +121,34 @@ def get_final_context_strings(questions, answers, context):
   - For better retrieval
   - [ ] Waiting for response
 
+* TODO Action #7 [0%]
+  - [ ] Augmentation by paraphrase generation
+  - [ ] Select data if feasible
 
-* IN PROGRESS Action #6 Collect Relevant Papers [40%]
-  - [X] Pre-trained Embedding
+* TODO Action #8 [0%]
+  - [ ] Autoaugment: Try different kinds of data augmentation and select policy
+
+* IN PROGRESS Action #9 Collect Relevant Papers [33%]
+  - [X] Embedding
     - [[./papers/1810.04805.pdf][Bert: Pre-training of deepbidirectional transformers for language understand-ing.(2019)]]
     - [[./papers/1907.11692.pdf][RoBERTa: A Robustly Optimized BERT Pretraining Approach(2019)]]
     - [[./papers/2004.10964.pdf][Don’t stop pretraining:Adapt language models to domains and tasks.(2020)]]
     - [[./papers/1906.02242.pdf][VAMPIRE:Variational Pretraining for Semi-supervised Text Classification(2019)]]
     - [[./papers/beta_vae.pdf][Disentangled Variational Autoencoder]]
 
-  - [X] Retrieval Strategy
-
+  - [X] Augmentation by Retrieval
     - [[./papers/2004.02105.pdf][Unsupervised domain clusters in pretrained language models.(2020)]]
     - [[./papers/1707.07328.pdf][Adversarial examples for evaluating reading comprehension systems.(2017)]]
     - [[./papers/2004.04906.pdf][Dense Passage Retrieval for Open-Domain Question Answering(2020)]]
 
-  - [ ] Augementation Method
+  - [ ] Augmentation by Paraphrase Generation
     - [[./papers/1804.06059.pdf][Adversarial example generation with syntactically controlled paraphrase networks.(2018)]]
     - [[./papers/2010.05700.pdf][Reformulating Unsupervised Style Transferas Paraphrase Generation(2020)]]
+
+  - [ ] Auto Augment
     - [[./papers/1805.09501.pdf][AutoAugment:Learning Augmentation Strategies from Data(2018)]]
     - [[./papers/1709.01643.pdf][Learning to Compose Domain-Specific Transformations for Data Augmentation(2017)]]
     - [[./papers/1912.11188.pdf][Adversarial Autoaugment(2020)]]
-
 
   - [ ] Robustness
     - [[./papers/1804.07998.pdf][Generating natural language adversarial examples.(2018)]]
