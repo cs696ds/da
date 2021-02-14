@@ -1,7 +1,6 @@
 import json
 import pandas as pd
 
-
 def show_data(jsonl_file):
     df = pd.read_json(jsonl_file, lines=True)
     print(df.head())
