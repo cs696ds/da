@@ -121,11 +121,12 @@ def get_final_context_strings(questions, answers, context):
   - [ ] Waiting for response
 
 
-* IN PROGRESS Action #6 Collect Relevant Papers [60%]
+* IN PROGRESS Action #6 Collect Relevant Papers [50%]
   - [X] Pre-trained Embedding
     - [[./papers/1810.04805.pdf][Bert: Pre-training of deepbidirectional transformers for language understand-ing.(2019)]]
     - [[./papers/1907.11692.pdf][RoBERTa: A Robustly Optimized BERT Pretraining Approach(2019)]]
     - [[./papers/2004.10964.pdf][Don’t stop pretraining:Adapt language models to domains and tasks.(2020)]]
+    - [[./papers/beta_vae.pdf][Disentangled Variational Autoencoder]]
 
   - [X] Retrieval Strategy
     - [[./papers/1906.02242.pdf][VAMPIRE:Variational Pretraining for Semi-supervised Text Classification(2019)]]
@@ -144,3 +145,5 @@ def get_final_context_strings(questions, answers, context):
 
   - [ ] Style Transfer
     - [[./papers/2010.05700.pdf][Reformulating Unsupervised Style Transferas Paraphrase Generation(2020)]]
+
+    
