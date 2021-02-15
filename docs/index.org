@@ -121,14 +121,13 @@ def get_final_context_strings(questions, answers, context):
   - For better retrieval
   - [ ] Waiting for response
 
-* TODO Action #7 [0%]
+* TODO Action #6 Augmentation Methods[0%]
   - [ ] Augmentation by paraphrase generation
-  - [ ] Select data if feasible
 
-* TODO Action #8 [0%]
+* TODO Action #7 Automation[0%]
   - [ ] Autoaugment: Try different kinds of data augmentation and select policy
 
-* IN PROGRESS Action #9 Collect Relevant Papers [33%]
+* IN PROGRESS Action #8 Collect Relevant Papers [33%]
   - [X] Embedding
     - [[./papers/1810.04805.pdf][Bert: Pre-training of deepbidirectional transformers for language understand-ing.(2019)]]
     - [[./papers/1907.11692.pdf][RoBERTa: A Robustly Optimized BERT Pretraining Approach(2019)]]

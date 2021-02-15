@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-14 Sun 10:33 -->
+<!-- 2021-02-15 Mon 10:12 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Project State</title>
@@ -161,6 +161,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -191,7 +204,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -240,45 +253,45 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org408e2d3">Week1 Notes <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-02-02 Tue&gt;</span></span></a>
+<li><a href="#org4d0b9eb">Week1 Notes <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-02-02 Tue&gt;</span></span></a>
 <ul>
-<li><a href="#orgfc4879d">Present at meeting <code>[6/6]</code></a></li>
-<li><a href="#org5bb3508">Agenda</a></li>
-<li><a href="#org2dc1fe9">Notes</a>
+<li><a href="#orgadbd105">Present at meeting <code>[6/6]</code></a></li>
+<li><a href="#org6cc6ffc">Agenda</a></li>
+<li><a href="#org77e6f1a">Notes</a>
 <ul>
-<li><a href="#org9cc3f3b">Goal: Publish a paper</a></li>
-<li><a href="#orgec6b845">Topic: NLP Data Augmentation</a></li>
-<li><a href="#orgbd9edc8">Focus on Classification Tasks</a></li>
-<li><a href="#orgacb2167">Evaluation:</a></li>
-<li><a href="#orge0297f3">Shared Vector Embedding space is enormous. Focus on a small subset.</a></li>
-<li><a href="#org6cb7546">Will discuss further after setting up toy retrieval pipeline</a></li>
-<li><a href="#org983b8c5">May be able to get Oracle’s previous research on retrieval</a></li>
-<li><a href="#org47e47e9">Don’t stop Pretraining embedding</a></li>
+<li><a href="#org35c9d00">Goal: Publish a paper</a></li>
+<li><a href="#org1a14b82">Topic: NLP Data Augmentation</a></li>
+<li><a href="#org340d192">Focus on Classification Tasks</a></li>
+<li><a href="#org18daa3d">Evaluation:</a></li>
+<li><a href="#org7d77fe4">Shared Vector Embedding space is enormous. Focus on a small subset.</a></li>
+<li><a href="#org99fd671">Will discuss further after setting up toy retrieval pipeline</a></li>
+<li><a href="#org413942f">May be able to get Oracle’s previous research on retrieval</a></li>
+<li><a href="#org8c60a3c">Don’t stop Pretraining embedding</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgd657765"><span class="done DONE">DONE</span> Action #1 Choose Data <code>[100%]</code></a></li>
-<li><a href="#org5eb0365"><span class="done DONE">DONE</span> Action #2 Select Embedding <code>[100%]</code></a></li>
-<li><a href="#orgc01147c"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #3 Build Basic Classification Pipeline <code>[50%]</code></a></li>
-<li><a href="#org7e9ea1e"><span class="todo TODO">TODO</span> Action #4 Retrieval Strategy <code>[40%]</code></a></li>
-<li><a href="#org31c99aa"><span class="todo WAITING">WAITING</span> Action #5 Acquire Previous Work from Oracle <code>[0%]</code></a></li>
-<li><a href="#org70fd605"><span class="todo TODO">TODO</span> Action #7 <code>[0%]</code></a></li>
-<li><a href="#orga66ea70"><span class="todo TODO">TODO</span> Action #8 <code>[0%]</code></a></li>
-<li><a href="#org5b1d351"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #9 Collect Relevant Papers <code>[33%]</code></a></li>
+<li><a href="#orgf21aa9f"><span class="done DONE">DONE</span> Action #1 Choose Data <code>[100%]</code></a></li>
+<li><a href="#org4681357"><span class="done DONE">DONE</span> Action #2 Select Embedding <code>[100%]</code></a></li>
+<li><a href="#orgc537a67"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #3 Build Basic Classification Pipeline <code>[50%]</code></a></li>
+<li><a href="#org52f846e"><span class="todo TODO">TODO</span> Action #4 Retrieval Strategy <code>[40%]</code></a></li>
+<li><a href="#org7af5cb6"><span class="todo WAITING">WAITING</span> Action #5 Acquire Previous Work from Oracle <code>[0%]</code></a></li>
+<li><a href="#orgee9e7c9"><span class="todo TODO">TODO</span> Action #6 Augmentation Methods<code>[0%]</code></a></li>
+<li><a href="#org22d0d19"><span class="todo TODO">TODO</span> Action #7 Automation<code>[0%]</code></a></li>
+<li><a href="#orgf724d4e"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #8 Collect Relevant Papers <code>[33%]</code></a></li>
 </ul>
 </div>
 </div>
 
 
 
-<div id="outline-container-org408e2d3" class="outline-2">
-<h2 id="org408e2d3">Week1 Notes <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-02-02 Tue&gt;</span></span></h2>
-<div class="outline-text-2" id="text-org408e2d3">
+<div id="outline-container-org4d0b9eb" class="outline-2">
+<h2 id="org4d0b9eb">Week1 Notes <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-02-02 Tue&gt;</span></span></h2>
+<div class="outline-text-2" id="text-org4d0b9eb">
 </div>
-<div id="outline-container-orgfc4879d" class="outline-3">
-<h3 id="orgfc4879d">Present at meeting <code>[6/6]</code></h3>
-<div class="outline-text-3" id="text-orgfc4879d">
+<div id="outline-container-orgadbd105" class="outline-3">
+<h3 id="orgadbd105">Present at meeting <code>[6/6]</code></h3>
+<div class="outline-text-3" id="text-orgadbd105">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Peter</li>
 <li class="on"><code>[X]</code> Sudarshan</li>
@@ -290,9 +303,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org5bb3508" class="outline-3">
-<h3 id="org5bb3508">Agenda</h3>
-<div class="outline-text-3" id="text-org5bb3508">
+<div id="outline-container-org6cc6ffc" class="outline-3">
+<h3 id="org6cc6ffc">Agenda</h3>
+<div class="outline-text-3" id="text-org6cc6ffc">
 <ul class="org-ul">
 <li>Logistics</li>
 <li>Project Intro</li>
@@ -301,20 +314,20 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org2dc1fe9" class="outline-3">
-<h3 id="org2dc1fe9">Notes</h3>
-<div class="outline-text-3" id="text-org2dc1fe9">
+<div id="outline-container-org77e6f1a" class="outline-3">
+<h3 id="org77e6f1a">Notes</h3>
+<div class="outline-text-3" id="text-org77e6f1a">
 </div>
-<div id="outline-container-org9cc3f3b" class="outline-4">
-<h4 id="org9cc3f3b">Goal: Publish a paper</h4>
+<div id="outline-container-org35c9d00" class="outline-4">
+<h4 id="org35c9d00">Goal: Publish a paper</h4>
 </div>
-<div id="outline-container-orgec6b845" class="outline-4">
-<h4 id="orgec6b845">Topic: NLP Data Augmentation</h4>
-<div class="outline-text-4" id="text-orgec6b845">
+<div id="outline-container-org1a14b82" class="outline-4">
+<h4 id="org1a14b82">Topic: NLP Data Augmentation</h4>
+<div class="outline-text-4" id="text-org1a14b82">
 </div>
 <ul class="org-ul">
-<li><a id="org99b6b20"></a>Approach<br />
-<div class="outline-text-5" id="text-org99b6b20">
+<li><a id="org2a9bf6a"></a>Approach<br />
+<div class="outline-text-5" id="text-org2a9bf6a">
 <ul class="org-ul">
 <li>Find existing examples within large corpus such as Common Crawl using embedding</li>
 <li>Generating from scratch(May not efficient)</li>
@@ -325,21 +338,21 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 
-<div id="outline-container-orgbd9edc8" class="outline-4">
-<h4 id="orgbd9edc8">Focus on Classification Tasks</h4>
-<div class="outline-text-4" id="text-orgbd9edc8">
+<div id="outline-container-org340d192" class="outline-4">
+<h4 id="org340d192">Focus on Classification Tasks</h4>
+<div class="outline-text-4" id="text-org340d192">
 </div>
 <ul class="org-ul">
-<li><a id="orgf9997ad"></a>Ari's suggestion:<br />
-<div class="outline-text-5" id="text-orgf9997ad">
+<li><a id="org75b3b98"></a>Ari's suggestion:<br />
+<div class="outline-text-5" id="text-org75b3b98">
 <ul class="org-ul">
 <li>Intent Classification on banking domain (Open a bank account)</li>
 <li>Sentiment Classification(3 classes)</li>
 </ul>
 </div>
 </li>
-<li><a id="org7f41aad"></a>Kalpesh:<br />
-<div class="outline-text-5" id="text-org7f41aad">
+<li><a id="orgdd4cf25"></a>Kalpesh:<br />
+<div class="outline-text-5" id="text-orgdd4cf25">
 <ul class="org-ul">
 <li>Citation intent classification</li>
 <li>Topic Classification</li>
@@ -349,9 +362,9 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 
-<div id="outline-container-orgacb2167" class="outline-4">
-<h4 id="orgacb2167">Evaluation:</h4>
-<div class="outline-text-4" id="text-orgacb2167">
+<div id="outline-container-org18daa3d" class="outline-4">
+<h4 id="org18daa3d">Evaluation:</h4>
+<div class="outline-text-4" id="text-org18daa3d">
 <ul class="org-ul">
 <li>Held-out Test Accuracy</li>
 <li>Adversarial held-out accuracy</li>
@@ -361,9 +374,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orge0297f3" class="outline-4">
-<h4 id="orge0297f3">Shared Vector Embedding space is enormous. Focus on a small subset.</h4>
-<div class="outline-text-4" id="text-orge0297f3">
+<div id="outline-container-org7d77fe4" class="outline-4">
+<h4 id="org7d77fe4">Shared Vector Embedding space is enormous. Focus on a small subset.</h4>
+<div class="outline-text-4" id="text-org7d77fe4">
 <ul class="org-ul">
 <li>Linguistic phenomena</li>
 <li>TF-IDF</li>
@@ -373,12 +386,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org6cb7546" class="outline-4">
-<h4 id="org6cb7546">Will discuss further after setting up toy retrieval pipeline</h4>
+<div id="outline-container-org99fd671" class="outline-4">
+<h4 id="org99fd671">Will discuss further after setting up toy retrieval pipeline</h4>
 </div>
-<div id="outline-container-org983b8c5" class="outline-4">
-<h4 id="org983b8c5">May be able to get Oracle’s previous research on retrieval</h4>
-<div class="outline-text-4" id="text-org983b8c5">
+<div id="outline-container-org413942f" class="outline-4">
+<h4 id="org413942f">May be able to get Oracle’s previous research on retrieval</h4>
+<div class="outline-text-4" id="text-org413942f">
 <ul class="org-ul">
 <li>Collecting the farthest embedding.</li>
 <li>May collect irrelevant data. Thus, think about other way</li>
@@ -386,15 +399,15 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org47e47e9" class="outline-4">
-<h4 id="org47e47e9">Don’t stop Pretraining embedding</h4>
+<div id="outline-container-org8c60a3c" class="outline-4">
+<h4 id="org8c60a3c">Don’t stop Pretraining embedding</h4>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgd657765" class="outline-2">
-<h2 id="orgd657765"><span class="done DONE">DONE</span> Action #1 Choose Data <code>[100%]</code></h2>
-<div class="outline-text-2" id="text-orgd657765">
+<div id="outline-container-orgf21aa9f" class="outline-2">
+<h2 id="orgf21aa9f"><span class="done DONE">DONE</span> Action #1 Choose Data <code>[100%]</code></h2>
+<div class="outline-text-2" id="text-orgf21aa9f">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> <p>
 Toy Classification Data
@@ -436,9 +449,9 @@ Toy Classification Data
 </div>
 </div>
 
-<div id="outline-container-org5eb0365" class="outline-2">
-<h2 id="org5eb0365"><span class="done DONE">DONE</span> Action #2 Select Embedding <code>[100%]</code></h2>
-<div class="outline-text-2" id="text-org5eb0365">
+<div id="outline-container-org4681357" class="outline-2">
+<h2 id="org4681357"><span class="done DONE">DONE</span> Action #2 Select Embedding <code>[100%]</code></h2>
+<div class="outline-text-2" id="text-org4681357">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Get better semantic representation(embedding) by pre-training with relevant domain corpus
 <ul class="org-ul">
@@ -454,9 +467,9 @@ Toy Classification Data
 </div>
 </div>
 
-<div id="outline-container-orgc01147c" class="outline-2">
-<h2 id="orgc01147c"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #3 Build Basic Classification Pipeline <code>[50%]</code></h2>
-<div class="outline-text-2" id="text-orgc01147c">
+<div id="outline-container-orgc537a67" class="outline-2">
+<h2 id="orgc537a67"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #3 Build Basic Classification Pipeline <code>[50%]</code></h2>
+<div class="outline-text-2" id="text-orgc537a67">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Download IMDB Data(train/test/dev) used in <a href="https://github.com/allenai/dont-stop-pretraining">https://github.com/allenai/dont-stop-pretraining</a></li>
 <li class="off"><code>[&#xa0;]</code> Fine-tune ROBERTA with hyperparameters from <a href="https://github.com/allenai/dont-stop-pretraining/blob/master/environments/hyperparameters.py">https://github.com/allenai/dont-stop-pretraining/blob/master/environments/hyperparameters.py</a></li>
@@ -464,9 +477,9 @@ Toy Classification Data
 </div>
 </div>
 
-<div id="outline-container-org7e9ea1e" class="outline-2">
-<h2 id="org7e9ea1e"><span class="todo TODO">TODO</span> Action #4 Retrieval Strategy <code>[40%]</code></h2>
-<div class="outline-text-2" id="text-org7e9ea1e">
+<div id="outline-container-org52f846e" class="outline-2">
+<h2 id="org52f846e"><span class="todo TODO">TODO</span> Action #4 Retrieval Strategy <code>[40%]</code></h2>
+<div class="outline-text-2" id="text-org52f846e">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Don’s stop pretraining (Focus on last few chapters)
 <ul class="org-ul">
@@ -510,9 +523,9 @@ Base: Sudarshan's Previous work on KNN Cosine Similarity Retrieval
 </div>
 </div>
 
-<div id="outline-container-org31c99aa" class="outline-2">
-<h2 id="org31c99aa"><span class="todo WAITING">WAITING</span> Action #5 Acquire Previous Work from Oracle <code>[0%]</code></h2>
-<div class="outline-text-2" id="text-org31c99aa">
+<div id="outline-container-org7af5cb6" class="outline-2">
+<h2 id="org7af5cb6"><span class="todo WAITING">WAITING</span> Action #5 Acquire Previous Work from Oracle <code>[0%]</code></h2>
+<div class="outline-text-2" id="text-org7af5cb6">
 <ul class="org-ul">
 <li>For better retrieval</li>
 <li class="off"><code>[&#xa0;]</code> Waiting for response</li>
@@ -520,28 +533,27 @@ Base: Sudarshan's Previous work on KNN Cosine Similarity Retrieval
 </div>
 </div>
 
-<div id="outline-container-org70fd605" class="outline-2">
-<h2 id="org70fd605"><span class="todo TODO">TODO</span> Action #7 <code>[0%]</code></h2>
-<div class="outline-text-2" id="text-org70fd605">
+<div id="outline-container-orgee9e7c9" class="outline-2">
+<h2 id="orgee9e7c9"><span class="todo TODO">TODO</span> Action #6 Augmentation Methods<code>[0%]</code></h2>
+<div class="outline-text-2" id="text-orgee9e7c9">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Augmentation by paraphrase generation</li>
-<li class="off"><code>[&#xa0;]</code> Select data if feasible</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orga66ea70" class="outline-2">
-<h2 id="orga66ea70"><span class="todo TODO">TODO</span> Action #8 <code>[0%]</code></h2>
-<div class="outline-text-2" id="text-orga66ea70">
+<div id="outline-container-org22d0d19" class="outline-2">
+<h2 id="org22d0d19"><span class="todo TODO">TODO</span> Action #7 Automation<code>[0%]</code></h2>
+<div class="outline-text-2" id="text-org22d0d19">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Autoaugment: Try different kinds of data augmentation and select policy</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org5b1d351" class="outline-2">
-<h2 id="org5b1d351"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #9 Collect Relevant Papers <code>[33%]</code></h2>
-<div class="outline-text-2" id="text-org5b1d351">
+<div id="outline-container-orgf724d4e" class="outline-2">
+<h2 id="orgf724d4e"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #8 Collect Relevant Papers <code>[33%]</code></h2>
+<div class="outline-text-2" id="text-orgf724d4e">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Embedding
 <ul class="org-ul">
@@ -589,7 +601,7 @@ Base: Sudarshan's Previous work on KNN Cosine Similarity Retrieval
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Hee Hwang</p>
-<p class="date">Created: 2021-02-14 Sun 10:33</p>
+<p class="date">Created: 2021-02-15 Mon 10:12</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
