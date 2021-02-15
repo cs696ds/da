@@ -56,41 +56,30 @@
     - e.g. Collect task-relevant examples and take the farthest embedding
 *** Don’t stop Pretraining embedding
 
-* DONE Action #1 Choose Data [100%]
-  - [X] Toy Classification Data
-    |------+-----------------------------------------------------------------------------------------+
-    | IMDB | https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/train.jsonl |
-    |      | https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/test.jsonl  |
-    |      | https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/dev.jsonl   |
-    |------+-----------------------------------------------------------------------------------------+
-  - [X] Augmentation Data
-    - Common Crawl raw text: https://commoncrawl.s3.amazonaws.com/contrib/depcc/CC-MAIN-2016-07/index.html
-    - Downloaded raw text on UMass gypsum cluster(468 GB with compression)
-    - Need to tokenize it at a paragraph level
-    - Sentence Level: gypsum:://mnt/nfs/work1/miyyer/datasets/depcc
-    - Other Data: https://github.com/EleutherAI/the-pile
-
-* DONE Action #2 Select Embedding [100%]
-  - [X] Get better semantic representation(embedding) by pre-training with relevant domain corpus
-    - ROBERTA, ROBERTA-DAPT, and ROBERTA-TAPT are available online.
-    - https://huggingface.co/allenai
-  - [X] VAMPIRE(https://github.com/allenai/vampire)
-    - This is the augmentation method for the previous paper "don't stop pretraining"
-    - Got it working without any issue.
-
-* IN PROGRESS Action #3 Build Basic Classification Pipeline [50%]
-  - [X] Download IMDB Data(train/test/dev) used in https://github.com/allenai/dont-stop-pretraining 
-  - [ ] Fine-tune ROBERTA with hyperparameters from https://github.com/allenai/dont-stop-pretraining/blob/master/environments/hyperparameters.py
-
-* TODO Action #4 Review Retrieval Strategy [40%]
-  - [ ] Don’s stop pretraining (Focus on last few chapters)
+* TODO Action #01 Review Papers [0%]
+  - [ ] Discuss [[./papers/2004.10964.pdf][Don’t stop pretraining:Adapt language models to domains and tasks.(2020)]]
     - They augment data by using VAMPIRE, a variational auto encoder with simple bag-of-words
     - Replication(Pretraining) Failed. But the dataset, model, and classification task is good
     - Definitely good for a baseline
+  - [ ] Discuss [[./papers/2004.02105.pdf][Unsupervised domain clusters in pretrained language models.(2020)]] 
+  - [ ] Discuss [[./papers/2004.04906.pdf][Dense Passage Retrieval for Open-Domain Question Answering(2020)]]
+  - [ ] Discuss [[./papers/2102.01335.pdf][Neural Data Augmentation via Example Extrapolation(2020)]]
 
-  - [ ] Unsupervised Clustering https://arxiv.org/pdf/2004.02105.pdf
+* TODO Action #02 Review Augmentation by Generation [0%]
+  - [ ] Discuss Neural Data Augmentation via Example Extrapolation 
+  - [ ] Augmentation by paraphrase generation
 
-  - [X] Base: Sudarshan's Previous work on KNN Cosine Similarity Retrieval
+* TODO Action #03 Automation[0%]
+  - [ ] Get some ideas from image data augmentation
+  - [ ] Autoaugment: Try different kinds of data augmentation and select policy
+
+* IN PROGRESS Action #04 Build toy Classification Pipeline [50%]
+  - [X] Download IMDB Data(train/test/dev) used in https://github.com/allenai/dont-stop-pretraining 
+  - [ ] Fine-tune ROBERTA with hyperparameters from https://github.com/allenai/dont-stop-pretraining/blob/master/environments/hyperparameters.py
+
+* IN PROGRESS Action #05 Build toy augmentation using retrieval [0%]
+  - [ ] Retrieval based data augmentation on a small subsample of common crawl.
+    Based on Sudarshan's Previous work on KNN Cosine Similarity Retrieval
     #+BEGIN_SRC python
 #This function reduces the size of the context by selecting top k passages in the context and concatenates them
 def get_final_context_strings(questions, answers, context):
@@ -117,25 +106,40 @@ def get_final_context_strings(questions, answers, context):
   return final_context_strings
     #+END_SRC
 
-* WAITING Action #5 Acquire Previous Work from Oracle [0%]
-  - For better retrieval
+* DONE Action #96 Choose Data [100%]
+  - [X] Toy Classification Data
+    |------+-----------------------------------------------------------------------------------------+
+    | IMDB | https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/train.jsonl |
+    |      | https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/test.jsonl  |
+    |      | https://allennlp.s3-us-west-2.amazonaws.com/dont_stop_pretraining/data/imdb/dev.jsonl   |
+    |------+-----------------------------------------------------------------------------------------+
+  - [X] Augmentation Data
+    - Common Crawl raw text: https://commoncrawl.s3.amazonaws.com/contrib/depcc/CC-MAIN-2016-07/index.html
+    - Downloaded raw text on UMass gypsum cluster(468 GB with compression)
+    - Need to tokenize it at a paragraph level
+    - Sentence Level: gypsum:://mnt/nfs/work1/miyyer/datasets/depcc
+    - Other Data: https://github.com/EleutherAI/the-pile
+
+* DONE Action #97 Select Embedding [100%]
+  - [X] Get better semantic representation(embedding) by pre-training with relevant domain corpus
+    - ROBERTA, ROBERTA-DAPT, and ROBERTA-TAPT are available online.
+    - https://huggingface.co/allenai
+  - [X] VAMPIRE(https://github.com/allenai/vampire)
+    - This is the augmentation method for the previous paper "don't stop pretraining"
+    - Got it working without any issue.
+
+* WAITING Action #98 Acquire Previous Work from Oracle [0%]
   - [ ] Waiting for response
 
-* TODO Action #6 Augmentation Methods[0%]
-  - [ ] Augmentation by paraphrase generation
-
-* TODO Action #7 Automation[0%]
-  - [ ] Autoaugment: Try different kinds of data augmentation and select policy
-
-* IN PROGRESS Action #8 Collect Relevant Papers [33%]
-  - [X] Embedding
+* IN PROGRESS Action #99 Collect Relevant Papers [0%]
+  - [ ] Embedding
     - [[./papers/1810.04805.pdf][Bert: Pre-training of deepbidirectional transformers for language understand-ing.(2019)]]
     - [[./papers/1907.11692.pdf][RoBERTa: A Robustly Optimized BERT Pretraining Approach(2019)]]
     - [[./papers/2004.10964.pdf][Don’t stop pretraining:Adapt language models to domains and tasks.(2020)]]
     - [[./papers/1906.02242.pdf][VAMPIRE:Variational Pretraining for Semi-supervised Text Classification(2019)]]
     - [[./papers/beta_vae.pdf][Disentangled Variational Autoencoder(2017)]]
 
-  - [X] Augmentation by Retrieval
+  - [ ] Augmentation by Retrieval
     - [[./papers/2004.02105.pdf][Unsupervised domain clusters in pretrained language models.(2020)]]
     - [[./papers/1707.07328.pdf][Adversarial examples for evaluating reading comprehension systems.(2017)]]
     - [[./papers/2004.04906.pdf][Dense Passage Retrieval for Open-Domain Question Answering(2020)]]

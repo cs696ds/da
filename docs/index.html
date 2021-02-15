@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-02-15 Mon 10:23 -->
+<!-- 2021-02-15 Mon 10:45 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Project State</title>
@@ -253,45 +253,46 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org4d00c6d">Week1 Notes <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-02-02 Tue&gt;</span></span></a>
+<li><a href="#org7221dd1">Week1 Notes <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-02-02 Tue&gt;</span></span></a>
 <ul>
-<li><a href="#orge65050f">Present at meeting <code>[6/6]</code></a></li>
-<li><a href="#org40b5eee">Agenda</a></li>
-<li><a href="#org67dbdb1">Notes</a>
+<li><a href="#orgcb84dd7">Present at meeting <code>[6/6]</code></a></li>
+<li><a href="#orga842782">Agenda</a></li>
+<li><a href="#orgaee06b0">Notes</a>
 <ul>
-<li><a href="#org60f5799">Goal: Publish a paper</a></li>
-<li><a href="#org1580d3d">Topic: NLP Data Augmentation</a></li>
-<li><a href="#org53de5dc">Focus on Classification Tasks</a></li>
-<li><a href="#orgba9622e">Evaluation:</a></li>
-<li><a href="#org92ef74b">Shared Vector Embedding space is enormous. Focus on a small subset.</a></li>
-<li><a href="#org8354ccb">Will discuss further after setting up toy retrieval pipeline</a></li>
-<li><a href="#org390d47f">May be able to get Oracle’s previous research on retrieval</a></li>
-<li><a href="#org7b6f43b">Don’t stop Pretraining embedding</a></li>
+<li><a href="#orgeecbe9c">Goal: Publish a paper</a></li>
+<li><a href="#org53d9d56">Topic: NLP Data Augmentation</a></li>
+<li><a href="#org75ff46c">Focus on Classification Tasks</a></li>
+<li><a href="#org31af878">Evaluation:</a></li>
+<li><a href="#orgcab3f23">Shared Vector Embedding space is enormous. Focus on a small subset.</a></li>
+<li><a href="#org7d673b1">Will discuss further after setting up toy retrieval pipeline</a></li>
+<li><a href="#orgb2a68c5">May be able to get Oracle’s previous research on retrieval</a></li>
+<li><a href="#org92ffac6">Don’t stop Pretraining embedding</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org656f278"><span class="done DONE">DONE</span> Action #1 Choose Data <code>[100%]</code></a></li>
-<li><a href="#orgced3cb6"><span class="done DONE">DONE</span> Action #2 Select Embedding <code>[100%]</code></a></li>
-<li><a href="#orgc14c84f"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #3 Build Basic Classification Pipeline <code>[50%]</code></a></li>
-<li><a href="#org5a51d64"><span class="todo TODO">TODO</span> Action #4 Review Retrieval Strategy <code>[40%]</code></a></li>
-<li><a href="#org12eb898"><span class="todo WAITING">WAITING</span> Action #5 Acquire Previous Work from Oracle <code>[0%]</code></a></li>
-<li><a href="#orgd4f26aa"><span class="todo TODO">TODO</span> Action #6 Augmentation Methods<code>[0%]</code></a></li>
-<li><a href="#org7ce7eb7"><span class="todo TODO">TODO</span> Action #7 Automation<code>[0%]</code></a></li>
-<li><a href="#orgc445f5e"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #8 Collect Relevant Papers <code>[33%]</code></a></li>
+<li><a href="#orga2fcea2"><span class="todo TODO">TODO</span> Action #01 Review Papers <code>[0%]</code></a></li>
+<li><a href="#org9fcc715"><span class="todo TODO">TODO</span> Action #02 Review Augmentation by Generation <code>[0%]</code></a></li>
+<li><a href="#org181fd12"><span class="todo TODO">TODO</span> Action #03 Automation<code>[0%]</code></a></li>
+<li><a href="#orgcf88db4"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #04 Build toy Classification Pipeline <code>[50%]</code></a></li>
+<li><a href="#org1b3716c"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #05 Build toy augmentation using retrieval <code>[0%]</code></a></li>
+<li><a href="#org7142b14"><span class="done DONE">DONE</span> Action #96 Choose Data <code>[100%]</code></a></li>
+<li><a href="#orgc5752e7"><span class="done DONE">DONE</span> Action #97 Select Embedding <code>[100%]</code></a></li>
+<li><a href="#orgdcae394"><span class="todo WAITING">WAITING</span> Action #98 Acquire Previous Work from Oracle <code>[0%]</code></a></li>
+<li><a href="#org9cc80f5"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #99 Collect Relevant Papers <code>[0%]</code></a></li>
 </ul>
 </div>
 </div>
 
 
 
-<div id="outline-container-org4d00c6d" class="outline-2">
-<h2 id="org4d00c6d">Week1 Notes <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-02-02 Tue&gt;</span></span></h2>
-<div class="outline-text-2" id="text-org4d00c6d">
+<div id="outline-container-org7221dd1" class="outline-2">
+<h2 id="org7221dd1">Week1 Notes <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-02-02 Tue&gt;</span></span></h2>
+<div class="outline-text-2" id="text-org7221dd1">
 </div>
-<div id="outline-container-orge65050f" class="outline-3">
-<h3 id="orge65050f">Present at meeting <code>[6/6]</code></h3>
-<div class="outline-text-3" id="text-orge65050f">
+<div id="outline-container-orgcb84dd7" class="outline-3">
+<h3 id="orgcb84dd7">Present at meeting <code>[6/6]</code></h3>
+<div class="outline-text-3" id="text-orgcb84dd7">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Peter</li>
 <li class="on"><code>[X]</code> Sudarshan</li>
@@ -303,9 +304,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org40b5eee" class="outline-3">
-<h3 id="org40b5eee">Agenda</h3>
-<div class="outline-text-3" id="text-org40b5eee">
+<div id="outline-container-orga842782" class="outline-3">
+<h3 id="orga842782">Agenda</h3>
+<div class="outline-text-3" id="text-orga842782">
 <ul class="org-ul">
 <li>Logistics</li>
 <li>Project Intro</li>
@@ -314,20 +315,20 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org67dbdb1" class="outline-3">
-<h3 id="org67dbdb1">Notes</h3>
-<div class="outline-text-3" id="text-org67dbdb1">
+<div id="outline-container-orgaee06b0" class="outline-3">
+<h3 id="orgaee06b0">Notes</h3>
+<div class="outline-text-3" id="text-orgaee06b0">
 </div>
-<div id="outline-container-org60f5799" class="outline-4">
-<h4 id="org60f5799">Goal: Publish a paper</h4>
+<div id="outline-container-orgeecbe9c" class="outline-4">
+<h4 id="orgeecbe9c">Goal: Publish a paper</h4>
 </div>
-<div id="outline-container-org1580d3d" class="outline-4">
-<h4 id="org1580d3d">Topic: NLP Data Augmentation</h4>
-<div class="outline-text-4" id="text-org1580d3d">
+<div id="outline-container-org53d9d56" class="outline-4">
+<h4 id="org53d9d56">Topic: NLP Data Augmentation</h4>
+<div class="outline-text-4" id="text-org53d9d56">
 </div>
 <ul class="org-ul">
-<li><a id="org9967954"></a>Approach<br />
-<div class="outline-text-5" id="text-org9967954">
+<li><a id="orgbaa9fc4"></a>Approach<br />
+<div class="outline-text-5" id="text-orgbaa9fc4">
 <ul class="org-ul">
 <li>Find existing examples within large corpus such as Common Crawl using embedding</li>
 <li>Generating from scratch(May not efficient)</li>
@@ -338,21 +339,21 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 
-<div id="outline-container-org53de5dc" class="outline-4">
-<h4 id="org53de5dc">Focus on Classification Tasks</h4>
-<div class="outline-text-4" id="text-org53de5dc">
+<div id="outline-container-org75ff46c" class="outline-4">
+<h4 id="org75ff46c">Focus on Classification Tasks</h4>
+<div class="outline-text-4" id="text-org75ff46c">
 </div>
 <ul class="org-ul">
-<li><a id="org14ed169"></a>Ari's suggestion:<br />
-<div class="outline-text-5" id="text-org14ed169">
+<li><a id="org5866c6e"></a>Ari's suggestion:<br />
+<div class="outline-text-5" id="text-org5866c6e">
 <ul class="org-ul">
 <li>Intent Classification on banking domain (Open a bank account)</li>
 <li>Sentiment Classification(3 classes)</li>
 </ul>
 </div>
 </li>
-<li><a id="org0889535"></a>Kalpesh:<br />
-<div class="outline-text-5" id="text-org0889535">
+<li><a id="org874a820"></a>Kalpesh:<br />
+<div class="outline-text-5" id="text-org874a820">
 <ul class="org-ul">
 <li>Citation intent classification</li>
 <li>Topic Classification</li>
@@ -362,9 +363,9 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 
-<div id="outline-container-orgba9622e" class="outline-4">
-<h4 id="orgba9622e">Evaluation:</h4>
-<div class="outline-text-4" id="text-orgba9622e">
+<div id="outline-container-org31af878" class="outline-4">
+<h4 id="org31af878">Evaluation:</h4>
+<div class="outline-text-4" id="text-org31af878">
 <ul class="org-ul">
 <li>Held-out Test Accuracy</li>
 <li>Adversarial held-out accuracy</li>
@@ -374,9 +375,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org92ef74b" class="outline-4">
-<h4 id="org92ef74b">Shared Vector Embedding space is enormous. Focus on a small subset.</h4>
-<div class="outline-text-4" id="text-org92ef74b">
+<div id="outline-container-orgcab3f23" class="outline-4">
+<h4 id="orgcab3f23">Shared Vector Embedding space is enormous. Focus on a small subset.</h4>
+<div class="outline-text-4" id="text-orgcab3f23">
 <ul class="org-ul">
 <li>Linguistic phenomena</li>
 <li>TF-IDF</li>
@@ -386,12 +387,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org8354ccb" class="outline-4">
-<h4 id="org8354ccb">Will discuss further after setting up toy retrieval pipeline</h4>
+<div id="outline-container-org7d673b1" class="outline-4">
+<h4 id="org7d673b1">Will discuss further after setting up toy retrieval pipeline</h4>
 </div>
-<div id="outline-container-org390d47f" class="outline-4">
-<h4 id="org390d47f">May be able to get Oracle’s previous research on retrieval</h4>
-<div class="outline-text-4" id="text-org390d47f">
+<div id="outline-container-orgb2a68c5" class="outline-4">
+<h4 id="orgb2a68c5">May be able to get Oracle’s previous research on retrieval</h4>
+<div class="outline-text-4" id="text-orgb2a68c5">
 <ul class="org-ul">
 <li>Collecting the farthest embedding.</li>
 <li>May collect irrelevant data. Thus, think about other way</li>
@@ -399,15 +400,100 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org7b6f43b" class="outline-4">
-<h4 id="org7b6f43b">Don’t stop Pretraining embedding</h4>
+<div id="outline-container-org92ffac6" class="outline-4">
+<h4 id="org92ffac6">Don’t stop Pretraining embedding</h4>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org656f278" class="outline-2">
-<h2 id="org656f278"><span class="done DONE">DONE</span> Action #1 Choose Data <code>[100%]</code></h2>
-<div class="outline-text-2" id="text-org656f278">
+<div id="outline-container-orga2fcea2" class="outline-2">
+<h2 id="orga2fcea2"><span class="todo TODO">TODO</span> Action #01 Review Papers <code>[0%]</code></h2>
+<div class="outline-text-2" id="text-orga2fcea2">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Discuss <a href="./papers/2004.10964.pdf">Don’t stop pretraining:Adapt language models to domains and tasks.(2020)</a>
+<ul class="org-ul">
+<li>They augment data by using VAMPIRE, a variational auto encoder with simple bag-of-words</li>
+<li>Replication(Pretraining) Failed. But the dataset, model, and classification task is good</li>
+<li>Definitely good for a baseline</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Discuss <a href="./papers/2004.02105.pdf">Unsupervised domain clusters in pretrained language models.(2020)</a></li>
+<li class="off"><code>[&#xa0;]</code> Discuss <a href="./papers/2004.04906.pdf">Dense Passage Retrieval for Open-Domain Question Answering(2020)</a></li>
+<li class="off"><code>[&#xa0;]</code> Discuss <a href="./papers/2102.01335.pdf">Neural Data Augmentation via Example Extrapolation(2020)</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9fcc715" class="outline-2">
+<h2 id="org9fcc715"><span class="todo TODO">TODO</span> Action #02 Review Augmentation by Generation <code>[0%]</code></h2>
+<div class="outline-text-2" id="text-org9fcc715">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Discuss Neural Data Augmentation via Example Extrapolation</li>
+<li class="off"><code>[&#xa0;]</code> Augmentation by paraphrase generation</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org181fd12" class="outline-2">
+<h2 id="org181fd12"><span class="todo TODO">TODO</span> Action #03 Automation<code>[0%]</code></h2>
+<div class="outline-text-2" id="text-org181fd12">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Get some ideas from image data augmentation</li>
+<li class="off"><code>[&#xa0;]</code> Autoaugment: Try different kinds of data augmentation and select policy</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcf88db4" class="outline-2">
+<h2 id="orgcf88db4"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #04 Build toy Classification Pipeline <code>[50%]</code></h2>
+<div class="outline-text-2" id="text-orgcf88db4">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Download IMDB Data(train/test/dev) used in <a href="https://github.com/allenai/dont-stop-pretraining">https://github.com/allenai/dont-stop-pretraining</a></li>
+<li class="off"><code>[&#xa0;]</code> Fine-tune ROBERTA with hyperparameters from <a href="https://github.com/allenai/dont-stop-pretraining/blob/master/environments/hyperparameters.py">https://github.com/allenai/dont-stop-pretraining/blob/master/environments/hyperparameters.py</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1b3716c" class="outline-2">
+<h2 id="org1b3716c"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #05 Build toy augmentation using retrieval <code>[0%]</code></h2>
+<div class="outline-text-2" id="text-org1b3716c">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> <p>
+Retrieval based data augmentation on a small subsample of common crawl.
+Based on Sudarshan's Previous work on KNN Cosine Similarity Retrieval
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #6A9955;">#</span><span style="color: #6A9955;">This function reduces the size of the context by selecting top k passages in the context and concatenates them</span>
+<span style="color: #569cd6;">def</span> <span style="color: #DCDCAA;">get_final_context_strings</span>(questions, answers, context):
+  <span style="color: #9cdcfe;">top_k</span> = 3 <span style="color: #6A9955;"># </span><span style="color: #6A9955;">Choose number of top passages to concatenate. Typical is 3 for Longformer.</span>
+  <span style="color: #9cdcfe;">context_embeddings</span> = get_context_embeddings(context)
+  <span style="color: #9cdcfe;">num_questions</span> = <span style="color: #C586C0;">len</span>(questions)
+  <span style="color: #9cdcfe;">num_answers</span> = <span style="color: #C586C0;">len</span>(answers)
+  <span style="color: #9cdcfe;">final_contexts</span> = [[] <span style="color: #569cd6;">for</span> i <span style="color: #569cd6;">in</span> <span style="color: #C586C0;">range</span>(num_questions)]
+  <span style="color: #9cdcfe;">final_context_strings</span> = [<span style="color: #CE9178;">""</span> <span style="color: #569cd6;">for</span> i <span style="color: #569cd6;">in</span> <span style="color: #C586C0;">range</span>(num_questions)]
+  <span style="color: #9cdcfe;">top_k_sentences</span> = []
+
+  <span style="color: #569cd6;">with</span> torch.no_grad():
+    <span style="color: #9cdcfe;">question_embeddings</span> = torch.from_numpy(model_ir.encode(questions)) <span style="color: #6A9955;"># </span><span style="color: #6A9955;">-&gt; Tensor, Size: Number of Questions x Embedding Size</span>
+  <span style="color: #9cdcfe;">cos_sim_sentences</span> = util.pytorch_cos_sim(question_embeddings, context_embeddings) <span style="color: #6A9955;"># </span><span style="color: #6A9955;">Use cosine simularity to rate sentences. -&gt; Tensor, Size: Number of Questions x Number of Passages in Context</span>
+  <span style="color: #9cdcfe;">top_k_sentences</span> = torch.topk(cos_sim_sentences,top_k)[1] <span style="color: #6A9955;">#</span><span style="color: #6A9955;">Indices Tensor (Size: Number of Questions x Indices of Top k Values in Context) - Discard values tensor at index 0</span>
+  <span style="color: #9cdcfe;">sorted_indices</span> = torch.sort(top_k_sentences,dim=-1)[0] <span style="color: #6A9955;">## </span><span style="color: #6A9955;">Sort sentences into document order to preserve structure, removing extra indices tensor from sort fxn. -&gt; Indices Tensor (Size: Number of Questions x Indices of Top k Values in Context)</span>
+  <span style="color: #9cdcfe;">sorted_indices_list</span> = sorted_indices.tolist()
+
+  <span style="color: #569cd6;">for</span> qxn <span style="color: #569cd6;">in</span> <span style="color: #C586C0;">range</span>(num_questions): <span style="color: #6A9955;"># </span><span style="color: #6A9955;">Build all the final contexts</span>
+    <span style="color: #569cd6;">for</span> chunk <span style="color: #569cd6;">in</span> sorted_indices_list[qxn]:
+      final_contexts[qxn].append(sentences[chunk])
+    <span style="color: #9cdcfe;">final_context_strings</span>[qxn] = <span style="color: #CE9178;">" "</span>.join(final_contexts[qxn])
+
+  <span style="color: #569cd6;">return</span> final_context_strings
+</pre>
+</div></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7142b14" class="outline-2">
+<h2 id="org7142b14"><span class="done DONE">DONE</span> Action #96 Choose Data <code>[100%]</code></h2>
+<div class="outline-text-2" id="text-org7142b14">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> <p>
 Toy Classification Data
@@ -449,9 +535,9 @@ Toy Classification Data
 </div>
 </div>
 
-<div id="outline-container-orgced3cb6" class="outline-2">
-<h2 id="orgced3cb6"><span class="done DONE">DONE</span> Action #2 Select Embedding <code>[100%]</code></h2>
-<div class="outline-text-2" id="text-orgced3cb6">
+<div id="outline-container-orgc5752e7" class="outline-2">
+<h2 id="orgc5752e7"><span class="done DONE">DONE</span> Action #97 Select Embedding <code>[100%]</code></h2>
+<div class="outline-text-2" id="text-orgc5752e7">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Get better semantic representation(embedding) by pre-training with relevant domain corpus
 <ul class="org-ul">
@@ -467,95 +553,20 @@ Toy Classification Data
 </div>
 </div>
 
-<div id="outline-container-orgc14c84f" class="outline-2">
-<h2 id="orgc14c84f"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #3 Build Basic Classification Pipeline <code>[50%]</code></h2>
-<div class="outline-text-2" id="text-orgc14c84f">
+<div id="outline-container-orgdcae394" class="outline-2">
+<h2 id="orgdcae394"><span class="todo WAITING">WAITING</span> Action #98 Acquire Previous Work from Oracle <code>[0%]</code></h2>
+<div class="outline-text-2" id="text-orgdcae394">
 <ul class="org-ul">
-<li class="on"><code>[X]</code> Download IMDB Data(train/test/dev) used in <a href="https://github.com/allenai/dont-stop-pretraining">https://github.com/allenai/dont-stop-pretraining</a></li>
-<li class="off"><code>[&#xa0;]</code> Fine-tune ROBERTA with hyperparameters from <a href="https://github.com/allenai/dont-stop-pretraining/blob/master/environments/hyperparameters.py">https://github.com/allenai/dont-stop-pretraining/blob/master/environments/hyperparameters.py</a></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org5a51d64" class="outline-2">
-<h2 id="org5a51d64"><span class="todo TODO">TODO</span> Action #4 Review Retrieval Strategy <code>[40%]</code></h2>
-<div class="outline-text-2" id="text-org5a51d64">
-<ul class="org-ul">
-<li class="off"><code>[&#xa0;]</code> Don’s stop pretraining (Focus on last few chapters)
-<ul class="org-ul">
-<li>They augment data by using VAMPIRE, a variational auto encoder with simple bag-of-words</li>
-<li>Replication(Pretraining) Failed. But the dataset, model, and classification task is good</li>
-<li>Definitely good for a baseline</li>
-</ul></li>
-
-<li class="off"><code>[&#xa0;]</code> Unsupervised Clustering <a href="https://arxiv.org/pdf/2004.02105.pdf">https://arxiv.org/pdf/2004.02105.pdf</a></li>
-
-<li class="on"><code>[X]</code> <p>
-Base: Sudarshan's Previous work on KNN Cosine Similarity Retrieval
-</p>
-<div class="org-src-container">
-<pre class="src src-python"><span style="color: #6A9955;">#</span><span style="color: #6A9955;">This function reduces the size of the context by selecting top k passages in the context and concatenates them</span>
-<span style="color: #569cd6;">def</span> <span style="color: #DCDCAA;">get_final_context_strings</span>(questions, answers, context):
-  <span style="color: #9cdcfe;">top_k</span> = 3 <span style="color: #6A9955;"># </span><span style="color: #6A9955;">Choose number of top passages to concatenate. Typical is 3 for Longformer.</span>
-  <span style="color: #9cdcfe;">context_embeddings</span> = get_context_embeddings(context)
-  <span style="color: #9cdcfe;">num_questions</span> = <span style="color: #C586C0;">len</span>(questions)
-  <span style="color: #9cdcfe;">num_answers</span> = <span style="color: #C586C0;">len</span>(answers)
-  <span style="color: #9cdcfe;">final_contexts</span> = [[] <span style="color: #569cd6;">for</span> i <span style="color: #569cd6;">in</span> <span style="color: #C586C0;">range</span>(num_questions)]
-  <span style="color: #9cdcfe;">final_context_strings</span> = [<span style="color: #CE9178;">""</span> <span style="color: #569cd6;">for</span> i <span style="color: #569cd6;">in</span> <span style="color: #C586C0;">range</span>(num_questions)]
-  <span style="color: #9cdcfe;">top_k_sentences</span> = []
-
-  <span style="color: #569cd6;">with</span> torch.no_grad():
-    <span style="color: #9cdcfe;">question_embeddings</span> = torch.from_numpy(model_ir.encode(questions)) <span style="color: #6A9955;"># </span><span style="color: #6A9955;">-&gt; Tensor, Size: Number of Questions x Embedding Size</span>
-  <span style="color: #9cdcfe;">cos_sim_sentences</span> = util.pytorch_cos_sim(question_embeddings, context_embeddings) <span style="color: #6A9955;"># </span><span style="color: #6A9955;">Use cosine simularity to rate sentences. -&gt; Tensor, Size: Number of Questions x Number of Passages in Context</span>
-  <span style="color: #9cdcfe;">top_k_sentences</span> = torch.topk(cos_sim_sentences,top_k)[1] <span style="color: #6A9955;">#</span><span style="color: #6A9955;">Indices Tensor (Size: Number of Questions x Indices of Top k Values in Context) - Discard values tensor at index 0</span>
-  <span style="color: #9cdcfe;">sorted_indices</span> = torch.sort(top_k_sentences,dim=-1)[0] <span style="color: #6A9955;">## </span><span style="color: #6A9955;">Sort sentences into document order to preserve structure, removing extra indices tensor from sort fxn. -&gt; Indices Tensor (Size: Number of Questions x Indices of Top k Values in Context)</span>
-  <span style="color: #9cdcfe;">sorted_indices_list</span> = sorted_indices.tolist()
-
-  <span style="color: #569cd6;">for</span> qxn <span style="color: #569cd6;">in</span> <span style="color: #C586C0;">range</span>(num_questions): <span style="color: #6A9955;"># </span><span style="color: #6A9955;">Build all the final contexts</span>
-    <span style="color: #569cd6;">for</span> chunk <span style="color: #569cd6;">in</span> sorted_indices_list[qxn]:
-      final_contexts[qxn].append(sentences[chunk])
-    <span style="color: #9cdcfe;">final_context_strings</span>[qxn] = <span style="color: #CE9178;">" "</span>.join(final_contexts[qxn])
-
-  <span style="color: #569cd6;">return</span> final_context_strings
-</pre>
-</div></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org12eb898" class="outline-2">
-<h2 id="org12eb898"><span class="todo WAITING">WAITING</span> Action #5 Acquire Previous Work from Oracle <code>[0%]</code></h2>
-<div class="outline-text-2" id="text-org12eb898">
-<ul class="org-ul">
-<li>For better retrieval</li>
 <li class="off"><code>[&#xa0;]</code> Waiting for response</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgd4f26aa" class="outline-2">
-<h2 id="orgd4f26aa"><span class="todo TODO">TODO</span> Action #6 Augmentation Methods<code>[0%]</code></h2>
-<div class="outline-text-2" id="text-orgd4f26aa">
+<div id="outline-container-org9cc80f5" class="outline-2">
+<h2 id="org9cc80f5"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #99 Collect Relevant Papers <code>[0%]</code></h2>
+<div class="outline-text-2" id="text-org9cc80f5">
 <ul class="org-ul">
-<li class="off"><code>[&#xa0;]</code> Augmentation by paraphrase generation</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org7ce7eb7" class="outline-2">
-<h2 id="org7ce7eb7"><span class="todo TODO">TODO</span> Action #7 Automation<code>[0%]</code></h2>
-<div class="outline-text-2" id="text-org7ce7eb7">
-<ul class="org-ul">
-<li class="off"><code>[&#xa0;]</code> Autoaugment: Try different kinds of data augmentation and select policy</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgc445f5e" class="outline-2">
-<h2 id="orgc445f5e"><span class="todo IN_PROGRESS">IN PROGRESS</span> Action #8 Collect Relevant Papers <code>[33%]</code></h2>
-<div class="outline-text-2" id="text-orgc445f5e">
-<ul class="org-ul">
-<li class="on"><code>[X]</code> Embedding
+<li class="off"><code>[&#xa0;]</code> Embedding
 <ul class="org-ul">
 <li><a href="./papers/1810.04805.pdf">Bert: Pre-training of deepbidirectional transformers for language understand-ing.(2019)</a></li>
 <li><a href="./papers/1907.11692.pdf">RoBERTa: A Robustly Optimized BERT Pretraining Approach(2019)</a></li>
@@ -564,7 +575,7 @@ Base: Sudarshan's Previous work on KNN Cosine Similarity Retrieval
 <li><a href="./papers/beta_vae.pdf">Disentangled Variational Autoencoder(2017)</a></li>
 </ul></li>
 
-<li class="on"><code>[X]</code> Augmentation by Retrieval
+<li class="off"><code>[&#xa0;]</code> Augmentation by Retrieval
 <ul class="org-ul">
 <li><a href="./papers/2004.02105.pdf">Unsupervised domain clusters in pretrained language models.(2020)</a></li>
 <li><a href="./papers/1707.07328.pdf">Adversarial examples for evaluating reading comprehension systems.(2017)</a></li>
@@ -605,7 +616,7 @@ Base: Sudarshan's Previous work on KNN Cosine Similarity Retrieval
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Hee Hwang</p>
-<p class="date">Created: 2021-02-15 Mon 10:23</p>
+<p class="date">Created: 2021-02-15 Mon 10:45</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
