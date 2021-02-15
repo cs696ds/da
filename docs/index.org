@@ -63,19 +63,16 @@
   - [ ] Discuss [[./papers/2004.04906.pdf][Dense Passage Retrieval for Open-Domain Question Answering(2020)]]
   - [ ] Discuss [[./papers/2102.01335.pdf][Neural Data Augmentation via Example Extrapolation(2020)]]
 
-* TODO Action #02 Review Augmentation by Generation [0%]
-  - [ ] Discuss Neural Data Augmentation via Example Extrapolation 
+* TODO Action #02 Discuss additional ideas [0%]
   - [ ] Augmentation by paraphrase generation
-
-* TODO Action #03 Automation[0%]
-  - [ ] Get some ideas from image data augmentation
+  - [ ] Get some ideas from image data augmentation automation
   - [ ] Autoaugment: Try different kinds of data augmentation and select policy
 
-* IN PROGRESS Action #04 Build toy Classification Pipeline [50%]
+* IN PROGRESS Action #03 Build toy Classification Pipeline [50%]
   - [X] Download IMDB Data(train/test/dev) used in https://github.com/allenai/dont-stop-pretraining 
   - [ ] Fine-tune ROBERTA with hyperparameters from https://github.com/allenai/dont-stop-pretraining/blob/master/environments/hyperparameters.py
 
-* IN PROGRESS Action #05 Build toy augmentation using retrieval [0%]
+* IN PROGRESS Action #04 Build toy augmentation using retrieval [0%]
   - [ ] Retrieval based data augmentation on a small subsample of common crawl.
     Based on Sudarshan's Previous work on KNN Cosine Similarity Retrieval
     #+BEGIN_SRC python
