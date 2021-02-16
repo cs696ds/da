@@ -5,7 +5,7 @@
 #+title:  Data Augmentation
 #+author: Hee Hwang
 
-* Week2 Notes <2021-02-16 Tue>
+* Week3 Notes <2021-02-16 Tue>
 ** Present at meeting [7/7]
    - [X] Peter
    - [X] Sudarshan
