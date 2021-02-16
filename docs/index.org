@@ -5,6 +5,81 @@
 #+title:  Data Augmentation
 #+author: Hee Hwang
 
+* Week2 Notes <2021-02-16 Tue>
+** Present at meeting [7/7]
+   - [X] Peter
+   - [X] Sudarshan
+   - [X] Kalpesh
+   - [X] Ari
+   - [X] Sweta
+   - [X] Michael
+   - [X] Naveen
+
+** Topics
+   - Progress
+   - Project Overview
+   - Filtering
+   - Encoding
+   - Nearest Neighbor
+   - Computational Requirement
+
+** Notes   
+*** Progress
+**** Set up environments on the UMass Gypsum cluster
+**** Completed a basic classifier with IMDB dataset by fine-tuning RoBERTa 
+**** Collected the common crawl files
+
+*** Project Overview
+    1. Get relevant documents by filtering common crawl 
+    2. Encode sentence/passage (Bag of words, Vampire, or DPR)
+    3. Apply nearest/farthest neighbor using API
+    4. Augment data by manually labeling data or use classifier
+    5. Compare with existing results
+
+
+*** Filtering
+**** Kalpesh: url-based filtering 
+**** Ari: Invertied index over common crawl
+**** Try different heuristics
+     - How long do they take?(complexity)
+     - How fine-grain are they?(similarity)
+     - How many documents are there after filtering?
+
+*** Encoding
+    - First of all, make sure similar sentences cluster
+    - Naveen: Better to use alternatives for embedding rather than plain RoBERTa
+    - e.g. Sentence BERT(Distilled RoBERTa)
+    - Kalpesh: DPR: Passage Encoder; dedicated retrieval; MAP search;
+    - Michael: Should use dual encoder like universal sentence encoder
+    - Traditional Inverted Index: Less nuanced but worth trying
+    - Time complexity: How many documents/seconds can the model process?
+
+*** Nearest Neighbor    
+    - Sweta   : Do not reinvent wheels. Good programs are available.
+    - Google SCANN : https://github.com/google-research/google-research/tree/master/scann
+    - Facebook FAISS: https://github.com/facebookresearch/faiss (edited) 
+    
+*** Computational Requirement
+    - Where is the bottleneck? KNN? Encoding?
+    - Kalpesh: Building and loading index may be computationally expensive in terms of space. 
+    - For example, 21M index -> 120GB RAM(TODO: Check gypsum memory limit)
+    - Try a single common crawl file(20-50 MB)
+    - Michael: Embedding -> bit vector if RAM is the issue
+
+*** After Augmentation
+    - Sample 10-15 sentence, see if it is reasonable
+    - If not, debugging.(filter problem? encoding problem? or KNN problem?)
+    - Try other dataset
+
+*** Additional Comment
+    - Focus on augmentation by retrieval. Put aside sentence generation.
+    - Given validation set, find wrong example, find similar sentense from embedding, retrain, and check accuracy
+    - Select data with moderate accuracy; 95% is too high!
+    - Start from the small data and check accuracy after augmentation both from valid set and augmented data
+    - Other baseline: DAPT and TAPT from [[./papers/2004.10964.pdf][Don’t stop pretraining:Adapt language models to domains and tasks.(2020)]]
+    - Just get one solution working first.
+
+
 * Week1 Notes <2021-02-02 Tue>
 ** Present at meeting [6/6]
    - [X] Peter

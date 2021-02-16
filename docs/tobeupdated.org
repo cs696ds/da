@@ -1,0 +1,2 @@
+* SNIPS for intent classification
+  https://github.com/MiuLab/SlotGated-SLU/tree/master/data/snips
