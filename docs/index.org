@@ -130,12 +130,6 @@
 
 
 * ACTIONS
-
-
-
-
-
-
 ** IN PROGRESS Action #03 Build toy Classification Pipeline [100%]
   - [X] Download IMDB Data(train/test/dev) used in https://github.com/allenai/dont-stop-pretraining 
   - [X] Fine-tune ROBERTA with hyperparameters from https://github.com/allenai/dont-stop-pretraining/blob/master/environments/hyperparameters.py
@@ -209,7 +203,7 @@ def get_final_context_strings(questions, answers, context):
 ** WAITING Action #98 Acquire Previous Work from Oracle [0%]
   - [ ] Waiting for response
 
-** IN PROGRESS Action #99 Collect Relevant Papers [0%]
+* References [0%]
   - [ ] Embedding
     - [[./papers/1810.04805.pdf][Bert: Pre-training of deepbidirectional transformers for language understand-ing.(2019)]]
     - [[./papers/1907.11692.pdf][RoBERTa: A Robustly Optimized BERT Pretraining Approach(2019)]]
@@ -240,3 +234,6 @@ def get_final_context_strings(questions, answers, context):
   - [ ] Linguistic Generalization
     - [[./papers/2005.04118.pdf][Beyond Accuracy: Behavioral Testing of NLP Models with CheckList(2020)]]
     - [[./papers/2004.11999.pdf][Syntacticdata augmentation increases robustness to inference heuristics.(2020)]]
+
+* Links
+- [[https://sites.google.com/iesl.cs.umass.edu/compsci-696-ds-spring-2021/home?authuser=1 ][696 Course Homepage]]
