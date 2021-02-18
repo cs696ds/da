@@ -20,8 +20,9 @@ for i in range(int(sys.argv[1]), int(sys.argv[1]) + LIMIT):
     val_url  = ""
     val_s3   = ""
     val_text = ""
+    k = 0  # The number of documents
     for j, d in enumerate(data):
-        if j == 10:
+        if k == 10:
             break
         print('%d / %d' % (j, len(data)))
         if d.startswith("# newdoc"):
@@ -36,6 +37,7 @@ for i in range(int(sys.argv[1]), int(sys.argv[1]) + LIMIT):
                 docs.append(json.dumps(dict))
                 val_url = ""
                 val_text = ""
+                k += 1
         else:
             tokenized_str = wt.tokenize(d)
             line = ' '.join(w.text for w in tokenized_str)
@@ -48,7 +50,7 @@ for i in range(int(sys.argv[1]), int(sys.argv[1]) + LIMIT):
             f.write('\n')
             
     print("%.4f seconds for %d" % (time.time() - start, i))
-    sys.exit()
+
 #    final_data = [' '.join([y.text for y in x]) for x in tokenized_strs]
 
     # with open('depcc.%05d-of-19101' % i, 'w') as f:
