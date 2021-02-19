@@ -44,7 +44,7 @@ for i in range(int(sys.argv[1]), int(sys.argv[1]) + LIMIT):
             line += ' '
             val_text += line
 
-    with open('depcc.%05d-of-19101.jsonl' % i, 'w') as f:
+    with open('part-%05d.jsonl' % i, 'w') as f:
         for doc in docs:
             f.write(doc);
             f.write('\n')
