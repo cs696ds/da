@@ -22,8 +22,8 @@ for i in range(int(sys.argv[1]), int(sys.argv[1]) + LIMIT):
     val_text = ""
     k = 0  # The number of documents
     for j, d in enumerate(data):
-        if k == 10:
-            break
+        # if k == 10:
+        #     break
         print('%d / %d' % (j, len(data)))
         if d.startswith("# newdoc"):
             pos = d.find('s3 =')
