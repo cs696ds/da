@@ -24,8 +24,11 @@ print(solr.ping())
 #         solr.add(j)
 # print(len(json_lines))
 
+sample_text = "These observations and this line of reasoning has not escaped the attention of theoretical linguists ."
+#sample_text = "friends"
 
-results = solr.search('friends')
+results = solr.search(sample_text, rows=9999)
+#results = solr.search(sample_text)
 
 print("Saw {0} result(s).".format(len(results)))
 for result in results:
