@@ -1,0 +1,1 @@
+Griffiths et al. ( 2007 ) helped pave the path for cognitive-linguistic multimodal research , showing that Latent Dirichlet Allocation outperformed Latent Semantic Analysis ( Deerwester et al. , 1990 ) in the prediction of association norms .

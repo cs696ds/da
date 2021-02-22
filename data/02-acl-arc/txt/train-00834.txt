@@ -1,0 +1,1 @@
+Mathematical analysis can assess a measure with respect to some formal properties , e.g. whether a measure is a metric ( Lin , 1998 ) .4 However , mathematical analysis can not tell us whether a measure closely resembles human judgments or whether it performs best when used in a certain application .

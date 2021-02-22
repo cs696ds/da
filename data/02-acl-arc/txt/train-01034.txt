@@ -1,0 +1,1 @@
+Kinyon and Prolo ( 2002 ) describe a simple tool which uses fine-grained rules to identify the arguments of verb occurrences in the Penn-II Treebank .

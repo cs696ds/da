@@ -1,0 +1,1 @@
+Problems such as these have motivated research on more abstract , dependencybased parser evaluation ( e.g. , Lin 1995 ; Carroll , Briscoe , and Sanfilippo 1998 ; Carroll et al. 2002 ; Clark and Hockenmaier 2002 ; King et al. 2003 ; Preiss 2003 ; Kaplan et al. 2004 ; Miyao and Tsujii 2004 ) .

@@ -1,0 +1,1 @@
+This approach , which uses words that appear in the context of terms to formulate hypotheses on their semantic relatedness ( Habert et al. , 1996 , for example ) , does not specify the relationship itself .

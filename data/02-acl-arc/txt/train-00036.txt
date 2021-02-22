@@ -1,0 +1,1 @@
+Gurevych ( 2006 ) observed that some annotators were not familiar with the exact definition of semantic relatedness .

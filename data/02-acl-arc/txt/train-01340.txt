@@ -1,0 +1,1 @@
+The current system learns finite state flowcharts whereas typical learning systems usually acquire coefficient values as in Minsky and Papert ( 1969 ) , assertional statements as in Michalski ( 1980 ) , or semantic nets as in Winston ( 1975 ) .

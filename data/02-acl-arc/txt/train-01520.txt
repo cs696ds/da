@@ -1,0 +1,1 @@
+As they are required to enable test subjects to distinguish between senses , we use artificial glosses composed from synonyms and hypernyms as a surrogate , e.g. for brother : `` brother , male sibling '' vs. `` brother , comrade , friend '' ( Gurevych , 2005 ) .

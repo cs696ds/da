@@ -1,0 +1,1 @@
+Morphological alterations of a search term have a negative impact on the recall performance of an information retrieval ( IR ) system ( Choueka , 1990 ; J Â¨ appinen and Niemist Â¨ o , 1988 ; Kraaij and Pohlmann , 1996 ) , since they preclude a direct match between the search term proper and its morphological variants in the documents to be retrieved .

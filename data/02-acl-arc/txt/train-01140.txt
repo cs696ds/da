@@ -1,0 +1,1 @@
+Unlike the models proposed by Brown et al. ( 1993b ) , this model is symmetric , because both word bags are generated together from a joint probability distribution .

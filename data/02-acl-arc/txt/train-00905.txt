@@ -1,0 +1,1 @@
+This is similar to `` one sense per collocation '' idea of Yarowsky ( 1993 ) .

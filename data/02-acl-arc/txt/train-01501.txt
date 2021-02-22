@@ -1,0 +1,1 @@
+We use the Clark and Curran ( 2007 ) CCG parser to analyse the sentence before and after paraphrasing .

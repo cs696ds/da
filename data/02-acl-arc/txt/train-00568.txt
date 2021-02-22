@@ -1,0 +1,1 @@
+Church and Hanks ( 1990 ) use mutual information to identify collocations , a method they claim is reasonably effective for words with a frequency of not less than five .

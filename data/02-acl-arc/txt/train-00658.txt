@@ -1,0 +1,1 @@
+We will examine the worst-case complexity of interpretation as well as generation to shed some light on the hypothesis that vague descriptions are more difficult to process than others because they involve a comparison between objects ( Beun and Cremers 1998 , Krahmer and Theune 2002 ) .

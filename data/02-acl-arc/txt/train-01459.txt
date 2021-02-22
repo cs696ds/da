@@ -1,0 +1,1 @@
+A number of alignment techniques have been proposed , varying from statistical methods ( Brown et al. , 1991 ; Gale and Church , 1991 ) to lexical methods ( Kay and Roscheisen , 1993 ; Chen , 1993 ) .

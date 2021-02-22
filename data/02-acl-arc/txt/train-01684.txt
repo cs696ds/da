@@ -1,0 +1,1 @@
+Following previous work ( e.g. , Soon et al. ( 2001 ) and Ponzetto and Strube ( 2006 ) ) , we generate training instances as follows : a positive instance is created for each anaphoric NP , NPj , and its closest antecedent , NPi ; and a negative instance is created for NPj paired with each of the intervening NPs , NPi +1 , NPi +2 , ... , NPj_1 .

@@ -1,0 +1,1 @@
+results are based on a corpus of movie subtitles ( Tiedemann 2007 ) , and are consequently shorter sentences , whereas the En â Es results are based on a corpus of parliamentary proceedings ( Koehn 2005 ) .

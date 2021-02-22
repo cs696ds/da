@@ -1,0 +1,1 @@
+These automatic transformations are based on linguistic rules ( Bohmova , 2001 ) .

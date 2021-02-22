@@ -1,0 +1,1 @@
+The exact form of M ( Si ) need not be discussed at this point ; it could be a conceptual dependence graph ( Schank and Abelson 1977 ) , a deep parse of Si , or some other representation .

@@ -1,0 +1,1 @@
+ASARES has been previously applied to the acquisition of word pairs sharing semantic relations defined in the Generative Lexicon framework ( Pustejovsky , 1995 ) and called qualia relations ( Bouillon et al. , 2001 ) .

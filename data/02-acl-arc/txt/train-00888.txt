@@ -1,0 +1,1 @@
+â¢ The regular TBL , as described in section 2 ; â¢ An improved version of TBL , which makes extensive use of indexes to speed up the rules ' update ; â¢ The FastTBL algorithm ; â¢ The ICA algorithm ( Hepple , 2000 ) .

@@ -1,0 +1,1 @@
+Our previous work ( Zhai et al. , 2012 ) designed an EMbased method to construct unsupervised trees for tree-based translation models .

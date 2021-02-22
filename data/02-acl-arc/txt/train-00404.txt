@@ -1,0 +1,1 @@
+4 This interpretation of the signature is sometimes referred to as closed world ( Gerdemann and King 1994 ; Gerdemann 1995 ) .

@@ -1,0 +1,1 @@
+The BEETLE II system architecture is designed to overcome these limitations ( Callaway et al. , 2007 ) .

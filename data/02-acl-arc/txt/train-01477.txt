@@ -1,0 +1,1 @@
+SNoW ( Carleson et al. , 1999 ; Roth , 1998 ) is a multi-class classifier that is specifically tailored for learning in domains in which the potential number of information sources ( features ) taking part in decisions is very large , of which NLP is a principal example .

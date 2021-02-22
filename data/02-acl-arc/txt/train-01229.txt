@@ -1,0 +1,1 @@
+By using the EM algorithm ( Dempster et al. , 1977 ) , they can guarantee convergence towards the globally optimum parameter set .

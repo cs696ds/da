@@ -1,0 +1,1 @@
+Unfortunately , as shown in ( Okanohara and Tsujii , 2007 ) , with the represetation of sentences that we use , linear classifiers can not discriminate real sentences from sentences sampled from a trigram , which is the model we use as a baseline , so here we resort to a non-linear large-margin classifier ( see section 3 for details ) .

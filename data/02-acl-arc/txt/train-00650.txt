@@ -1,0 +1,1 @@
+Agreement between two annotation sets is calculated here in terms of Cohen 's kappa ( Cohen , 1960 ) 1 and corrected kappa ( Brennan and Prediger , 1981 ) 2 .

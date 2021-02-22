@@ -1,0 +1,1 @@
+Accordingly , we convert examples such as ( 27 ) into their generalized equivalents , as in ( 28 ) : ( 28 ) <DET> good man : bon homme That is , where Block ( 2000 ) substitutes variables for various words in his templates , we replace certain lexical items with their marker tag .

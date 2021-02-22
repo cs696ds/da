@@ -1,0 +1,1 @@
+Withindocument coreference resolution has been applied to produce summaries of text surrounding occurrences of the name ( Bagga and Baldwin , 1998 ; Gooi and Allan , 2004 ) .

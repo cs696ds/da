@@ -1,0 +1,1 @@
+Related are also the studies by Rieks op den Akker and Schulz ( 2008 ) and Murray and Renals ( 2008 ) : both achieve promising results in the automatic segmentation of dialogue acts using the annotations in a large multimodal corpus .

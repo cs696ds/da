@@ -1,0 +1,1 @@
+In this Section , we will describe some example cases , which are drawn from the problem of using synchronous formalisms to define translations between languages ( e.g. Shieber ( 1994 ) cases ) .

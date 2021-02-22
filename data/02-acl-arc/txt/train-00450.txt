@@ -1,0 +1,1 @@
+Actually , if we use LSH technique ( Andoni and Indyk , 2008 ) in retrieval process , the local method can be easily scaled to a larger training data .

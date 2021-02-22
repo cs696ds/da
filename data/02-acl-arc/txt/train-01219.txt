@@ -1,0 +1,1 @@
+More specifically , we use LIBSVM ( Chang and Lin , 2001 ) with a quadratic kernel K ( xZ , xj ) = ( - yxT xj + r ) 2 and the built-in one-versus-all strategy for multi-class classification .

@@ -1,0 +1,1 @@
+Virpioja et al. ( 2007 ) , Badr et al. ( 2008 ) , Luong et al. ( 2010 ) , Clifton and Sarkar ( 2011 ) , and others are primarily concerned with using morpheme segmentation in SMT , which is a useful approach for dealing with issues of word-formation .

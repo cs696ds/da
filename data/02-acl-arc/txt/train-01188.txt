@@ -1,0 +1,1 @@
+Others have applied the NLP technologies of near-duplicate detection and topic-based text categorization to politically oriented text ( Yang and Callan , 2005 ; Purpura and Hillard , 2006 ) .

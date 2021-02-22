@@ -1,0 +1,1 @@
+This is where robust syntactic systems like SATZ ( Palmer and Hearst 1997 ) or the POS tagger reported in Mikheev ( 2000 ) , which do not heavily rely on word capitalization and are not sensitive to document length , have an advantage .

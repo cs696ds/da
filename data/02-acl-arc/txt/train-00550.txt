@@ -1,0 +1,1 @@
+In our previous work ( Salloum and Habash , 2011 ; Salloum and Habash , 2012 ) , we applied our approach to tokenized Arabic and our DA-MSA transfer component used feature transfer rules only .

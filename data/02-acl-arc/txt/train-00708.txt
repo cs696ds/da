@@ -1,0 +1,1 @@
+A similar method is included in PATR-II ( Shieber et al. 1983 ) and can be used to encode lexical rules as binary relations in the CUF system ( Dorre and Eisele 1991 ; Done and Dorna 1993b ) or the TFS system ( Emele and Zajac 1990 ; Emele 1994 ) .

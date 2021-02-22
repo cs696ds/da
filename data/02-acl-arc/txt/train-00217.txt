@@ -1,0 +1,1 @@
+Another technique for making better use of unlabeled data is cotraining ( Blum and Mitchell 1998 ) , in which two sufficiently different learners help each other learn by labeling training data for one another .

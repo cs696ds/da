@@ -1,0 +1,1 @@
+The best results on most of our data were obtained using Hidden Naive Bayes ( HNB ) ( Zhang et al. , 2005 ) .

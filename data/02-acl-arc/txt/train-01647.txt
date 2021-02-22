@@ -1,0 +1,1 @@
+This indicates that parse trees are usually not the optimal choice for training tree-based translation models ( Wang et al. , 2010 ) .

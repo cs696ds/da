@@ -1,0 +1,1 @@
+Each component will return a confidence measure of the reliability of its prediction , c.f. ( Elworthy , 1998 ) .

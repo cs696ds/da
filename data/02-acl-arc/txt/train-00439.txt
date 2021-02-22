@@ -1,0 +1,1 @@
+Lapalme and Kosseim ( 2003 ) investigated three approaches to the automatic generation of response e-mails : text classification , case-based reasoning , and question answering .

@@ -1,0 +1,1 @@
+The diagnoser , based on Dzikovska et al. ( 2008b ) , outputs a diagnosis which consists of lists of correct , contradictory and non-mentioned objects and relations from the student 's answer .

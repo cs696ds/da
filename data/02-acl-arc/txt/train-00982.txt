@@ -1,0 +1,1 @@
+Typed feature grammars can be used as the basis for implementations of Head-driven Phrase Structure Grammar ( Pollard and Sag , 1994 ) .3 ( Meurers and Minnen , 1997 ) propose a compilation of lexical rules into TIT definite clauses

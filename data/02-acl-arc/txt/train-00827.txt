@@ -1,0 +1,1 @@
+Figure 2 illustrates a DSyntS from a meteorological application , MeteoCogent ( Kittredge and Lavoie , 1998 ) , represented using the standard graphical notation and also the RealPro ASCII notation used internally in the framework ( Lavoie and Rambow , 1997 ) .

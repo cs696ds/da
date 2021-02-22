@@ -1,0 +1,1 @@
+6 For Sent-Pred we also experimented with grammatical and sentence-based syntactic features , such as number of syntactic phrases , grammatical mood , and grammatical person ( Marom and Zukerman 2006 ) , but the simple binary bag-of-lemmas representation yielded similar results .

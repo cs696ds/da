@@ -1,0 +1,1 @@
+Before using the DCA method , we applied a Russian morphological processor ( Mikheev and Liubushkina 1995 ) to convert each word in the text to its main form : nominative case singular for nouns and adjectives , infinitive for verbs , etc. .

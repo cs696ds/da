@@ -1,0 +1,1 @@
+The dialogue state is represented by a cumulative answer analysis which tracks , over multiple turns , the correct , incorrect , and not-yet-mentioned parts 1Other factors such as student confidence could be considered as well ( Callaway et al. , 2007 ) .

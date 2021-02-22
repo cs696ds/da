@@ -1,0 +1,1 @@
+1 The representation in Mohri and Pereira ( 1998 ) is even more compact than ours for grammars that are not self-embedding .

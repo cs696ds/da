@@ -1,0 +1,1 @@
+Collins and Duffy ( 2002 ) define a kernel over parse trees and apply it to re-ranking the output of a parser , but the resulting feature space is restricted by the need to compute the kernel efficiently , and the results are not as good as Collins ' previous work on re-ranking using a finite set of features ( Collins , 2000 ) .

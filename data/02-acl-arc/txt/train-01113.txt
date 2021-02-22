@@ -1,0 +1,1 @@
+This alignment is obtained by following the same set of rules learned from the development dataset as in ( Zhang and Chai , 2009 ) .

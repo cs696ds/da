@@ -1,0 +1,1 @@
+An example of this is the estimation of maximum entropy models , from simple iterative estimation algorithms used by Ratnaparkhi ( 1998 ) that converge very slowly , to complex techniques from the optimisation literature that converge much more rapidly ( Malouf , 2002 ) .

@@ -1,0 +1,1 @@
+Another possibility that often works better is to use Minimum Bayes-Risk ( MBR ) decoding ( Kumar and Byrne 2002 ; Liang , Taskar , and Klein 2006 ; Ganchev , and Taskar 2007 ) .

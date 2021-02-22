@@ -1,0 +1,1 @@
+This approach has now gained wide usage , as exemplified by the work of Collins ( 1996 , 1999 ) , Charniak ( 1996 , 1997 ) , Johnson ( 1998 ) , Chiang ( 2000 ) , and many others .

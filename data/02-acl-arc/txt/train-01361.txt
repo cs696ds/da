@@ -1,0 +1,1 @@
+Optimizing for dependency arc length is particularly important as parsers tend to do worse on longer dependencies ( McDonald and Nivre , 2007 ) and these dependencies are typically the most meaningful for downstream tasks , e.g. , main verb dependencies for tasks

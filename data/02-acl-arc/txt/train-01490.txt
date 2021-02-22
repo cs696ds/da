@@ -1,0 +1,1 @@
+Other studies which view lR as a query generation process include Maron and Kuhns , 1960 ; Hiemstra and Kraaij , 1999 ; Ponte and Croft , 1998 ; Miller et al , 1999 .

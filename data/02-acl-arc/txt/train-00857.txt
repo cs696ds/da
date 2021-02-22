@@ -1,0 +1,1 @@
+In a similar vain to Skut and Brants ( 1998 ) and Buchholz et al. ( 1999 ) , the method extends an existing flat shallow-parsing method to handle composite structures .

@@ -1,0 +1,1 @@
+Venables and Ripley ( 1994 ) describe an efficient algorithm ( of linear complexity in the number of training sentences ) for computing the LDA transform matrix , which entails computing the withinand between-covariance matrices of the classes , and using Singular Value Decomposition ( SVD ) to compute the eigenvectors of the new space .

@@ -1,0 +1,1 @@
+Others provide automatic mappings of natural language instructions to executable actions , such as interpreting navigation directions ( Chen and Mooney , 2011 ) or robot commands ( Tellex et al. , 2011 ; Matuszek et al. , 2012 ) .

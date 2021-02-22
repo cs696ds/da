@@ -1,0 +1,1 @@
+each relevant document is retrieved ( Baeza-Yates and Ribeiro-Neto 1999 ) .

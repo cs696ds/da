@@ -1,0 +1,1 @@
+LTAG ( Schabes et al. , 1988 ) is a grammar formalism that provides syntactic analyses for a sentence by composing elementary trees with two opera -

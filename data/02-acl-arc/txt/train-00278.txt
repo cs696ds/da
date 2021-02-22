@@ -1,0 +1,1 @@
+We have also applied our more general unification grammar acquisition methodology to the TIGER Treebank ( Brants et al. 2002 ) and Penn Chinese Treebank ( Xue , Chiou , and Palmer 2002 ) , extracting wide-coverage , probabilistic LFG grammar

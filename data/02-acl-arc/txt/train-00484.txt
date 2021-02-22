@@ -1,0 +1,1 @@
+For statistical significance , we use McNemar 's test on non-gold LAS , as implemented by Nilsson and Nivre ( 2008 ) .

@@ -1,0 +1,1 @@
+There has also been work focused upon determining the political leaning ( e.g. , `` liberal '' vs. `` conservative '' ) of a document or author , where most previously-proposed methods make no direct use of relationships between the documents to be classified ( the `` unlabeled '' texts ) ( Laver et al. , 2003 ; Efron , 2004 ; Mullen and Malouf , 2006 ) .

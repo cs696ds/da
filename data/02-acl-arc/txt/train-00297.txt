@@ -1,0 +1,1 @@
+However , since work in this direction has started , a significant progress has also been made in the research on statistical learning of full parsers , both in terms of accuracy and processing time ( Charniak , 1997b ; Charniak , 1997a ; Collins , 1997 ; Ratnaparkhi , 1997 ) .

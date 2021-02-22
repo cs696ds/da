@@ -1,0 +1,1 @@
+Second , software for utilizing this ontology already exists : MetaMap ( Aronson 2001 ) identifies concepts in free text , and SemRep ( Rindflesch and Fiszman 2003 ) extracts relations between the concepts .

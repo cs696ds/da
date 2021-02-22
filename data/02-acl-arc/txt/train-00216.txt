@@ -1,0 +1,1 @@
+This problem may be similar to the situation in which current formal grammars allow nonsensical but parsable collections of words ( e.g. , `` colorless green ideas ... '' ) , while before the advent of Chomskyan formalisms , a sentence was defined as the smallest meaningful collection of words ; Fowler ( 1965 , p. 546 ) gives 10 definitions of a sentence .

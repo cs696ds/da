@@ -1,0 +1,1 @@
+Discriminative approaches ( especially SVMs ) have been shown to be very effective for many supervised classification tasks ; see , for example , ( Joachims , 1998 ; Ng and Jordan , 2001 ) .

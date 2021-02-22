@@ -1,0 +1,1 @@
+Manning ( 1993 ) attempts to improve on the approach of Brent ( 1993 ) by passing raw text through a stochastic tagger and a finite-state parser ( which includes a set of simple rules for subcategorization frame recognition ) in order to extract verbs and the constituents with which they co-occur .

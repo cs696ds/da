@@ -1,0 +1,1 @@
+In our previous papers ( Zhang and Clark 2011 ; Zhang , Blackwood , and Clark 2012 ) , we applied a set of beams to this structure , which makes it similar to the data structure used for phrase-based MT decoding ( Koehn 2010 ) .

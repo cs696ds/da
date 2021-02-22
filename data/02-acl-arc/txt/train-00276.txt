@@ -1,0 +1,1 @@
+Word alignments are used primarily for extracting minimal translation units for machine translation ( MT ) ( e.g. , phrases [ Koehn , Och , and Marcu 2003 ] and rules [ Galley et al. 2004 ; Chiang et al. 2005 ] ) as well as for

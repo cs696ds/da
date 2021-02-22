@@ -1,0 +1,1 @@
+â¢ The transition probability a is 0.7 using the EM algorithm ( Rabiner , 1989 ) on the TREC4 ad-hoc query set .

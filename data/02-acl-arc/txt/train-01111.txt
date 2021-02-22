@@ -1,0 +1,1 @@
+A statistical technique which has recently become popular for NLP is Maximum Entropy/Minimum Divergence ( MEMD ) modeling ( Berger et al. , 1996 ) .

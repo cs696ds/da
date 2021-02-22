@@ -1,0 +1,1 @@
+More recently , Silberer et al. ( 2013 ) show that visual attribute classifiers , which have been immensely successful in object recognition ( Farhadi et al. , 2009 ) , act as excellent substitutes for feature

@@ -1,0 +1,1 @@
+Ratinov and Roth ( 2009 ) present detailed studies on the task of named entity recognition , which discusses and compares different methods on multiple aspects including chunk representation , inference method , utility of non-local features , and integration of external knowledge .

@@ -1,0 +1,1 @@
+The first version ( TIMIT ) was developed for the 450 phonetically rich sentences of the TIMIT database ( Lamel et al. 1986 ) .

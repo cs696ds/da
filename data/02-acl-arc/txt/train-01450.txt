@@ -1,0 +1,1 @@
+The best performance on the WSJ corpus was achieved by a combination of the SATZ system ( Palmer and Hearst 1997 ) with the Alembic system ( Aberdeen et al. 1995 ) : a 0.5 % error rate .

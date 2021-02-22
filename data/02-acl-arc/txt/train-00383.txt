@@ -1,0 +1,1 @@
+The keypoints are clustered into 5,000 visual codewords ( centroids ) using k-means clustering ( Sculley , 2010 ) , and images are then quantized over the 5,000 codewords .

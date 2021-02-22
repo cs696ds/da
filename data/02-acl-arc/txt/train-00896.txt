@@ -1,0 +1,1 @@
+HOLMES is given the following set of six domainindependent rules , which are similar to the upward monotone rules introduced by ( MacCartney and Manning , 2007 ) .

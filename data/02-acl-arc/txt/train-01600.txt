@@ -1,0 +1,1 @@
+This is because the binary structure has been verified to be very effective for tree-based translation ( Wang et al. , 2007 ; Zhang et al. , 2011a ) .

@@ -1,0 +1,1 @@
+We previously showed that incorporating this intuition into a Bayesian prior can help train a CCG supertagger ( Garrette et al. , 2014 ) .

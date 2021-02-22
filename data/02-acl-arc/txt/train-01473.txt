@@ -1,0 +1,1 @@
+WIT has been implemented in Common Lisp and C on UNIX , and we have built several experimental and demonstration dialogue systems using it , including a meeting room reservation system ( Nakano et al. , 1999b ) , a video-recording programming system , a schedule management system ( Nakano et al. , 1999a ) , and a weather infomiation system ( Dohsaka et al. , 2000 ) .

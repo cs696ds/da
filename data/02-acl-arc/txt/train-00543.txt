@@ -1,0 +1,1 @@
+Some examples include text categorization ( Lewis and Catlett 1994 ) , base noun phrase chunking ( Ngai and Yarowsky 2000 ) , part-of-speech tagging ( Engelson Dagan 1996 ) , spelling confusion set disambiguation ( Banko and Brill 2001 ) , and word sense disambiguation ( Fujii et al. 1998 ) .

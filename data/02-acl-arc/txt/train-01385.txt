@@ -1,0 +1,1 @@
+Indeed , such rich semantic links can be used to extend indices or reformulate queries ( similar to the work by Voorhees ( 1994 ) with WoRDNET relations ) .

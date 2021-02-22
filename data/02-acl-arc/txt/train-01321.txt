@@ -1,0 +1,1 @@
+While we have observed reasonable results with both G2 and Fisher 's exact test , we have not yet discussed how these results compare to the results that can be obtained with a technique commonly used in corpus linguistics based on the mutual information ( MI ) measure ( Church and Hanks 1990 ) :

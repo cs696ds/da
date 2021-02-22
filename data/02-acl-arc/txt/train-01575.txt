@@ -1,0 +1,1 @@
+Other solutions such as complete caching of the corpora are not typically adopted due to legal concerns over copyright and redistribution of web data , issues considered at length by Fletcher ( 2004a ) .

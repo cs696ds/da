@@ -1,0 +1,1 @@
+For automatically extracting these surface level mappings we will draw on the approach to learning paraphrases from a corpus that is described in Barzilay and McKeown ( 2001 ) .

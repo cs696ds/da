@@ -1,0 +1,1 @@
+Our implementation of the NP-based QA system uses the Empire noun phrase finder , which is described in detail in Cardie and Pierce ( 1998 ) .

@@ -1,0 +1,1 @@
+Typed feature grammars can be used as the basis for implementations of Head-driven Phrase Structure Grammar ( HPSG ; Pollard and Sag , 1994 ) as discussed in ( Gotz and Meurers , 1997a ) and ( Meurers and Minnen , 1997 ) .

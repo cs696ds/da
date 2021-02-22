@@ -1,0 +1,1 @@
+As shown in Meurers ( 1994 ) this is a well-motivated convention since it avoids splitting up lexical rules to transfer the specifications that must be preserved for different lexical entries .

@@ -1,0 +1,1 @@
+In practice , perceptron-type algorithms are often applied in a batch learning scenario , i.e. , the algorithm is applied for K epochs to a training sample of size T and then used for prediction on an unseen test set ( Freund and Schapire , 1999 ; Collins , 2002 ) .

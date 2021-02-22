@@ -1,0 +1,1 @@
+Using WordNet , annotating the sem feature of an adjective involves first choosing the correct sense for the adjective 2Some descriptions of int modifiers can be found in ( Cheng and Mellish , 2000b ) .

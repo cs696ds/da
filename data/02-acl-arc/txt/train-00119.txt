@@ -1,0 +1,1 @@
+In comparison , the tag set of the Buckwalter Morphological Analyzer ( Buckwalter 2004 ) used in the PATB has a core POS set of 44 tags ( CORE44 ) before morphological extension .8 Cross-linguistically , a core set containing around 12 tags is often

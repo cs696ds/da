@@ -1,0 +1,1 @@
+To create the baseline system , we use the opensource Joshua 4.0 system ( Ganitkevitch et al. , 2012 ) to build a hierarchical phrase-based ( HPB ) system , and a syntax-augmented MT ( SAMT ) 11 system ( Zollmann and Venugopal , 2006 ) respectively .

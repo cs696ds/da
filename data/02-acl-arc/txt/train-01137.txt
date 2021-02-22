@@ -1,0 +1,1 @@
+In the system , we extract both the minimal GHKM rules ( Galley et al. , 2004 ) , and the rules of SPMT Model 1 ( Galley et al. , 2006 ) with phrases up to length L = 5 on the source side .

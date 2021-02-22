@@ -1,0 +1,1 @@
+Following our previous work on stance classification ( Hasan and Ng , 2013c ) , we employ three types of features computed based on the frame-semantic parse of each sentence in a post obtained from SEMAFOR ( Das et al. , 2010 ) .

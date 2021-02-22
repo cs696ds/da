@@ -1,0 +1,1 @@
+29 This improvement of the covariation encoding can also be viewed as an instance of the program transformation technique referred to as deletion of clauses with a finitely failed body ( Pettorossi and Proietti 1994 ) .

@@ -1,0 +1,1 @@
+That is , a document that contains terms al , a2 and a3 may be ranked higher than a document which contains terms al and b.f. However , the second document is more likely to be relevant since correct translations of the query terms are more likely to co-occur ( Ballesteros and Croft , 1998 ) .

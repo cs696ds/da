@@ -1,0 +1,1 @@
+Therefore , we repeated the experiments with POS tags predicted by the MADA toolkit ( Habash and Rambow 2005 ; Habash , Rambow , and Roth 2012 ) 15 ( see Table 2 , 14 Some parsers predict POS tags internally , instead of receiving them as input , but this is not the case in this article .

@@ -1,0 +1,1 @@
+Some recent GRE algorithms have done away with the separation between content determination and linguistic realization , interleaving the two processes instead ( Stone and Webber 1998 ; Krahmer and Theune 2002 ) .

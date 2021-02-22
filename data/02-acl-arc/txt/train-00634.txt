@@ -1,0 +1,1 @@
+Since earlier versions of the SNoW based CSCL were used only to identify single phrases ( Punyakanok and Roth , 2001 ; Munoz et al. , 1999 ) and never to identify a collection of several phrases at the same time , as we do here , we also trained and tested it under the exact conditions of CoNLL-2000 ( Tjong Kim Sang and Buchholz , 2000 ) to compare it to other shallow parsers .

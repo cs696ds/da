@@ -1,0 +1,1 @@
+In the areas of Natural Language Processing ( NLP ) and computational linguistics , proposals have been made for using the computational Grid for data-intensive NLP and text-mining for eScience ( Carroll et al. , 2005 ; Hughes et al , 2004 ) .

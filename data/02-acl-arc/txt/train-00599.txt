@@ -1,0 +1,1 @@
+Our algorithm is similar to the approach taken by Pereira and Schabes ( 1992 ) for inducing PCFG parsers .

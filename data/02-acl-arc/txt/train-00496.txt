@@ -1,0 +1,1 @@
+In our previous work ( Zhang and Chai , 2009 ) , we started an initial investigation on conversation entailment .

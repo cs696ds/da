@@ -1,0 +1,1 @@
+We used the revised experimental setup ( Gurevych , 2005 ) , based on discrete relatedness scores and presentation of word pairs in isolation , that is scalable to the higher number of pairs .

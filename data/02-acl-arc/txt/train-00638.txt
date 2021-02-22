@@ -1,0 +1,1 @@
+It is only recently that the web name ambiguity has been approached as a separate problem and defined as an NLP task Web People Search on its own ( Artiles et al. , 2005 ; Artiles et al. , 2007 ) .

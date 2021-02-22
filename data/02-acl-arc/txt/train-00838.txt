@@ -1,0 +1,1 @@
+The analysis of the data we have collected indicates that student satisfaction may be affected if the system rephrases student answers using different words ( for example , using better terminology ) but does n't explicitly explain the reason why different terminology is needed ( Dzikovska et al. , 2010 ) .

@@ -1,0 +1,1 @@
+In addition , a fully flexible access system allows the retrieval of dictionary entries on the basis of constraints specifying any combination of phonetic , lexical , syntactic , and semantic information ( Boguraev et al. , 1987 ) .

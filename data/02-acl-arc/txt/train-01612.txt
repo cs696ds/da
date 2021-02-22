@@ -1,0 +1,1 @@
+Some well-known approaches include rule-based models ( Brill and Resnik 1994 ) , backed-off models ( Collins and Brooks 1995 ) , and a maximumentropy model ( Ratnaparkhi 1998 ) .

@@ -1,0 +1,1 @@
+Various feature selection techniques have been used in automatic text categorization ; they include document frequency ( DF ) , information gain ( IG ) ( Tzeras and Hartman , 1993 ) , minimum description length principal ( Lang , 1995 ) , and the X2 statistic .

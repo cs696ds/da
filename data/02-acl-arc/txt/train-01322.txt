@@ -1,0 +1,1 @@
+Following Ponzetto and Strube ( 2006 ) , we consider an anaphoric reference , NPi , correctly resolved if NPi and its closest antecedent are in the same coreference chain in the resulting partition .

@@ -1,0 +1,1 @@
+While these approaches have been reasonably successful ( see Mitkov ( 2002 ) ) , Kehler et al. ( 2004 ) speculate that deeper linguistic knowledge needs to be made available to resolvers in order to reach the next level of performance .

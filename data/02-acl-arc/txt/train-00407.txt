@@ -1,0 +1,1 @@
+For instance , implementing an efficient version of the MXPOST POS tagger ( Ratnaparkhi , 1996 ) will simply involve composing and configuring the appropriate text file reading component , with the sequential tagging component , the collection of feature extraction components and the maximum entropy model component .

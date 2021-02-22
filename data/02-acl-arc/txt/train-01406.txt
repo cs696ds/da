@@ -1,0 +1,1 @@
+To address this limitation , our previous work ( Zhang and Chai , 2009 ) has initiated an investigation on the problem of conversation entailment .

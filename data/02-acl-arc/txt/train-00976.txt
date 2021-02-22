@@ -1,0 +1,1 @@
+In FAQs , Berger and Mittal ( 2000 ) employed a sentence retrieval approach based on a language model where the entire response to an FAQ is considered a sentence , and the questions and answers are embedded in an FAQ document .

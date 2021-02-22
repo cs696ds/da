@@ -1,0 +1,1 @@
+There are two corpora normally used for evaluation in a number of text-processing tasks : the Brown corpus ( Francis and Kucera 1982 ) and the Wall Street Journal ( WSJ ) corpus , both part of the Penn Treebank ( Marcus , Marcinkiewicz , and Santorini 1993 ) .

@@ -1,0 +1,1 @@
+To a first approximation , a CURRENT-FOCUS reaches only nodes that are c-commanded ( Chomsky 1977 ) by its generator .

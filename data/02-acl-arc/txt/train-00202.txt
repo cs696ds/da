@@ -1,0 +1,1 @@
+Instead , we will adopt the nomenclature of the Automatic Content Extraction program ( NIST , 2004 ) : we will call the instances of textual references to objects/abstractions mentions , which can be either named ( e.g. John Mayor ) , nominal ( the president ) or pronominal ( she , it ) .

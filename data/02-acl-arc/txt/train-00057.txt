@@ -1,0 +1,1 @@
+They are widely used in MT as a way to figure out how to translate input in one language into output in another language ( Koehn et al. , 2003 ) .

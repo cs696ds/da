@@ -1,0 +1,1 @@
+This evaluation set-up is an improvement versus the one we previously reported ( Gerber and Chai 2010 ) , in which fixed partitions were used for training , development , and testing .

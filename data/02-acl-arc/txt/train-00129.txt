@@ -1,0 +1,1 @@
+Brockmann and Lapata ( 2003 ) have showed that WordNet-based approaches do not always outperform simple frequency-based models , and a number of techniques have been recently proposed which may offer ideas for refining our current unsupervised approach ( Erk , 2007 ; Bergsma et al. , 2008 ) .

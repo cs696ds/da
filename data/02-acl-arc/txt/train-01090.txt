@@ -1,0 +1,1 @@
+Berger et al ( 1996 ) describe an efficient algorithm for accomplishing this in which approximations to Pst ( TIS ) are computed in parallel for all ( new ) features ft by holding all weights in the existing model fixed and optimizing only over a8t .

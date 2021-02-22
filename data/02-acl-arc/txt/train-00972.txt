@@ -1,0 +1,1 @@
+It is analogous to the step in other translation model induction algorithms that sets all probabilities below a certain threshold to negligible values ( Brown et al. , 1990 ; Dagan et al. , 1993 ; Chen , 1996 ) .

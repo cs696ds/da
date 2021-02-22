@@ -1,0 +1,1 @@
+More sophisticated approaches have been proposed ( Hillard et al. , 2003 ) , including an extension that , in an interesting reversal of our problem , makes use of sentimentpolarity indicators within speech segments ( Galley et al. , 2004 ) .

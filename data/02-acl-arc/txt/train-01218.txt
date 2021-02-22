@@ -1,0 +1,1 @@
+We parsed the 3 GB AQUAINT corpus ( Voorhees , 2002 ) using Minipar ( Lin , 1998b ) , and collected verb-object and verb-subject frequencies , building an empirical MI model from this data .

@@ -1,0 +1,1 @@
+the mention sub-type , which is a sub-category of the mention type ( ACE , 2004 ) ( e.g. OrgGovernmental , FacilityPath , etc. ) .

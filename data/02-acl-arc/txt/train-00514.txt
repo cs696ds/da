@@ -1,0 +1,1 @@
+Based on this advise ( Moore and Quirk , 2007 ) exclude the latent segmentation variables and opt for a heuristic training procedure .

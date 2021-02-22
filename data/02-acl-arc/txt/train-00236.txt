@@ -1,0 +1,1 @@
+Berstel and Reutenauer ( 1988 ) give a sufficiently general finite-state framework to allow this : weights may fall in any set K ( instead of R ) .

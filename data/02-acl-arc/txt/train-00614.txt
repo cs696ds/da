@@ -1,0 +1,1 @@
+Many provide graphical user interfaces ( GUI ) for manual annotation ( e.g. General Architecture for Text Engineering ( GATE ) ( Cunningham et al. , 1997 ) and the Alembic Workbench ( Day et al. , 1997 ) ) as well as NLP tools and resources that can be manipulated from the GUI .

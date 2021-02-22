@@ -1,0 +1,1 @@
+Cross-lingual Textual Entailment ( CLTE ) has been proposed by ( Mehdad et al. , 2010 ) as an extension of Textual Entailment ( Dagan and Glickman , 2004 ) that consists in deciding , given two texts T and H in different languages , if the meaning of H can be inferred from the meaning of T .

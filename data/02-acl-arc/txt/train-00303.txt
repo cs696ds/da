@@ -1,0 +1,1 @@
+Atallah et al. ( 2001b ) and Topkara et al. ( 2006a ) attained the embedding capacity of 0.5 bits per sentence with the syntactic transformation method .

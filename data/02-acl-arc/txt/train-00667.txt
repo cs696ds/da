@@ -1,0 +1,1 @@
+Many statistical parsers ( Ratnaparkhi , 1999 ; Collins , 1999 ; Charniak , 2001 ) are based on a history-based probability model ( Black et al. , 1993 ) , where the probability of each decision in a parse is conditioned on the previous decisions in the parse .

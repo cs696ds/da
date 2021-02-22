@@ -1,0 +1,1 @@
+The extraction procedure consists of three steps : First , the bracketing of the trees in the Penn Treebank is corrected and extended based on the approaches of Magerman ( 1994 ) and Collins ( 1997 ) .

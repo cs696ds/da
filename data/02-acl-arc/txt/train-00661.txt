@@ -1,0 +1,1 @@
+This means that natural language expressions such as `` A is B , '' `` A is the same as B , '' etc. are not directly represented by logical equality ; similarly , `` not '' is often not treated as logical negation ; cfXXX Hintikka ( 1985 ) .

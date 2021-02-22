@@ -1,0 +1,1 @@
+This approach is taken in computational syntactic grammars ( e.g. Jensen 1986 ) ; the number of unlikely parses is severely reduced whenever possible , but no attempt is made to define only the so-called grammatical strings of a language .

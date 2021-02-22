@@ -1,0 +1,1 @@
+We have presented an ensemble approach to word sense disambiguation ( Pedersen , 2000 ) where multiple Naive Bayesian classifiers , each based on co -- occurrence features from varying sized windows of context , is shown to perform well on the widely studied nouns interest and line .

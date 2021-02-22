@@ -1,0 +1,1 @@
+Although in this paper we take modus ponens as the main rule of inference , in general one can consider deductive closures with respect to weaker , nonstandard logics , ( cfXXX Levesque 1984 ; Frisch 1987 ; Patel-Schneider 1985 ) .

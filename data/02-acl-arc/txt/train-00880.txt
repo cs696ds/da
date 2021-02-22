@@ -1,0 +1,1 @@
+A more flexible approach is used by Reiter and Sripada ( 2002 ) , where users can specify boundary values for attributes like rainfall , specifying , for example , rain counts as moderate above 7 mm/h , as heavy above 20 mm/h , and so on .

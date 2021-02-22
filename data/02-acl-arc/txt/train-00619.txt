@@ -1,0 +1,1 @@
+Our re-ranking approach , like the approach to parse re-ranking of Collins ( 2000 ) , employs a simpler model -- a local semantic role labeling algorithm -- as a first pass to generate a set of n likely complete assignments of labels to all parse tree nodes .

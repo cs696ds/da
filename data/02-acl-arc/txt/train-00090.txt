@@ -1,0 +1,1 @@
+We gather similar words using Lin ( 1998a ) , mining similar verbs from a comparable-sized parsed corpus , and collecting similar nouns from a broader 10 GB corpus of English text .4 We also use Keller and Lapata ( 2003 ) 's approach to obtaining web-counts .

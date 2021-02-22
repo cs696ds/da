@@ -1,0 +1,1 @@
+After much exploration , Demner-Fushman et al. ( 2006 ) discovered that it was not practical to annotate PICO entities at the phrase level due to significant unresolvable disagreement and interannotator reliability issues .

@@ -1,0 +1,1 @@
+At present , the system uses a heuristic matching algorithm to classify relations into the appropriate category , though in the future we may consider a classifier similar to Nielsen et al. ( 2008 ) .

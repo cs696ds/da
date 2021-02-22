@@ -1,0 +1,1 @@
+To solve these scaling issues , we implement Online Variational Bayesian Inference ( Hoffman et al. , 2010 ; Hoffman et al. , 2012 ) for our models .

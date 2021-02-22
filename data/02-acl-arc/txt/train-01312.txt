@@ -1,0 +1,1 @@
+To name a few examples , Rohrbach et al. ( 2010 ) and Socher et al. ( 2013 ) show how semantic information from text can be used to improve zero-shot classification ( i.e. , classifying never-before-seen objects ) , and Motwani and Mooney ( 2012 ) show that verb clusters can be used to improve activity recognition in videos .

@@ -1,0 +1,1 @@
+For our experiments we used the standard division of the WSJ ( Marcus et al. 1993 ) , with sections 2 through 21 for training ( approx .

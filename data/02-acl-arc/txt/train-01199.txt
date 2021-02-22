@@ -1,0 +1,1 @@
+Erk ( 2007 ) compared a number of techniques for creating similar-word sets and found that both the Jaccard coefficient and Lin ( 1998a ) 's information-theoretic metric work best .

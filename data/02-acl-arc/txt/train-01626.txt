@@ -1,0 +1,1 @@
+In order to obtain semantic representations of each word , we apply our previous strategy ( Schone and Jurafsky ( 2000 ) ) .

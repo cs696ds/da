@@ -1,0 +1,1 @@
+All communicative head gestures in the videos were found and annotated with ANVIL using a subset of the attributes defined in the MUMIN annotation scheme ( Allwood et al. , 2007 ) .

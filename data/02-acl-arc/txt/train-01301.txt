@@ -1,0 +1,1 @@
+The ability to explicitly identify these sections in unstructured text could play an important role in applications such as document summarization ( Teufel and Moens , 2000 ) , information retrieval ( Tbahriti et al. , 2005 ) , information extraction ( Mizuta et al. , 2005 ) , and question answering .

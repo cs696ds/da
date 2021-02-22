@@ -1,0 +1,1 @@
+Liu et al. ( 2012 ) re-trained the linguistic parsers bilingually based on word alignment .

@@ -1,0 +1,1 @@
+This idea of preserving properties can be considered an instance of the well-known frame problem in AT ( McCarthy and Hayes 1969 ) , and we will therefore refer to the specifications left implicit by the linguist as the frame specification , or simply frame , of a lexical rule .

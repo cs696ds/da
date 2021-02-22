@@ -1,0 +1,1 @@
+The starting point for the approach followed here was a dissatisfaction with certain aspects of the theory of quasi-logical form as described in Alshawi ( 1990 , 1992 ) , and implemented in SRI 's Core Language Engine ( CLE ) .

@@ -1,0 +1,1 @@
+8 It is based on the dataset of Pang and Lee ( 2004 ) ,9 which consists of 1000 positive and 1000 negative movie reviews , tokenized and divided into 10 folds ( F0 -- F9 ) .

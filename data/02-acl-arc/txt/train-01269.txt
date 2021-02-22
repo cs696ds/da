@@ -1,0 +1,1 @@
+Although the parser only derives projective graphs , the fact that graphs are labeled allows non-projective dependencies to be captured using the pseudoprojective approach of Nivre and Nilsson ( 2005 ) .

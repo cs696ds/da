@@ -1,0 +1,1 @@
+Furthermore , we demonstrate that our results carry over successfully to another parser , the Easy-First Parser ( Goldberg and Elhadad 2010 ) ( Section 6 ) .

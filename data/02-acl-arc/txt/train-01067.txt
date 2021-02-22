@@ -1,0 +1,1 @@
+Experiments ( Section 5 ) show that forestbased extraction improves BLEU score by over 1 point on a state-of-the-art tree-to-string system ( Liu et al. , 2006 ; Mi et al. , 2008 ) , which is also 0.5 points better than ( and twice as fast as ) extracting on 30-best parses .

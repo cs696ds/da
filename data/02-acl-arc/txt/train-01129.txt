@@ -1,0 +1,1 @@
+To model o ( Li , S â T ) , o ( Ri , S â T ) , i.e. the reordering of the neighboring phrases of a function word , we employ the orientation model introduced by Setiawan et al. ( 2007 ) .

@@ -1,0 +1,1 @@
+This includes work on generalized expectation ( Mann and McCallum , 2010 ) , posterior regularization ( Ganchev et al. , 2010 ) and constraint driven learning ( Chang et al. , 2007 ; Chang et al. , 2010 ) .

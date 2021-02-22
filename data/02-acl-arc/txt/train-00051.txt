@@ -1,0 +1,1 @@
+Following the work of Stymne and Cancedda ( 2011 ) , we implement a linear-chain CRF merging system using the following features : stemmed ( separated ) surface form , part-of-speech14 and frequencies from the training corpus for bigrams/merging of word and word +1 , word as true prefix , word +1 as true suffix , plus frequency comparisons of these .

@@ -1,0 +1,1 @@
+Two exceptions to this generalisation are the Linguistic String Project ( Sager , 1981 ) and the IBM CRITIQUE ( formerly EPISTLE ) Project ( Heidorn et al. , 1982 ; Byrd , 1983 ) ; the former employs a dictionary of approximately 10,000 words , most of which are specialist medical terms , the latter has well over 100,000 entries , gathered from machine readable sources .

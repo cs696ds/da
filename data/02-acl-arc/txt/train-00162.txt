@@ -1,0 +1,1 @@
+Fung and McKeown ( 1997 ) attempt to translate technical terms using word relation matrices , although the resource from which such relations are derived is a pair of nonparallel corpora .

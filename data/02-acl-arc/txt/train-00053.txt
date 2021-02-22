@@ -1,0 +1,1 @@
+From an IR view , a lot of specialized research has already been carried out for medical applications , with emphasis on the lexico-semantic aspects of dederivation and decomposition ( Pacak et al. , 1980 ; Norton and Pacak , 1983 ; Wolff , 1984 ; Wingert , 1985 ; Dujols et al. , 1991 ; Baud et al. , 1998 ) .

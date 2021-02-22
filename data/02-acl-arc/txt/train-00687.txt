@@ -1,0 +1,1 @@
+EM maximizes G ( 0 ) via block-coordinate ascent on a lower bound F ( q , 0 ) using an auxiliary distribution over the latent variables q ( z | x , y ) ( Neal and Hinton 1998 ) :

@@ -1,0 +1,1 @@
+27 Briscoe and Copestake ( 1996 ) argue that semi-productivity of lexical rules , which can be understood as a generalization of exceptions to lexical rules , can be integrated with our approach by assigning probabilities to the automaton associated with a particular lexical entry .

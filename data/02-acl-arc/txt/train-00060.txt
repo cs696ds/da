@@ -1,0 +1,1 @@
+Here , PV ( A ) represents an ascent direction chosen as follows : For inequality constraints , it is the projected gradient ( Bertsekas 1999 ) ; for equality constraints with slack , we use conjugate gradient ( Nocedal and Wright 1999 ) , noting that when A = 0 , the objective is not differentiable .

@@ -1,0 +1,1 @@
+We first identified the most informative unigrams and bigrams using the information gain measure ( Yang and Pedersen 1997 ) , and then selected only the positive outcome predictors using odds ratio ( Mladenic and Grobelnik 1999 ) .

@@ -1,0 +1,1 @@
+Multilingual lexical databases aligned with the English WordNet ( e.g. MultiWordNet ( Pianta et al. , 2002 ) ) have been created for several languages , with different degrees of coverage .

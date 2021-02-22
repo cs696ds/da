@@ -1,0 +1,1 @@
+4To prove ( 1 ) â ( 3 ) , express f as an FST and apply the well-known Kleene-Sch Â¨ utzenberger construction ( Berstel and Reutenauer , 1988 ) , taking care to write each regexp in the construction as a constant times a probabilistic regexp .

@@ -1,0 +1,1 @@
+Recently , several alternative , often quite sophisticated approaches to collective classification have been proposed ( Neville and Jensen , 2000 ; Lafferty et al. , 2001 ; Getoor et al. , 2002 ; Taskar et al. , 2002 ; Taskar et al. , 2003 ; Taskar et al. , 2004 ; McCallum and Wellner , 2004 ) .

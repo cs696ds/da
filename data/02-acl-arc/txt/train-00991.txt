@@ -1,0 +1,1 @@
+While wikis have spread from a detailed design ( Cunningham and Leuf , 2001 ) , unfortunately blogs have not been designed under a model .

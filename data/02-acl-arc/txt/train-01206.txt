@@ -1,0 +1,1 @@
+After calculating the raw score of each sentence , we use a modified version of the Adaptive Greedy Algorithm by Filatova and Hatzivassiloglou ( 2004 ) to penalize redundant sentences in cohesive clusters .

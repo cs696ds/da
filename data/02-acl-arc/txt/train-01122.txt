@@ -1,0 +1,1 @@
+In our previous work ( Tomuro , 2000 ) , we applied this method to a small subset of WordNet nouns and showed potential applicability .

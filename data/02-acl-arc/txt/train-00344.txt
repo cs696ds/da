@@ -1,0 +1,1 @@
+Since then this idea has been applied to several tasks , including word sense disambiguation ( Yarowsky 1995 ) and named-entity recognition ( Cucerzan and Yarowsky 1999 ) .

@@ -1,0 +1,1 @@
+Previous work in sentence planning in the natural language generation ( NLG ) community uses hand-written rules to approximate the distribution of linguistic phenomena in a corpus ( see ( Shaw , 1998 ) for a recent example with further references ) .

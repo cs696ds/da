@@ -1,0 +1,1 @@
+In addition , there has been much work on the application of linguistic and semantic knowledge to information retrieval ; see Lin and Demner-Fushman ( 2006a ) for a brief overview .

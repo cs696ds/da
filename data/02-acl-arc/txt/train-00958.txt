@@ -1,0 +1,1 @@
+The necessity of this kind of merging of arguments has been recognized before : Charniak and McDermott ( 1985 ) call it abductive unification/matching , Hobbs ( 1978 , 1979 ) refers to such operations using the terms knitting or petty conversational implicature .

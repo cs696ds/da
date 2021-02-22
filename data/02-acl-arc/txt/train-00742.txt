@@ -1,0 +1,1 @@
+For example , while it is difficult to induce a grammar with raw text alone , the task is tractable when the syntactic analysis for each sentence is provided as a part of the training data ( Pereira and Schabes 1992 ) .

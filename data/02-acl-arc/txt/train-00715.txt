@@ -1,0 +1,1 @@
+Interaction between components is coordinated by the dialogue manager which uses the informationstate approach ( Larsson and Traum , 2000 ) .

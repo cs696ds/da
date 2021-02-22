@@ -1,0 +1,1 @@
+The ten most specific nouns have been produced by comparing our corpus of computing to the French corpus Le Monde , composed of newspaper articles ( Lemay et al. , 2004 ) .

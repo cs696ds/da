@@ -1,0 +1,1 @@
+Latent Dirichlet Allocation ( Blei et al. , 2003 ) , or LDA , is an unsupervised Bayesian probabilistic model of text documents .

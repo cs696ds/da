@@ -1,0 +1,1 @@
+The data used in the experiment was selected from the Penn Treebank Wall Street Journal , and is the same used by Brill and Wu ( 1998 ) .

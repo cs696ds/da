@@ -1,0 +1,1 @@
+We experiment with four learners commonly employed in language learning : Decision List ( DL ) : We use the DL learner as described in Collins and Singer ( 1999 ) , motivated by its success in the related tasks of word sense disambiguation ( Yarowsky , 1995 ) and NE classification ( Collins and Singer , 1999 ) .

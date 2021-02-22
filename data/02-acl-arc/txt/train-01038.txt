@@ -1,0 +1,1 @@
+In the context of word alignment , Deng and Byrne ( 2005 ) use a state-duration HMM in order to model word-to-phrase translations .

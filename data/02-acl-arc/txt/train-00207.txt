@@ -1,0 +1,1 @@
+The obtained SCFG is further used in a phrase-based and hierarchical phrase-based system ( Chiang , 2007 ) .

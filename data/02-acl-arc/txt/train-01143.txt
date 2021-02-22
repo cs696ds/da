@@ -1,0 +1,1 @@
+Our work extends directions taken in systems such as Ariane ( Vauquois and Boitet , 1985 ) , FoG ( Kittredge and Polguere , 1991 ) , JOYCE ( Rambow and Korelsky , 1992 ) , and LFS ( Iordanskaja et al. , 1992 ) .

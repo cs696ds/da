@@ -1,0 +1,1 @@
+Following our previous work ( Karamanis and Manurung 2002 ; Althaus , Karamanis , and Koller 2004 ) , the input to information ordering is an unordered set of informationbearing items represented as CF lists .

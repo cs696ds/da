@@ -1,0 +1,1 @@
+We rephrase the method of Grimley-Evans ( 1997 ) as follows : First , we construct the approximating finite automaton according to the unparameterized RTN method above .

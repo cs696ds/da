@@ -1,0 +1,1 @@
+Not having to represent the frame explicitly not only enables the linguist to express only the relevant things , but also allows a more compact representation of lexical rules where explicit framing would require the rules to be split up ( Meurers 1994 ) .

@@ -1,0 +1,1 @@
+For this research , we used a coreference resolution system ( ( Harabagiu and Maiorano , 1999 ) ) that implements different sets of heuristics corresponding to various forms of coreference .

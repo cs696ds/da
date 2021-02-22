@@ -1,0 +1,1 @@
+Due to advances in statistical syntactic parsing techniques ( Collins , 1997 ; Charniak , 2001 ) , attention has recently shifted towards the harder question of analyzing the meaning of natural language sentences .

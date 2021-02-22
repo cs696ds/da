@@ -1,0 +1,1 @@
+In this paper , inspired by KNN-SVM ( Zhang et al. , 2006 ) , we propose a local training method , which trains sentence-wise weights instead of a single weight , to address the above two problems .

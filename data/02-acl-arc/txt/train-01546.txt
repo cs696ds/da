@@ -1,0 +1,1 @@
+The Ruby on Rails ( 2006 ) framework permits us to quickly develop web applications without rewriting common functions and classes .

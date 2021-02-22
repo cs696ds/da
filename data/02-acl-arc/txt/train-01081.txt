@@ -1,0 +1,1 @@
+For example , in ordinary HMM training , xi = E * and represents a completely hidden state sequence ( cfXXX Ristad ( 1998 ) , who allows any regular set ) , while yi is a single string representing a completely observed emission sequence .11 What to optimize ?

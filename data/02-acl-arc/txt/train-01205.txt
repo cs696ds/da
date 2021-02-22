@@ -1,0 +1,1 @@
+The ConTroll grammar development system as described in ( Gotz and Meurers , 1997b ) implements the above mentioned techniques for compiling an HPSG theory into typed feature grammars .

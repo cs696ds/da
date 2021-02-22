@@ -1,0 +1,1 @@
+Developed Systems Our developed system is built on the work by Chang et al. ( 2013 ) , using Constrained Latent Left-Linking Model ( CL3M ) as our mention-pair coreference model in the joint framework10 .

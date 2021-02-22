@@ -1,0 +1,1 @@
+Their computational significance arises from the issue of their storage in lexical resources like WordNet ( Fellbaum , 1998 ) and raises the questions like , how to store morphologically complex words , in a lexical resource like WordNet keeping in mind the storage and access efficiency .

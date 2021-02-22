@@ -1,0 +1,1 @@
+A substring in the sentence that corresponds to a node in the representation tree is denoted by assigning the interval of the substring to SNODE of 2 These definitions are based on the discussion in ( Tang , 1994 ) and Boitet & Zaharin ( 1988 ) .

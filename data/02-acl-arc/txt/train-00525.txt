@@ -1,0 +1,1 @@
+Our most accurate product model achieves an F score of 92.5 without the use of discriminative reranking and comes close to the best known numbers on this test set ( Zhang et al. , 2009 ) .

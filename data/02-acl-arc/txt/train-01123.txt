@@ -1,0 +1,1 @@
+Much of the earlier work in anaphora resolution heavily exploited domain and linguistic knowledge ( Sidner 1979 ; Carter 1987 ; Rich and LuperFoy 1988 ; Carbonell and Brown 1988 ) , which was difficult both to represent and to process , and which required considerable human input .

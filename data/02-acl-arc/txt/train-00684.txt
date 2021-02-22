@@ -1,0 +1,1 @@
+Some methods are based on likelihood ( Och and Ney , 2002 ; Blunsom et al. , 2008 ) , error rate ( Och , 2003 ; Zhao and Chen , 2009 ; Pauls et al. , 2009 ; Galley and Quirk , 2011 ) , margin ( Watanabe et al. , 2007 ; Chiang et al. , 2008 ) and ranking ( Hopkins and May , 2011 ) , and among which minimum error rate training ( MERT ) ( Och , 2003 ) is the most popular one .

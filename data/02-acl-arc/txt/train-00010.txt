@@ -1,0 +1,1 @@
+Similar to our previous work ( Chan and Ng , 2005b ) , we used the supervised WSD approach described in ( Lee and Ng , 2002 ) for our experiments , using the naive Bayes algorithm as our classifier .

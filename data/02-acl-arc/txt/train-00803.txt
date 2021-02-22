@@ -1,0 +1,1 @@
+In terms of treebank data , the primary training corpus is the Penn Wall Street Journal Treebank ( PTB ) ( Marcus et al. , 1993 ) .

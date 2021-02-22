@@ -1,0 +1,1 @@
+Klein and Manning ( 2002 ) 's CCM is an unlabeled bracketing model that generates the span of part-of-speech tags that make up each constituent and the pair of tags surrounding each constituent span ( as well as the spans and contexts of each non-constituent ) .

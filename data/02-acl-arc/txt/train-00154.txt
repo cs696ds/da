@@ -1,0 +1,1 @@
+Finite state transducers , which can be learned from bilingual corpora , have been proposed for automatic translation ( Amengual et al. , 2000 ) , as have been bilingual stochastic grammars ( Wu , 1996 ) .

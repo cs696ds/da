@@ -1,0 +1,1 @@
+For instance , part of the ACE Phase 2 also adopted a corpus-based approach to SC deterevaluation involves classifying an NP as PERSON , mination that is investigated as part of the mention ORGANIZATION , GPE ( a geographical-political redetection ( MD ) task ( e.g. , Florian et al. ( 2006 ) ) .

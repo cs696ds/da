@@ -1,0 +1,1 @@
+This work is a continuation of that initiated in ( Yahyaoui , 2001 ) , which reports an overall NB classification correctness of 75.6 % , in cross validation experiments , on a data set that consists of 100 documents for each of 12 categories ( the data set is collected from different Arabic portals ) .

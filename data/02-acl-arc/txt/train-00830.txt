@@ -1,0 +1,1 @@
+The key linguistic knowledge sources that we use are morphological analysis and generation of German based on SMOR , a morphological analyzer/generator of German ( Schmid et al. , 2004 ) and the BitPar parser , which is a state-of-the-art parser of German ( Schmid , 2004 ) .

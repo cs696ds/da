@@ -1,0 +1,1 @@
+This includes work on question answering ( Wang et al. , 2007 ) , sentiment analysis ( Nakagawa et al. , 2010 ) , MT reordering ( Xu et al. , 2009 ) , and many other tasks .

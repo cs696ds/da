@@ -1,0 +1,1 @@
+This idea was inspired by Delisle et al. ( 1993 ) , who used a list of arguments surrounding the main verb together with the verb 's subcategorization information and previously processed examples to analyse semantic roles ( case relations ) .

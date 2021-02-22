@@ -1,0 +1,1 @@
+category relationships from the weak supervision : the tag dictionary and raw corpus ( Garrette and Baldridge , 2012 ; Garrette et al. , 2015 ) .4 This procedure attempts to automatically estimate the frequency of each word/tag combination by dividing the number of raw-corpus occurrences of each word in the dictionary evenly across all of its associated tags .

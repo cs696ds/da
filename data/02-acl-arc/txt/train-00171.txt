@@ -1,0 +1,1 @@
+For better comparison with work of others , we adopt the suggestion made by Green and Manning ( 2010 ) to evaluate the parsing quality on sentences up to 70 tokens long .

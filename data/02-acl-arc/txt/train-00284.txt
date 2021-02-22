@@ -1,0 +1,1 @@
+In this paper , I present a computational implementation of Distributed Morphology ( Halle and Marantz , 1993 ) , a non-lexicalist linguistic theory that erases the distinction between syntactic derivation and morphological derivation .

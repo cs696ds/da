@@ -1,0 +1,1 @@
+It is these orthographic variations and complex morphological structure that make Arabic language processing challenging ( Xu et al. , 2001 ; Xu et al. , 2002 ) .

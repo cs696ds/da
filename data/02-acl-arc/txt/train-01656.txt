@@ -1,0 +1,1 @@
+KUbler , McDonald , and Nivre ( 2009 ) describe a `` typical '' MaltParser model configuration of attributes and features .13 Starting with it , in a series of initial controlled experiments , we settled on using buf [ 0-1 ] + stk [ 0-1 ] for word-forms , and buf [ 0-3 ] + stk [ 0-2 ] for POS tags .

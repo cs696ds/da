@@ -1,0 +1,1 @@
+In principle , this might be done by providing the generator with vague input -- in which case no special algorithms are needed -- but suitably contextualized vague input is often not available ( Mellish 2000 ) .

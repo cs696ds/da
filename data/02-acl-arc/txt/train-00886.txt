@@ -1,0 +1,1 @@
+Perhaps some variation of multi-level bulleted lists , appropriately integrated with interface elements for expanding and hiding items , might provide physicians a better overview of the information landscape ; see , for example , Demner-Fushman and Lin ( 2006 ) .

@@ -1,0 +1,1 @@
+Using the basic solution proposed by ( Mehdad et al. , 2010 ) as a term of comparison , we experiment with different sources of multilingual lexical knowledge to address the following questions : ( 1 ) What is the potential of the existing multilingual lexical resources to approach CLTE ?

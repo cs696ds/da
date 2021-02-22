@@ -1,0 +1,1 @@
+We collect substring rationales for a sentiment classification task ( Pang and Lee , 2004 ) and use them to obtain significant accuracy improvements for each annotator .

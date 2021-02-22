@@ -1,0 +1,1 @@
+Software engineering research on Generative Programming ( Czarnecki and Eisenecker , 2000 ) attempts to solve these problems by focusing on the development of configurable elementary components and knowledge to combine these components into complete systems .

@@ -1,0 +1,1 @@
+The lexicon is used to mediate and map between a language-independent domain model and a language-dependent ontology widely used in NLG , the Upper Model ( Bateman 1990 ) .

@@ -1,0 +1,1 @@
+The description of the EAGLE workbench for linguistic engineering ( Baldwin et al. 1997 ) mentions a case normalization module that uses a heuristic in which a capitalized word in an ambiguous position should be rewritten without capitalization if it is found lower-cased in the same document .

@@ -1,0 +1,1 @@
+Notable early papers on graph-based semisupervised learning include Blum and Chawla ( 2001 ) , Bansal et al. ( 2002 ) , Kondor and Lafferty ( 2002 ) , and Joachims ( 2003 ) .

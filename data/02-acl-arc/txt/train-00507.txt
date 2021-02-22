@@ -1,0 +1,1 @@
+The local training method ( Bottou and Vapnik , 1992 ) is widely employed in computer vision ( Zhang et al. , 2006 ; Cheng et al. , 2010 ) .

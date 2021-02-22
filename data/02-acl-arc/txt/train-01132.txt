@@ -1,0 +1,1 @@
+This is similar to the `` deletion '' strategy employed by Zettlemoyer and Collins ( 2007 ) , but we do it directly in the grammar .

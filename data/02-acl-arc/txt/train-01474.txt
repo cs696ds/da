@@ -1,0 +1,1 @@
+Lexical functional grammar ( Kaplan and Bresnan 1982 ; Bresnan 2001 ; Dalrymple 2001 ) is a member of the family of constraint-based grammars .

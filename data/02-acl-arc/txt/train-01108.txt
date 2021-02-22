@@ -1,0 +1,1 @@
+Research on shallow parsing was inspired by psycholinguistics arguments ( Gee and Grosjean , 1983 ) that suggest that in many scenarios ( e.g. , conversational ) full parsing is not a realistic strategy for sentence processing and analysis , and was further motivated by several arguments from a natural language engineering viewpoint .

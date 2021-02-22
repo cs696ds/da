@@ -1,0 +1,1 @@
+The application of domain models and deep semantic knowledge to question answering has been explored by a variety of researchers ( e.g. , Jacquemart and Zweigenbaum 2003 , Rinaldi et al. 2004 ) , and was also the focus of recent workshops on question answering in restricted domains at ACL 2004 and AAAI 2005 .

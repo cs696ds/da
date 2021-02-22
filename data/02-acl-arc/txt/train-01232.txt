@@ -1,0 +1,1 @@
+In most recent research , NEs ( person , location and organisations ) are extracted from the text and used as a source of evidence to calculate the similarity between documents - see for instance ( Blume , 2005 ; Chen and Martin , 2007 ; Popescu and Magnini , 2007 ; Kalashnikov et al. , 2007 ) .

@@ -1,0 +1,1 @@
+The paraphrase dictionary that we use was generated for us by Chris Callison-Burch , using the technique described in Callison-Burch ( 2008 ) , which exploits a parallel corpus and methods developed for statistical machine translation .

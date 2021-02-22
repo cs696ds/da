@@ -1,0 +1,1 @@
+Fortunately , there exists a compact PCFG-reduction of DOP1 that generates the same trees with the same probabilities , as shown by Goodman ( 1996 , 2002 ) .

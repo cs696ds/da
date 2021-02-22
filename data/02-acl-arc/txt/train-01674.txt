@@ -1,0 +1,1 @@
+Our most accurate single grammar achieves an F score of 91.6 on the WSJ test set , rivaling discriminative reranking approaches ( Charniak and Johnson , 2005 ) and products of latent variable grammars ( Petrov , 2010 ) , despite being a single generative PCFG .

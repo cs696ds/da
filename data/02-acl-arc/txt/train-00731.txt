@@ -1,0 +1,1 @@
+Using the section labels , the HMM was trained using the HTK toolkit ( Young et al. , 2002 ) , which efficiently performs the forward-backward algorithm and BaumWelch estimation .

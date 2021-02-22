@@ -1,0 +1,1 @@
+Levenberg et al. ( 2012 ) employed a Bayesian method to learn discontinuous SCFG rules .

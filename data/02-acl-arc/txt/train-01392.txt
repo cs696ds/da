@@ -1,0 +1,1 @@
+The only disambiguation metric that we used in our previous work ( Marcu , 1997b ) was the shape-based metric , according to which the `` best '' trees are those that are skewed to the right .

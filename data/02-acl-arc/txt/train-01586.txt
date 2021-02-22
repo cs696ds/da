@@ -1,0 +1,1 @@
+Berger et al. ( 2000 ) compared two retrieval approaches ( TF.IDF and query expansion ) and two predictive approaches ( statistical translation and latent variable models ) .

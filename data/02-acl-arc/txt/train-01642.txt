@@ -1,0 +1,1 @@
+The three preprocessing steps ( tokenization , POS-tagging , lemmatization ) are performed using TreeTagger ( Schmid , 1995 ) .

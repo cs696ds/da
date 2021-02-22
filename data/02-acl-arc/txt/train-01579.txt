@@ -1,0 +1,1 @@
+Other attempts to address efficiency include the fast Transformation Based Learning ( TBL ) Toolkit ( Ngai and Florian , 2001 ) which dramatically speeds up training TBL systems , and the translation of TBL rules into finite state machines for very fast tagging ( Roche and Schabes , 1997 ) .

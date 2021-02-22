@@ -1,0 +1,1 @@
+Although a number of methods for query-dependent text summarization are beginning to be developed and evaluated in a variety of realistic settings ( Mani et al. , 1999 ) , we again propose the use of vector space methods from IR , which can be easily extended to the summarization task ( Salton et al. , 1994 ) :

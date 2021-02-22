@@ -1,0 +1,1 @@
+Some methods of semantic relation analysis rely on predefined templates filled with information from processed texts ( Baker et al. , 1998 ) .

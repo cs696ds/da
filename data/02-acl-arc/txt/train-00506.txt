@@ -1,0 +1,1 @@
+2The WePS-1 corpus includes data from the Web03 testbed ( Mann , 2006 ) which follows similar annotation guidelines , although the number of document per ambiguous name is more variable .

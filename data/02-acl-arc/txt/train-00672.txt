@@ -1,0 +1,1 @@
+We have not yet made use of TINA 'S probabilities in adjusting the recognizer scores on the fly , but we have been able to incorporate linguistic scores to resort N-best outputs , giving a significant improvement in performance ( Goodine et al. 1991 ) .

@@ -1,0 +1,1 @@
+For example , McKnight and Srinivasan ( 2003 ) describe a machine learning approach to automatically label sentences as belonging to introduction , methods , results , or conclusion using structured abstracts as training data ( see also Lin et al. 2006 ) .

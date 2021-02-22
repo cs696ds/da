@@ -1,0 +1,1 @@
+Selectional Preferences have also been a recent focus of researchers investigating the learning of paraphrases and inference rules ( Pantel et al. , 2007 ; Roberto et al. , 2007 ) .

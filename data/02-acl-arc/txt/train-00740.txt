@@ -1,0 +1,1 @@
+Word pairs containing polysemous words are expanded to concept pairs using GermaNet ( Kunze , 2004 ) , the German equivalent to WordNet , as a sense inventory for each word .

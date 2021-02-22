@@ -1,0 +1,1 @@
+The example used to illustrate the power of ATNs ( Woods 1986 ) , `` John was believed to have been shot , '' also parses correctly , because the [ object ] node following the verb `` believed '' acts as both an absorber and a ( re ) generator .

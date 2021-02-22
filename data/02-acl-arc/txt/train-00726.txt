@@ -1,0 +1,1 @@
+A study of the query log of the AllTheWeb and Altavista search sites gives an idea of the relevance of the people search task : 11-17 % of the queries were composed of a person name with additional terms and 4 % were identified as person names ( Spink et al. , 2004 ) .

@@ -1,0 +1,1 @@
+This recognizer incrementally outputs word hypotheses as soon as they are found in the best-scored path in the forward search ( Hirasawa et al. , 1998 ) using the ISTAR ( Incremental Structure Transmitter And Receiver ) protocol , which conveys word graph information as well as word hypotheses .

@@ -1,0 +1,1 @@
+In our work , we gather sets of sentences , and assume ( but do not employ ) existing approaches for their organization ( Goldstein et al. 2000 ; Barzilay , Elhadad , and McKeown 2001 ; Barzilay and McKeown 2005 ) .

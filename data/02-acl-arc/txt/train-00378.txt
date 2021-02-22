@@ -1,0 +1,1 @@
+Previously , a user study ( Lin et al. 2003 ) has shown that people are reluctant to type full natural language questions , even after being told that they were using a questionanswering system and that typing complete questions would result in better performance .

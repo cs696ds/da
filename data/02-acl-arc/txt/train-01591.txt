@@ -1,0 +1,1 @@
+At the same time , we believe our method has advantages over the approach developed initially at IBM ( Brown et al. 1990 ; Brown et al. 1993 ) for training translation systems automatically .

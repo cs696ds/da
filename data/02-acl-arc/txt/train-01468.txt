@@ -1,0 +1,1 @@
+These knowledge sources were effectively used to build a state-of-the-art WSD program in one of our prior work ( Lee and Ng , 2002 ) .

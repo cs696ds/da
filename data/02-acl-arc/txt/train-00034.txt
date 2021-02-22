@@ -1,0 +1,1 @@
+11 From ( Zollmann and Vogel , 2011 ) , we find that the performance of SAMT system is similar with the method of labeling SCFG rules with POS tags .

@@ -1,0 +1,1 @@
+For this mention-pair coreference model Ï ( u , v ) , we use the same set of features used in Bengtson and Roth ( 2008 ) .

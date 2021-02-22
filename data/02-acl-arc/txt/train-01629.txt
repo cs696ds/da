@@ -1,0 +1,1 @@
+Furthermore , a number of performance features , largely based on the PARADISE dialogue evaluation scheme ( Walker et al. , 1997 ) , were automatically logged , derived , or manually annotated .

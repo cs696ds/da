@@ -1,0 +1,1 @@
+`` Coherence , '' as outlined above , can be understood as a declarative ( or static ) version of marker passing ( Hirst 1987 ; Charniak 1983 ) , with one difference : the activation spreads to theories that share a predicate , not through the IS-A hierarchy , and is limited to elementary facts about predicates appearing in the text .

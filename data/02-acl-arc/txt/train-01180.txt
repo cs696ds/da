@@ -1,0 +1,1 @@
+Liang et al. ( 2006 ) presented a perceptron-based algorithm for learning the phrase-translation parameters in a statistical machine translation system .

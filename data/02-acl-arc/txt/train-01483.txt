@@ -1,0 +1,1 @@
+It has also been shown to be useful in joint inference of text with visual attributes obtained using visual classifiers ( Silberer et al. , 2013 ) .

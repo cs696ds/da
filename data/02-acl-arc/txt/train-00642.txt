@@ -1,0 +1,1 @@
+It is frequently used in tasks like scene identification , and Deselaers and Ferrari ( 2011 ) shows that distance in GIST space correlates well with semantic distance in WordNet .

@@ -1,0 +1,1 @@
+This may be because pipelines have many engineering advantages , and in practice the sort of problems pointed out by Danlos and other pipeline critics do not seem to be a major problem in current applied NLG systems ( Mittal et al. 1998 ) .

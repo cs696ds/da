@@ -1,0 +1,1 @@
+We induced a two-class word-to-word model of translational equivalence from 13 million words of the Canadian Hansards , aligned using the method in ( Gale & Church , 1991 ) .

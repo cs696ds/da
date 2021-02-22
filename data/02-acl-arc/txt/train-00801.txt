@@ -1,0 +1,1 @@
+This was done because purely unsupervised techniques ( e.g. , Baum-Welch [ Baum and Petrie 1966 ] or Brill 's [ Brill 1995b ] ) enable regularities to be induced for word classes which contain many entries , exploiting the fact that individual words that belong to a POS class occur in different ambiguity patterns .

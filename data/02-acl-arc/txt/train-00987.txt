@@ -1,0 +1,1 @@
+Most DOP models , such as in Bod ( 1993 ) , Goodman ( 1996 ) , Bonnema et al. ( 1997 ) , Sima'an ( 2000 ) and Collins & Duffy ( 2002 ) , use a likelihood criterion in defining the best parse tree : they take ( some notion of ) the most likely ( i.e. most probable ) tree as a candidate for the best tree of a sentence .

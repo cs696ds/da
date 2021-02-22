@@ -1,0 +1,1 @@
+Since the arguments can provide useful semantic information , the SRL is crucial to many natural language processing tasks , such as Question and Answering ( Narayanan and Harabagiu 2004 ) , Information Extraction ( Surdeanu et al. 2003 ) , and Machine Translation ( Boas 2002 ) .

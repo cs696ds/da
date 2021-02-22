@@ -1,0 +1,1 @@
+Following construction of the marker lexicon , the ( source , target ) chunks are generalized further using a methodology based on Block ( 2000 ) to permit a limited form of insertion in the translation process .

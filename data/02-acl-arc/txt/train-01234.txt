@@ -1,0 +1,1 @@
+Lee et al. ( 2003 ) demonstrates a technique for segmenting Arabic text and uses it as a morphological processing step in machine translation .

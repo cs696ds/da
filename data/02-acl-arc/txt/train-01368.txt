@@ -1,0 +1,1 @@
+In other words AJAX is a web development technique for creating interactive web applications using a combination of XHTML and CSS , Document Object Model ( or DOM ) , the XMLHTTPRequest object ( Wikipedia , 2005 ) .

@@ -1,0 +1,1 @@
+But while Bod 's estimator obtains state-of-the-art results on the WSJ , comparable to Charniak ( 2000 ) and Collins ( 2000 ) , Bonnema et al. 's estimator performs worse and is comparable to Collins ( 1996 ) .

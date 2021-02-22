@@ -1,0 +1,1 @@
+We use an in-house statistical tagger ( based on ( Church , 1988 ) ) to tag the text in which the unknown word occurs .

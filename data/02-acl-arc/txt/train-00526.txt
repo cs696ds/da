@@ -1,0 +1,1 @@
+To demonstrate that this is possible we have implemented a system which constructs dictionary entries for the PATR-II system ( Shieber , 1984 and references therein ) .

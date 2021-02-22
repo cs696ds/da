@@ -1,0 +1,1 @@
+To prepare SMT outputs for post-editing , the creators of the corpus used their own WMT10 system ( Potet et al. , 2010 ) , based on the Moses phrase-based decoder ( Koehn et al. , 2007 ) with dense features .

@@ -1,0 +1,1 @@
+The computational treatment of lexical rules as covariation in lexical entries was implemented in Prolog by the authors in cooperation with Dieter Martini for the ConTroll system ( Gerdemann and King 1994 ; Gotz and Meurers 1997a ) .

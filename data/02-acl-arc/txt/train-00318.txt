@@ -1,0 +1,1 @@
+This approach resembles the work by Grishman et al. ( 1986 ) and Hirschman et al. ( 1975 ) on selectional restrictions .

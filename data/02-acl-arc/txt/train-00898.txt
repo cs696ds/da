@@ -1,0 +1,1 @@
+ImageNet is a large-scale and widely used image database , built on top of WordNet , which maps words into groups of images , called synsets ( Deng et al. , 2009 ) .

@@ -1,0 +1,1 @@
+Many NLP applications require knowledge about semantic relatedness rather than just similarity ( Budanitsky and Hirst , 2006 ) .

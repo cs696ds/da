@@ -1,0 +1,1 @@
+The right-side context of a non-terminal category -- the probability of generating a category to the right of the current constituent 's category -- corresponds directly to the category transitions used for the HMM supertagger of Garrette et al. ( 2014 ) .

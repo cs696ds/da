@@ -1,0 +1,1 @@
+Andrews et al. ( 2009 ) extend LDA to allow for the inference of document and topic distributions in a multimodal corpus .

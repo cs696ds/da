@@ -1,0 +1,1 @@
+Boutsis and Piperidis ( 1998 ) use a tagged parallel corpus to extract translationally equivalent English-Greek clauses on the basis of word occurrence and co-occurrence probabilities .

@@ -1,0 +1,1 @@
+Relationships between the unlabeled items Carvalho and Cohen ( 2005 ) consider sequential relations between different types of emails ( e.g. , between requests and satisfactions thereof ) to classify messages , and thus also explicitly exploit the structure of conversations .

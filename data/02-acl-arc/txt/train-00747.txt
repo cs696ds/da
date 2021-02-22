@@ -1,0 +1,1 @@
+This system has been successfully tested with the development of plug-ins supporting instant messaging , distributed video encoding ( Hughes and Walkerdine , 2005 ) , distributed virtual worlds ( Hughes et al. , 2005 ) and digital library management ( Walkerdine and Rayson , 2004 ) .

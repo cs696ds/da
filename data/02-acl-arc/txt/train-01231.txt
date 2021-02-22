@@ -1,0 +1,1 @@
+Previous work has developed various approaches for grounded semantics mainly for the reference resolution task , i.e. , identifying visual objects in the environment given language descriptions ( Dhande , 2003 ; Gorniak and Roy , 2004 ; Tenbrink and Moratz , 2003 ; Siebert and Schlangen , 2008 ; Liu et al. , 2012 ) .

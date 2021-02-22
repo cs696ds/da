@@ -1,0 +1,1 @@
+We evaluated our translations with IBM 's BLEU evaluation metric ( Papineni et al. , 2001 ) , using the same evaluation method and reference retranslations that were used for evaluation at HLT Workshop 2002 at CLSP ( Haji 6 et al. , 2002 ) .

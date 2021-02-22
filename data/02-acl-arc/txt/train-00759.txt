@@ -1,0 +1,1 @@
+One common approach is using Machine Translation ( MT ) to translate the queries to the language of the documents or translate documents to the language of the queries ( Gey et al , 1999 ; Oard , 1998 ) .

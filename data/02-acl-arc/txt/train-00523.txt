@@ -1,0 +1,1 @@
+This method allows the efficient retrieval of arbitrary length n-grams ( Nagao and Mori , 94 ; Haruno et al. , 96 ; Ikehaxa et al. , 96 ; Shimohata et al. , 1997 ; Russell , 1998 ) .

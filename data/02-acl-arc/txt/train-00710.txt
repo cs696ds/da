@@ -1,0 +1,1 @@
+With the use of computers in storing the explosive amount of biological information , natural language processing ( NLP ) approaches have been explored to make the task of managing information recorded in free text more feasible [ 1 , 2 ] .

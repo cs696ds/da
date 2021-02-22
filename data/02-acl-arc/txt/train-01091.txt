@@ -1,0 +1,1 @@
+As suggested in Rapp & Zock ( 2010 ) this can be done by looking up the ranks of each of the four given words ( i.e. the words occurring in a particular word equation ) within the association vector of a translation candidate , and by multiplying these ranks .

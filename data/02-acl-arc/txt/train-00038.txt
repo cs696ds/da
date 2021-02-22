@@ -1,0 +1,1 @@
+Although originally developed as a tool to assist in query formulation , Booth ( 2000 ) pointed out that PICO frames can be employed to structure IR results for improving precision .

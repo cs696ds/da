@@ -1,0 +1,1 @@
+But typical OT grammars offer much richer finite-state models of left context ( Eisner 1997a ) than provided by the traditional HMM finite-state topologies .

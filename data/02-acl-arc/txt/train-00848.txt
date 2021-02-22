@@ -1,0 +1,1 @@
+Most of the early work on automatic f-structure annotation ( e.g. , van Genabith , Way , and Sadler 1999 ; Frank 2000 ; Sadler , van Genabith , and Way 2000 ) was applied only to small data sets ( fewer than 200 sentences ) and was largely proof of concept .

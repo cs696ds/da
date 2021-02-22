@@ -1,0 +1,1 @@
+It is defined on different kinds of textual units , e.g. documents , parts of a document ( e.g. words and their surrounding context ) , words or concepts ( Lebart and Rajman , 2000 ) .2 Linguistic distance between words is inverse to their semantic similarity or relatedness .

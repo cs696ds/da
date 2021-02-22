@@ -1,0 +1,1 @@
+We use the agreement checker code developed by Alkuhlani and Habash ( 2011 ) and evaluate our baseline ( MaltParser using only CORE12 ) , best performing model ( Easy-First Parser using CORE12 + DET+LMM+PERSON+FN * NGR g + p ) , and the gold reference .

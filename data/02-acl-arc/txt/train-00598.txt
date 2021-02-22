@@ -1,0 +1,1 @@
+tions for the remaining 20 % of the instances ; and ( 3 ) train an SVM classifier ( using the LIBSVM package ( Chang and Lin , 2001 ) ) on these 20 % of the instances , where each instance , i , is represented by a set of 31 binary features .

@@ -1,0 +1,1 @@
+Based on a computational grammar that associates natural language expressions with both a syntactic and a semantic representation , a paraphrastic gram ` As we shall briefly discuss in section 4 , the grammar is developed with the help of a meta-grammar ( Candito , 1999 ) thus ensuring an additional level of abstraction .

@@ -1,0 +1,1 @@
+An HPSG grammar consists of lexical entries and ID grammar rules , each of which is described with typed feature structures ( Carpenter , 1992 ) .

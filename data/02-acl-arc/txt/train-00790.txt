@@ -1,0 +1,1 @@
+Our plan is to implement a windowed or moving-average version of BLEU as in ( Chiang et al. , 2008 ) .

@@ -1,0 +1,1 @@
+The forward and backward probabilities , p0j and pkn , can be computed using single-source algebraic path for the simpler semiring ( R , + , x , â ) -- or equivalently , by solving a sparse linear system of equations over R , a much-studied problem at O ( n ) space , O ( nm ) time , and faster approximations ( Greenbaum , 1997 ) .

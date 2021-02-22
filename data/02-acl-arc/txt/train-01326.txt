@@ -1,0 +1,1 @@
+See also the work of Byrd and Chodorow ( 1985 ) , which considers computer-based pronunciation by analogy but does not mention the possible application to text-to-speech synthesis .

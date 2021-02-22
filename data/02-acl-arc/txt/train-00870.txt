@@ -1,0 +1,1 @@
+The result holds for both the MaltParser ( Nivre 2008 ) and the Easy-First Parser ( Goldberg and Elhadad 2010 ) .

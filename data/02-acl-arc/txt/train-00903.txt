@@ -1,0 +1,1 @@
+A few others incorporate various measures of inter-document similarity between the texts to be labeled ( Agarwal and Bhattacharyya , 2005 ; Pang and Lee , 2005 ; Goldberg and Zhu , 2006 ) .

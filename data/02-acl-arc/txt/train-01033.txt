@@ -1,0 +1,1 @@
+Nasr ( 1997 ) reported that the translation lexicon that our model induced from this tiny bitext accounted for 30 % of the word types with precision between 84 % and 90 % .

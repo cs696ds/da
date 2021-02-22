@@ -1,0 +1,1 @@
+The recent great advances in speech and language technologies have made it possible to build fully implemented spoken dialogue systems ( Aust et al. , 1995 ; Allen et al. , 1996 ; Zue et al. , 2000 ; Walker et al. , 2000 ) .

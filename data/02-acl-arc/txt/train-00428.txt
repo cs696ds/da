@@ -1,0 +1,1 @@
+According to current tagger comparisons ( van Halteren et al. , 1998 ; Zavrel and Daelemans , 1999 ) , and according to a comparsion of the results presented here with those in ( Ratnaparkhi , 1996 ) , the Maximum Entropy framework seems to be the only other approach yielding comparable results to the one presented here .

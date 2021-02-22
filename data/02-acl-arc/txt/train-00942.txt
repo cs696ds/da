@@ -1,0 +1,1 @@
+More generally , distributional clustering techniques ( Sch Â¨ utze , 1992 ; Pereira et al. , 1993 ) could be applied to extract semantic classes from the corpus itself .

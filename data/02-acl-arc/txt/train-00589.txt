@@ -1,0 +1,1 @@
+To quantify the relative strengths of these transitive inferences , Shaw and Hatzivassiloglou ( 1999 ) propose to assign a weight to each link .

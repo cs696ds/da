@@ -1,0 +1,1 @@
+A previous work along this line is Sproat et al. ( 1996 ) , which is based on weighted finite-state transducers ( FSTs ) .

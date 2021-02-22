@@ -1,0 +1,1 @@
+We have shown elsewhere ( Jensen and Binot 1988 ; Zadrozny 1987a , 1987b ) that natural language programs , such as on-line grammars and dictionaries , can be used as referential levels for commonsense reasoning -- for example , to disambiguate PP attachment .

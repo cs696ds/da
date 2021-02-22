@@ -1,0 +1,1 @@
+Baseline Systems We choose three publicly available state-of-the-art end-to-end coreference systems as our baselines : Stanford system ( Lee et al. , 2011 ) , Berkeley system ( Durrett and Klein , 2014 ) and HOTCoref system ( Bj Â¨ orkelund and Kuhn , 2014 ) .

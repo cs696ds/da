@@ -1,0 +1,1 @@
+For descriptions of SMT systems see for example ( Germann et al. , 2001 ; Och et al. , 1999 ; Tillmann and Ney , 2002 ; Vogel et al. , 2000 ; Wang and Waibel , 1997 ) .

@@ -1,0 +1,1 @@
+The parsing algorithm used for all languages is the deterministic algorithm first proposed for unlabeled dependency parsing by Nivre ( 2003 ) and extended to labeled dependency parsing by Nivre et al. ( 2004 ) .

@@ -1,0 +1,1 @@
+To provide the required configurability in the static version of the code we will use policy templates ( Alexandrescu , 2001 ) , and for the dynamic version we will use configuration classes .

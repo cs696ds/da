@@ -1,0 +1,1 @@
+In this paper , we use TF-IDF ( a kind of augmented DF ) as a feature selection criterion , in order to ensure results are comparable with those in ( Yahyaoui , 2001 ) .

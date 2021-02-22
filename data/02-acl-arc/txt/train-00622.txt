@@ -1,0 +1,1 @@
+Our experiments are based on the multimodal extension of Latent Dirichlet Allocation developed by Andrews et al. ( 2009 ) .

@@ -1,0 +1,1 @@
+2This view of typed feature structures differs from the perspective on typed feature structures as modeling partial information as in ( Carpenter , 1992 ) .

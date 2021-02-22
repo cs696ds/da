@@ -1,0 +1,1 @@
+Although this study falls under the general topic of discourse modeling , our work differs from previous attempts to characterize text in terms of domainindependent rhetorical elements ( McKeown , 1985 ; Marcu and Echihabi , 2002 ) .

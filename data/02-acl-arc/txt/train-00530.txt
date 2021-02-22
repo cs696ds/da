@@ -1,0 +1,1 @@
+2We could just as easily use other symmetric `` association '' measures , such as 02 ( Gale & Church , 1991 ) or the Dice coefficient ( Smadja , 1992 ) .

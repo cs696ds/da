@@ -1,0 +1,1 @@
+No attempt has been made to map any closed class entries from LDOCE , as a 3,000 word lexicon containing most closed class items has been developed independently by one of the groups collaborating with us to develop the general purpose morphological and syntactic analyser ( see the Introduction and Russell et al. , 1986 ) .

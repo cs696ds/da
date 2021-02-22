@@ -1,0 +1,1 @@
+( Watanabe et al. , 2007 ; Chiang et al. , 2008 ; Hopkins and May , 2011 ) proposed other optimization objectives by introducing a margin-based and ranking-based indirect loss functions .

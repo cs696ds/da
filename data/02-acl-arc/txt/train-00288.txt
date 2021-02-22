@@ -1,0 +1,1 @@
+But , obviously , there are other possibilities -- for instance , the discourse representation structures ( DRS 's ) of Kamp ( 1981 ) , which have been used to translate a subset of English into logical formulas , to model text ( identified with a list of sentences ) , to analyze a fragment of English , and to deal with anaphora .

@@ -1,0 +1,1 @@
+One approach to partial parsing was presented by Buchholz et al. ( 1999 ) , who extended a shallow-parsing technique to partial parsing .

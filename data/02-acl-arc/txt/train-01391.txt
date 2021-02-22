@@ -1,0 +1,1 @@
+Following Hockenmaier , Bierner , and Baldridge ( 2002 ) , Xia ( 1999 ) , and Miyao , Ninomiya , and Tsujii ( 2004 ) , we extract a reference lexicon from Sections 02 -- 21 of the WSJ .

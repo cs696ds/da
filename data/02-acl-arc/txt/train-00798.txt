@@ -1,0 +1,1 @@
+More recently , Burke , Cahill , et al. ( 2004a ) carried out an evaluation of the automatic annotation algorithm against the publicly available PARC 700 Dependency Bank ( King et al. 2003 ) , a set of 700 randomly selected sentences from Section 23 which have been parsed , converted to dependency format , and manually corrected and extended by human validators .

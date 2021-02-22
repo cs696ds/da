@@ -1,0 +1,1 @@
+Unless very high rates of misspellings are to be expected ( this explains the favorable results for trigram indexing in ( Franz et al. , 2000 ) ) one can not really recommend this method .

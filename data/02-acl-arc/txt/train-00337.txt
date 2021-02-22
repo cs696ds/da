@@ -1,0 +1,1 @@
+We measure this association using pointwise Mutual Information ( MI ) ( Church and Hanks , 1990 ) .

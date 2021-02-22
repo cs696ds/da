@@ -1,0 +1,1 @@
+Both tasks are performed with a statistical framework : the mention detection system is similar to the one presented in ( Florian et al. , 2004 ) and the coreference resolution system is similar to the one described in ( Luo et al. , 2004 ) .

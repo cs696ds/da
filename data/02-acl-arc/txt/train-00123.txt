@@ -1,0 +1,1 @@
+Cases like this would be covered if the decision-theoretic property of Pareto optimality ( e.g. , Feldman 1980 ) was used as the sole criterion : Formally , an object r E C has a Pareto-optimal combination of Values V iff there is no other x E C such that

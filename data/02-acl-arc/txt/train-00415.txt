@@ -1,0 +1,1 @@
+And ( Glickman and Dagan , 2003 ) use clustering and similarity measures to identify similar contexts in a single corpus and extract verbal paraphrases from these contexts .

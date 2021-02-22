@@ -1,0 +1,1 @@
+We apply our system to the latest version of the XTAG English grammar ( The XTAG Research Group , 2001 ) , which is a large-scale FB-LTAG grammar .

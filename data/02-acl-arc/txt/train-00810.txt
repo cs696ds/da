@@ -1,0 +1,1 @@
+Johns and Jones ( 2012 ) take an entirely different approach by showing that one can successfully infer held out feature norms from weighted mixtures based on textual similarity .

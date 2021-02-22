@@ -1,0 +1,1 @@
+In informal experiments described elsewhere ( Melamed 1995 ) , I found that the G2 statistic suggested by Dunning ( 1993 ) slightly outperforms 02 .

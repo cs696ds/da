@@ -1,0 +1,1 @@
+Our proposed method is based on the automatically acquired paraphrase dictionary described in Callison-Burch ( 2008 ) , in which the application of paraphrases from the dictionary encodes secret bits .

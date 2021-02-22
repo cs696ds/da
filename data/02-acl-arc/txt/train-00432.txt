@@ -1,0 +1,1 @@
+We see no good reason , however , why such text spans should necessarily be sentences , since the majority of tagging paradigms ( e.g. , Hidden Markov Model [ HMM ] [ Kupiec 1992 ] , Brill 's [ Brill 1995a ] , and MaxEnt [ Ratnaparkhi 1996 ] ) do not attempt to parse an entire sentence and operate only in the local window of two to three tokens .

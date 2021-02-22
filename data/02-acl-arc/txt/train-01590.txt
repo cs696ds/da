@@ -1,0 +1,1 @@
+Chen and Vijay-Shanker ( 2000 ) explore a number of related approaches to the extraction of a lexicalized TAG from the Penn-II Treebank with the aim of constructing a statistical model for parsing .

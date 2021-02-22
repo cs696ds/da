@@ -1,0 +1,1 @@
+Promising features for classification include part of speech , frequency of co-occurrence , relative word position , and translational entropy ( Melamed , 1997 ) .

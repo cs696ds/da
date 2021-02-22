@@ -1,0 +1,1 @@
+Tetreault 's contribution features comparative evaluation involving the author 's own centering-based pronoun resolution algorithm called the Left-Right Centering algorithm ( LRC ) as well as three other pronoun resolution methods : Hobbs 's naive algorithm ( Hobbs 1978 ) , BFP ( Brennan , Friedman , and Pollard 1987 ) , and Strube 's 5list approach ( Strube 1998 ) .

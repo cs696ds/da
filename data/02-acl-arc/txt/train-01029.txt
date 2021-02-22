@@ -1,0 +1,1 @@
+IGEN uses standard chart generation techniques ( Kay , 1996 ) in its base generator to efficiently produce generation candidates .

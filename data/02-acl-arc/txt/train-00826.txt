@@ -1,0 +1,1 @@
+In this paper , we evaluated the role of low-level image features , SURF and GIST , for their compatibility with the multimodal Latent Dirichlet Allocation model of Andrews et al. ( 2009 ) .

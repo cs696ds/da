@@ -1,0 +1,1 @@
+One of the better-known approaches is described in Grefenstette and Tapanainen ( 1994 ) , which suggested that abbreviations first be extracted from a corpus using abbreviation-guessing heuristics akin to those described in Section 6 and then reused in further processing .

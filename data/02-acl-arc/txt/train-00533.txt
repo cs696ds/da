@@ -1,0 +1,1 @@
+Character classes , such as punctuation , are defined according to the Unicode Standard ( Aliprand et al. , 2004 ) .

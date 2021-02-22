@@ -1,0 +1,1 @@
+Our results also confirm the insights gained by Blitzer et al. ( 2007 ) , who observed that in crossdomain polarity analysis adding more training data is not always beneficial .

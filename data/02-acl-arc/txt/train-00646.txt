@@ -1,0 +1,1 @@
+Previous sentiment-analysis work in different domains has considered inter-document similarity ( Agarwal and Bhattacharyya , 2005 ; Pang and Lee , 2005 ; Goldberg and Zhu , 2006 ) or explicit

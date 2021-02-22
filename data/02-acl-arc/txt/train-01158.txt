@@ -1,0 +1,1 @@
+As has been previously observed and exploited in the NLP literature ( Pang and Lee , 2004 ; Agarwal and Bhattacharyya , 2005 ; Barzilay and Lapata , 2005 ) , the above optimization function , unlike many others that have been proposed for graph or set partitioning , can be solved exactly in an provably efficient manner via methods for finding minimum cuts in graphs .

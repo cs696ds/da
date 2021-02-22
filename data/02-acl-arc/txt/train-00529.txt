@@ -1,0 +1,1 @@
+Efficient hardware implementation is also possible via chip-level parallelism ( Rote , 1985 ) .

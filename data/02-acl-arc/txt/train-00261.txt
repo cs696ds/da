@@ -1,0 +1,1 @@
+For all the experiments reported in this article , we used the training portion of PATB Part 3 v3 .1 ( Maamouri et al. 2004 ) , converted to the CATiB Treebank format , as mentioned in Section 2.5 .

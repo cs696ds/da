@@ -1,0 +1,1 @@
+One obvious approach to this problem is to employ parser reranking ( Collins , 2000 ) .

@@ -1,0 +1,1 @@
+Notice that it is not possible to use corpus annotation to determine the likelihood of a given property to be chosen , unless we know in advance all of the properties that can be attributed to a given object , as in the case of Jordan 's work on the COCONUT domain ( Jordan , 2000 ) .

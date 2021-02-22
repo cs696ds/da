@@ -1,0 +1,1 @@
+We take some core ideas from our previous work on mining script information ( Regneri et al. , 2010 ) .

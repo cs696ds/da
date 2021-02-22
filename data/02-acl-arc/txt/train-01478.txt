@@ -1,0 +1,1 @@
+Hence , enumerating morphological variants in a semi-automatically generated lexicon , such as proposed for French ( Zweigenbaum et al. , 2001 ) , turns out to be infeasible , at least for German and related languages .

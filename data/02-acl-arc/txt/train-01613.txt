@@ -1,0 +1,1 @@
+There is some literature on procedure acquisition such as the LISP synthesis work described in Biermann et al. ( 1984 ) and the PROLOG synthesis method of Shapiro ( 1982 ) .

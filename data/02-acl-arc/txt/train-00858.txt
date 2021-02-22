@@ -1,0 +1,1 @@
+An interesting aspect of our generative approach is that we model HMM outputs as Gaussian vectors ( log probabilities of observing entire sentences based on our language models ) , as opposed to sequences of terms , as done in ( Barzilay and Lee , 2004 ) .

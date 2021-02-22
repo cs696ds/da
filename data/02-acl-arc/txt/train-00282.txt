@@ -1,0 +1,1 @@
+Towards this aim , a flexible annotation structure called Structured String-Tree Correspondence ( SSTC ) was introduced in Boitet & Zaharin ( 1988 ) to record the string of terms , its associated representation structure and the mapping between the two , which is expressed by the sub-correspondences recorded as part of a SSTC .

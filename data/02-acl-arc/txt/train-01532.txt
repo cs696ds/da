@@ -1,0 +1,1 @@
+Thus for instance , ( Copestake and Flickinger , 2000 ; Copestake et al. , 2001 ) describes a Head Driven Phrase Structure Grammar ( HPSG ) which supports the parallel construction of a phrase structure ( or derived ) tree and of a semantic representation and ( Dalrymple , 1999 ) show how to equip Lexical Functional grammar ( LFG ) with a glue semantics .

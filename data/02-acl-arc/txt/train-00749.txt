@@ -1,0 +1,1 @@
+We then use Illinois Chunker ( Punyakanok and Roth , 2001 ) 6 to extract more noun phrases from the text and employ Collins head rules ( Collins , 1999 ) to identify their heads .

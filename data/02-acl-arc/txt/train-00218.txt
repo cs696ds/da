@@ -1,0 +1,1 @@
+For example , modeling CASE in Czech improves Czech parsing ( Collins et al. 1999 ) : CASE is relevant , not redundant , and can be predicted with sufficient accuracy .

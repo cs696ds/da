@@ -1,0 +1,1 @@
+Silberer and Lapata ( 2012 ) introduce a new method of multimodal integration based on Canonical Correlation Analysis , and performs a systematic comparison between their CCA-based model and others on association norm prediction , held out feature prediction , and word similarity .

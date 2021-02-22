@@ -1,0 +1,1 @@
+Such a component would serve as the first stage of a clinical question answering system ( Demner-Fushman and Lin , 2005 ) or summarization system ( McKeown et al. , 2003 ) .

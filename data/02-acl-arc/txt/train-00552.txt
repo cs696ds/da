@@ -1,0 +1,1 @@
+Due to their remarkable ability to incorporate context structure information and long distance reordering into the translation process , tree-based translation models have shown promising progress in improving translation quality ( Liu et al. , 2006 , 2009 ; Quirk et al. , 2005 ; Galley et al. , 2004 , 2006 ; Marcu et al. , 2006 ; Shen et al. , 2008 ; Zhang et al. , 2011b ) .

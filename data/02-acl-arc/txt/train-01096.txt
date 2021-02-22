@@ -1,0 +1,1 @@
+In Table 2 , lem refers to the LTAG parser ( Sarkar et al. , 2000 ) , ANSI C implementation of the two-phase parsing algorithm that performs the head corner parsing ( van Noord , 1994 ) without features ( phase 1 ) , and then executes feature unification ( phase 2 ) .

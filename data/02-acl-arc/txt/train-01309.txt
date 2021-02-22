@@ -1,0 +1,1 @@
+The system was trained on the Penn Treebank ( Marcus et al. , 1993 ) WSJ Sections 221 and tested on Section 23 ( Table 1 ) , same as used by Magerman ( 1995 ) , Collins ( 1997 ) , and Ratnaparkhi ( 1997 ) , and became a common testbed .

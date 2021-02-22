@@ -1,0 +1,1 @@
+They proved to be useful in a number of NLP applications such as natural language generation ( Iordanskaja et al. , 1991 ) , multidocument summarization ( McKeown et al. , 2002 ) , automatic evaluation of MT ( Denkowski and Lavie , 2010 ) , and TE ( Dinu and Wang , 2009 ) .

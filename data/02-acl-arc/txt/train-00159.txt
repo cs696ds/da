@@ -1,0 +1,1 @@
+SWIZZLE is a multilingual enhancement of COCKTAIL ( Harabagiu and Maiorano , 1999 ) , a coreference resolution system that operates on a mixture of heuristics that combine semantic and textual cohesive information ' .

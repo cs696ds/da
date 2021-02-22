@@ -1,0 +1,1 @@
+That is , if the current hypothesis is unable to label a candidate or is uncertain about it , then the candidate might be a good training example ( Lewis and Catlett 1994 ) .

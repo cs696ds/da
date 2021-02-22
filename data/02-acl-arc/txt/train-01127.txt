@@ -1,0 +1,1 @@
+Specifically , we used Decision Graphs ( Oliver 1993 ) for Doc-Pred , and SVMs ( Vapnik 1998 ) for Sent-Pred .11 Additionally , we used unigrams for clustering documents and sentences , and unigrams and bigrams for predicting document clusters and sentence clusters ( Sections 3.1.2 and 3.2.2 ) .

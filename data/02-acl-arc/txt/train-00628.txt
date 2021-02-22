@@ -1,0 +1,1 @@
+Part of speech taggers typically require input in the format of a single sentence per line ( for example Brill 's tagger ( Brill , 1992 ) ) and parsers generally aim to produce a tree spanning each sentence .

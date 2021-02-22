@@ -1,0 +1,1 @@
+Using an accumulator passing technique ( O'Keefe 1990 ) , we ensure that upon execution of a call to the interaction predicate q_1 a new lexical entry is derived as the result of successive application of a number of lexical rules .

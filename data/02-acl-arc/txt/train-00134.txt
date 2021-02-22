@@ -1,0 +1,1 @@
+Our work is more similar to NLG work that concentrates on structural constraints such as generative poetry ( Greene et al. , 2010 ) ( Colton et al. , 2012 ) ( Jiang and Zhou , 2008 ) or song lyrics ( Wu et al. , 2013 ) ( Ramakrishnan A et al. , 2009 ) , where specified meter or rhyme schemes are enforced .

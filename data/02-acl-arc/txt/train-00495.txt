@@ -1,0 +1,1 @@
+The method is called targeted self-training as it is similar in vein to self-training ( McClosky et al. , 2006 ) , with the exception that the new parse data is targeted to produce accurate word reorderings .

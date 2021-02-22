@@ -1,0 +1,1 @@
+Both systems are built around from the maximum-entropy technique ( Berger et al. , 1996 ) .

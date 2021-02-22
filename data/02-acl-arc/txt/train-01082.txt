@@ -1,0 +1,1 @@
+Fraser ( 2009 ) tried to solve the inflection prediction problem by simply building an SMT system for translating from stems to inflected forms .

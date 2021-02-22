@@ -1,0 +1,1 @@
+We measure the inter annotator agreement using the Fleiss Kappa ( Fleiss et al. , 1981 ) measure ( x ) where the agreement lies around 0.79 .

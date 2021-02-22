@@ -1,0 +1,1 @@
+This method follows a traditional Information Retrieval paradigm ( Salton and McGill 1983 ) , where a query is represented by the content terms it contains , and the system retrieves from the corpus a set of documents that best match this query .

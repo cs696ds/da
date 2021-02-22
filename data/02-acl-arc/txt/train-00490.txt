@@ -1,0 +1,1 @@
+Other tools have been designed around particular techniques , such as finite state machines ( Karttunen et al. , 1997 ; Mohri et al. , 1998 ) .

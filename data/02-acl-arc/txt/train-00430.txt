@@ -1,0 +1,1 @@
+The first lexical substitution method was proposed by Chapman and Davida ( 1997 ) .

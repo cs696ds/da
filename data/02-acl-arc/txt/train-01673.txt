@@ -1,0 +1,1 @@
+Therefore , we preprocess Ontonote-5 .0 to derive mention heads using Collins head rules ( Collins , 1999 ) with gold constituency parsing information and gold named entity information .

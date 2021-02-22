@@ -1,0 +1,1 @@
+The subcategorization requirements expressed by semantic forms are enforced at f-structure level through completeness and coherence well-formedness conditions on f-structure ( Kaplan and Bresnan 1982 ) : An f-structure is locally complete iff it contains all the governable grammatical functions that its predicate governs .

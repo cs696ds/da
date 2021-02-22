@@ -1,0 +1,1 @@
+To represent the semantics of predicative units , we use FrameNet inventory of frames and frame elements ( C.Johnson et al. , 2002 ) .

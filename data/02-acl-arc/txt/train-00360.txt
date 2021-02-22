@@ -1,0 +1,1 @@
+As for work on Arabic ( MSA ) , results have been reported on the PATB ( Kulick , Gabbard , and Marcus 2006 ; Diab 2007 ; Green and Manning 2010 ) , the Prague Dependency Treebank ( PADT ) ( Buchholz and Marsi 2006 ; Nivre 2008 ) and the CATiB ( Habash and Roth 2009 ) .

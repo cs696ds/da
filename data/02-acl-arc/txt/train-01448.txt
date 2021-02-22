@@ -1,0 +1,1 @@
+Andrews et al. ( 2009 ) furthered this work by showing that a bimodal topic model , consisting of both text and feature norms , outperformed models using only one modality on the prediction of association norms , word substitution errors , and semantic interference tasks .

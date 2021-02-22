@@ -1,0 +1,1 @@
+For the A * algorithm ( Hart et al. 1968 ) as applied to speech recognition , the actual path score is typically augmented with an estimated score for the unseen portion .

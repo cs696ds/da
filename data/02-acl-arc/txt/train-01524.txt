@@ -1,0 +1,1 @@
+We use an in-house developed hierarchical phrase-based translation ( Chiang , 2005 ) as our baseline system , and we denote it as In-Hiero .

@@ -1,0 +1,1 @@
+In the disambiguation of capitalized words , the most widespread method is POS tagging , which achieves about a 3 % error rate on the Brown corpus and a 5 % error rate on the WSJ corpus , as reported in Mikheev ( 2000 ) .

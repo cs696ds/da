@@ -1,0 +1,1 @@
+Stanford University is developing the English Resource Grammar , an HPSG grammar for English , as a part of the Linguistic Grammars Online ( LinGO ) project ( Flickinger , 2000 ) .

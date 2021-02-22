@@ -1,0 +1,1 @@
+32 In certain cases an extension of the constraint language with named disjunctions or contexted constraints ( Maxwell and Kaplan 1989 ; Eisele and Dorre 1990 ; Griffith 1996 ) can be used to circumvent constraint propagation .

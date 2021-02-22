@@ -1,0 +1,1 @@
+Some efforts have tackled tasks such as automatic image caption generation ( Feng and Lapata , 2010a ; Ordonez et al. , 2011 ) , text illustration ( Joshi et al. , 2006 ) , or automatic location identification of Twitter users ( Eisenstein et al. , 2010 ; Wing and Baldridge , 2011 ; Roller et al. , 2012 ) .

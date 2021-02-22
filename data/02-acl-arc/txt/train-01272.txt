@@ -1,0 +1,1 @@
+A detailed introduction to the SBD problem can be found in Palmer and Hearst ( 1997 ) .

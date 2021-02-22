@@ -1,0 +1,1 @@
+In this paper , a flexible annotation schema called Structured String-Tree Correspondence ( SSTC ) ( Boitet & Zaharin , 1988 ) will be introduced to capture a natural language text , its corresponding abstract linguistic representation and the mapping ( correspondence ) between these two .

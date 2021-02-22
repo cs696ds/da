@@ -1,0 +1,1 @@
+Linguistic preprocessing of text documents is carried out by re-using smes , an information extraction core system for real-world German text processing ( Neumann et al. , 1997 ) .

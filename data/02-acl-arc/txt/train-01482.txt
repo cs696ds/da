@@ -1,0 +1,1 @@
+We employ the idea of ultraconservative update ( Crammer and Singer , 2003 ; Crammer et al. , 2006 ) to propose two incremental methods for local training in Algorithm 2 as follows .

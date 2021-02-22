@@ -1,0 +1,1 @@
+Most probabilistic translation model reestimation algorithms published to date are variations on the theme proposed by Brown et al. ( 1993b ) .

@@ -1,0 +1,1 @@
+Proceedings of EACL '99 example , the ALE parser ( Carpenter and Penn , 1994 ) presupposes a phrase structure backbone which can be used to determine whether a constraint is to be interpreted bottom-up or topdown .

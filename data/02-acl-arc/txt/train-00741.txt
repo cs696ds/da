@@ -1,0 +1,1 @@
+Using the initial target U-trees , source sentences and word alignment , we extract minimal GHKM translation rules7 in terms of frontier nodes ( Galley et al. , 2004 ) .

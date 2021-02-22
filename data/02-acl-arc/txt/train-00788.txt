@@ -1,0 +1,1 @@
+To prove that our method is effective , we also make a comparison between the performances of our system and Xue and Palmer ( 2005 ) , Xue ( 2008 ) .

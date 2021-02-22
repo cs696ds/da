@@ -1,0 +1,1 @@
+One of the proposed methods to extract paraphrases relies on a pivot-based approach using phrase alignments in a bilingual parallel corpus ( Bannard and Callison-Burch , 2005 ) .

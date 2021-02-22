@@ -1,0 +1,1 @@
+Some approaches apply semantic parsing , where words and sentences are mapped to logical structure meaning ( Kate and Mooney , 2007 ) .

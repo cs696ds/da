@@ -1,0 +1,1 @@
+For this evaluation , we randomly selected 50 abstracts with disorders indexed as the main topic from abstracts retrieved using PubMed on the five clinical questions described in Sneiderman et al. ( 2005 ) .

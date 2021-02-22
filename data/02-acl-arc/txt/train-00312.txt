@@ -1,0 +1,1 @@
+Petrov et al. ( 2010 ) observed that dependency parsers tend to do quite poorly when parsing questions due to their limited exposure to them in the news corpora from the PennTreebank .

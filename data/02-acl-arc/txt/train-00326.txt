@@ -1,0 +1,1 @@
+We used a standard implementation of IBM Model 4 ( Och and Ney 2003 ) and because changing the existing code is not trivial , we could not use the same stopping criterion to avoid overfitting and we are not able to produce precision/recall curves .

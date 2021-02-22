@@ -1,0 +1,1 @@
+We run TreeTagger ( Schmid , 1994 ) for tokenization , and used the Giza + + ( Och and Ney , 2003 ) to align the tokenized corpora at the word level .

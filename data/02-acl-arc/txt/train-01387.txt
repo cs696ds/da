@@ -1,0 +1,1 @@
+Despite these arguments , most applied NLG systems use a pipelined architecture ; indeed , a pipeline was used in every one of the systems surveyed by Reiter ( 1994 ) and Paiva ( 1998 ) .

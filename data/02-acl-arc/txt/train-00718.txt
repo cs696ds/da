@@ -1,0 +1,1 @@
+The most common way is to divide each half of the bitext into an equal number of segments and to align the segments so that each pair of segments Si and Ti are translations of each other ( Gale & Church , 1991 ; Melamed , 1996a ) .

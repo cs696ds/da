@@ -1,0 +1,1 @@
+coreference performance on perfect mentions ( e.g. , Incorporate the two knowledge sources in a Luo et al. ( 2004 ) ) ; and for those that do report percoreference resolver .

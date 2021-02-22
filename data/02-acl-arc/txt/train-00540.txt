@@ -1,0 +1,1 @@
+This setup is also scalable to a higher number of word pairs ( 350 ) as was shown in Gurevych ( 2006 ) .

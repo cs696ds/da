@@ -1,0 +1,1 @@
+For example , the forward-backward algorithm ( Baum , 1972 ) trains only Hidden Markov Models , while ( Ristad and Yianilos , 1996 ) trains only stochastic edit distance .

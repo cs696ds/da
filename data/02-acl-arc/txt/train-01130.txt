@@ -1,0 +1,1 @@
+The syntactic structures of the input data are produced by a parser with good coverage and detailed syntactic information , DIPETT ( Delisle and Szpakowicz , 1995 ) .

@@ -1,0 +1,1 @@
+We run GIZA + + ( Och and Ney , 2000 ) on the training corpus in both directions ( Koehn et al. , 2003 ) to obtain the word alignment for each sentence pair .

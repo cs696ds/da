@@ -1,0 +1,1 @@
+The original and the obtained grammar generated exactly the same number of derivation trees in the parsing experiment with 457 sentences from the ATIS corpus ( Marcus et al. , 1994 ) 6 ( the average length is 6.32 words ) .

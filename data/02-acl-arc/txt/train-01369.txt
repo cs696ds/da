@@ -1,0 +1,1 @@
+For these or for a specific domain , basic synonymic dictionaries can be complemented using learning methods based on distributional similarity ( Pereira et al. , 1993 ; Lin , 1998 ) .

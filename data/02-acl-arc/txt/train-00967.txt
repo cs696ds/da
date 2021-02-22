@@ -1,0 +1,1 @@
+The error rate on sentence boundaries in the Brown corpus was not significantly worse than the lowest quoted before ( Riley 1989 : 0.28 % vs. 0.20 % error rate ) .

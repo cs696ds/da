@@ -1,0 +1,1 @@
+This is the approach taken by IBM Models 4 + ( Brown et al. 1993b ; Och and Ney 2003 ) , and more recently by the LEAF model ( Fraser and Marcu 2007 ) .

@@ -1,0 +1,1 @@
+The latter question is tackled by applicationspecific evaluation , where a measure is tested within the framework of a certain application , e.g. word sense disambiguation ( Patwardhan et al. , 2003 ) or malapropism detection ( Budanitsky and Hirst , 2006 ) .

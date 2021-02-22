@@ -1,0 +1,1 @@
+Semantic construction proceeds from the derived tree ( Gardent and Kallmeyer , 2003 ) rather than -- as is more common in TAG -- from the derivation tree .

@@ -1,0 +1,1 @@
+3 The degree of precision of the measurement ( James et al. 1996 , Section 1.5 ) determines which objects can be described by the GRE algorithm , since it determines which objects count as having the same size .

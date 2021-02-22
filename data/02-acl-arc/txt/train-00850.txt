@@ -1,0 +1,1 @@
+Recent work by Korhonen ( 2002 ) on the filtering phase of this approach uses linguistic verb classes ( based on Levin [ 1993 ] ) for obtaining more accurate back-off estimates for hypothesis selection .

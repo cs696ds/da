@@ -1,0 +1,1 @@
+We evaluated on the English CCGBank ( Hockenmaier and Steedman , 2007 ) , which is a transformation of the Penn Treebank ( Marcus et al. , 1993 ) ; the CTBCCG ( Tse and Curran , 2010 ) transformation of the Penn Chinese Treebank ( Xue et al. , 2005 ) ; and the CCG-TUT corpus ( Bos et al. , 2009 ) , built from the TUT corpus of Italian text ( Bosco et al. , 2000 ) .

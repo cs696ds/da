@@ -1,0 +1,1 @@
+Robust natural language understanding in Atlas-Andes is provided by RosÃ© 's CARMEL system ( RosÃ© 2000 ) ; it uses the spelling correction algorithm devised by Elmi and Evens ( 1998 ) .

@@ -1,0 +1,1 @@
+The framework was originally developed for the realization of deep-syntactic structures in NLG ( Lavoie and Rambow , 1997 ) .

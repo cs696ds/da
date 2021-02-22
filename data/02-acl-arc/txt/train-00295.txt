@@ -1,0 +1,1 @@
+We also made use of the person-name/instance pairs automatically extracted by Fleischman et al. ( 2003 ) .2 This data provides counts for pairs such as `` Edwin Moses , hurdler '' and `` William Farley , industrialist . ''

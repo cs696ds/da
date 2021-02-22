@@ -1,0 +1,1 @@
+We carried out two parallel experiments with two parsers available for Czech , parser I ( Hajie et al. , 1998 ) and parser II ( Charniak , 1999 ) .

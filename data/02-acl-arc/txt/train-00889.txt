@@ -1,0 +1,1 @@
+For example , Jokinen and Ragni ( 2007 ) and Jokinen et al. ( 2008 ) find that machine learning algorithms can be trained to recognise some of the functions of head movements , while Reidsma et al. ( 2009 ) show that there is a dependence between focus of attention and assignment of dialogue act labels .

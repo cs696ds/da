@@ -1,0 +1,1 @@
+Also , advanced methods often require many training iterations , for example active learning ( Dagan and Engelson ,1995 ) and co-training ( Blum and Mitchell , 1998 ) .

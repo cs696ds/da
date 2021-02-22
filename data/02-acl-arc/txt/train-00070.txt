@@ -1,0 +1,1 @@
+The research described below is taking place in the context of three collaborative projects ( Boguraev , 1987 ; Russell et al. , 1986 ; Phillips and Thompson , 1986 ) to develop a general-purpose , wide coverage morphological and syntactic analyser for English .

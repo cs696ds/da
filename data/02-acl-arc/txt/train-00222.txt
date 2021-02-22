@@ -1,0 +1,1 @@
+This situation suggests a response-automation approach that follows the document retrieval paradigm ( Salton and McGill 1983 ) , where a new request is matched with existing response documents ( e-mails ) .

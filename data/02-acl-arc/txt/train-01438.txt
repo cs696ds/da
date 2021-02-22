@@ -1,0 +1,1 @@
+( Details of how the average-expert model performs can be found in our prior work ( Xiong and Litman , 2011 ) . )

@@ -1,0 +1,1 @@
+12 In order to focus on the computational aspects of the covariation approach , in this paper we will not go into a discussion of the full lexical rule specification language introduced in Meurers ( 1995 ) .

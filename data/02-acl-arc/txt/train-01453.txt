@@ -1,0 +1,1 @@
+The bottom panel of table 1 lists the results for the chosen lexicalized model ( SSN-Freq > 200 ) and five recent statistical parsers ( Ratnaparkhi , 1999 ; Collins , 1999 ; Charniak , 2000 ; Collins , 2000 ; Bod , 2001 ) .

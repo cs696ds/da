@@ -1,0 +1,1 @@
+Future research should apply the work of Blunsom et al. ( 2008 ) and Blunsom and Osborne ( 2008 ) , who marginalize over derivations to find the most probable translation rather than the most probable derivation , to these multi-nonterminal grammars .

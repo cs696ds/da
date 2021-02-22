@@ -1,0 +1,1 @@
+The disambiguation of person names in Web results is usually compared to two other Natural Language Processing tasks : Word Sense Disambiguation ( WSD ) ( Agirre and Edmonds , 2006 ) and Cross-document Coreference ( CDC ) ( Bagga and Baldwin , 1998 ) .

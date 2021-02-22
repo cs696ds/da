@@ -1,0 +1,1 @@
+While corpus driven efforts along the PARSEVAL lines ( Black et al. , 1991 ) are good at giving some measure of a grammar coverage , they are not suitable for finer grained analysis and in particular , for progress evaluation , regression testing and comparative report generation .

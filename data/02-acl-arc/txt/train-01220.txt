@@ -1,0 +1,1 @@
+It is wasteful to compute ti as suggested earlier , by minimizing ( cxxi ) of o ( yixE ) , since then the real work is done by an c-closure step ( Mohri , 2002 ) that implements the all-pairs version of algebraic path , whereas all we need is the single-source version .

@@ -1,0 +1,1 @@
+This is implemented as a cascade of simple strategies , which were briefly described in Mikheev ( 1999 ) .

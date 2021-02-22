@@ -1,0 +1,1 @@
+This paper presents experiments with generative content models for analyzing the discourse structure of medical abstracts , which has been confirmed to follow the four-section pattern discussed above ( Salanger-Meyer , 1990 ) .

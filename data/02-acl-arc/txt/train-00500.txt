@@ -1,0 +1,1 @@
+ear regression adapted for classification ( Ting and Witten 1999 ) , which can be described by the following equation :

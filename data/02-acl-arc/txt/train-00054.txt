@@ -1,0 +1,1 @@
+Rather than producing a complete analysis of sentences , the alternative is to perform only partial analysis of the syntactic structures in a text ( Harris , 1957 ; Abney , 1991 ; Greffenstette , 1993 ) .

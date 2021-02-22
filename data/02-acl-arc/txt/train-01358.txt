@@ -1,0 +1,1 @@
+Previous work on Chinese SRL mainly focused on how to transplant the machine learning methods which has been successful with English , such as Sun and Jurafsky ( 2004 ) , Xue and Palmer ( 2005 ) and Xue ( 2008 ) .

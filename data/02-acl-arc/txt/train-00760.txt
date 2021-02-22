@@ -1,0 +1,1 @@
+Adding selectional restrictions ( semantic feature information , Hobbs 1977 ) does not solve the problem , because isolated features offer only part of the background knowledge necessary for reference disambiguation .

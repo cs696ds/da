@@ -1,0 +1,1 @@
+Our HDP extension is also inspired from the Bayesian model proposed by Haghighi and Klein ( 2007 ) .

@@ -1,0 +1,1 @@
+Collins et al. ( 1999 ) report that an optimal tag set for parsing Czech consists of a basic POS tag plus a CASE feature ( when applicable ) .

@@ -1,0 +1,1 @@
+For the development of these lists we used a collection of texts of about 300,000 words derived from the New York Times ( NYT ) corpus that was supplied as training data for the 7th Message Understanding Conference ( MUC-7 ) ( Chinchor 1998 ) .

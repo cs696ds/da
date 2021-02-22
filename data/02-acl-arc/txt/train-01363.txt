@@ -1,0 +1,1 @@
+We also experiment with a CCG parser ( Clark and Curran , 2007 ) , requiring that the contexts surrounding the original phrase and paraphrase are assigned

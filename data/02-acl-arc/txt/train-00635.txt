@@ -1,0 +1,1 @@
+Using the implicit modeling of argument consistency , we follow the same approach as in our previous work ( Zhang and Chai , 2009 ) and trained a logistic regression model to predict verb alignment based on the features in Table 1 .

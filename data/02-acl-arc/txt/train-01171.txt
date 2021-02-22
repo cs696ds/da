@@ -1,0 +1,1 @@
+For the joint segmentation and POS-tagging task , we present a novel solution using the framework in this article , and show that it gives comparable accuracies to our previous work ( Zhang and Clark 2008a ) , while being more than an order of magnitude faster .

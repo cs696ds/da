@@ -1,0 +1,1 @@
+A formula for the test set perplexity ( Lee 1989 ) is :13

@@ -1,0 +1,1 @@
+mlSystem ruleFeats + atomFeats We augment mlSystem ruleFeats with more features from our previous work ( Markert et al. , 2012 ; Hou et al. , 2013a ; Hou et al. , 2013b ) on bridging anaphora recognition and antecedent selection .

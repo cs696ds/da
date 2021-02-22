@@ -1,0 +1,1 @@
+This heuristic is called soft union ( DeNero and Klein 2007 ) .

@@ -1,0 +1,1 @@
+Acoustic models for HTK is trained with the continuous speech database of the Acoustical Society of Japan ( Kobayashi et al. , 1992 ) .

@@ -1,0 +1,1 @@
+One approach to this problem is that taken by the ASCOT project ( Akkerman et al. , 1985 ; Akkerman , 1986 ) .

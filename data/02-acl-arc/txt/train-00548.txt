@@ -1,0 +1,1 @@
+For all experiments reported in this section we used the syntactic dependency parser MaltParser v1 .3 ( Nivre 2003 , 2008 ; KÃ¼bler , McDonald , and Nivre 2009 ) , a transition-based parser with an input buffer and a stack , which uses SVM classifiers

@@ -1,0 +1,1 @@
+Typical letter-to-sound rule sets are those described by Ainsworth ( 1973 ) , McIlroy ( 1973 ) , Elovitz et al. ( 1976 ) , Hurmicutt ( 1976 ) , and Divay and Vitale ( 1997 ) .

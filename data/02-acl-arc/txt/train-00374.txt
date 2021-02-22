@@ -1,0 +1,1 @@
+I A more detailed discussion of various aspects of the proposed parser can be found in ( Minnen , 1998 ) .

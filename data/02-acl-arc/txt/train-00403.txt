@@ -1,0 +1,1 @@
+But their importance has grown far beyond machine translation : for instance , transferring annotations between languages ( Yarowsky and Ngai 2001 ; Hwa et al. 2005 ; Ganchev , Gillenwater , and Taskar 2009 ) ; discovery of paraphrases ( Bannard and Callison-Burch 2005 ) ; and joint unsupervised POS and parser induction across languages ( Snyder and Barzilay 2008 ) .

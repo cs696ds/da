@@ -1,0 +1,1 @@
+This approach has its roots in Fillmore 's Case Grammar ( 1968 ) , and serves as the foundation for two current large-scale semantic annotation projects : FrameNet ( Baker et al. , 1998 ) and PropBank ( Kingsbury et al. , 2002 ) .

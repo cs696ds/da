@@ -1,0 +1,1 @@
+Similarly , ( Barzilay and Lee , 2003 ) and ( Shinyanma et al. , 2002 ) learn sentence level paraphrase templates from a corpus of news articles stemming from different news source .

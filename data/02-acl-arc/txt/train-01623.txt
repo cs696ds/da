@@ -1,0 +1,1 @@
+In particular , boosting ( Schapire , 1999 ; Abney et al. , 1999 ) offers the possibility of achieving high accuracy from a collection of classifiers which individually perform quite poorly .

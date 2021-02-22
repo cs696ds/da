@@ -1,0 +1,1 @@
+Prototypes of Internet search engines for linguists , corpus linguists and lexicographers have been proposed : WebCorp ( Kehoe and Renouf , 2002 ) , KWiCFinder ( Fletcher , 2004a ) and the Linguist 's Search Engine ( Kilgarriff , 2003 ; Resnik and Elkiss , 2003 ) .

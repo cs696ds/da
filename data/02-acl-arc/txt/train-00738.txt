@@ -1,0 +1,1 @@
+Steganography is concerned with hiding information in some cover medium , by manipulating properties of the medium in such a way that the hidden information is not easily detectable by an observer ( Fridrich , 2009 ) .

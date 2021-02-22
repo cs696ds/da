@@ -1,0 +1,1 @@
+As ( Daelemans et al. , 1999 ) show , lexical information improves on NP and VP chunking as well .

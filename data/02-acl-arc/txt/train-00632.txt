@@ -1,0 +1,1 @@
+For instance , GATE currently provides a POS tagger , named entity recogniser and gazetteer and ontology editors ( Cunningham et al. , 2002 ) .

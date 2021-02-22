@@ -1,0 +1,1 @@
+All current approaches to monolingual TE , either syntactically oriented ( Rus et al. , 2005 ) , or applying logical inference ( Tatu and Moldovan , 2005 ) , or adopting transformation-based techniques ( Kouleykov and Magnini , 2005 ; Bar-Haim et al. , 2008 ) , incorporate different types of lexical knowledge to support textual inference .

@@ -1,0 +1,1 @@
+A number of studies ( e.g. , Hildebrandt , Katz , and Lin 2004 ) have pointed out shortcomings of the original nugget scoring model , although a number of these issues have been recently addressed ( Lin and Demner-Fushman 2005a , 2006b ) .

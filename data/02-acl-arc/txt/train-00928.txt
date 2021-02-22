@@ -1,0 +1,1 @@
+( Och and Ney , 2002 ; Blunsom et al. , 2008 ) used maximum likelihood estimation to learn weights for MT. ( Och , 2003 ; Moore and Quirk , 2008 ; Zhao and Chen , 2009 ; Galley and Quirk , 2011 ) employed an evaluation metric as a loss function and directly optimized it .

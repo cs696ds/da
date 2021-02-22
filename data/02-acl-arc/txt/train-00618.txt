@@ -1,0 +1,1 @@
+In particular , the `` Semantic Information Retrieval '' project ( SIR Project , 2006 ) systematically investigates the use of lexical-semantic relations between words or concepts for improving the performance of information retrieval systems .

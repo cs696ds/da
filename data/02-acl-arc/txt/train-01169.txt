@@ -1,0 +1,1 @@
+Aside from the extraction of theory-neutral subcategorization lexicons , there has also been work in the automatic construction of lexical resources which comply with the principles of particular linguistic theories such as LTAG , CCG , and HPSG ( Chen and Vijay-Shanker 2000 ; Xia 1999 ; Hockenmaier , Bierner , and Baldridge 2004 ; Nakanishi , Miyao , and Tsujii 2004 ) .

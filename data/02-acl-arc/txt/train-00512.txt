@@ -1,0 +1,1 @@
+We use the same method as Andrews et al. ( 2009 ) for generating our multimodal corpora : for each word token in the text corpus , a feature is selected stochastically from the word 's feature distribution , creating a word-feature pair .

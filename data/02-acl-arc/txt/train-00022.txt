@@ -1,0 +1,1 @@
+The system utilizes several large size biological databases including three NCBI databases ( GenPept [ 11 ] , RefSeq [ 12 ] , and Entrez GENE [ 13 ] ) , PSD database from Protein Information Resources ( PIR ) [ 14 ] , and

@@ -1,0 +1,1 @@
+However , more recent work ( Cahill et al. 2002 ; Cahill , McCarthy , et al. 2004 ) has presented efforts in evolving and scaling up annotation techniques to the Penn-II Treebank ( Marcus et al. 1994 ) , containing more than 1,000,000 words and 49,000 sentences .

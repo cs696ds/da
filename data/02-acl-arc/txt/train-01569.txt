@@ -1,0 +1,1 @@
+Machine learning methods should be interchangeable : Transformation-based learning ( TBL ) ( Brill , 1993 ) and Memory-based learning ( MBL ) ( Daelemans et al. , 2002 ) have been applied to many different problems , so a single interchangeable component should be used to represent each method .

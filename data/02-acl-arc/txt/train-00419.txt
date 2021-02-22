@@ -1,0 +1,1 @@
+To sum up , this work has been carried out to automatically classify Arabic documents using the NB algorithm , with the use of a different data set , a different number of categories , and a different root extraction algorithm from those used in ( Yahyaoui , 2001 ) .

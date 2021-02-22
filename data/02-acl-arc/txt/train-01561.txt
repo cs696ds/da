@@ -1,0 +1,1 @@
+One way to increase the precision of the mapping process is to impose some linguistic constraints on the sequences such as simple noun-phrase contraints ( Gaussier , 1995 ; Kupiec , 1993 ; hua Chen and Chen , 94 ; Fung , 1995 ; Evans and Zhai , 1996 ) .

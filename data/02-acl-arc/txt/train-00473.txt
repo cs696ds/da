@@ -1,0 +1,1 @@
+â¢ Before indexing the text , we process it with Textract ( Byrd and Ravin , 1998 ; Wacholder et al. , 1997 ) , which performs lemmatization , and discovers proper names and technical terms .

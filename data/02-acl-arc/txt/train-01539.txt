@@ -1,0 +1,1 @@
+The flexible architecture we have presented enables interesting future research : ( i ) a straightforward improvement is the use of lexical similarity to reduce data sparseness , e.g. ( Basili et al. , 2005 ; Basili et al. , 2006 ; Bloehdorn et al. , 2006 ) .

@@ -1,0 +1,1 @@
+In particular , since we treat each individual speech within a debate as a single `` document '' , we are considering a version of document-level sentiment-polarity classification , namely , automatically distinguishing between positive and negative documents ( Das and Chen , 2001 ; Pang et al. , 2002 ; Turney , 2002 ; Dave et al. , 2003 ) .

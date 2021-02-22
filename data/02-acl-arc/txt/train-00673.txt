@@ -1,0 +1,1 @@
+These features are carefully designed to reduce the data sparseness problem and some of them are inspired by previous work ( He et al. , 2008 ; Gimpel and Smith , 2008 ; Marton and Resnik , 2008 ; Chiang et al. , 2009 ; Setiawan et al. , 2009 ; Shen et al. , 2009 ; Xiong et al. , 2009 ) : 1 .

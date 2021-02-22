@@ -1,0 +1,1 @@
+One approach to this problem consists in defining , within the Cut-free atomic-id space , normal form derivations in which the succession of rule application is regulated ( Konig 1989 , Hepple 1990 , Hendriks 1993 ) .

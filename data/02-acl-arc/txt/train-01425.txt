@@ -1,0 +1,1 @@
+For future work , we might investigate how machine learning algorithms , which are specifically designed for the problem of domain adaptation ( Blitzer et al. , 2007 ; Jiang and Zhai , 2007 ) , perform in comparison to our approach .

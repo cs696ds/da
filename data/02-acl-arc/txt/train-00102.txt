@@ -1,0 +1,1 @@
+In multi-party discussion people usually mention each other 's name for the purpose of disentanglement ( Elsner and Charniak , 2008 ) .

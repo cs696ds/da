@@ -1,0 +1,1 @@
+Lin ( 1998 ) for example discusses a method where a syntactic parse of the text is performed and the context of a word is modeled using dependency triples .

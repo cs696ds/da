@@ -1,0 +1,1 @@
+For an overview of systems designed to answer open-domain factoid questions , the TREC QA track overview papers are a good place to start ( Voorhees and Tice 1999 ) .

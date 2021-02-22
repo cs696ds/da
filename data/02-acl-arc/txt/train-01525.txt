@@ -1,0 +1,1 @@
+The types of sentences accepted are essentially those accepted by the original NLC grammar , imperative sentences with nested noun groups and conjunctions ( Ballard 1979 ) .

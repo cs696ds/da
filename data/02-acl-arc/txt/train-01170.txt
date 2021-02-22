@@ -1,0 +1,1 @@
+An alternative representation based on Liberman and Prince ( 1977 ) is presented in Selkirk ( 1984 ) , which contends that prosody , including prosodic phrasing , is more properly represented as a grid instead of a tree .

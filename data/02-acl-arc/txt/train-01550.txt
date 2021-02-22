@@ -1,0 +1,1 @@
+Morris and Hirst ( 2004 ) pointed out that many relations between words in a text are non-classical ( i.e. other than typical taxonomic relations like synonymy or hypernymy ) and therefore not covered by semantic similarity .

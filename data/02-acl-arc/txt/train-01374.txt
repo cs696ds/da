@@ -1,0 +1,1 @@
+For English â > Urdu , Juola ( 1997 , page 213 ) notes that `` the system learned the original training corpus ... perfectly and could reproduce it without errors '' ; that is , it scored 100 % accuracy when tested against the training corpus .

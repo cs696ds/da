@@ -1,0 +1,1 @@
+McKnight and Srinivasan ( 2003 ) have previously examined the task of categorizing sentences in medical abstracts using supervised discriminative machine learning techniques .

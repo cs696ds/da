@@ -1,0 +1,1 @@
+financial news , we created a probabilistic CzechEnglish dictionary by running GIZA + + training ( translation models 1-4 , see Och and Ney ( 2000 ) ) on the training part of the English-Czech WSJ parallel corpus extended by the parallel corpus of entry/translation pairs from the manual dictionary .

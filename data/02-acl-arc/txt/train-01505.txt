@@ -1,0 +1,1 @@
+The inclusion of the coreference task in the Sixth and Seventh Message Understanding Conferences ( MUC-6 and MUC-7 ) gave a considerable impetus to the development of coreference resolution algorithms and systems , such as those described in Baldwin et al. ( 1995 ) , Gaizauskas and Humphreys ( 1996 ) , and Kameyama ( 1997 ) .

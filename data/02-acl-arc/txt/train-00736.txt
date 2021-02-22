@@ -1,0 +1,1 @@
+The problem with this approach is that any threshold is , to some extent , arbitrary , and there is evidence to suggest that , for some tasks , low counts are important ( Collins and Brooks , 1995 ) .

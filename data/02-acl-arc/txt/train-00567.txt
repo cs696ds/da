@@ -1,0 +1,1 @@
+Following Ratinov and Roth ( 2009 ) , we also compare the performance of our system with a system using features based on the Brown clusters of the word types in a document .

@@ -1,0 +1,1 @@
+In practical context , German , English , and Japanese HPSG-based grammars are developed and used in the Verbmobil project ( Kay et al. , 1994 ) .

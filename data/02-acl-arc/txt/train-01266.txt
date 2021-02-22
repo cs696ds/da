@@ -1,0 +1,1 @@
+Our own work ( Wang and Callison-Burch , 2011 ) extends the first idea to paraphrase fragment extraction on monolingual parallel and comparable corpora .

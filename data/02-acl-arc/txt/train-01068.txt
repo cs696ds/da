@@ -1,0 +1,1 @@
+Our approach to extract and classify social events builds on our previous work ( Agarwal and Rambow , 2010 ) , which in turn builds on work from the relation extraction community ( Nguyen et al. , 2009 ) .

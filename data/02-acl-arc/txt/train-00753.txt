@@ -1,0 +1,1 @@
+Two formalizations of lexical rules as used by HPSG linguists have been proposed , the meta-level lexical rules ( MLRs ; Calcagno 1995 ; Calcagno and Pollard 1995 ) and the .

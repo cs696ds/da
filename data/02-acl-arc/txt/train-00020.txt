@@ -1,0 +1,1 @@
+Collins & Duffy ( 2002 ) showed how the perceptron algorithm can be used to efficiently compute the best parse with DOP1 's subtrees , reporting a 5.1 % relative reduction in error rate over the model in Collins ( 1999 ) on the WSJ .

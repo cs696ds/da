@@ -1,0 +1,1 @@
+In addition to the model based upon a dictionary of stems and words , we also experimented with models based upon character n-grams , similar to those used for Chinese segmentation ( Sproat et al. , 1996 ) .

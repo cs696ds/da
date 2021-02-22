@@ -1,0 +1,1 @@
+These types of features result in an improvement in both the mention detection and coreference resolution performance , as shown through experiments on the ACE 2004 Arabic data .

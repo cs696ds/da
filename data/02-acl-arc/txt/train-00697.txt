@@ -1,0 +1,1 @@
+Other representations use the link structure ( Malin , 2005 ) or generate graph representations of the extracted features ( Kalashnikov et al. , 2007 ) .

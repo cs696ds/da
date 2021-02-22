@@ -1,0 +1,1 @@
+Their kernel is also very time consuming and in their more general sparse setting it requires O ( mn3 ) time and O ( mn2 ) space , where m and n are the number of nodes of the two trees ( m > = n ) ( Zelenko et al. , 2003 ) .

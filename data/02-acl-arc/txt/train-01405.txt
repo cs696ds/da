@@ -1,0 +1,1 @@
+As in ( Lee et al. , 2003 ) , we used unsupervised training data which is automatically segmented to discover previously unseen stems .

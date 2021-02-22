@@ -1,0 +1,1 @@
+For our Text modality , we use deWaC , a large German web corpus created by the WaCKy group ( Baroni et al. , 2009 ) containing approximately 1.7 B word tokens .

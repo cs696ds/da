@@ -1,0 +1,1 @@
+Using the bottom-up , dynamic programming technique ( see the appendix for details ) of computing inside probabilities ( Lari and Young 1990 ) , we can efficiently compute the probability of the sentence , P ( w | G ) .

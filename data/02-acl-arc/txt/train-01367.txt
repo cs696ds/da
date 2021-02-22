@@ -1,0 +1,1 @@
+include decision tree learning and Bayesian learning , nearest neighbor learning , and artificial neural networks , early such works may be found in ( Lewis and Ringnette , 1994 ) , ( Creecy and Masand , 1992 ) and ( Wiene and Pedersen , 1995 ) , respectively .

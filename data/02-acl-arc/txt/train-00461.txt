@@ -1,0 +1,1 @@
+Another line of research approaches grounded language knowledge by augmenting distributional approaches of word meaning with perceptual information ( Andrews et al. , 2009 ; Steyvers , 2010 ; Feng and Lapata , 2010b ; Bruni et al. , 2011 ; Silberer and Lapata , 2012 ; Johns and Jones , 2012 ; Bruni et al. , 2012a ; Bruni et al. , 2012b ; Silberer et al. , 2013 ) .

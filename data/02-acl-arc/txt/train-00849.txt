@@ -1,0 +1,1 @@
+We prepare the training data by splitting compounds in two steps , following the technique of Fritzinger and Fraser ( 2010 ) .

@@ -1,0 +1,1 @@
+The last point may be seen better if we look at some differences between our system and KRYPTON , which also distinguishes between an object theory and background knowledge ( cfXXX Brachman et al. 1985 ) .

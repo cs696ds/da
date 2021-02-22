@@ -1,0 +1,1 @@
+First , it has been noted that in many natural language applications it is sufficient to use shallow parsing information ; information such as noun phrases ( NPs ) and other syntactic sequences have been found useful in many large-scale language processing applications including information extraction and text summarization ( Grishman , 1995 ; Appelt et al. , 1993 ) .

@@ -1,0 +1,1 @@
+Some previous works ( Bannard and Callison-Burch , 2005 ; Zhao et al. , 2009 ; Kouylekov et al. , 2009 ) indicate , as main limitations of the mentioned resources , their limited coverage , their low precision , and the fact that they are mostly suitable to capture relations mainly between single words .

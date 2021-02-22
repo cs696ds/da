@@ -1,0 +1,1 @@
+There has been some controversy , at least for simple stemmers ( Lovins , 1968 ; Porter , 1980 ) , about the effectiveness of morphological analysis for document retrieval ( Harman , 1991 ; Krovetz , 1993 ; Hull , 1996 ) .

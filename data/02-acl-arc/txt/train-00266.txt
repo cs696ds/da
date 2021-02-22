@@ -1,0 +1,1 @@
+More recently , an alignment selection approach was proposed in ( Huang , 2009 ) , which computes confidence scores for each link and prunes the links from multiple sets of alignments using a hand-picked threshold .

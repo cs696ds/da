@@ -1,0 +1,1 @@
+A nonprobabilistic approach for DA labeling proposed by Samuel , Carberry , and Vijay-Shanker ( 1998 ) is transformation-based learning ( Brill 1993 ) .

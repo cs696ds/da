@@ -1,0 +1,1 @@
+They use a Bag of Visual Words ( BoVW ) model ( Lowe , 2004 ) to create a bimodal vocabulary describing documents .

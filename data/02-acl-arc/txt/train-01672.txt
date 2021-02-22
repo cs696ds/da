@@ -1,0 +1,1 @@
+Baseline language model : For P0 we used a trigram with modified kneser-ney smoothing [ Chen and Goodman , 1998 ] , which is still considered one of the best smoothing methods for n-gram language models .

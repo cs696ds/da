@@ -1,0 +1,1 @@
+Cohn and Blunsom ( 2009 ) adopted a Bayesian method to infer an STSG by exploring the space of alignments based on parse trees .

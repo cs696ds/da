@@ -1,0 +1,1 @@
+As an alternative , we rely on PubMed to retrieve an initial set of hits that we then postprocess in greater detail -- this is the standard pipeline architecture commonly employed in other question-answering systems ( Voorhees and Tice 1999 ; Hirschman and Gaizauskas 2001 ) .

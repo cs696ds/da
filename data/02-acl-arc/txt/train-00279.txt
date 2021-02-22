@@ -1,0 +1,1 @@
+We use the structures previously used by Nguyen et al. ( 2009 ) , and propose one new structure .

@@ -1,0 +1,1 @@
+( 4 ) NE : We use BBN 's IdentiFinder ( Bikel et al. , 1999 ) , a MUC-style NE recognizer to determine the NE type of NPZ .

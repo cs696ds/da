@@ -1,0 +1,1 @@
+Per-state joint normalization ( Eisner , 2001b , Â§ 8.2 ) is similar but drops the dependence on a .

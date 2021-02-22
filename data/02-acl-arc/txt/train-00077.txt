@@ -1,0 +1,1 @@
+Och and Ney ( 2002 ) introduced the log-linear model for statistical machine translation ( SMT ) , in which translation is considered as the following optimization problem :

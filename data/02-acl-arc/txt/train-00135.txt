@@ -1,0 +1,1 @@
+For the cases where retrieval took place , we used F-score ( van Rijsbergen 1979 ; Salton and McGill 1983 ) to determine the similarity between the response from the top-ranked document and the real response ( the formulas for F-score and its contributing factors , recall and precision , appear in Section 4.2 ) .

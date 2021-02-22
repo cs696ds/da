@@ -1,0 +1,1 @@
+The elimination of redundant nondeterminism is based on Unfold/Fold transformation techniques ( Tamaki and Sato 1984 ) .29 The unfolding transformation is also referred to as partial execution , for example , by Pereira and Shieber ( 1987 ) .

@@ -1,0 +1,1 @@
+We found the same number using our previous approach ( Wang and Callison-Burch , 2011 ) , which is roughly equivalent to our core module .

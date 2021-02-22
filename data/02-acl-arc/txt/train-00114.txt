@@ -1,0 +1,1 @@
+This approach is taken , for example , in LKB ( Copestake 1992 ) where lexical rules are introduced on a par with phrase structure rules and the parser makes no distinction between lexical and nonlexical rules ( Copestake 1993 , 31 ) .

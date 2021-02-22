@@ -1,0 +1,1 @@
+Soricut and Brill ( 2006 ) compared a predictive approach ( statistical translation ) , a retrieval approach based on a language-model , and a hybrid approach which combines statistical chunking and traditional retrieval .

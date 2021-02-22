@@ -1,0 +1,1 @@
+The powerful mechanism of lexical rules ( Carpenter 1991 ) has been used in many natural language processing systems .

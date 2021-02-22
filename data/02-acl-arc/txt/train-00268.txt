@@ -1,0 +1,1 @@
+A variety of statistical methods were proposed over the recent years for learning to produce a full parse of free-text sentences ( e.g. , Bod ( 1992 ) , Magerman ( 1995 ) , Collins ( 1997 ) , Ratnaparkhi ( 1997 ) , and Sekine ( 1998 ) ) .

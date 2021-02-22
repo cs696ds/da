@@ -1,0 +1,1 @@
+A common way to combine different models consists of selecting the model that is most confident regarding its decision ( Burke 2002 ) .

@@ -1,0 +1,1 @@
+Sridhar et al. ( 2009 ) obtain promising results in dialogue act tagging of the Switchboard-DAMSL corpus using lexical , syntactic and prosodic cues , while Gravano and Hirschberg ( 2009 ) examine the relation between particular acoustic and prosodic turn-yielding cues and turn taking in a large corpus of task-oriented dialogues .

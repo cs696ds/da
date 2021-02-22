@@ -1,0 +1,1 @@
+For example , 10 million words of the American National Corpus ( Ide et al. , 2002 ) will have manually corrected POS tags , a tenfold increase over the Penn Treebank ( Marcus et al. , 1993 ) , currently used for training POS taggers .

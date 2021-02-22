@@ -1,0 +1,1 @@
+Bruni et al. ( 2012a ) show how a BoVW model may be easily combined with a distributional vector space model of language using only vector concatenation .

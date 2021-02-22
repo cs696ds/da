@@ -1,0 +1,1 @@
+Similarly , the notion of R + M-abduction is spiritually related to the `` abductive inference '' of Reggia ( 1985 ) , the `` diagnosis from first principles '' of Reiter ( 1987 ) , `` explainability '' of Poole ( 1988 ) , and the subset principle of Berwick ( 1986 ) .

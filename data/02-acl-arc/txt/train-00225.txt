@@ -1,0 +1,1 @@
+We have noted that many of these desiderata make complex question answering quite similar to multi-document summarization ( Lin and Demner-Fushman 2005b ) , but these features are also beyond the capabilities of current summarization systems .

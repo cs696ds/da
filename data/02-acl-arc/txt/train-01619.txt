@@ -1,0 +1,1 @@
+Following Lekakos and Giaglis ( 2007 ) , one approach for achieving this objective consists of applying supervised learning , where a winning method is selected for each case in the training set , all the training cases are labeled accordingly , and then the system is trained to predict a winner for unseen cases .

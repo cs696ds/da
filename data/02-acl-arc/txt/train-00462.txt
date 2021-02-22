@@ -1,0 +1,1 @@
+14We parse each sentence with the Collins parser ( Collins , 1999 ) .

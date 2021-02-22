@@ -1,0 +1,1 @@
+The semantic categories of verbs and other words are extracted from the Semantic Knowledge-base of Contemporary Chinese ( Wang et al. 2003 ) .

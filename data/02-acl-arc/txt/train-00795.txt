@@ -1,0 +1,1 @@
+Based on this assumption , the problem of identifying mention heads is a sequential phrase identification problem , and we choose to employ the BILOU-representation as it has advantages over traditional BIO-representation , as shown , e.g. in Ratinov and Roth ( 2009 ) .

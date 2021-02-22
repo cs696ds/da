@@ -1,0 +1,1 @@
+This process produces a hierarchical clustering of the word types in the corpus , and these clusterings have been found useful in many applications ( Ratinov and Roth , 2009 ; Koo et al. , 2008 ; Miller et al. , 2004 ) .

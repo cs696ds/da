@@ -1,0 +1,1 @@
+To address this issue , we use a version of the PATB3 training and dev sets manually annotated with functional gender , number , and rationality ( Alkuhlani and Habash 2011 ) .18 This is the first resource providing all three features ( ElixirFm only provides functional number , and to some extent functional gender ) .

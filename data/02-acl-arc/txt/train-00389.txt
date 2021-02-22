@@ -1,0 +1,1 @@
+The feature of head word trigger which we apply to the log-linear model is motivated by the trigger-based approach ( Hasan and Ney , 2009 ) .

@@ -1,0 +1,1 @@
+For the evaluation of the results we use the BLEU score ( Papineni et al. , 2001 ) .

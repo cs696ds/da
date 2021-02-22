@@ -1,0 +1,1 @@
+Lee et al. ( 2012 ) model entity coreference and event coreference jointly ; Durrett and Klein ( 2014 ) consider joint coreference and entity-linking .

@@ -1,0 +1,1 @@
+The third approach to cross-lingual retrieval is to map queries and documents to some intermediate representation , e.g latent semantic indexing ( LSI ) ( Littman et al , 1998 ) , or the General Vector space model ( GVSM ) , ( Carbonell et al , 1997 ) .

@@ -1,0 +1,1 @@
+The one-sided t-test ( Hull , 1993 ) at significance level 0.05 indicated that the improvement on Trec5C is not statistically significant .

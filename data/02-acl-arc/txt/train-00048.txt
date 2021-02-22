@@ -1,0 +1,1 @@
+For example , Gay et al. ( 2005 ) experimented with abstracts and full article texts in the task of automatically generating index term recommendations and discovered that using full article texts yields at most a 7.4 % improvement in F-score .

@@ -1,0 +1,1 @@
+Differently , Cohn and Blunsom ( 2009 ) designed a sampler to infer an STSG by fixing the tree structure and exploring the space of alignment .

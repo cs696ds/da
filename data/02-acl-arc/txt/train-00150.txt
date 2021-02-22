@@ -1,0 +1,1 @@
+Compared to the reranking technique in Collins ( 2000 ) , who obtained an LP of 89.9 % and an LR of 89.6 % , our results show a 9 % relative error rate reduction .

@@ -1,0 +1,1 @@
+WIT features an incremental understanding method ( Nakano et al. , 1999b ) that makes it possible to build a robust and real-time system .

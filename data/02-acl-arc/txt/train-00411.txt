@@ -1,0 +1,1 @@
+We use two measures from Information Retrieval to determine the quality of an automatically generated response : precision and F-score ( van Rijsbergen 1979 ; Salton and McGill 1983 ) .

@@ -1,0 +1,1 @@
+It helps them build complex knowledge bases by combining components : events , entities and modifiers ( Clark and Porter , 1997 ) .

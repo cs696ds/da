@@ -1,0 +1,1 @@
+For compound splitting , we follow Fritzinger and Fraser ( 2010 ) , using linguistic knowledge encoded in a rule-based morphological analyser and then selecting the best analysis based on the geometric mean of word part frequencies .

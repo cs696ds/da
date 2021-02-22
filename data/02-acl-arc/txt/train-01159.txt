@@ -1,0 +1,1 @@
+To combine the phrasal matching scores obtained at each n-gram level , and optimize their relative weights , we trained a Support Vector Machine classifier , SVMlight ( Joachims , 1999 ) , using each score as a feature .

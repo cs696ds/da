@@ -1,0 +1,1 @@
+We tested the classification of verbs into semantic types using a verb list of 139 pre-classified items drawn from the lists published in Rosenbaum ( 1967 ) and Stockwell et al. ( 1973 ) .

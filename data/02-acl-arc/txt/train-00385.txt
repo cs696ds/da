@@ -1,0 +1,1 @@
+In knowledge-lean approaches , coreference resolvers employ only morpho-syntactic cues as knowledge sources in the resolution process ( e.g. , Mitkov ( 1998 ) , Tetreault ( 2001 ) ) .

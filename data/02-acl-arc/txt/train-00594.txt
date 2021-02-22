@@ -1,0 +1,1 @@
+Details of the top performing heuristics of COCKTAIL were reported in ( Harabagiu and Maiorano , 1999 ) .

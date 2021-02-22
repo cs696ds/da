@@ -1,0 +1,1 @@
+Encouraged by the success of chunk-based verb reordering lattices on ArabicEnglish ( Bisazza and Federico , 2010 ) , we tried to adapt the same approach to the German-English language pair .

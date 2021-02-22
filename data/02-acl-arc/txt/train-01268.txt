@@ -1,0 +1,1 @@
+Current state-of-the-art statistical parsers ( Collins 1999 ; Charniak 2000 ) are all trained on large annotated corpora such as the Penn Treebank ( Marcus , Santorini , and Marcinkiewicz 1993 ) .

@@ -1,0 +1,1 @@
+The contextual interpreter then uses a reference resolution approach similar to Byron ( 2002 ) , and an ontology mapping mechanism ( Dzikovska et al. , 2008a ) to produce a domain-specific semantic representation of the student 's output .

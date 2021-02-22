@@ -1,0 +1,1 @@
+The standard way to handle this problem is to handcraft a finite set of features which provides a sufficient summary of the unbounded history ( Ratnaparkhi , 1999 ; Collins , 1999 ; Charniak , 2000 ) .

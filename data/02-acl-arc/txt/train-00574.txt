@@ -1,0 +1,1 @@
+This choice is motivated by an observation we made previously ( Hasan and Ng , 2013a ) : since each post in a sequence is a reply to the preceding post , we could exploit their dependencies by determining their stance labels together .3 As our sequence learner , we employ a maximum entropy Markov model ( MEMM ) ( McCallum et al. , 2000 ) .

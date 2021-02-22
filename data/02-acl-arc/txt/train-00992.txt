@@ -1,0 +1,1 @@
+In our experiment , we annotated a high number of pairs similar in size to the test sets by Finkelstein ( 2002 ) and Gurevych ( 2006 ) .

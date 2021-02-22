@@ -1,0 +1,1 @@
+Position , subcat frame , phrase type , first word , last word , subcat frame + , predicate , path , head word and its POS , predicate + head word , predicate + phrase type , path to BA and BEI , verb class 3 , verb class + head word , verb class + phrase type , from Xue ( 2008 ) .

@@ -1,0 +1,1 @@
+Other approaches use less deep linguistic resources ( e.g. , POS-tags Stymne ( 2008 ) ) or are ( almost ) knowledge-free ( e.g. , Koehn and Knight ( 2003 ) ) .

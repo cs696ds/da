@@ -1,0 +1,1 @@
+The system is in the form of an agenda-driven chart-based parser whose foundation is similar to previous formalizations of Chomsky 's Minimalist Program ( Stabler , 1997 ; Harkema , 2000 ; Niyogi , 2001 ) .

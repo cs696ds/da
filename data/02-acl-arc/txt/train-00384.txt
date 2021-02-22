@@ -1,0 +1,1 @@
+Another approach for partial parsing was presented by Skut and Brants ( 1998 ) .

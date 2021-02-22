@@ -1,0 +1,1 @@
+5An alternative strategy to step ( 4 ) is to perform a database lookup based on the ambiguous query and summarize the results ( Litman et al. , 1998 ) , which we leave for future work .

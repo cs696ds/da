@@ -1,0 +1,1 @@
+We use the Columbia Arabic Treebank ( CATiB ) ( Habash and Roth 2009 ) .

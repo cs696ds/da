@@ -1,0 +1,1 @@
+Mani and MacMillan ( 1995 ) pointed out that little attention had been paid in the named-entity recognition field to the discourse properties of proper names .

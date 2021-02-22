@@ -1,0 +1,1 @@
+6The analysis is reminiscent of the treatment of coordination in the Collins parser ( Collins , 1999 ) .

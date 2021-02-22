@@ -1,0 +1,1 @@
+9 We only use the minimal GHKM rules ( Galley et al. , 2004 ) here to reduce the complexity of the sampler .

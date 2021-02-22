@@ -1,0 +1,1 @@
+These tools use a highly optimised GIS implementation and provide sophisticated Gaussian smoothing ( Chen and Rosenfeld , 1999 ) .

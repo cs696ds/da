@@ -1,0 +1,1 @@
+Features were discovered from the actual sentence plan trees that the SPG generated through the feature derivation process described below , in a manner similar to that used by Collins ( 2000 ) .

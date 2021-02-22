@@ -1,0 +1,1 @@
+For instance , ( Lin and Pantel , 2001 ) acquire two-argument templates ( inference rules ) from corpora using an extended version of the distributional analysis in which paths in dependency trees that have similar arguments are taken to be close in meaning .

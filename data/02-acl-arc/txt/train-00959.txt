@@ -1,0 +1,1 @@
+The OntoNotes-5 .0 dataset , which is released for the CoNLL-2012 Shared Task ( Pradhan et al. , 2012 ) , contains 3,145 annotated documents .

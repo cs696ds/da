@@ -1,0 +1,1 @@
+Secondly , we need to investigate techniques for identifying identical documents , virtually identical documents and highly repetitive documents , such as those pioneered by Fletcher ( 2004b ) and shingling techniques described by Chakrabarti ( 2002 ) .

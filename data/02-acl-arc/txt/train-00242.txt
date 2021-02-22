@@ -1,0 +1,1 @@
+We performed translation experiments with an implementation of the IBM-4 translation model ( Brown et al. , 1993 ) .

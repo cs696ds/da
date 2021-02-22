@@ -1,0 +1,1 @@
+Baroni and Bernardini ( 2004 ) built a corpus by iteratively searching Google for a small set of seed terms .

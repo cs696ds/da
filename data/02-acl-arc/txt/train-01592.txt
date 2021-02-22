@@ -1,0 +1,1 @@
+Building on the work of Ruch et al. ( 2003 ) in the same domain , we present a generative approach that attempts to directly model the discourse structure of MEDLINE abstracts using Hidden Markov Models ( HMMs ) ; cfXXX ( Barzilay and Lee , 2004 ) .

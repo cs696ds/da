@@ -1,0 +1,1 @@
+The best performance on the Brown corpus , a 0.2 % error rate , was reported by Riley ( 1989 ) , who trained a decision tree classifier on a 25-million-word corpus .

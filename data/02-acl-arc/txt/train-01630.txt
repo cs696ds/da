@@ -1,0 +1,1 @@
+Shaw and Hatzivassiloglou ( 1999 ) propose to generalize the direct evidence method so that it can apply to unseen pairs of adjectives by computing the transitive closure of the ordering relation .

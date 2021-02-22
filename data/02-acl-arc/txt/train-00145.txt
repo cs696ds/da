@@ -1,0 +1,1 @@
+Over the past decade , researchers at IBM have developed a series of increasingly sophisticated statistical models for machine translation ( Brown et al. , 1988 ; Brown et al. , 1990 ; Brown et al. , 1993a ) .

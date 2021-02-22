@@ -1,0 +1,1 @@
+Finally , we experiment with a method for combining phrase tables proposed in ( Nakov and Ng , 2009 ; Nakov and Ng , 2012 ) .

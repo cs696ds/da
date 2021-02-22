@@ -1,0 +1,1 @@
+A good study comparing document categorization algorithms can be found in ( Yang and Liu , 1999 ) .

@@ -1,0 +1,1 @@
+With the exception of ( Fung , 1995b ) , previous methods for automatically constructing statistical translation models begin by looking at word cooccurrence frequencies in bitexts ( Gale & Church , 1991 ; Kumano & Hirakawa , 1994 ; Fung , 1995a ; Melamed , 1995 ) .

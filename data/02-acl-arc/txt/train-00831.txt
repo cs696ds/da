@@ -1,0 +1,1 @@
+A common computational treatment of lexical rules adopted , for example , in the ALE system ( Carpenter and Penn 1994 ) consists of computing the transitive closure of the base lexical entries under lexical rule application at compile-time .

@@ -1,0 +1,1 @@
+The reader is referred to Meurers and Minnen ( 1996 ) for a more detailed discussion of our use of constraint propagation .32 We illustrate the result of constraint propagation with our example grammar .

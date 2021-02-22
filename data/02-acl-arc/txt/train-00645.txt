@@ -1,0 +1,1 @@
+In our prior work ( Xiong and Litman , 2011 ) , we examined whether techniques used for predicting the helpfulness of product reviews ( Kim et al. , 2006 ) could be tailored to our peer-review domain , where the definition of helpfulness is largely influenced by the educational context of peer review .

@@ -1,0 +1,1 @@
+Our results are lower than those of full parsers , e.g. , Collins ( 1997 ) as might be expected since much less structural data , and no lexical data are being used .

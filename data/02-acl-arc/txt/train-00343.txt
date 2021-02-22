@@ -1,0 +1,1 @@
+The search algorithm is the standard Viterbi search ( Viterbi 1967 ) , except that the match involves a network-to-network alignment problem rather than sequence-to-sequence .

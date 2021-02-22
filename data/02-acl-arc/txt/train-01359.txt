@@ -1,0 +1,1 @@
+Accuracy is not the best measure to assess segmentation quality , therefore we also conducted experiments using the WindowDiff measure as proposed by Pevzner and Hearst ( 2002 ) .

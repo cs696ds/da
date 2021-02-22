@@ -1,0 +1,1 @@
+In the field of machine learning research , incremental training has been employed in the work ( Cauwenberghs and Poggio , 2001 ; Shilton et al. , 2005 ) , but there is little work for tuning parameters of statistical machine translation .

@@ -1,0 +1,1 @@
+They also proposed two major categories of meta-learning approaches for recommender systems , merging and ensemble , each subdivided into the more specific subclasses suggested by Burke ( 2002 ) as follows .

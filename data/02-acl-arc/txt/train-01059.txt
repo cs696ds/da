@@ -1,0 +1,1 @@
+Marinov and Hemming ( 2004 ) present preliminary work on the automatic extraction of subcategorization frames for Bulgarian from the BulTreeBank ( Simov , Popova , and Osenova 2002 ) .

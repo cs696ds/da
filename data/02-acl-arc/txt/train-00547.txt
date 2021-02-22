@@ -1,0 +1,1 @@
+Though we could have used a further downstream measure like BLEU , METEOR has also been shown to directly correlate with translation quality ( Banerjee and Lavie , 2005 ) and is simpler to measure .

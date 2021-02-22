@@ -1,0 +1,1 @@
+Tbahriti et al. ( 2006 ) have demonstrated that differential weighting of automatically labeled sections can lead to improved retrieval performance .

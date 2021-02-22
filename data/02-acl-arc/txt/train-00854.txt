@@ -1,0 +1,1 @@
+The language chosen for semantic representation is a flat semantics along the line of ( Bos , 1995 ; Copestake et al. , 1999 ; Copestake et al. , 2001 ) .

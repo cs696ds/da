@@ -1,0 +1,1 @@
+Pierce and Cardie ( 2001 ) have shown , in the context of base noun identification , that combining sample selection and cotraining can be an effective learning framework for large-scale training .

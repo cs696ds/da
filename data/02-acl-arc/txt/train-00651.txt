@@ -1,0 +1,1 @@
+On the WSJ corpus our system performed slightly better than the combination of the Alembic and SATZ systems described in Palmer and Hearst ( 1997 ) ( 0.44 % vs. 0.5 % error rate ) .

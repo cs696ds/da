@@ -1,0 +1,1 @@
+Finally , feedback expressions ( head nods and shakes ) are successfully predicted from speech , prosody and eye gaze in interaction with Embodied Communication Agents as well as human communication ( Fujie et al. , 2004 ; Morency et al. , 2005 ; Morency et al. , 2007 ; Morency et al. , 2009 ) .

@@ -1,0 +1,1 @@
+As such it resembles the parser of the grammar development system Attribute Language Engine ( ALE ) of ( Carpenter and Penn , 1994 ) .

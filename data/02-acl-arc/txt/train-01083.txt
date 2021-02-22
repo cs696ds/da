@@ -1,0 +1,1 @@
+As shown in ( Okanohara and Tsujii , 2007 ) , using this representation , a linear classifier can not distinguish sentences sampled from a trigram and real sentences .

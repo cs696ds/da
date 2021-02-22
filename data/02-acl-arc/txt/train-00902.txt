@@ -1,0 +1,1 @@
+For right-branching structures , the leftcorner ancestor is the parent , conditioning on which has been found to be beneficial ( Johnson , 1998 ) , as has conditioning on the left-corner child ( Roark and Johnson , 1999 ) .

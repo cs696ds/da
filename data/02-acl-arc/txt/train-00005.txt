@@ -1,0 +1,1 @@
+This is roughly an 11 % relative reduction in error rate over Charniak ( 2000 ) and Bods PCFG-reduction reported in Table 1 .

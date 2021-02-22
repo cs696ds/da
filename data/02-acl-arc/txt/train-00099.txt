@@ -1,0 +1,1 @@
+In a similar vein , Steyvers ( 2010 ) showed that a different feature-topic model improved predictions on a fill-in-the-blank task .

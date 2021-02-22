@@ -1,0 +1,1 @@
+like information extraction ( Yates and Etzioni , 2009 ) and textual entailment ( Berant et al. , 2010 ) .

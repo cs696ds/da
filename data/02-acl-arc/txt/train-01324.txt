@@ -1,0 +1,1 @@
+The Gsearch system ( Corley et al. , 2001 ) also selects sentences by syntactic criteria from large on-line text collections .

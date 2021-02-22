@@ -1,0 +1,1 @@
+Other studies on the value of disambiguation for cross-lingual IR include Hiemstra and de Jong , 1999 ; Hull , 1997 .

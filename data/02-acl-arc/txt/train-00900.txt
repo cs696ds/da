@@ -1,0 +1,1 @@
+Two applications that , like help-desk , deal with question -- answer pairs are : summarization of e-mail threads ( Dalli , Xia , and Wilks 2004 ; Shrestha and McKeown 2004 ) , and answer extraction in FAQs ( Frequently Asked Questions ) ( Berger and Mittal 2000 ;

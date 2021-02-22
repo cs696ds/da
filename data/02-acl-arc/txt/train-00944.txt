@@ -1,0 +1,1 @@
+Somers ( 1998 ) replicates the work of Fung and McKeown with different language pairs using the simpler metric of Levenshtein distance .

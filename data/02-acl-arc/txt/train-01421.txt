@@ -1,0 +1,1 @@
+We used a publicly available tagger ( Ratnaparkhi , 1996 ) to tag the words and then used these in the input to the system .

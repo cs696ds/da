@@ -1,0 +1,1 @@
+In a log-linear parameterization , for example , a prior that penalizes feature strengths far from 1 can be used to do feature selection and avoid overfitting ( Chen and Rosenfeld , 1999 ) .

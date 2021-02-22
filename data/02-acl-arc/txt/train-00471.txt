@@ -1,0 +1,1 @@
+The extraction procedure utilizes a head percolation table as introduced by Magerman ( 1995 ) in combination with a variation of Collins 's ( 1997 ) approach to the differentiation between complement and adjunct .

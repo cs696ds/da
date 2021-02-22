@@ -1,0 +1,1 @@
+For each co-occurring pair of word types u and v , these likelihoods are initially set proportional to their co-occurrence frequency ( â , v ) and inversely proportional to their marginal frequencies n ( u ) and n ( v ) 1 , following ( Dunning , 1993 ) 2 .

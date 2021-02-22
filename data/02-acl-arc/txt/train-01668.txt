@@ -1,0 +1,1 @@
+Nevertheless , Juola ( 1998 , page 23 ) observes that `` a slightly more general mapping , where two adjacent terminal symbols can be merged into a single lexical item ( for example , a word and its case-marking ) , can capture this sort of result quite handily . ''

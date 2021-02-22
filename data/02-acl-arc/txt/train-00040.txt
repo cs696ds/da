@@ -1,0 +1,1 @@
+in history-based models ( Black et al. , 1993 ) , the probability estimate for each derivation decision di is conditioned on the previous derivation decisions d1 , ... , d , _ 1 , which is called the derivation history at step i .

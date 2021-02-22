@@ -1,0 +1,1 @@
+She evaluates 3,000 German verbs with a token frequency between 10 and 2,000 against the Duden ( Dudenredaktion 2001 ) .

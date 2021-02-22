@@ -1,0 +1,1 @@
+A parsing experiment shows that an efficient HPSG parser with the obtained grammar achieved a significant speed-up against an existing LTAG parser ( Yoshinaga et al. , 2001 ) .

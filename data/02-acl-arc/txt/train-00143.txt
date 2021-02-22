@@ -1,0 +1,1 @@
+Many researchers use the GIZA + + software package ( Och and Ney 2003 ) as a black box , selecting IBM Model 4 as a compromise between alignment quality and efficiency .

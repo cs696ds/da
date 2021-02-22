@@ -1,0 +1,1 @@
+TNT refers to the HPSG parser ( Torisawa et al. , 2000 ) , C++ implementation of the two-phase parsing algorithm that performs filtering with a compiled CFG ( phase 1 ) and then executes feature unification ( phase 2 ) .

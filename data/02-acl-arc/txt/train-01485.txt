@@ -1,0 +1,1 @@
+A more subtle example is weighted FSAs that approximate PCFGs ( Nederhof , 2000 ; Mohri and Nederhof , 2001 ) , or to extend the idea , weighted FSTs that approximate joint or conditional synchronous PCFGs built for translation .

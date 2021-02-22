@@ -1,0 +1,1 @@
+Worst case , calculating the set corresponding with such a property , of the form size ( x ) = maxm , for example , involves sorting the distractors as to their size , which may amount to O ( n2d ) or O ( nd log nd ) calculations ( depending on the sorting algorithm : cfXXX [ Aho et al. 1983 ] Chapter 8 ) .

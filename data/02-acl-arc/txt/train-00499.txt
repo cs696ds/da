@@ -1,0 +1,1 @@
+This is mainly due to the fact that Arabic is a non-concatenative language ( Al-Shalabi and Evens , 1998 ) , and that the stem/infix obtained by suppression of infix and prefix add-ons is not the same for words derived from the same origin called the root .

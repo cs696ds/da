@@ -1,0 +1,1 @@
+Nugget F-score has been employed as a metric in the TREC question-answering track since 2003 , to evaluate so-called definition and `` other '' questions ( Voorhees 2003 ) .

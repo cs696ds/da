@@ -1,0 +1,1 @@
+Empirical evidence has been brought forward that inflectional and/or derivational stemmers augmented by dictionaries indeed perform substantially better than those without access to such lexical repositories ( Krovetz , 1993 ; Kraaij and Pohlmann , 1996 ; Tzoukermann et al. , 1997 ) .

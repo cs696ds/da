@@ -1,0 +1,1 @@
+We use a standard split of 268 training documents , 68 development documents , and 106 testing documents ( Culotta et al. , 2007 ; Bengtson and Roth , 2008 ) .

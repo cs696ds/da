@@ -1,0 +1,1 @@
+The framework represents a generalization of several predecessor NLG systems based on Meaning-Text Theory : FoG ( Kittredge and Polguere , 1991 ) , LFS ( Iordanskaja et al. , 1992 ) , and JOYCE ( Rambow and Korelsky , 1992 ) .

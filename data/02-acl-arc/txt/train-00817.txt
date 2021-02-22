@@ -1,0 +1,1 @@
+Following Andrews et al. ( 2009 ) , we measure association norm prediction as an average of percentile ranks .

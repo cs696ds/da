@@ -1,0 +1,1 @@
+The same annotation scheme as in our previous work on anger detection has been applied , see e.g. ( Schmitt et al. , 2009 ) .

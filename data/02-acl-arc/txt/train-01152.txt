@@ -1,0 +1,1 @@
+Using the GHKM algorithm ( Galley et al. 2004 ) , we can get two different STSG derivations from the two U-trees based on the fixed word alignment .

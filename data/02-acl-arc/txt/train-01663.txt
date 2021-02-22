@@ -1,0 +1,1 @@
+On small data sets all of the Bayesian estimators strongly outperform EM ( and , to a lesser extent , VB ) with respect to all of our evaluation measures , confirming the results reported in Goldwater and Griffiths ( 2007 ) .

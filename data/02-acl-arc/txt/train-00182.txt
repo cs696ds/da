@@ -1,0 +1,1 @@
+Such systems extract information from some types of syntactic units ( clauses in ( Fillmore and Atkins , 1998 ; Gildea and Jurafsky , 2002 ; Hull and Gomez , 1996 ) ; noun phrases in ( Hull and Gomez , 1996 ; Rosario et al. , 2002 ) ) .

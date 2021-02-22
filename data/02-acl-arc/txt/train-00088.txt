@@ -1,0 +1,1 @@
+The PERSIVAL project , the most comprehensive study of such techniques applied on medical texts to date , leverages patient records to generate personalized summaries in response to physicians ' queries ( McKeown , Elhadad , and Hatzivassiloglou 2003 ; Elhadad et al. 2005 ) .

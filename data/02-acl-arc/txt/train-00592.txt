@@ -1,0 +1,1 @@
+We train a 4-gram language model on the Xinhua portion of the English Gigaword corpus using the SRILM Toolkits ( Stolcke , 2002 ) with modified Kneser-Ney smoothing ( Chen and Goodman , 1998 ) .

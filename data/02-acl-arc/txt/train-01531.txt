@@ -1,0 +1,1 @@
+Due to this inherent ambiguity , manual annotations usually distinguish between sure correspondences for unambiguous translations , and possible , for ambiguous translations ( Och and Ney 2003 ) .

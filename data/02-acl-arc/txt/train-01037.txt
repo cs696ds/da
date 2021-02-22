@@ -1,0 +1,1 @@
+The principle of maximum entropy states that when one searches among probability distributions that model the observed data ( evidence ) , the preferred one is the one that maximizes the entropy ( a measure of the uncertainty of the model ) ( Berger et al. , 1996 ) .

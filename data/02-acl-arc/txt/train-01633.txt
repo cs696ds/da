@@ -1,0 +1,1 @@
+PR is closely related to the work of Mann and McCallum ( 2007 , 2008 ) , who concurrently developed the idea of using penalties based on posterior expectations of features to guide semi-supervised learning .

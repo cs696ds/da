@@ -1,0 +1,1 @@
+See Nederhof ( 1998 ) for a variant of this approximation that constructs finite transducers rather than finite automata .

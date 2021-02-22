@@ -1,0 +1,1 @@
+In most cases , the accuracy of parsers degrades when run on out-of-domain data ( Gildea , 2001 ; McClosky et al. , 2006 ; Blitzer et al. , 2006 ; Petrov et al. , 2010 ) .

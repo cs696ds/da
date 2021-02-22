@@ -1,0 +1,1 @@
+ones , DIRT ( Lin and Pantel , 2001 ) , VerbOcean ( Chklovski and Pantel , 2004 ) , FrameNet ( Baker et al. , 1998 ) , and Wikipedia ( Mehdad et al. , 2010 ; Kouylekov et al. , 2009 ) .

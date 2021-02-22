@@ -1,0 +1,1 @@
+Manually defined heuristics are used to automatically annotate each tree in the treebank with partially specified HPSG derivation trees : Head/argument/modifier distinctions are made for each node in the tree based on Magerman ( 1994 ) and Collins ( 1997 ) ;

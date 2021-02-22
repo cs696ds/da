@@ -1,0 +1,1 @@
+Inspired by ( Klein and Manning , 2003 ) , we split one phrase type into several subsymbols , which contain category information of current constituent 's parent .

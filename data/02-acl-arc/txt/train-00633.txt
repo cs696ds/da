@@ -1,0 +1,1 @@
+Latent variables we wish to consider are an increased number of word classes ; more flexible regions -- see Petrov et al. ( 2007 ) on learning a state transition diagram for acoustic regions in phone recognition -- and phonological features and syllable boundaries .

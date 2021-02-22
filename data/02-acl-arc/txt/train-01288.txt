@@ -1,0 +1,1 @@
+For example , Radzinsky ( 1991 ) proves that Chinese numerals such as wu zhao zhao zhao zhao zhao wu zhao zhao zhao zhao wu zhao zhao zhao wu zhao zhao wu zhao , for the number 5000000000000000005000000000000005000000000005000000005000 , are not context-free , which implies that Chinese is not a context-free language and thus might parse in exponential worst-case time .

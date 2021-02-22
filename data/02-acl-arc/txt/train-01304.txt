@@ -1,0 +1,1 @@
+Lebart and Rajman ( 2000 ) argue for application-specific evaluation of similarity measures , because measures are always used for some task .

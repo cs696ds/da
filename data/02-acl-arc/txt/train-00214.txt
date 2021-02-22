@@ -1,0 +1,1 @@
+As already mentioned in the literature , see for example ( Lapata and Lascarides , 2003 ) , knowledge about implicit predicates could be potentially useful for a variety of NLP tasks such as language generation , information extraction , question answering or machine translation .

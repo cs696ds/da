@@ -1,0 +1,1 @@
+More recently , ( Sebastiani , 2002 ) has performed a good survey of document categorization ; recent works can also be found in ( Joachims , 2002 ) , ( Crammer and Singer , 2003 ) , and ( Lewis et al. , 2004 ) .

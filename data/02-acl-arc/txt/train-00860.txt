@@ -1,0 +1,1 @@
+In Charniak ( 1996 ) and Krotov et al. ( 1998 ) , it was observed that treebank grammars ( CFGs extracted from treebanks ) are very large and grow with the size of the treebank .

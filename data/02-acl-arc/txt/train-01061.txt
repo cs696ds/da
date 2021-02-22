@@ -1,0 +1,1 @@
+ASARES is based on a Machine Learning technique , Inductive Logic Programming ( ILP ) ( Muggleton and De-Raedt , 1994 ) , which infers general morpho-syntactic patterns from a set of examples ( this set is noted E + hereafter ) and counter-examples ( E â ) of the elements one

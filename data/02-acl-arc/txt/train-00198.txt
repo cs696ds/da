@@ -1,0 +1,1 @@
+Here 11 is an optimization precision , oc is a step size chosen with the strong Wolfe 's rule ( Nocedal and Wright 1999 ) .

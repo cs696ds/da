@@ -1,0 +1,1 @@
+In addition , we consider several types of lexical features ( LexF ) inspired by previous work on agreement and disagreement ( Galley et al. , 2004 ; Misra and Walker , 2013 ) .

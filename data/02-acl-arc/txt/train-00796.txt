@@ -1,0 +1,1 @@
+TF is given by TFD , t , and it denotes frequency of term t in document D. IDF is given by IDFt = log ( N/dft ) , where N is the number of documents in the collection , and dft is the number of documents containing the term t. ( Salton and Yang , 1973 ) proposed the combination of TF and IDF as weighting schemes , and it has been shown that their product gave better performance .

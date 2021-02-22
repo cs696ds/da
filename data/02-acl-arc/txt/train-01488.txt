@@ -1,0 +1,1 @@
+This choice is inspired by recent work on learning syntactic categories ( Yatbaz et al. , 2012 ) , which successfully utilized such language models to represent word window contexts of target words .

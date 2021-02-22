@@ -1,0 +1,1 @@
+The values of a vector correspond to the presence or absence of each ( lemmatized ) corpus word in the document in question ( after removing stop-words and words with very low frequency ) .4 The predictive model is a Decision Graph ( Oliver 1993 ) , which , like Snob , is based on the MML principle .

@@ -1,0 +1,1 @@
+The choice of learning algorithm for each classifier is motivated by earlier findings showing that discriminative classifiers outperform other machine-learning methods on error correction tasks ( Rozovskaya and Roth , 2011 ) .

@@ -1,0 +1,1 @@
+The statistical significance test is performed by the re-sampling approach ( Koehn , 2004 ) .

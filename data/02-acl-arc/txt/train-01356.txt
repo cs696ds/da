@@ -1,0 +1,1 @@
+Its significance is reflected both in the growing interest in annotation software for word sense tagging ( Edmonds and Kilgarriff , 2002 ) and in the long-standing use of part-of-speech taggers , parsers and morphological analysers for data from English and many other languages .

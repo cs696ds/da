@@ -1,0 +1,1 @@
+Because each rule r consists of a target tree fragment frag and a source string str in the model , we follow Cohn and Blunsom ( 2009 ) and decompose the prior probability P0 ( r | N ) into two factors as follows :

@@ -1,0 +1,1 @@
+For HMMs ( footnote 11 ) , Ti is the familiar trellis , and we would like this computation of ti to reduce to the forwardbackward algorithm ( Baum , 1972 ) .

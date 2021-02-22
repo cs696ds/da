@@ -1,0 +1,1 @@
+Our baseline coreference system uses the C4 .5 decision tree learner ( Quinlan , 1993 ) to acquire a classifier on the training texts for determining whether two NPs are coreferent .

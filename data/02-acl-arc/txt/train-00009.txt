@@ -1,0 +1,1 @@
+The formalization of DLRs provided by Meurers ( 1995 ) defines a formal lexical rule specification language and provides a semantics for that language in two steps : A rewrite system enriches the lexical rule specification into a fully explicit description of the kind shown in Figure 1 .

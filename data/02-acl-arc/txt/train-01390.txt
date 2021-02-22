@@ -1,0 +1,1 @@
+In addition to headwords , dictionary search through the pronunciation field is available ; Carter ( 1987 ) has merged information from the pronunciation and hyphenation fields , creating an enhanced phonological representation which allows access to entries by broad phonetic class and syllable structure ( Huttenlocher and Zue , 1983 ) .

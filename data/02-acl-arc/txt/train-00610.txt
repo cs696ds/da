@@ -1,0 +1,1 @@
+Following Ruch et al. ( 2003 ) and Barzilay and Lee ( 2004 ) , we employed Hidden Markov Models to model the discourse structure of MEDLINE abstracts .

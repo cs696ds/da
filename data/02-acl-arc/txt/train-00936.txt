@@ -1,0 +1,1 @@
+The more conservative approach is to try to integrate existing statistical disambiguation schemes for QLFs , either individually or in a `` packed '' structure ( Alshawi and Carter 1994 ) , with the resolution process as described here .

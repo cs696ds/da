@@ -1,0 +1,1 @@
+To retrieve translation examples for a test sentence , ( Watanabe and Sumita , 2003 ) defined a metric based on the combination of edit distance and TF-IDF ( Manning and Sch Â¨ utze , 1999 ) as follows :

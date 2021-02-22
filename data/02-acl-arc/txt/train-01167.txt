@@ -1,0 +1,1 @@
+In this paper , we use the Constrained Latent Left-Linking Model ( CL3M ) described in Chang et al. ( 2013 ) in our experiments .

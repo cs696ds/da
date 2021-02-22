@@ -1,0 +1,1 @@
+This paper describes an approach for sharing resources in various grammar formalisms such as Feature-Based Lexicalized Tree Adjoining Grammar ( FB-LTAG1 ) ( Vijay-Shanker , 1987 ; Vijay-Shanker and Joshi , 1988 ) and Head-Driven Phrase Structure Grammar ( HPSG ) ( Pollard and Sag , 1994 ) by a method of grammar conversion .

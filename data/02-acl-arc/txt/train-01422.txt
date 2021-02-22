@@ -1,0 +1,1 @@
+Some works abstract perception via the usage of symbolic logic representations ( Chen et al. , 2010 ; Chen and Mooney , 2011 ; Matuszek et al. , 2012 ; Artzi and Zettlemoyer , 2013 ) , while others choose to employ concepts elicited from psycholinguistic and cognition studies .

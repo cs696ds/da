@@ -1,0 +1,1 @@
+For the full parser , we use the one developed by Michael Collins ( Collins , 1996 ; Collins , 1997 ) -- one of the most accurate full parsers around .

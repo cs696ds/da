@@ -1,0 +1,1 @@
+ECM-F is an entity-constrained mention Fmeasure ( cfXXX ( Luo et al. , 2004 ) for how ECM-F is computed ) , and ACE-Value is the official ACE evaluation metric .

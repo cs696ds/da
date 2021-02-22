@@ -1,0 +1,1 @@
+Most coreference resolution work simply mentions it in passing as a module in the pipelined system ( Chang et al. , 2013 ; Durrett and Klein , 2013 ; Lee et al. , 2011 ; Bj Â¨ orkelund and Kuhn , 2014 ) .

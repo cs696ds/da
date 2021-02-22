@@ -1,0 +1,1 @@
+This conception of lexical rules thus can be understood as underlying the computational approach that treats lexical rules as unary phrase structure rules as , for example , adopted in the LKB system ( Copestake 1992 ) .

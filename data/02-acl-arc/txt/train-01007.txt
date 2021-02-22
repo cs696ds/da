@@ -1,0 +1,1 @@
+This alignment is done on the basis of both length ( Gale and Church [ 7 ] ) and a notion of cognateness ( Simard [ 16 ] ) .

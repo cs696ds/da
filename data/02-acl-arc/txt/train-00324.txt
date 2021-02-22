@@ -1,0 +1,1 @@
+Then , we binarize the English parse trees using the head binarization approach ( Wang et al. , 2007 ) and use the resulting binary parse trees to build another s2t system .

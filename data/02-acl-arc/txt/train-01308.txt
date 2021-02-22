@@ -1,0 +1,1 @@
+This method can be generalized , inspired by Stolcke and Segal ( 1994 ) , who derive N-gram probabilities from stochastic context-free grammars .

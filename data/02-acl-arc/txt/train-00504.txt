@@ -1,0 +1,1 @@
+5 Significant bigrams are obtained using the n-gram statistics package NSP ( Banerjee and Pedersen 2003 ) , which offers statistical tests to decide whether to accept or reject the null hypothesis regarding a bigram ( that it is not a collocation ) .

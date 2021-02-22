@@ -1,0 +1,1 @@
+Samuelsson and Voutilainen ( 1997 ) report excellent part-of-speech tagging results using a handcrafted approach that is close to OT .3 More speculatively , imagine an OT grammar for stylistic revision of parsed sentences .

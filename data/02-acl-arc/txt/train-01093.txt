@@ -1,0 +1,1 @@
+This article represents an extension of our previous work on unsupervised event coreference resolution ( Bejan et al. 2009 ; Bejan and Harabagiu 2010 ) .

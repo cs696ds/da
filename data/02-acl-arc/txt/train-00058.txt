@@ -1,0 +1,1 @@
+Further details about the properties of entropy can be found in textbooks on information theory ( e.g. , Cover and Thomas 1991 ) .

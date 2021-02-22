@@ -1,0 +1,1 @@
+A cooccurrence based stemmer ( Xu and Croft , 1998 ) was used to stem Spanish words .

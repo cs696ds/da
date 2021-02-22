@@ -1,0 +1,1 @@
+If each word 's translation is treated as a sense tag ( Resnik and Yarowsky 1997 ) , then `` translational '' collocations have the unique property that the collocate and the word sense are one and the same !

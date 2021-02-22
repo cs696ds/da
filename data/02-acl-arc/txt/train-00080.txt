@@ -1,0 +1,1 @@
+Koehn and Hoang ( 2007 ) showed that the use of a POS factor only results in negligible BLEU improvements , but we need access to the POS in our inflection prediction models .

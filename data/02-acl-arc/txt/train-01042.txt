@@ -1,0 +1,1 @@
+Previously LDA has been successfully used to infer unsupervised joint topic distributions over words and feature norms together ( Andrews et al. , 2009 ; Silberer and Lapata , 2012 ) .

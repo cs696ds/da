@@ -1,0 +1,1 @@
+Much previous work looks at the impact of using source side information ( i.e. , feature functions on the aligned English ) , such as those of Avramidis and Koehn ( 2008 ) , Yeniterzi and Oflazer ( 2010 ) and others .

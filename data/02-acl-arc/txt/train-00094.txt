@@ -1,0 +1,1 @@
+The system uses a domain-specific content planner to produce input to the surface realizer based on the strategy decision , and a FUF/SURGE ( Elhadad and Robin , 1992 ) generation system to produce the appropriate text .

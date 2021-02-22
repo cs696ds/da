@@ -1,0 +1,1 @@
+In fact , most of the features3 implemented in existing coreference resolution systems rely solely on mention heads ( Bengtson and Roth , 2008 ) .
