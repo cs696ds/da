@@ -30,13 +30,10 @@ for i in range(int(sys.argv[1]), int(sys.argv[1]) + LIMIT):
             val_url = d[14:pos].strip()
             val_s3  = d[pos + 4:].strip()
             if len(val_text.strip()) > 0:
-                # dict = {"url" : val_url,
-                #         "s3"  : val_s3,
-                #         "text": val_text
-                # }
-                # dict = {"id" : val_url,
-                #         "text": val_text
-                # }
+                dict = {"url" : val_url,
+                        "s3"  : val_s3,
+                        "text": val_text
+                }
                 docs.append(json.dumps(dict))
                 val_url = ""
                 val_text = ""
