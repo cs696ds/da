@@ -9,9 +9,9 @@ from allennlp.data.tokenizers.word_tokenizer import WordTokenizer
 
 wt = WordTokenizer()
 
-LIMIT = 1
+LIMIT = 20
 for i in range(int(sys.argv[1]), int(sys.argv[1]) + LIMIT):
-    with open('part-%05d' % i, 'r') as f:
+    with open('../../../depcc_uncompressed/part-%05d' % i, 'r') as f:
         data = f.read().split('\n')
 
     data = [x for x in data if len(x.strip()) > 0]
@@ -44,7 +44,7 @@ for i in range(int(sys.argv[1]), int(sys.argv[1]) + LIMIT):
             line += ' '
             val_text += line
 
-    with open('part-%05d.jsonl' % i, 'w') as f:
+    with open('../../data/99-depcc/part-%05d.jsonl' % i, 'w') as f:
         for doc in docs:
             f.write(doc);
             f.write('\n')
