@@ -9,7 +9,7 @@ from allennlp.data.tokenizers.word_tokenizer import WordTokenizer
 
 wt = WordTokenizer()
 
-LIMIT = 20
+LIMIT = 180
 for i in range(int(sys.argv[1]), int(sys.argv[1]) + LIMIT):
     with open('../../../depcc_uncompressed/part-%05d' % i, 'r') as f:
         data = f.read().split('\n')
