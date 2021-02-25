@@ -1,0 +1,10 @@
+0   0.5 lexical language rules information natural analysis text e.g lin processing rule extraction general question found speech chen applications work computational 
+1   0.5 linguistic document retrieval system english information problem test instance description pairs simple morphological language evidence source cfxxx inference task prosodic 
+2   0.5 systems dialogue knowledge number current approaches semantic litman learning mitkov taskar speech domain recent recently interest resolution shown student proposed 
+3   0.5 och approach automatic generation evaluation corpus text zhao model ney proposed error employed previously rate maximum training berger standard chen 
+4   0.5 word model based models corpus collins e.g tree translation parse brown results words sentences sentence feature brill disambiguation approach sense 
+5   0.5 translation structure representation number terms semantic proposed machine work annotation head problem context sato theory language galley represent kilgarriff process 
+6   0.5 system coreference tasks method version semantic applied performance relations palmer xue relation recognition verb muc resolution conll chinese show recent 
+7   0.5 grammar database phrase tag treebank features grammars model set arabic hpsg habash syntactic databases structure penn moschitti section resources nomenclature 
+8   0.5 previous work algorithm similar parser features training set data experiments approach results feature grammar parsing method nivre juola obtained technique 
+9   0.5 learning methods statistical work charniak collins made parsers parsing words syntactic buchholz phrases documents data roth ratnaparkhi full significant research 
