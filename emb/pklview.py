@@ -1,7 +1,9 @@
 import pickle
 
+f = 'part-19100_0.pkl'
+
 # open a file, where you stored the pickled data
-file = open('part-19100.pkl', 'rb')
+file = open(f, 'rb')
 
 # dump information to that file
 data = pickle.load(file)

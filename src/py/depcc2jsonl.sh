@@ -1,2 +1,2 @@
 #!/bin/bash
-python ../py/depcc2jsonl.py 00020
+python ../py/depcc2jsonl.py $1

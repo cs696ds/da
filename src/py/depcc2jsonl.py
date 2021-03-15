@@ -9,7 +9,7 @@ from allennlp.data.tokenizers.word_tokenizer import WordTokenizer
 
 wt = WordTokenizer()
 
-LIMIT = 180
+LIMIT = 30
 for i in range(int(sys.argv[1]), int(sys.argv[1]) + LIMIT):
     with open('../../../depcc_uncompressed/part-%05d' % i, 'r') as f:
         data = f.read().split('\n')
@@ -24,7 +24,7 @@ for i in range(int(sys.argv[1]), int(sys.argv[1]) + LIMIT):
     for j, d in enumerate(data):
         # if k == 10:
         #     break
-        print('%d / %d' % (j, len(data)))
+#        print('%d / %d' % (j, len(data)))
         if d.startswith("# newdoc"):
             pos = d.find('s3 =')
             val_url = d[14:pos].strip()
@@ -44,12 +44,12 @@ for i in range(int(sys.argv[1]), int(sys.argv[1]) + LIMIT):
             line += ' '
             val_text += line
 
-    with open('../../data/99-depcc/part-%05d.jsonl' % i, 'w') as f:
+    with open('../../data/99-depcc/15000-15999/part-%05d.jsonl' % i, 'w') as f:
         for doc in docs:
             f.write(doc);
             f.write('\n')
             
-    print("%.4f seconds for %d" % (time.time() - start, i))
+#    print("%.4f seconds for %d" % (time.time() - start, i))
 
 #    final_data = [' '.join([y.text for y in x]) for x in tokenized_strs]
 
