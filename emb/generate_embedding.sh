@@ -1,5 +1,5 @@
 #!/bin/bash
-/home/heeh/Projects/da/emb
+#/home/heeh/Projects/da/emb
 
 #PROJ_HOME="/home/heeh/Projects"
 PROJ_HOME="/mnt/nfs/work1/696ds-s21/hhwang"
