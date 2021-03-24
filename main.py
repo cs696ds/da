@@ -9,6 +9,16 @@ import subprocess
 import numpy as np
 import faiss
 import textwrap
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+
+def encode_sparse(X):
+    encoder = TfidfVectorizer(stop_words='english', ngram_range=(1, 2), max_df=0.3)
+    encoder.fit(X)
+    print("Dimension: ", len(encoder.vocabulary_))
+    embedding = encoder.transform(X).toarray()
+    return embedding
+
 
 def main(args):
     TR = 'tr_' + args.dataset_name
@@ -69,9 +79,10 @@ def main(args):
         for psg in cc_psgs:
             dw.writerow(psg)
 
-
     MAX_TR_PSGS = len(train_psgs)
     MAX_CC_PSGS = len(cc_psgs)
+    print(MAX_TR_PSGS)
+    print(MAX_CC_PSGS)
 
     if args.emb=='dense':
         subprocess.call(['emb/generate_embedding.sh', TR])
@@ -79,18 +90,24 @@ def main(args):
         train_embeddings = np.load('emb/' + TR + '_0.pkl', allow_pickle=True)
         cc_embeddings = np.load('emb/' + CC + '_0.pkl', allow_pickle=True)
 
-    print(MAX_TR_PSGS)
-    print(MAX_CC_PSGS)
-    print(cc_embeddings[0][1].shape)  # Dimension of the embedding
 
+#    print(train_psgs[:2])
+#    print(cc_psgs[:2])
     if args.emb=='sparse':
-        emb = encode(train_psgs + cc_psgs)
+        texts = []
+        for dict_tr in train_psgs:
+            texts.append(dict_tr['doc_text'])
+        for dict_cc in cc_psgs:
+            texts.append(dict_cc['doc_text'])
+        emb = encode_sparse(texts)
         print(emb.shape)
         train_embeddings = emb[:MAX_TR_PSGS]
         cc_embeddings = emb[MAX_TR_PSGS:]
         print(train_embeddings.shape)
         print(cc_embeddings.shape)
-    
+
+    print(len(cc_embeddings))
+    sys.exit()
     nb = len(cc_embeddings) # database size
     d = cc_embeddings[0][1].size
     print(nb,d)
@@ -152,6 +169,7 @@ if __name__ == "__main__":
     parser.add_argument("--dataset_name", default="02_acl"                     , type=str, help="")
     parser.add_argument("--train_file"  , default="data/02-acl-arc/train.jsonl", type=str, help="")
     parser.add_argument("--dev_file"    , default="data/02-acl-arc/dev.jsonl"  , type=str, help="")
-    parser.add_argument("--test_file"   , default="data/02-acl-arc/test.jsonl" , type=str, help="")    
+    parser.add_argument("--test_file"   , default="data/02-acl-arc/test.jsonl" , type=str, help="")
+    parser.add_argument("--emb"         , default="sparse" , type=str, help="")    
     print(parser.parse_args())
     main(parser.parse_args())
