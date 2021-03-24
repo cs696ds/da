@@ -1,0 +1,221 @@
+Namespace(dataset_name='07_imdb', emb='sparse', train_file='data/07-imdb/train.jsonl')
+Dr.+Seuss+would+sure+be+mad+right+now+if+he+was+alive.+Cat+in+the+Hat+proves+to+
+show+how+movie+productions+can+take+a+classic+story+and+turn+it+into+a+mindless+
+pile+of+goop.+We+have+Mike+Myers+as+the+infamous+Cat+in+the+Hat,+big+mistake!+My
+ers+proves+he+can't+act+in+this+film.+He+acts+like+a+prissy+show+girl+with+a+tho
+usand+tricks+up+his+sleeve.+The+kids+in+this+movie+are+all+right,+somewhere+in+b
+etween+the+lines+of+dull+and+annoying.+The+story+is+just+like+the+original+with+
+a+couple+of+tweaks+and+like+most+movies+based+on+other+stories,+never+tweak+with
++the+original+story!+Bringing+in+the+evil+neighbor+Quin+was+a+bad+idea.+He+is+a+
+stupid+villain+that+would+never+get+anywhere+in+life.This+movie+is+like+a+reject
+ed+comic+strip+from+the+newspaper+if+you+think+about+it.+The+film+sure+does+look
++tacky!+Sure+there+are+a+funny+adult+jokes+like+where+the+cat+cuts+of+his+tail+a
+nd+the+censor+goes+off+before+he+says+a+naughty+word,+mildly+funny.+At+least+the
++Grinch+had+spunk,+and+the+film+was+actually+good!+This+film+is+a+cartoonish+pie
+ce+of+snot+with+bright+colors+and+bad+mediocre+acting.+Was+Mike+Myers+even+in+th
+is+movie+actually?+And+another+thing,+the+fish.+What+is+with+that+stupid+fish!+F
+irst+time+you+see+him,+he's+an+actual+fish.+Next+time+you+see+him,+he's+all+anim
+ated+and+talking.+But+he+looks+like+an+animated+piece+of+rubber+play+dough!+This
++film+is+a+total+off+target+wreck.+Good+joke,+bad+joke,+bad,+bad,+bad,+good+joke
+!+I'm+surprised+it+even+had+good+jokes+like+the+water+park+ride+joke,+that+was+g
+ood.+So+please+if+you+have+the+choice,+watch+the+Grinch+instead+of+this+mess.
+Number of retrieved documents: 10
+--- 0.30579185485839844 seconds ---
+tr_07_imdb
+Dr. Seuss would sure be mad right now if he was alive. Cat in the Hat proves to
+show how movie productions can take a classic story and turn it into a mindless
+pile of goop. We have Mike Myers as the infamous Cat in the Hat, big mistake!
+Myers proves he can't act in this film. He acts like a prissy show girl with a
+thousand tricks up his sleeve. The kids in this movie are all right, somewhere
+in between the lines of dull and annoying. The story is just like the original
+with a couple of tweaks and like most movies based on other stories, never tweak
+with the original story! Bringing in the evil neighbor Quin was a bad idea. He
+is a stupid villain that would never get anywhere in life.This movie is like a
+rejected comic strip from the newspaper if you think about it. The film sure
+does look tacky! Sure there are a funny adult jokes like where the cat cuts of
+his tail and the censor goes off before he says a naughty word, mildly funny. At
+least the Grinch had spunk, and the film was actually good! This film is a
+cartoonish piece of snot with bright colors and bad mediocre acting. Was Mike
+Myers even in this movie actually? And another thing, the fish. What is with
+that stupid fish! First time you see him, he's an actual fish. Next time you see
+him, he's all animated and talking. But he looks like an animated piece of
+rubber play dough! This film is a total off target wreck. Good joke, bad joke,
+bad, bad, bad, good joke! I'm surprised it even had good jokes like the water
+park ride joke, that was good. So please if you have the choice, watch the
+Grinch instead of this mess.
+
+20000
+466
+Dimension:  1479453
+(20466, 1479453)
+(20000, 1479453)
+(466, 1479453)
+Number of train passages: 20000
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]
+trained? True
+Total number of indexed CC passages:  466
+
+Using an indentical CC set
+================================================================
+4 nearest neighbors
+[[  0   8  12 ... 452  95  73]
+ [  1  10  14 ...  30   5   2]
+ [  2  13 112 ... 452  95  57]
+ [  3  12   5 ... 113  57  31]
+ [  4 112 232 ...  55  23  10]]
+
+distances(sanity check)
+[[0.        1.8392534 1.8459218 ... 2.0000002 2.0000002 2.0000002]
+ [0.        1.8461086 1.8519824 ... 2.        2.        2.       ]
+ [0.        1.8651484 1.9165182 ... 2.0000002 2.0000002 2.0000002]
+ [0.        1.7629857 1.8124349 ... 2.0000002 2.0000002 2.0000002]
+ [0.        1.8522519 1.8645197 ... 2.        2.        2.       ]]
+
+===============================================================
+Using the query(train set)
+4 nearest neighbors
+[[ 12   3 112 ... 224  95  18]
+ [408 445 406 ... 223  48  16]
+ [328 173 323 ... 260 420  80]
+ [ 47 380 126 ... 236  57   6]
+ [107   4 439 ... 260 420 127]]
+
+distances
+[[1.8139527 1.8434416 1.8598983 ... 2.        2.        2.       ]
+ [1.957631  1.9633079 1.9663103 ... 2.        2.        2.       ]
+ [1.9680848 1.974025  1.9772074 ... 2.0000005 2.0000005 2.0000005]
+ ...
+ [1.9628233 1.9694351 1.9723376 ... 2.0000002 2.0000002 2.0000002]
+ [1.9656421 1.9676843 1.9698116 ... 2.        2.        2.0000002]
+ [1.9697009 1.9723011 1.9727484 ... 2.0000002 2.0000002 2.0000002]]
+
+Train passage
+I ran across this several years ago while channel surfing on a Sunday afternoon.
+Though it was obviously a cheesy TV movie from the 70s, the direction and score
+were well done enough that it grabbed my attention, and indeed I was hooked and
+had to watch it through to the end. I recently got the opportunity to buy a
+foreign DVD of this film (oops, didn't notice a domestic one had finally come
+out a couple months prior), and was very pleased to be able to watch it again
+(and in its entirety).I don't wholly understand the phenomenon, but somehow the
+70s seem to have a lock on horror movies that are actually scary. The decades
+prior to the 70s produced some beautifully shot films and the bulk of our
+enduring horror icons, but are they actually scary? No, not very. Likewise in
+the years since the 70s we've gotten horror movies that are cooler, more
+exciting, have much better production values and sophisticated special effects,
+are more fun, funnier, have effective "jump" moments, and some very creative
+uses of gore, but again... they aren't really scary! There's just something
+about the atmosphere of the 70s horror films. The grainy film quality. The
+spookily dark scenes unilluminated by vast high-tech lighting rigs. The "edge of
+dreamland" muted quality of the dialogue and the weird and stridently EQ'd
+scores. The odd sense of unease and ugliness permeating everything. Everything
+that works to undermine most movies of the 70s, in the case of horror, works in
+its favor.Specifically, in this film, the quiet, intense shots of the devil dog
+staring people down is fairly unnerving. So much more effective than if they had
+gone the more obvious route of having the dog be growling, slavering, and
+overtly hostile ("Cujo"?). The filmmakers wisely save that for when the dog
+appears in its full-on supernatural form. The effects when that occurs, while
+unsophisticated by today's standards, literally gave me chills. The bizarre,
+vaguely-defined, "I'm not quite sure what I'm looking at" look intuitively
+strikes me as more like how a real supernatural vision would be, rather than the
+hyper-real, crystal clear optical printer / digital compositor confections of
+latter-day horror films.While the human characters in this film are not as
+satisfyingly rendered as their nemesis or the world they inhabit, the actors all
+do a decent job. The pairing of the brother and sister from the "Witch Mountain"
+movies as, yes, brother and sister, is a rather cheesy bit of stunt casting, but
+they do fine. Yvette Mimieux always manages to be entertaining if unspectacular.
+Richard Crenna earns more and more empathy from the audience as the film
+progresses. His self-doubt as he wonders whether his family's alienness is truly
+due to a supernatural plot or whether he's merely succumbing to paranoid
+schizophrenia is pretty well handled, though his thought that getting a routine
+physical may provide an explanation for what he's been experiencing is absurd in
+its naïveté.The movie's The-End-Question-Mark type ending is one of the only
+ones I've seen that doesn't feel like a cheap gimmick, and actually made me
+think about the choices these characters would be faced with next and what
+they'd be likely to do and how they'd feel about it.Detractors of this film may
+say it's merely a feature-length vehicle for some neato glowing retina shots,
+but hey, you could say the same thing about "Blade Runner". :-)
+
+CLOSEST passages in CC:
+-------------------------------------------------------------
+Closest 0
+I feel like Halloween III should have featured Abbot & Costello it might have
+been better .This also applies to the Nightmare , and Friday The 13th series as
+well .Another great review James .This sequel along with H20 are the best in the
+series imo .I agree though that first is the best and few movies are as scary as
+the first .After all the horror movies I have seen , from new to old , and
+original to remake , the original Halloween still stands as a film that can
+scare me and it takes a lot to scare me .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 1
+Sure , it was a big part of the TV show as well , but we as a culture have moved
+on from that kind of entertainment .Overall , this movie met my expectations -
+very low quality flick produced solely to entertain little kids and give
+stressed parents a break from their little demons . ...Expand .Why .Just why is
+all I really have to say .The last time these guys were good was back in the 70s
+and 80s .There is no point in resurrecting these characters and then just
+completely ruin what made the old cartoon great .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 2
+This film simply does n't work .I feel that this film could have been better if
+it was called " The Smurfs , Only not the Smurfs From the 70s/80s That we
+Remember : The Movie " .Seriously .This film slaughters the characters , weather
+you loved or hated This film is just ...God .Its so BAD !I can see why it would
+have been relevant back in the 80 's , or heck , even the 90 's , but now , in
+2011 ?No .This film simply does n't work .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 3
+Taken as it is , as a stand - alone movie , it 's not very good .It 's not utter
+crap , but it is bad in a lot of ways .The idea is still interesting , but it
+suffers from a lot of problems that plague many horror movies , like logical
+lapses , cheesy effects and lazy writing .I appreciate what it tried to do , but
+it still failed , in my opinion .I think its biggest downfall was that it tried
+to do too much , between the cult story , the town , the mystery , the masks .
+------------------------------------------------------------
+...
+-------------------------------------------------------------
+Farthest 462
+Battle : Los Angeles then Battleship ?WTF ?Did you just compare Battleship to
+Pieces ? o_O The latter one is pure campy geniousness , Battleship mostly meh -
+rated .Thanks about the Asylum tip , American Battleship seems worth seeing
+!Guesto .Why is it that whenever they make an inside - outside transition , the
+doors NEVER ever match up ?Plinkett 's house does n't have a brick wall on the
+front porch , and the glass door they open in this review turns into a metal one
+when inside !It 's craaaazy ! thomas040 . is there a way to subscribe to the "
+half in the bag " show ? ?
+-------------------------------------------------------------
+Farthest 463
+After breaking out his sex kitten partner , the doctor drives off with her in
+the seat beside him , and then it 's revealed that ... she 's a robot too .And
+she tries to strangle him .So he crashes into a tree and her arm gets ripped off
+so she tries to strangle him with one arm ... and then ...I .. just ca n't
+explain it any further , it 's just SO GODDAMN STUPID , MY WORDS CANNOT DO IT
+JUSTICE .So then it 's revealed that stopping the British - accented Bond
+villain did n't halt the killer pumpkin videos , so the doctor guy decides to
+call the studio to get it taken off the air .
+-------------------------------------------------------------
+Farthest 464
+Why would you ?He keeps kidnapping the Princess .Ralph decides that enough is
+enough and must earn everybody 's respect the same way that the ever so popular
+Felix Jr. ( Jack McBrayer ) has earned everybody 's respect .In order for Ralph
+to prove himself , he needs to win a medal and it is there that he will get what
+he desires .He tries to do this by " game - hopping " , in other words , one
+video game character entering a different video game , kind of like seeing Sonic
+the Hedgehog appear out of nowhere in the game " Luigi 's Mansion " .
+-------------------------------------------------------------
+Farthest 465
+" The story line flows very well and is great for children of all ages .The
+movie is about a game character who struggles to become a hero by obtaining a
+medal .Ralph strives to become a hero by surviving in another game called " Hero
+'s Duty . "Although he won the medal , he accidentally brings a " cy - bug "
+with him which can jeopardize the whole game system .Ralph and Vanellope have
+explored Candy Land adventures and met an enemy called " King Candy " which then
+gives a great twist to the story .

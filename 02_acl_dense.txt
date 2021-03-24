@@ -1,0 +1,169 @@
+Namespace(dataset_name='02_acl', emb='dense', train_file='data/02-acl-arc/train.jsonl')
+Thus+,+over+the+past+few+years+,+along+with+advances+in+the+use+of+learning+and+
+statistical+methods+for+acquisition+of+full+parsers+(+Collins+,+1997+;+Charniak+
+,+1997a+;+Charniak+,+1997b+;+Ratnaparkhi+,+1997+)+,+significant+progress+has+bee
+n+made+on+the+use+of+statistical+learning+methods+to+recognize+shallow+parsing+p
+atterns+syntactic+phrases+or+words+that+participate+in+a+syntactic+relationship+
+(+Church+,+1988+;+Ramshaw+and+Marcus+,+1995+;+Argamon+et+al.+,+1998+;+Cardie+and
++Pierce+,+1998+;+Munoz+et+al.+,+1999+;+Punyakanok+and+Roth+,+2001+;+Buchholz+et+
+al.+,+1999+;+Tjong+Kim+Sang+and+Buchholz+,+2000+)+.
+Number of retrieved documents: 10
+--- 0.037914276123046875 seconds ---
+tr_02_acl
+Thus , over the past few years , along with advances in the use of learning and
+statistical methods for acquisition of full parsers ( Collins , 1997 ; Charniak
+, 1997a ; Charniak , 1997b ; Ratnaparkhi , 1997 ) , significant progress has
+been made on the use of statistical learning methods to recognize shallow
+parsing patterns syntactic phrases or words that participate in a syntactic
+relationship ( Church , 1988 ; Ramshaw and Marcus , 1995 ; Argamon et al. , 1998
+; Cardie and Pierce , 1998 ; Munoz et al. , 1999 ; Punyakanok and Roth , 2001 ;
+Buchholz et al. , 1999 ; Tjong Kim Sang and Buchholz , 2000 ) .
+
+1688
+416
+Number of train passages: 1688
+[[-0.87804127  0.05203568 -0.06780454 ... -0.5197406  -0.2222211
+  -0.02371504]
+ [-0.7526125  -0.15401648  0.3375842  ... -0.70269537 -0.06798308
+   0.0022837 ]
+ [-0.43047038  0.07143795 -0.03356247 ... -0.5204008  -0.0784183
+   0.17523418]
+ ...
+ [-0.08816212 -0.47372022  0.38190478 ... -0.2598227  -0.25476226
+   0.04806864]
+ [-0.58373874 -0.27933288  0.5223103  ... -0.47887757 -0.6835381
+   0.09084422]
+ [-0.4655094  -0.11000601  0.3970269  ... -0.4577696   0.09669067
+  -0.4276332 ]]
+trained? True
+Total number of indexed CC passages:  416
+
+Using an indentical CC set
+================================================================
+4 nearest neighbors
+[[  0   2 256 ... 303  47 320]
+ [  1 205 113 ... 306 303 320]
+ [  2   3   0 ... 303  47 320]
+ [  3   2 321 ...  47 303 320]
+ [  4   6   5 ... 299 320  47]]
+
+distances(sanity check)
+[[  0.        30.18142   31.350739 ... 106.24573  108.085365 116.75043 ]
+ [  0.        36.323853  36.505314 ... 122.65997  130.44864  136.31595 ]
+ [  0.        27.522001  30.18142  ... 104.72557  104.994995 126.77202 ]
+ [  0.        27.522001  28.558102 ... 104.08525  105.26668  115.010506]
+ [  0.        26.270412  40.000645 ... 108.734566 118.82944  124.52625 ]]
+
+===============================================================
+Using the query(train set)
+4 nearest neighbors
+[[ 23 271  77 ...  47 303 320]
+ [158 269 271 ... 313 303 320]
+ [378 343 157 ...  47 173 320]
+ [269 101 171 ... 306 305 320]
+ [256 171  81 ... 303  47 320]]
+
+distances
+[[ 32.132477  37.836197  37.883453 ... 109.97092  121.01689  139.72974 ]
+ [ 45.708572  47.546204  51.96724  ... 106.85559  113.42859  132.36404 ]
+ [ 51.04306   52.569656  53.01767  ... 107.07019  110.44466  128.80391 ]
+ ...
+ [ 47.195084  47.25467   49.75595  ... 116.073654 121.74666  137.55148 ]
+ [ 48.35608   51.15558   52.454285 ... 126.44472  133.63007  147.86935 ]
+ [ 38.28984   44.62393   45.948853 ... 118.88225  118.92641  121.70952 ]]
+
+Train passage
+It can be shown ( Berger et al. , 1996 ) that the use of this model with maximum
+likelihood parameter estimation is justified on information-theoretic grounds
+when q represents some prior knowledge about the true distribution and when the
+expected values of f in the training corpus are identical to their true expected
+values .3 There is no requirement that the components of f represent disjoint or
+statistically independent events .
+
+CLOSEST passages in CC:
+-------------------------------------------------------------
+Closest 0
+Although such generative models are easy to implement and are intuitive , it is
+not always the case that generative models perform best , since they are
+maximizing the joint probability of data and model , rather than directly
+maximizing conditional probability .Because we do not have gold - standard
+references for training a secondary conditional reranker , we incorporate weak
+supervision of evaluations against the perceptual world during the process of
+improving model performance .All these approaches are evaluated on the two
+publicly available domains that have been actively used in many other grounded
+language learning studies .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 1
+For every production in the formal language grammar , a Support - Vector Machine
+( SVM ) classifier is trained using string similarity as the kernel .Meaning
+representations for novel natural language sentences are obtained by finding the
+most probable semantic parse using these classifiers .This method does not use
+any hard - matching rules and unlike previous and other recent methods , does
+not use grammar rules for natural language , probabilistic or otherwise , which
+makes it more robust to noisy input .Besides being robust , this approach is
+also flexible and able to learn under a wide range of supervision , from extra
+to weaker forms of supervision .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 2
+Morgan and Newport ( 1981 ) showed that the reference world of Moeser and
+Bregman ( 1972 ) was successful in facilitating the acquisition of complex
+aspects of syntax because it served to demarcate the ...Publications : Learning
+for Semantic Parsing .Semantic parsing is the process of mapping a natural -
+language sentence into a formal representation of its meaning .A shallow form of
+semantic representation is a case - role analysis ( a.k.a . a semantic role
+labeling ) , which identifies roles such as agent , patient , source , and
+destination .A deeper semantic analysis provides a representation of the
+sentence in predicate logic or other formal language which supports automated
+reasoning .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 3
+They regarded parses as being of high quality if 20 different parsers agreed
+.They used an SVM regression approach on the basis of text - based and parse -
+based features .A method for acquiring reliable predicate - argument structures
+We acquire reliable predicate - argument str ... . " ...It is well known that
+parsing accuracy suffers when a model is applied to out - of - domain data .It
+is also known that the most beneficial data to parse a given domain is data that
+matches the domain ( Sekine , 1997 ; Gildea , 2001 ) .
+------------------------------------------------------------
+...
+-------------------------------------------------------------
+Farthest 412
+English source text : Bah , bah , black sheep , have you any wool ?Yes sir , yes
+sir , three bags full .One for the master , one for the dame , and one for the
+little boy who lives down the lane .French translation : Bah , bah , mouton noir
+, vous ont n'importe quelles laines ?Oui monsieur , oui monsieur , trois sacs
+complètement .Un pour le maître , un pour dame , et un pour le petit garçon qui
+vit en bas de la ruelle .And back into English again : Bah , bah , black sheep ,
+have you n ' imports which wools ?
+-------------------------------------------------------------
+Farthest 413
+For the Master , for lady , and for the little boy who lives in bottom of the
+lane .( ii ) Humpty Dumpty translated into Italian and then back again into
+English , using Babel Fish .English source text : Humpty Dumpty sat on a wall
+.Humpty Dumpty had a great fall .Italian translation : Humpty Dumpty si è seduto
+su una parete .Humpty Dumpty ha avuto una grande caduta .I cavalli di tutto il
+re e gli uomini di tutto il re non hanno potuto un Humpty ancora .And back into
+English again : Humpty Dumpty has been based on a wall .
+-------------------------------------------------------------
+Farthest 414
+The horses of all the king and the men of all the king have not been able a
+Humpty still .( iii ) Humpty Dumpty translated into Italian and then back again
+into English , using Google Translate .English source text : Humpty Dumpty sat
+on a wall .Humpty Dumpty had a great fall .Italian translation : Humpty Dumpty
+sedeva su un muro .Humpty Dumpty ha avuto un grande caduta .Tutti i cavalli del
+re e tutti gli uomini del re non poteva mettere Humpty di nuovo insieme .And
+back into English again : Humpty Dumpty sat on a wall .
+-------------------------------------------------------------
+Farthest 415
+Evi 's performance was tested by the author of this paragraph ."She "
+immediately provided correct answers to these questions submitted by voice input
+: .In which American state is Albuquerque ?In addition , Evi may link to
+relevant websites that provide further information .Text input is also accepted
+.In this section we outline the essentials of parsing , first of all by
+describing the components of a parsing system and then discussing different
+kinds of parser .We look at one linguistic phenomenon which causes problems for
+parsing and finally examine potential solutions to the difficulties raised by
+parsing .

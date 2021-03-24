@@ -1,0 +1,261 @@
+Namespace(dataset_name='04_hyper', emb='sparse', train_file='data/04-hyper/train.jsonl')
+As+seen+on+The+Five+Police+Group+Boycotts+Ben+&amp;+Jerry's+After+Black+Lives+Ma
+tter+Endorsement+As+more+women+come+forward+with+allegations+of+sexual+misconduc
+t+against+Donald+Trump,+the+Republican+nominee+is+lashing+out+at+the+mainstream+
+media,+which+he+claims+is+running+with+this+"total+fiction"+to+distract+from+Hil
+lary+Clinton's+scandals.+At+a+rally+in+Greensboro,+N.C.,+Trump+said+these+accusa
+tions+are+part+of+a+conspiracy+involving+the+Clinton+campaign+and+what+he+called
++“the+corrupt+media.”+Greg+Gutfeld+agreed+with+much+of+Trump's+assessment+on+"Th
+e+Five"+today,+saying,+"The+media+wants+Hillary+to+win.+There's+no+doubt+about+t
+hat."+Judge+Jeanine+on+Trump+Accusers:+'All+on+One+Day?+It's+a+Little+Too+Conven
+ient'+Gutfeld+explained+that+Trump+has+actually+been+"set+up,"+as+he+was+given+c
+ountless+hours+of+coverage+and+"billions+of+dollars+of+free+media,"+only+to+have
++the+rug+pulled+out+from+under+him.+"The+media+...+[and]+Hillary+and+Obama,+they
++knew+elevating+Donald+Trump+-+giving+him+an+air+of+respectability+in+the+press,
++as+well+-+turned+him+into+the+Republican+nominee.+Then,+out+came+the+knives."+W
+atch+the+co-hosts+of+"The+Five"+discuss+above,+and+let+us+know+what+you+think+in
++the+comments.+New+WikiLeaks+Bombshell:+Clinton+Aides+Discussed+'Emails+to+and+f
+rom+POTUS'
+Number of retrieved documents: 10
+--- 0.035140037536621094 seconds ---
+tr_04_hyper
+As seen on The Five Police Group Boycotts Ben &amp; Jerry's After Black Lives
+Matter Endorsement As more women come forward with allegations of sexual
+misconduct against Donald Trump, the Republican nominee is lashing out at the
+mainstream media, which he claims is running with this "total fiction" to
+distract from Hillary Clinton's scandals. At a rally in Greensboro, N.C., Trump
+said these accusations are part of a conspiracy involving the Clinton campaign
+and what he called “the corrupt media.” Greg Gutfeld agreed with much of Trump's
+assessment on "The Five" today, saying, "The media wants Hillary to win. There's
+no doubt about that." Judge Jeanine on Trump Accusers: 'All on One Day? It's a
+Little Too Convenient' Gutfeld explained that Trump has actually been "set up,"
+as he was given countless hours of coverage and "billions of dollars of free
+media," only to have the rug pulled out from under him. "The media ... [and]
+Hillary and Obama, they knew elevating Donald Trump - giving him an air of
+respectability in the press, as well - turned him into the Republican nominee.
+Then, out came the knives." Watch the co-hosts of "The Five" discuss above, and
+let us know what you think in the comments. New WikiLeaks Bombshell: Clinton
+Aides Discussed 'Emails to and from POTUS'
+
+516
+61
+Dimension:  139365
+(577, 139365)
+(516, 139365)
+(61, 139365)
+Number of train passages: 516
+[[0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ ...
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]
+trained? True
+Total number of indexed CC passages:  61
+
+Using an indentical CC set
+================================================================
+4 nearest neighbors
+[[ 0  1 37 36  2 34 44 45 41 16 57 46  7 24 42 23 20 21 53 33 39  8 52 49
+  47 22 26  4  5 15 28 19 32 38 56 35 18 11 48 12 25 43 29 31 60 54 50 17
+  58 51  6  3 55 59 40 30 27 14 13 10  9]
+ [ 1  0 37  2 36 53 57 16 45 44 34 41  7 46 10 49 47 42 35 56 40 19 55 23
+  24 31 52 50 59 60 58 32 13 29 17 28  3 22 51 48 39 38 43 33 30 25 26 21
+  20 18 27 15 14 12  9  6  5  4 54 11  8]
+ [ 2  1 34 53  0 57 33  5 39 47  3 16 21 20 37 24 22 49 59 10 48 23 35 36
+   4 19 38 56 12 29 15 52 11  8 58 25 27  7  9 42 60  6 14 18 55 28 17 50
+  41 31 45 54 51 46 44 40 43 32 30 26 13]
+ [ 3  5  2  6  4 23 34 39  9 22 10 24 48 21 36 38 31  7 37 20 19 54 45 53
+  47 17 50 29 40 30 51  8 58 43 41 35 16 14 28  1 56 52 46 33 32 26 25 12
+   0 57 55 49 44 59 42 18 60 27 15 13 11]
+ [ 4  5 10  6 22 34 38  3 21  2 37 33 39 20  9 16 28 36 29 19 53 24 11 14
+  47 18  8 58 44 56 12 32 35 45 17 57  0 15 42 46 30 54 55 52 31 51 50 49
+  48 60 43 41 40 26 25 23 27 13  7  1 59]]
+
+distances(sanity check)
+[[0.        1.4973702 1.5549839 1.7079868 1.8314708 1.9010355 1.9126612
+  1.9167863 1.9445298 1.9547212 1.956762  1.9569052 1.9596652 1.9695015
+  1.971623  1.9768815 1.978135  1.9792496 1.9800243 1.9807667 1.9845767
+  1.9882098 1.9890834 1.9892786 1.9896219 1.9908328 1.991576  1.9917507
+  1.9918016 1.9921962 1.9922714 1.9927175 1.9930861 1.9932883 1.9933687
+  1.9935008 1.9935806 1.9941722 1.9942013 1.9949784 1.995166  1.9954938
+  1.9955344 1.9956422 1.9957936 1.9960852 1.9980459 1.9999998 1.9999999
+  1.9999999 1.9999999 1.9999999 2.        2.        2.        2.
+  2.        2.        2.        2.        2.       ]
+ [0.        1.4973702 1.6879163 1.7397475 1.8195858 1.8867271 1.9079409
+  1.9271517 1.9659905 1.9661092 1.9682817 1.9716238 1.9800802 1.9823871
+  1.982801  1.9842851 1.9853216 1.9873726 1.9874572 1.9895494 1.9898435
+  1.9904215 1.9914447 1.9921577 1.9928842 1.9934342 1.9936981 1.9943386
+  1.994743  1.9949062 1.9951494 1.9959592 1.9967554 1.9999998 1.9999998
+  1.9999998 1.9999998 1.9999999 2.        2.        2.        2.
+  2.        2.        2.        2.        2.        2.        2.
+  2.        2.        2.        2.        2.        2.        2.
+  2.        2.        2.0000002 2.0000002 2.0000002]
+ [0.        1.7397475 1.808413  1.8102894 1.8314708 1.8406396 1.854676
+  1.8910769 1.9019108 1.9058821 1.9064068 1.9091501 1.9140292 1.9174869
+  1.9181229 1.9302788 1.935347  1.9361482 1.9371823 1.9378386 1.9461048
+  1.9468381 1.9500204 1.9505776 1.9512082 1.954895  1.9550252 1.9589312
+  1.9590685 1.9597125 1.9616728 1.9714359 1.9752748 1.9756112 1.9776219
+  1.9800122 1.9804697 1.9813758 1.9825457 1.9828115 1.9833956 1.9834569
+  1.9835936 1.9837883 1.9908712 1.9920579 1.9921212 1.9965022 1.9972275
+  1.9999998 1.9999999 2.        2.        2.        2.        2.
+  2.        2.        2.        2.0000002 2.0000002]
+ [0.        1.8165932 1.9064068 1.910758  1.9477589 1.9566822 1.9652702
+  1.9702928 1.9708942 1.9753075 1.9755472 1.9773794 1.980094  1.982453
+  1.9841667 1.9845879 1.9867013 1.9868991 1.9871855 1.9874027 1.9874127
+  1.9904858 1.9915876 1.992002  1.9931934 1.9933901 1.9943371 1.9956539
+  1.9956684 1.9958904 1.9962263 1.9963279 1.9999998 1.9999998 1.9999998
+  1.9999998 1.9999998 1.9999998 1.9999998 1.9999998 1.9999999 1.9999999
+  1.9999999 1.9999999 1.9999999 1.9999999 1.9999999 1.9999999 1.9999999
+  2.        2.        2.        2.        2.        2.        2.
+  2.        2.        2.        2.        2.       ]
+ [0.        1.8765123 1.917975  1.9185996 1.9295318 1.9304035 1.9366332
+  1.9477589 1.9481058 1.9512082 1.9594234 1.9628828 1.9637561 1.9640183
+  1.9659028 1.9680436 1.9712145 1.9718156 1.9769111 1.9777571 1.9782238
+  1.978463  1.9792663 1.9793633 1.9795896 1.979608  1.981461  1.984031
+  1.9840497 1.9841933 1.9862049 1.9870799 1.9893048 1.98995   1.9900899
+  1.990569  1.9917507 1.9935163 1.9935777 1.9939102 1.9939277 1.9944792
+  1.9946926 1.9999999 1.9999999 2.        2.        2.        2.
+  2.        2.        2.        2.        2.        2.        2.
+  2.        2.        2.        2.        2.0000002]]
+
+===============================================================
+Using the query(train set)
+4 nearest neighbors
+[[44 45 41 58  5  7 49 34 59 53 48 12 33 15 23 29 16 57  0 24 46  2 55 39
+  56 21 47 25 10 19 37 27 20 36  9 22  1 60 42 26 17 50 35  3  8 11  6 30
+  52 31 14 40 38 43 32 28  4 54 51 18 13]
+ [23 22 36 56 11 18 29 10 21 14 35 57 53 15 31 17 44 12  3 54 37  7 34 24
+  55 47 52 45 38 59 46 25 60 58 32 13 43 16  8 42  0 39 20 48 41  5  1 19
+  40 51 50 33 30 27 26  9  6 28  4  2 49]
+ [ 7 21 45 19 16 55 13 28 36 14 23 48 50 30  4 46 32 54 34 15 20 58 22 52
+  38 12 18 39 35 51 24  3 56  6 41 44 17 27 42 25  2  5  1 11 47 40 43 31
+  29  9  0 57 53 49 37 33 26 10  8 60 59]
+ [52 39 17 24  6 55 38 36 50 11 20 21 25 29  3 13 34 16 15 31 49 51  0 19
+  28 54 59 10 37  2 35 48  5 40  1 22 60  7 14 12 23 45 27 57 58 26 47 56
+  46 30 18 43 53 44 42 41 33 32  9  8  4]
+ [15  9 53 45 30 55 36 14 37  3 43 44 16 50  6 13 17 39 38 28 24 25 21 23
+  31  8 52 20 57 56  5 34 10 35 11 29 26 22 47  0  2 40 58 19  7 12 54 51
+  49 48 46 42 41 33 32 27 18  4  1 60 59]]
+
+distances
+[[1.9523941 1.9567391 1.9630142 ... 2.        2.        2.0000002]
+ [1.9683803 1.9759876 1.9760714 ... 2.0000002 2.0000002 2.0000005]
+ [1.9633448 1.9765851 1.978793  ... 2.        2.0000002 2.0000002]
+ ...
+ [1.9595939 1.9626493 1.9638784 ... 2.        2.        2.0000002]
+ [1.9771794 1.9836714 1.987586  ... 1.9999998 1.9999998 2.       ]
+ [1.9203264 1.9427229 1.9561079 ... 1.9960988 1.9961541 1.9999996]]
+
+Train passage
+Surprisingly a lot of people are standing with Colin Kaepernick in his decision
+not to stand during the national anthem, "calling the Star Spangled Banner
+"weak" and saying that he doesn't truly love the song. Here is what he had to
+say on twitter: For those defending the current anthem, do you really truly love
+that song? I don't and I'm very good at singing it. Like, one of the best He
+continued to add: My vote is for America the Beautiful. Star spangled banner is
+a weak song anyway. And then you read this... https://t.co/iAE62FAbxj John
+Legend linked to an article titled, "Colin Kaepernick Is Righter Than You Know:
+The National Anthem Is A Celebration Of Slavery" The article makes the arguement
+that an unsung verse of the Francis Scott Key poem is a moral "atrocity." The
+author claims the end of the rarely sung third verse "literally celebrated the
+murder of African-Americans." The verse reads: No refuge could save the hireling
+and slave From the terror of flight or the gloom of the grave, And the star-
+spangled banner in triumph doth wave O’er the land of the free and the home of
+the brave. @johnlegend not sure why it's turned into a battle over the lyrics of
+our anthem. The lyrics were never Colin's argument in the first place All of
+John Legend's tweets were made in support of the 49ers quarterback who refused
+to stand while the national anthem was being played during a preseason game.
+Kaepernick said that his sitd own was for "people that are being oppressed" and
+he'll end the protest when "I feel like that flag represents what it's supposed
+to represent."
+
+CLOSEST passages in CC:
+-------------------------------------------------------------
+Closest 0
+Main menu .You are here .George Zimmerman Travesty : Why Florida Boycott Could
+Change Things There And Elsewhere .December 12 Movement 's Omowale Clay .Photo
+credit : The Black Star News .[Black Star News Editorial ] .Boycotts are
+legitimate forms of fighting injustice , especially laws that discriminate
+against people based on their ethnic- , religious- , gender- , national
+background or sexual - orientation .Boycotts were very effective in breaking
+down oppression and segregation in the American South and in apartheid South
+Africa .Florida 's Stand - Your - Ground law is a form of discriminatory law .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 1
+Protesters representing the NAACP shouted , " Do n't stop , do n't shop , till
+the flag drops " in 2002 , as they publicized a multiyear tourism boycott
+against South Carolina .These protesters demanded a modification of the state 's
+flag , which bears the Confederate emblem .It is an ongoing protest , one of
+several economic boycotts launched recently by the NAACP .Other national
+boycotts , including a five - month action against the Adam 's Mark Hotel chain
+, have been concluded , and a boycott against major television networks , which
+cast few African Americans in principal roles , was threatened but not initiated
+.
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 2
+The rest of this article is only available to active members of Questia .Notes
+for this article .Questia , a part of Gale , Cengage Learning .Contributors :
+Sewell , Stacy Kinlock - Author .Journal title : The Journal of African American
+History .Volume : 89 .Issue : 2 Publication date : Spring 2004 .Page number :
+135 + .© Association for the Study of African American Life and History , Inc.
+COPYRIGHT 2004 Gale Group .This material is protected by copyright and , with
+the exception of fair use , may not be further copied , distributed or
+transmitted in any form or by any means .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 3
+Right here in New York when unarmed Black men have been killed by officers of
+the New York Police Department ( NYPD ) there are protests and people say "
+never again . "After each incident there is outrage and emotional protest
+marches all over the City .People declare " never again ." But it does always
+happen again .What can change all this ?How can people in the African American
+community make it abundantly clear that the lives of Black males have value even
+as many battle against the odds ?Enter Stevie Wonder and his vow to boycott
+Florida until the Stand - Your - Ground law is scrapped .
+------------------------------------------------------------
+...
+-------------------------------------------------------------
+Farthest 57
+In another western city , police clashed with hundreds of Buddhist monks leading
+a sympathy demonstration .The violence erupted just two weeks before China 's
+Summer Olympic celebrations kick off with the start of the torch relay , which
+passes through Tibet .China is gambling that its crackdown will not draw an
+international outcry over human rights violations that could lead to boycotts of
+the Olympics .The latest unrest began Monday on the anniversary of a 1959
+uprising against Chinese rule .Tibet was effectively independent for decades
+before communist troops entered in 1950 .Initially , the protests were led by
+Buddhist monks demanding the release of other detained monks .
+-------------------------------------------------------------
+Farthest 58
+Last week , an egregious Defamation Prohibition Law was passed , which " raise[s
+] the amount of punitive compensation for libel , without proof of actual damage
+" , according to the Association for Civil Rights ( ACRI ) in Israel .If the NGO
+bill goes forward in Israel 's parliament , watchdog groups like ACRI would be
+taxed at a punitive rate .In fact , a wide range of NGOs , today fully compliant
+with Israeli law , would suddenly come under an Orwellian regime ." By focusing
+on individual flare - ups like the fuss over a minor ad campaign , the Israeli
+government is missing the bigger picture strategically , " Ben - Ami told me . "
+-------------------------------------------------------------
+Farthest 59
+" This is a moment of hypocrisy if the city of Los Angeles says one thing and
+does another , " said Rabbi Jonathan Klein , executive director of the Los
+Angeles chapter of Clergy and Laity United for Economic Justice .Klein was
+speaking to a crowd of protesters gathered at City Hall to demand follow -
+through on the business ban .Protesters have complained about several exemptions
+the City Council has granted in the last year , including approvals of contracts
+for made - in - Arizona Taser guns and red - light traffic cameras , as well as
+a contract with a Los Angeles International Airport shuttle provider that has
+offices in the state .
+-------------------------------------------------------------
+Farthest 60
+Just a few days have passed since the police recommended indicting Foreign
+Minister Avigdor Lieberman for " alleged breach of trust in a case involving
+Israel 's former ambassador to Belarus , Zeev Ben Aryeh .Police believe that in
+2008 , while Ben Aryeh served as ambassador , he relayed to Lieberman secret
+details about an ongoing investigation against him , which the envoy had
+received as part of his official function ."Today I could n't find a word about
+it .Ah , who cares .Just a case of the " Been there , done that " , right ?

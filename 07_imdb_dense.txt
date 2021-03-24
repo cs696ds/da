@@ -1,0 +1,225 @@
+Namespace(dataset_name='07_imdb', emb='dense', train_file='data/07-imdb/train.jsonl')
+Dr.+Seuss+would+sure+be+mad+right+now+if+he+was+alive.+Cat+in+the+Hat+proves+to+
+show+how+movie+productions+can+take+a+classic+story+and+turn+it+into+a+mindless+
+pile+of+goop.+We+have+Mike+Myers+as+the+infamous+Cat+in+the+Hat,+big+mistake!+My
+ers+proves+he+can't+act+in+this+film.+He+acts+like+a+prissy+show+girl+with+a+tho
+usand+tricks+up+his+sleeve.+The+kids+in+this+movie+are+all+right,+somewhere+in+b
+etween+the+lines+of+dull+and+annoying.+The+story+is+just+like+the+original+with+
+a+couple+of+tweaks+and+like+most+movies+based+on+other+stories,+never+tweak+with
++the+original+story!+Bringing+in+the+evil+neighbor+Quin+was+a+bad+idea.+He+is+a+
+stupid+villain+that+would+never+get+anywhere+in+life.This+movie+is+like+a+reject
+ed+comic+strip+from+the+newspaper+if+you+think+about+it.+The+film+sure+does+look
++tacky!+Sure+there+are+a+funny+adult+jokes+like+where+the+cat+cuts+of+his+tail+a
+nd+the+censor+goes+off+before+he+says+a+naughty+word,+mildly+funny.+At+least+the
++Grinch+had+spunk,+and+the+film+was+actually+good!+This+film+is+a+cartoonish+pie
+ce+of+snot+with+bright+colors+and+bad+mediocre+acting.+Was+Mike+Myers+even+in+th
+is+movie+actually?+And+another+thing,+the+fish.+What+is+with+that+stupid+fish!+F
+irst+time+you+see+him,+he's+an+actual+fish.+Next+time+you+see+him,+he's+all+anim
+ated+and+talking.+But+he+looks+like+an+animated+piece+of+rubber+play+dough!+This
++film+is+a+total+off+target+wreck.+Good+joke,+bad+joke,+bad,+bad,+bad,+good+joke
+!+I'm+surprised+it+even+had+good+jokes+like+the+water+park+ride+joke,+that+was+g
+ood.+So+please+if+you+have+the+choice,+watch+the+Grinch+instead+of+this+mess.
+Number of retrieved documents: 10
+--- 0.2860593795776367 seconds ---
+tr_07_imdb
+Dr. Seuss would sure be mad right now if he was alive. Cat in the Hat proves to
+show how movie productions can take a classic story and turn it into a mindless
+pile of goop. We have Mike Myers as the infamous Cat in the Hat, big mistake!
+Myers proves he can't act in this film. He acts like a prissy show girl with a
+thousand tricks up his sleeve. The kids in this movie are all right, somewhere
+in between the lines of dull and annoying. The story is just like the original
+with a couple of tweaks and like most movies based on other stories, never tweak
+with the original story! Bringing in the evil neighbor Quin was a bad idea. He
+is a stupid villain that would never get anywhere in life.This movie is like a
+rejected comic strip from the newspaper if you think about it. The film sure
+does look tacky! Sure there are a funny adult jokes like where the cat cuts of
+his tail and the censor goes off before he says a naughty word, mildly funny. At
+least the Grinch had spunk, and the film was actually good! This film is a
+cartoonish piece of snot with bright colors and bad mediocre acting. Was Mike
+Myers even in this movie actually? And another thing, the fish. What is with
+that stupid fish! First time you see him, he's an actual fish. Next time you see
+him, he's all animated and talking. But he looks like an animated piece of
+rubber play dough! This film is a total off target wreck. Good joke, bad joke,
+bad, bad, bad, good joke! I'm surprised it even had good jokes like the water
+park ride joke, that was good. So please if you have the choice, watch the
+Grinch instead of this mess.
+
+20000
+466
+Number of train passages: 20000
+[[-0.34160995  0.1262601   0.33065796 ...  0.01783253  0.83223635
+   0.5383668 ]
+ [-0.22916798  0.1389395  -0.04974913 ...  0.3189098   0.5730846
+  -0.44882134]
+ [-0.3348292  -0.10565027  0.47091532 ...  0.5587884   0.33574852
+   0.07439486]
+ ...
+ [-0.22365153 -0.158058   -0.19985761 ...  0.2531428   0.5715084
+  -0.6859844 ]
+ [-0.47465512 -0.36969006  0.10207994 ... -0.05254665  0.7546085
+  -0.05997188]
+ [-0.88492167  0.1181832  -0.17976047 ... -0.33139467  0.37804982
+  -0.08505723]]
+trained? True
+Total number of indexed CC passages:  466
+
+Using an indentical CC set
+================================================================
+4 nearest neighbors
+[[  0   6  10 ... 179 147 399]
+ [  1  17 450 ... 364 147 399]
+ [  2  13 189 ... 384 295 399]
+ [  3   5  16 ...  70 182 399]
+ [  4 132 117 ... 392  18 399]]
+
+distances(sanity check)
+[[  0.        47.70365   52.353233 ... 135.96915  142.73918  147.24963 ]
+ [  0.        57.7162    62.315407 ... 137.71939  142.71222  145.85074 ]
+ [  0.        64.37684   79.39349  ... 168.81232  173.25867  182.11316 ]
+ [  0.        29.424995  45.139908 ... 141.68     145.36201  164.04443 ]
+ [  0.        41.76377   51.89472  ... 123.2982   124.542    129.16777 ]]
+
+===============================================================
+Using the query(train set)
+4 nearest neighbors
+[[ 22 236  27 ... 179 393 163]
+ [463 125  69 ... 295 384 399]
+ [450 451 324 ... 364 384 399]
+ [365 193  82 ... 420 424 447]
+ [ 90 143   7 ... 384 364 399]]
+
+distances
+[[ 44.08142   49.5726    51.8575   ... 130.83124  130.94067  132.09636 ]
+ [ 64.74005   65.57388   66.19699  ... 129.8533   130.92139  154.44762 ]
+ [ 58.457504  62.18907   62.888107 ... 138.60222  142.74342  149.80424 ]
+ ...
+ [ 72.00322   74.076324  74.68205  ... 151.52547  152.41579  153.00293 ]
+ [ 68.8849    71.87192   72.06566  ... 146.77187  149.00418  153.08896 ]
+ [ 70.65137   77.89699   81.82532  ... 146.46779  150.30997  151.50381 ]]
+
+Train passage
+I ran across this several years ago while channel surfing on a Sunday afternoon.
+Though it was obviously a cheesy TV movie from the 70s, the direction and score
+were well done enough that it grabbed my attention, and indeed I was hooked and
+had to watch it through to the end. I recently got the opportunity to buy a
+foreign DVD of this film (oops, didn't notice a domestic one had finally come
+out a couple months prior), and was very pleased to be able to watch it again
+(and in its entirety).I don't wholly understand the phenomenon, but somehow the
+70s seem to have a lock on horror movies that are actually scary. The decades
+prior to the 70s produced some beautifully shot films and the bulk of our
+enduring horror icons, but are they actually scary? No, not very. Likewise in
+the years since the 70s we've gotten horror movies that are cooler, more
+exciting, have much better production values and sophisticated special effects,
+are more fun, funnier, have effective "jump" moments, and some very creative
+uses of gore, but again... they aren't really scary! There's just something
+about the atmosphere of the 70s horror films. The grainy film quality. The
+spookily dark scenes unilluminated by vast high-tech lighting rigs. The "edge of
+dreamland" muted quality of the dialogue and the weird and stridently EQ'd
+scores. The odd sense of unease and ugliness permeating everything. Everything
+that works to undermine most movies of the 70s, in the case of horror, works in
+its favor.Specifically, in this film, the quiet, intense shots of the devil dog
+staring people down is fairly unnerving. So much more effective than if they had
+gone the more obvious route of having the dog be growling, slavering, and
+overtly hostile ("Cujo"?). The filmmakers wisely save that for when the dog
+appears in its full-on supernatural form. The effects when that occurs, while
+unsophisticated by today's standards, literally gave me chills. The bizarre,
+vaguely-defined, "I'm not quite sure what I'm looking at" look intuitively
+strikes me as more like how a real supernatural vision would be, rather than the
+hyper-real, crystal clear optical printer / digital compositor confections of
+latter-day horror films.While the human characters in this film are not as
+satisfyingly rendered as their nemesis or the world they inhabit, the actors all
+do a decent job. The pairing of the brother and sister from the "Witch Mountain"
+movies as, yes, brother and sister, is a rather cheesy bit of stunt casting, but
+they do fine. Yvette Mimieux always manages to be entertaining if unspectacular.
+Richard Crenna earns more and more empathy from the audience as the film
+progresses. His self-doubt as he wonders whether his family's alienness is truly
+due to a supernatural plot or whether he's merely succumbing to paranoid
+schizophrenia is pretty well handled, though his thought that getting a routine
+physical may provide an explanation for what he's been experiencing is absurd in
+its naïveté.The movie's The-End-Question-Mark type ending is one of the only
+ones I've seen that doesn't feel like a cheap gimmick, and actually made me
+think about the choices these characters would be faced with next and what
+they'd be likely to do and how they'd feel about it.Detractors of this film may
+say it's merely a feature-length vehicle for some neato glowing retina shots,
+but hey, you could say the same thing about "Blade Runner". :-)
+
+CLOSEST passages in CC:
+-------------------------------------------------------------
+Closest 0
+Sure , it was a big part of the TV show as well , but we as a culture have moved
+on from that kind of entertainment .Overall , this movie met my expectations -
+very low quality flick produced solely to entertain little kids and give
+stressed parents a break from their little demons . ...Expand .Why .Just why is
+all I really have to say .The last time these guys were good was back in the 70s
+and 80s .There is no point in resurrecting these characters and then just
+completely ruin what made the old cartoon great .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 1
+I 'm not entirely sure though .First off , it 's about time , that we have a
+movie that 's about video games and does n't suck .I said it already , but it 's
+so exciting .Enough with the geekgasm , I should start talking about why I like
+this film .Some of things that stand out in this film are the visuals , they are
+a joy to look at and have a lot of imagination put into them .Varying from
+arcade classic theme , dark gritty , and childlike .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 2
+This torment never ends .Was n't the TV series in the late sixties ?So , you 'd
+be pushing 60 yourself to remember the show ?Waaait ... these guys are trying to
+pay their bills ? !Those scum bags !Boo .Jesus Christ I hate fucking entitled
+idiots like you .I know you think you 're clever for pointing out some sort of
+hypocrisy in their use of advertising , but you have no clue what you 're
+talking about .How is having an advertisement in the middle of their video the
+same as horrible out - of - place product placement in a film ?
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 3
+And last but Fantastic movie .I feel like this movie had a lil ' something for
+everybody .For the gamer there were flashbacks to great games of the past ( as
+well as little hidden nuggets that only gamers could pick up on ) , It also had
+a well thought out plot with thoughtful moments that pulled at your heartstrings
+.It was also very funny ; I found myself laughing out loud numerous times .And
+last but not least , it even had a great twist that most viewers most likely did
+not see coming .
+------------------------------------------------------------
+...
+-------------------------------------------------------------
+Farthest 462
+Adam fathers a child with his teacher in approximately 7th grade .His Mom spends
+her remaining years in jail and up until Andy 's wedding the groom has secreted
+himself from his slob of a father .They do have their ups and downs , there 's a
+lot of Pinky Luerssen That 's My Boy with Adam Sandler and Andy Samberg is a
+typical raunchy , but funny film timed perfectly for a Summer opening .Adam
+fathers a child with his teacher in approximately 7th grade .His Mom spends her
+remaining years in jail and up until Andy 's wedding the groom has secreted
+himself from his slob of a father .
+-------------------------------------------------------------
+Farthest 463
+He 's told if he does n't pay 43,000 dollars at the end of the weekend then he
+must serve jail time .He is forced to join up with his son , Todd Peterson AKA
+Han Solo Berger ( Andy Samberg ) .Donny does n't want to just get the money out
+of Todd , he wants to hang out with his son one last time .That 's My Boy is one
+big raunchy perverted joke .... that I would listen to again and again .( Think
+about it ) ...Expand .Sure , it 's lowbrow as hell , but I laughed consistently
+throughout , and the movie has a heart .
+-------------------------------------------------------------
+Farthest 464
+To briefly summarize the plot , we get to see how the title character 's unique
+behavior helps to bring the lives of two very different siblings into balance
+.While young Sally ( Fanning ) is orderly and mature , her brother Conrad (
+Spencer Breslin ) is more wild and carefree .When the two kids are left alone
+with a narcoleptic babysitter by their mother Joan ( Kelly Preston ) , the Cat (
+Mike Myers ) appears , intent on teaching the conservative Sally and disobedient
+Conrad how to let loose and have fun .After the Cat wreaks havoc on the house ,
+the two tykes must try to restore order , clean up the mess , and learn neatly
+packaged life lessons about what it takes to be well - adjusted children .
+-------------------------------------------------------------
+Farthest 465
+It is definitely one of the more enjoyable movies at the cinemas right now .Adam
+Sandler was good in Punch - Drunk Love .Because it was a Paul Thomas Anderson
+film , not an Adam Sandler " movie .Because it was a Paul Thomas Anderson film ,
+not an Adam Sandler " movie .Watching white paint dry on a white wall might hold
+more entertainment value and humor than this .Because at least with watching
+watching white paint dry on a white wall , you can at least laugh at yourself
+for choosing that over this .

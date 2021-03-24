@@ -1,0 +1,174 @@
+Namespace(dataset_name='02_acl', emb='sparse', train_file='data/02-acl-arc/train.jsonl')
+Thus+,+over+the+past+few+years+,+along+with+advances+in+the+use+of+learning+and+
+statistical+methods+for+acquisition+of+full+parsers+(+Collins+,+1997+;+Charniak+
+,+1997a+;+Charniak+,+1997b+;+Ratnaparkhi+,+1997+)+,+significant+progress+has+bee
+n+made+on+the+use+of+statistical+learning+methods+to+recognize+shallow+parsing+p
+atterns+syntactic+phrases+or+words+that+participate+in+a+syntactic+relationship+
+(+Church+,+1988+;+Ramshaw+and+Marcus+,+1995+;+Argamon+et+al.+,+1998+;+Cardie+and
++Pierce+,+1998+;+Munoz+et+al.+,+1999+;+Punyakanok+and+Roth+,+2001+;+Buchholz+et+
+al.+,+1999+;+Tjong+Kim+Sang+and+Buchholz+,+2000+)+.
+Number of retrieved documents: 10
+--- 0.038947343826293945 seconds ---
+tr_02_acl
+Thus , over the past few years , along with advances in the use of learning and
+statistical methods for acquisition of full parsers ( Collins , 1997 ; Charniak
+, 1997a ; Charniak , 1997b ; Ratnaparkhi , 1997 ) , significant progress has
+been made on the use of statistical learning methods to recognize shallow
+parsing patterns syntactic phrases or words that participate in a syntactic
+relationship ( Church , 1988 ; Ramshaw and Marcus , 1995 ; Argamon et al. , 1998
+; Cardie and Pierce , 1998 ; Munoz et al. , 1999 ; Punyakanok and Roth , 2001 ;
+Buchholz et al. , 1999 ; Tjong Kim Sang and Buchholz , 2000 ) .
+
+1688
+416
+Dimension:  43341
+(2104, 43341)
+(1688, 43341)
+(416, 43341)
+Number of train passages: 1688
+[[0.         0.         0.         ... 0.         0.         0.        ]
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ [0.35724932 0.         0.         ... 0.         0.         0.        ]
+ ...
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ [0.         0.         0.         ... 0.         0.         0.        ]
+ [0.         0.         0.         ... 0.         0.         0.        ]]
+trained? True
+Total number of indexed CC passages:  416
+
+Using an indentical CC set
+================================================================
+4 nearest neighbors
+[[  0  97  16 ... 117  47   8]
+ [  1  15   3 ...  31 198  28]
+ [  2   5  10 ...  57  47  70]
+ [  3  71   1 ...  70  28  26]
+ [  4   6   8 ... 141 114  29]]
+
+distances(sanity check)
+[[0.        1.8391206 1.8582246 ... 2.        2.        2.       ]
+ [0.        1.8327465 1.8532362 ... 2.        2.        2.       ]
+ [0.        1.7966442 1.8468611 ... 2.        2.        2.0000002]
+ [0.        1.8340287 1.8532362 ... 2.0000002 2.0000002 2.0000002]
+ [0.        1.7248131 1.8305557 ... 2.0000002 2.0000002 2.0000002]]
+
+===============================================================
+Using the query(train set)
+4 nearest neighbors
+[[  0 194 270 ... 348 330 301]
+ [ 66  97 266 ... 122  51  21]
+ [344 371 157 ... 122  51  21]
+ [136  94 327 ... 122 103  21]
+ [157  48 159 ... 124 122 103]]
+
+distances
+[[1.7765132 1.8838347 1.8917812 ... 2.0000002 2.0000002 2.0000002]
+ [1.9256163 1.9257255 1.9323909 ... 2.0000002 2.0000002 2.0000002]
+ [1.9425323 1.9516444 1.952038  ... 2.0000002 2.0000002 2.0000002]
+ ...
+ [1.9018229 1.9022089 1.9275583 ... 2.0000002 2.0000002 2.0000002]
+ [1.9484161 1.9550877 1.9573586 ... 2.0000002 2.0000002 2.0000002]
+ [1.932614  1.9412556 1.9429576 ... 2.0000002 2.0000002 2.0000002]]
+
+Train passage
+It can be shown ( Berger et al. , 1996 ) that the use of this model with maximum
+likelihood parameter estimation is justified on information-theoretic grounds
+when q represents some prior knowledge about the true distribution and when the
+expected values of f in the training corpus are identical to their true expected
+values .3 There is no requirement that the components of f represent disjoint or
+statistically independent events .
+
+CLOSEST passages in CC:
+-------------------------------------------------------------
+Closest 0
+Electrophysiological evidence also supports this conclusion .Violations of
+expected harmonic , melodic , and rhythmic patterns result in a late positive
+component ( LPC ) characteristic of the detection of an incongruity , even when
+the participants lacked formal training and were unable to explicitly identify
+the surprises ( Besson and Faita , 1995 ) .The elicitation of ERP components
+related to syntactic violations in music seem to be independent of the task
+relevance of unexpected chords , and provides strong evidence for important
+implicit components to musical ability ( Koelsch et al . , 2000 ) .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 1
+Most current natural language processing ( NLP ) systems are built using
+statistical learning algorithms trained on large annotated corpora which can be
+expensive and time - consuming to collect .In contrast , humans can learn
+language through exposure to linguistic input in the context of a rich ,
+relevant , perceptual environment .I will first present a system we completed
+that can describe events in RoboCup 2D simulation games by learning only from
+sample language commentaries paired with traces of simulated activities without
+any language - specific prior knowledge .By applying an EM - like algorithm ,
+the system was able to simultaneously learn a grounded language model as well as
+align the ambiguous training data .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 2
+Training employs only ambiguous supervision consisting of a stream of
+descriptive textual comments and a sequence of events extracted from the
+simulation trace .The system simultaneously establishes correspondences between
+individual comments and the events that they describe while building a
+translation model that supports both parsing and generation .We also present a
+novel algorithm for learning which events are worth describing .Human
+evaluations of the generated commentaries indicate they are of reasonable
+quality and in some cases even on par with those produced by humans for our
+limited domain .ML ID : 240 .Learning Language from Perceptual Context [ Details
+] [ PDF ] [ Slides ] David L. Chen December 2009 .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 3
+This will involve exploiting prior knowledge about the natural - language syntax
+and the application domain .We also plan to construct a syntax - aware word -
+based alignment model for lexical acquisition .Finally , we will generalize the
+learning algorithm to handle context - dependent sentences and accept noisy
+training data .ML ID : 180 .A Statistical Semantic Parser that Integrates Syntax
+and Semantics [ Details ] [ PDF ] Ruifang Ge and Raymond J. Mooney In
+Proceedings of CoNLL-2005 , Ann Arbor , Michigan , June 2005 .We introduce a
+learning semantic parser , Scissor , that maps natural - language sentences to a
+detailed , formal , meaning - representation language .
+------------------------------------------------------------
+...
+-------------------------------------------------------------
+Farthest 412
+( Hutchins 1986:39 ) .It is then perhaps not surprising that the mid-1960s saw
+the birth of another discipline : Computer Assisted Language Learning ( CALL )
+.The PLATO project , which was initiated at the University of Illinois in 1960 ,
+is widely regarded as the beginning of CALL - although CALL was just part of
+this huge package of general Computer Assisted Learning ( CAL ) programs running
+on mainframe computers .PLATO IV ( 1972 ) was probably the version of this
+project that had the biggest impact on the development of CALL ( Hart 1995 ) .
+-------------------------------------------------------------
+Farthest 413
+The big drawback , however , is that individual learner errors have to be
+anticipated in the sense that each error needs to be covered by an adequate rule
+.However , as already stated it is not only in texts that have been produced by
+language learners that we find erroneous structures .Machine translation is
+facing similar problems .Dina & Malnati review approaches " concerning the
+design and the implementation of grammars able to deal with ' real input ' . "(
+Dina & Malnati 1993:75 ) .They list four approaches : .The rule - based approach
+which relies on two sets of rules : one for grammatical input and the other for
+ungrammatical input .
+-------------------------------------------------------------
+Farthest 414
+More specifically related to the implicit memory system , we believe such
+experiments could be conducted with both music and language studied side - by -
+side .Major divisions of the dopaminergic system contain neurons from the
+substantia nigra pars compacta and ventral tegmental area projecting to
+divisions of the striatum and prefrontal cortex , and other regions ( see
+Seamans and Yang , 2004 for a review ) .As discussed above , these brain regions
+are also associated with the implicit memory system .Future research into the
+role of the implicit memory system in music and language could employ similar
+methods to more directly examine their potentially shared molecular
+neurobiological mechanisms .
+-------------------------------------------------------------
+Farthest 415
+The original , pre - lemmatized Latin is salvum tu me esse cupisti ( Cicero ,
+Pro Plancio , chapter 33 ) .The original English is you wished me to be safe .As
+a result of the lemmatization process , many source words are mapped to multiple
+words in the target - most often to lemmas which share a common inflection .For
+instance , during lemmatization , the Latin word esse is replaced with the two
+lemmas from which it can be derived - sum1 ( to be ) and edo1 ( to eat ) .If the
+word alignment process maps the source word be to both of these lemmas in a
+given sentence ( as in Figure 3 ) , the translation probability is divided
+evenly between them .

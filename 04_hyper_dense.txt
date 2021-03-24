@@ -1,0 +1,277 @@
+Namespace(dataset_name='04_hyper', emb='dense', train_file='data/04-hyper/train.jsonl')
+As+seen+on+The+Five+Police+Group+Boycotts+Ben+&amp;+Jerry's+After+Black+Lives+Ma
+tter+Endorsement+As+more+women+come+forward+with+allegations+of+sexual+misconduc
+t+against+Donald+Trump,+the+Republican+nominee+is+lashing+out+at+the+mainstream+
+media,+which+he+claims+is+running+with+this+"total+fiction"+to+distract+from+Hil
+lary+Clinton's+scandals.+At+a+rally+in+Greensboro,+N.C.,+Trump+said+these+accusa
+tions+are+part+of+a+conspiracy+involving+the+Clinton+campaign+and+what+he+called
++“the+corrupt+media.”+Greg+Gutfeld+agreed+with+much+of+Trump's+assessment+on+"Th
+e+Five"+today,+saying,+"The+media+wants+Hillary+to+win.+There's+no+doubt+about+t
+hat."+Judge+Jeanine+on+Trump+Accusers:+'All+on+One+Day?+It's+a+Little+Too+Conven
+ient'+Gutfeld+explained+that+Trump+has+actually+been+"set+up,"+as+he+was+given+c
+ountless+hours+of+coverage+and+"billions+of+dollars+of+free+media,"+only+to+have
++the+rug+pulled+out+from+under+him.+"The+media+...+[and]+Hillary+and+Obama,+they
++knew+elevating+Donald+Trump+-+giving+him+an+air+of+respectability+in+the+press,
++as+well+-+turned+him+into+the+Republican+nominee.+Then,+out+came+the+knives."+W
+atch+the+co-hosts+of+"The+Five"+discuss+above,+and+let+us+know+what+you+think+in
++the+comments.+New+WikiLeaks+Bombshell:+Clinton+Aides+Discussed+'Emails+to+and+f
+rom+POTUS'
+Number of retrieved documents: 10
+--- 0.02270197868347168 seconds ---
+tr_04_hyper
+As seen on The Five Police Group Boycotts Ben &amp; Jerry's After Black Lives
+Matter Endorsement As more women come forward with allegations of sexual
+misconduct against Donald Trump, the Republican nominee is lashing out at the
+mainstream media, which he claims is running with this "total fiction" to
+distract from Hillary Clinton's scandals. At a rally in Greensboro, N.C., Trump
+said these accusations are part of a conspiracy involving the Clinton campaign
+and what he called “the corrupt media.” Greg Gutfeld agreed with much of Trump's
+assessment on "The Five" today, saying, "The media wants Hillary to win. There's
+no doubt about that." Judge Jeanine on Trump Accusers: 'All on One Day? It's a
+Little Too Convenient' Gutfeld explained that Trump has actually been "set up,"
+as he was given countless hours of coverage and "billions of dollars of free
+media," only to have the rug pulled out from under him. "The media ... [and]
+Hillary and Obama, they knew elevating Donald Trump - giving him an air of
+respectability in the press, as well - turned him into the Republican nominee.
+Then, out came the knives." Watch the co-hosts of "The Five" discuss above, and
+let us know what you think in the comments. New WikiLeaks Bombshell: Clinton
+Aides Discussed 'Emails to and from POTUS'
+
+516
+61
+Number of train passages: 516
+[[ 0.10329694 -0.17224692  0.32301614 ... -0.0395916   0.16416584
+  -0.26728263]
+ [ 0.2942422   0.2507013   0.22906436 ... -0.15961663 -0.08731524
+  -0.24905843]
+ [-0.15265147  0.08887546  0.27140763 ... -0.043509    0.16684186
+  -0.21334432]
+ ...
+ [ 0.5545548   0.18186316  0.11241318 ... -0.36863258  0.04152366
+  -0.27384302]
+ [ 0.45728907  0.3381232   0.17105189 ...  0.37549248  0.38859776
+  -0.30946207]
+ [ 0.22971752  0.08091886  0.7785329  ... -0.2643278   0.01397015
+  -0.2496137 ]]
+trained? True
+Total number of indexed CC passages:  61
+
+Using an indentical CC set
+================================================================
+4 nearest neighbors
+[[ 0  1  2 36 37 39 57 22 58 34 23 38 19 40  9  4 27 59 33 35  7 21 13 32
+  16  3 60 56 44 24  5 48 29 53 31  8 42 20 14  6 12 50 51 10 25 43 11 54
+  26 49 30 18 28 52 17 55 15 47 41 46 45]
+ [ 1  0 40 36 34 35 33  2 37 38 16 59 49 48 52 50 58 60 21 13 44 43 12 11
+  53 29  8 28 27 31 17 22 24 32 42 25 26  7 15  4 18 39 51 57 14 19  3 10
+  56 23  9 47 20 30  5 46 55  6 54 41 45]
+ [ 2  0 39 57  1 19 23 58 22 36 34 51 21  9 56  7 60  3  5 48 50 13 38 24
+  11 20 32 53 27 35  4 37 40 47 54 33  6 49 59 17 16 14 12 25 44 15 29 28
+  26 30 52 43 10 31 42 55 18  8 46 41 45]
+ [ 3  5  4  6 42 20 43 59  7 39  8 11 56 32 13 38  9 44 21 24 58 40 26 48
+  22 28 34 23 60 12 33 16 35 30 19 50 14 27 31 15 57 25 17 29 53  2 54 10
+  18 36 37 46 45 55  1 41 49 47 52  0 51]
+ [ 4  6  3  8  5 38  9 48 13 24 28 11 40 50 32 59 10 21 34 33 15 20 12 18
+   7 35 16 26 56 42 53 22 39 60 25 37 55 17 36 30 14 58 29 54 43 44 31 19
+  27 57 49  1 51 23  0 52  2 47 45 41 46]]
+
+distances(sanity check)
+[[  0.        66.264786  76.37625   79.92406   87.48816   91.08087
+   92.492645  96.54616   96.58867   96.77669  102.95421  103.33801
+  103.9213   107.31794  107.96268  112.61409  114.06259  114.18604
+  114.65505  114.77404  115.373215 115.52573  116.01227  116.05314
+  116.833145 118.06041  118.71317  120.04753  120.16113  120.79355
+  121.063644 122.4291   124.07889  124.3579   125.47014  125.964554
+  126.23825  127.62268  128.15115  128.9899   129.33624  129.86032
+  129.9378   130.15732  130.49301  131.36234  131.6489   131.71213
+  133.51828  133.63873  134.02072  134.35037  136.83028  137.02237
+  139.22672  141.08505  141.24133  144.97696  151.84113  154.29333
+  165.03645 ]
+ [  0.        66.264786  74.41518   77.40149   78.53316   80.49782
+   81.6561    84.25373   85.488625  88.75662   88.78317   92.43257
+   93.669556  95.14011   96.072945  96.109924  97.33658   97.96881
+   98.10165   98.48961   98.54334   99.793785 100.7484   101.199905
+  102.43655  102.54754  102.68175  103.41518  103.84724  104.08191
+  104.25204  104.51288  105.34049  105.36395  105.80761  105.98029
+  106.44094  107.44786  108.23044  108.91954  111.294815 112.04277
+  112.39588  112.97339  113.75162  114.11021  114.59318  115.04547
+  115.84999  116.762474 117.624466 118.7578   119.334526 119.46158
+  119.64029  120.012505 121.49077  122.32872  126.64942  128.00261
+  141.92557 ]
+ [  0.        76.37625   78.22601   83.939     84.25373   87.347824
+   89.93851   91.95592   97.505394  98.02992   98.286964  99.47532
+  100.687454 102.95065  104.40829  105.173386 107.34804  107.617645
+  107.65935  107.70802  110.13536  110.222725 111.378624 112.16968
+  112.755745 112.912155 114.56653  114.69577  116.52338  117.03223
+  119.211525 119.52794  119.68352  120.699234 122.21858  123.00822
+  123.077515 123.942184 124.49277  125.54827  125.6926   127.20151
+  127.23632  127.31286  128.51842  128.69296  129.40567  129.40921
+  129.81148  130.09879  131.33961  131.68835  132.1483   134.14386
+  134.3418   134.37607  136.0098   136.3805   147.73906  158.57191
+  162.3252  ]
+ [  0.        48.352676  56.208267  61.869164  76.246475  77.24927
+   78.61687   79.374405  81.561226  82.418465  82.731964  82.97508
+   83.530075  83.80549   84.72002   85.37904   85.78082   86.52035
+   87.21296   87.21739   87.81864   89.59486   90.08301   90.544754
+   92.92558   92.95667   93.75572   93.92389   94.1221    94.79695
+   95.901535  98.96706   99.11493   99.29421  101.41591  102.121765
+  102.13111  102.45756  102.76848  103.20491  103.30861  104.55087
+  104.95453  105.06113  105.20491  107.617645 108.16368  108.36678
+  108.87182  110.74446  111.03327  111.089355 112.24717  112.52663
+  114.59318  116.95018  117.42895  117.508965 117.902534 118.06041
+  119.1004  ]
+ [  0.        43.165512  56.208267  64.698906  66.69783   72.46307
+   77.88475   78.81166   79.190025  80.54928   81.65898   82.08829
+   82.840225  83.33781   83.42725   84.13412   84.84479   86.32655
+   86.460556  86.535515  86.56847   87.23705   87.49338   87.93997
+   88.629486  88.92642   90.259125  91.77663   92.09795   92.456535
+   92.91323   92.979004  94.53433   94.84832   94.93399   96.17996
+   96.77588   96.789986  98.30032   98.31326   99.43384   99.78003
+  100.53275  101.59742  102.33336  102.42677  103.425064 104.628235
+  106.32124  107.309105 107.74861  108.91954  109.19251  109.23125
+  112.61409  118.17937  119.211525 119.85036  124.69151  135.45073
+  137.40152 ]]
+
+===============================================================
+Using the query(train set)
+4 nearest neighbors
+[[59 48 58 50 53 23 54 32 21 57 56  7 30  8 55 13 22 16 24 31 10 25 19 12
+  28 20 27 51 11 15 14  9  4 44 60 39 36 33 47 26  6 29 52  0 49 18 38  3
+  35  2 42 34 43 17 37 40  1  5 45 41 46]
+ [ 7 21 15  8 23 11 59 24 55 13 58 30 19 48 32 12 20 54  4 50 39 38  6 33
+  35 53 18 43 22 42 17 40 36 31 44  3 27 52 26 28 56 14 60 57 10 51 25 29
+  34  5 16  9 45 41 37 49 47  2  1 46  0]
+ [ 7 21 19 31 23 13 54 32 18 30  8 24 12 15 14 11 48 59 17 55 50 36 58 52
+  37 39 22 53 20 26 29  4 43 28 16 33 27 38 57 51 42  3 25 44  9  6 35 40
+  49 60 56 41 10 34 45  5  0  1 47  2 46]
+ [21 24  7 22 39 60 35 20  8  3 59 36 23 54 40  5 31 27  4 50 43 34 26  6
+  33 13 10 11 58 30 51 17 38 28 48 25 15 53 19 42 29 16 44 32 12  1 52 14
+  57  9 55  2 37 56 47 18 41 49 46  0 45]
+ [24 10 21 20 60 35 26 34  7 13 59  5 22 11 33  8 38  3 30 44 15 18 40 50
+  48 53 42  4 36 19 31 28 12 58 25  9 43 16 52  6 32 47 37 27  1 56 39 29
+  14 17 55 23 54  2 57 51 46 45 41  0 49]]
+
+distances
+[[ 64.72856   68.10857   69.515    ... 112.84839  113.59613  126.56641 ]
+ [ 62.836273  64.90898   72.2742   ... 117.51077  121.45     131.62976 ]
+ [ 73.93149   79.91057   81.54175  ... 145.20792  145.30469  145.95642 ]
+ ...
+ [ 76.3878    77.29205   78.50545  ... 135.15114  142.38597  155.90079 ]
+ [ 84.7883    86.27052   88.43588  ... 132.29466  135.49806  144.30244 ]
+ [ 62.062912  63.15628   63.83789  ... 110.387375 110.96159  116.353546]]
+
+Train passage
+Surprisingly a lot of people are standing with Colin Kaepernick in his decision
+not to stand during the national anthem, "calling the Star Spangled Banner
+"weak" and saying that he doesn't truly love the song. Here is what he had to
+say on twitter: For those defending the current anthem, do you really truly love
+that song? I don't and I'm very good at singing it. Like, one of the best He
+continued to add: My vote is for America the Beautiful. Star spangled banner is
+a weak song anyway. And then you read this... https://t.co/iAE62FAbxj John
+Legend linked to an article titled, "Colin Kaepernick Is Righter Than You Know:
+The National Anthem Is A Celebration Of Slavery" The article makes the arguement
+that an unsung verse of the Francis Scott Key poem is a moral "atrocity." The
+author claims the end of the rarely sung third verse "literally celebrated the
+murder of African-Americans." The verse reads: No refuge could save the hireling
+and slave From the terror of flight or the gloom of the grave, And the star-
+spangled banner in triumph doth wave O’er the land of the free and the home of
+the brave. @johnlegend not sure why it's turned into a battle over the lyrics of
+our anthem. The lyrics were never Colin's argument in the first place All of
+John Legend's tweets were made in support of the 49ers quarterback who refused
+to stand while the national anthem was being played during a preseason game.
+Kaepernick said that his sitd own was for "people that are being oppressed" and
+he'll end the protest when "I feel like that flag represents what it's supposed
+to represent."
+
+CLOSEST passages in CC:
+-------------------------------------------------------------
+Closest 0
+Right here in New York when unarmed Black men have been killed by officers of
+the New York Police Department ( NYPD ) there are protests and people say "
+never again . "After each incident there is outrage and emotional protest
+marches all over the City .People declare " never again ." But it does always
+happen again .What can change all this ?How can people in the African American
+community make it abundantly clear that the lives of Black males have value even
+as many battle against the odds ?Enter Stevie Wonder and his vow to boycott
+Florida until the Stand - Your - Ground law is scrapped .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 1
+It would also be good to see young celebrities such as Jay - Z , patch up any
+misunderstanding with Belafonte that 's been the subject of recent media
+coverage and take a position on a critical issues that affects the lives of
+young Black males .Right here in New York City , the December 12 Movement has
+been leading Sunday rallies at 6PM in front of the State Office Building on
+125th Street in Harlem where participants discuss and strategize on how they can
+support the boycott of Florida .Omowale Clay led one such gathering yesterday
+afternoon where more than 60 people showed up in the rain .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 2
+( 1 )It is significant to recall that boycotts as a civil rights strategy did
+not always meet with such widespread approbation .The NAACP itself looked
+askance at some of the boycotts launched in the 1950s and 1960s that sought to
+expand employment opportunities for African Americans .The public support for
+economic demands was a gamble for an organization that preferred a legal or
+political approach to civil rights .But urban and economic realities , combined
+with a new assertiveness among activists , gave prominence to this strategy ,
+particularly in matters involving employment opportunities .
+------------------------------------------------------------
+-------------------------------------------------------------
+Closest 3
+Right here in New York mayor Bloomberg 's and Police Commissioner Ray
+Kelly'sdiscriminatory Stop - and - Frisk has led to racial profiling of hundreds
+of thousands of African Americans .Clearly Diallo and Bell were both racially
+profiled before they were approached .Legislators and politicians will pay more
+attention when people in the African American community respond to outrageous
+unlawful killings by taking action with their wallets and their purses and
+directing their dollars elsewhere or even refraining from spending it .In
+Florida Harry Belafonte , a veteran of many marches , protests , and boycotts ,
+including from the Civil Rights Movement and the anti - apartheid campaign in
+South Africa has now joined those promoting a boycott of Florida until something
+is done about Stand - Your - Ground .
+------------------------------------------------------------
+...
+-------------------------------------------------------------
+Farthest 57
+Ted had gone to a market on a quiet street , and tied Ben to a magazine rack
+.Something frightened Ben , and he bolted , breaking his leash .He was last seen
+running along the Seine .I tried to give advice and reassurance , but day after
+day went by without a trace .After five days , I decided to make the journey and
+see if I could help .So , seven days after Ben disappeared , I arrived in Paris
+and began a lengthy and tiring search with my bro .By this time , he had put up
+more than 1,000 posters around the city , contacted 22 police precincts and
+dozens of vets , and been receiving advice and support from numerous online
+rescue groups .
+-------------------------------------------------------------
+Farthest 58
+In two separate incidents over the past few weeks , Israelis issued a call for
+boycott or announced a boycott of an Israeli institution for political reasons
+.One protest came from the right , directed at an Israeli university with
+allegedly " anti - Zionist " professors on staff ; one came from the left ,
+directed at an Israeli theater in the West Bank .The boycotts from within may
+mark a new front in Israel 's political battles .For the time being , mainstream
+Israeli figures are condemning both boycotts ." Culture is a bridge in society ,
+and political disputes should be left outside cultural life and art , " Israel
+'s minister of culture and sport , Limor Livnat , said in response to the
+theater boycott .
+-------------------------------------------------------------
+Farthest 59
+The theaters each received about $ 2.5 million to $ 3 million from the ministry
+of culture and sport , according to an official in Livnat 's office .The
+ministry was not involved in funding the theater in Ariel , which is located
+about 10 miles inside the West Bank and is the fifth - largest Jewish settlement
+in the territory .The theaters issued a collective statement saying that the
+scheduled Ariel productions will go on , but that they would " respect the
+political opinions of their actors ." The theaters are consulting with their
+legal advisers on how to proceed with artists who refuse to perform in the West
+Bank , a culture ministry official told JTA .
+-------------------------------------------------------------
+Farthest 60
+They 've been to the States , Italy , England , Belgium , Germany , and are now
+back in Paris .Each day , they go to the Tuileries , where Ben plays , happily ,
+with a Saluki and a Galgo ( Spanish Greyhound ) .And what a beautiful sight it
+is !Toby Wolter is a realtor with Douglas Elliman in Florida .His special
+interests are animal rescue groups and the First Tee , a golf - mentoring
+program . "Looking for Ben " is a condensed version of the story , which
+appeared on his blog .
