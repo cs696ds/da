@@ -14,8 +14,8 @@ def main(args):
     TR = 'tr_' + args.dataset_name
     CC = 'cc_' + args.dataset_name
     TRAIN_PATH  = args.train_file
-    TR_TSV  = 'emb/' + TR + '.tsv'
-    CC_TSV  = 'emb/' + TR + '.tsv'
+    TR_TSV  = 'emb/' + TR + '.tsv' 
+    CC_TSV  = 'emb/' + CC + '.tsv'
     
     start_time = time.time()
     pretty = lambda x : json.dumps(x, indent=2, sort_keys=True)
@@ -68,11 +68,12 @@ def main(args):
         dw = csv.DictWriter(output_file, cc_psgs[0].keys(), delimiter='\t')
         for psg in cc_psgs:
             dw.writerow(psg)
-            print(CC)
-            print(cc_psgs[0]['doc_text'])
+#            print(CC)
+#            print(cc_psgs[0]['doc_text'])
 
-    subprocess.check_output(['sh', 'emb/generate_embedding.sh ' + TR])
-    subprocess.check_output(['sh', 'emb/generate_embedding.sh ' + CC]) 
+    
+    subprocess.call(['emb/generate_embedding.sh', TR])
+    subprocess.call(['emb/generate_embedding.sh', CC]) 
 
     MAX_TR_PSGS = len(train_psgs)
     MAX_CC_PSGS = len(cc_psgs)
