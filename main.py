@@ -1,3 +1,4 @@
+import pdb
 import argparse
 import sys
 import json
@@ -39,7 +40,7 @@ def main(args):
             N = len(json_lines)
     j = json_lines[0]
     query = j['text'].replace(' ', '+')
-    print(query)
+    print(textwrap.fill(query,80))
     rp_retrieval = requests.get(solr_select + query).json()
     cc_docs = (rp_retrieval['response']['docs'])
     print('Number of retrieved documents: %d' % len(cc_docs))
@@ -68,7 +69,7 @@ def main(args):
         train_dict = {'doc_id': str(i), 'doc_text': json_lines[i]['text'], 'title': ''}
         train_psgs.append(train_dict)
     print(TR)
-    print(train_psgs[0]['doc_text'])
+    print(textwrap.fill(train_psgs[0]['doc_text'], 80))
     print()
     with open(TR_TSV, 'w') as output_file:
         dw = csv.DictWriter(output_file, train_psgs[0].keys(), delimiter='\t')
@@ -84,15 +85,23 @@ def main(args):
     print(MAX_TR_PSGS)
     print(MAX_CC_PSGS)
 
+    nq = len(train_psgs)
+    nb = len(cc_psgs) # database size
+    
     if args.emb=='dense':
         subprocess.call(['emb/generate_embedding.sh', TR])
         subprocess.call(['emb/generate_embedding.sh', CC])
         train_embeddings = np.load('emb/' + TR + '_0.pkl', allow_pickle=True)
         cc_embeddings = np.load('emb/' + CC + '_0.pkl', allow_pickle=True)
+        d = train_embeddings[0][1].size
+        
+        xq = np.zeros((nq,d), dtype='float32')
+        for i in range(nq):
+            xq[i] = train_embeddings[i][1]
+        xb = np.zeros((nb,d), dtype='float32')
+        for i in range(nb):
+            xb[i] = cc_embeddings[i][1]
 
-
-#    print(train_psgs[:2])
-#    print(cc_psgs[:2])
     if args.emb=='sparse':
         texts = []
         for dict_tr in train_psgs:
@@ -100,28 +109,16 @@ def main(args):
         for dict_cc in cc_psgs:
             texts.append(dict_cc['doc_text'])
         emb = encode_sparse(texts)
+        _, d = emb.shape
         print(emb.shape)
         train_embeddings = emb[:MAX_TR_PSGS]
         cc_embeddings = emb[MAX_TR_PSGS:]
         print(train_embeddings.shape)
         print(cc_embeddings.shape)
+        xq = np.array(train_embeddings, dtype='float32')
+        xb = np.array(cc_embeddings, dtype='float32')
 
-    print(len(cc_embeddings))
-    sys.exit()
-    nb = len(cc_embeddings) # database size
-    d = cc_embeddings[0][1].size
-    print(nb,d)
-    xb = np.zeros((nb,d), dtype='float32')
-    for i in range(nb):
-        xb[i] = cc_embeddings[i][1]
 
-    print(train_embeddings[0][1].shape)  # Dimension of the embedding
-    nq = len(train_embeddings)
-    d = train_embeddings[0][1].size
-    print(nq,d)
-    xq = np.zeros((nq,d), dtype='float32')
-    for i in range(nq):
-        xq[i] = train_embeddings[i][1]
     print('Number of train passages: %d' % nq)
     print(xq)
     index = faiss.IndexFlatL2(d)   # build the index
@@ -148,7 +145,7 @@ def main(args):
     print(D)
     print()
     print('Train passage')
-    print(train_psgs[300]['doc_text'])
+    print(textwrap.fill(train_psgs[300]['doc_text'],80))
     print()
     print('CLOSEST passages in CC:')
     for i in range(4):
@@ -157,7 +154,7 @@ def main(args):
         closest = I[300][i]
         print(textwrap.fill(cc_psgs[closest]['doc_text'], 80))
         print('------------------------------------------------------------')
-        print('...')
+    print('...')
     for i in range(MAX_CC_PSGS-4, MAX_CC_PSGS):
         print('-------------------------------------------------------------')
         print('Farthest %d' % i)
@@ -168,8 +165,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Data Augmentation Pipeline')
     parser.add_argument("--dataset_name", default="02_acl"                     , type=str, help="")
     parser.add_argument("--train_file"  , default="data/02-acl-arc/train.jsonl", type=str, help="")
-    parser.add_argument("--dev_file"    , default="data/02-acl-arc/dev.jsonl"  , type=str, help="")
-    parser.add_argument("--test_file"   , default="data/02-acl-arc/test.jsonl" , type=str, help="")
-    parser.add_argument("--emb"         , default="sparse" , type=str, help="")    
+    parser.add_argument("--emb"         , default="dense" , type=str, help="")    
     print(parser.parse_args())
     main(parser.parse_args())
