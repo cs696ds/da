@@ -175,9 +175,14 @@ if __name__ == "__main__":
     # parser.add_argument("--dataset_name", default="02_acl"                     , type=str, help="")
     # parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_citation_intent.jsonl", type=str, help="")
     # parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_unlabeled_citation_intent.jsonl", type=str, help="")
-    parser.add_argument("--dataset_name", default="04_hyper"                     , type=str, help="")
-    parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_hyperpartisan_news.jsonl", type=str, help="")
-    parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_hyperpartisan_news.jsonl", type=str, help="")
+    # parser.add_argument("--dataset_name", default="04_hyper"                     , type=str, help="")
+    # parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_hyperpartisan_news.jsonl", type=str, help="")
+    # parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_hyperpartisan_news.jsonl", type=str, help="")
+
+    parser.add_argument("--dataset_name", default="07_imdb"                     , type=str, help="")
+    parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_imdb.jsonl", type=str, help="")
+    parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_imdb.jsonl", type=str, help="")
+
 #    parser.add_argument("--train_file"  , default="data/02-acl-arc/train.jsonl", type=str, help="")
 #    parser.add_argument("--emb"         , default="dense" , type=str, help="")
     print(parser.parse_args())
