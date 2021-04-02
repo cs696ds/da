@@ -33,8 +33,9 @@ def main(args):
             j = json.loads(line)
             json_lines.append(j)
     print('Start Querying')
-    cc_psgs_jsonl = []
+    #cc_psgs_jsonl = []
     for i in tqdm(range(len(json_lines))):
+        cc_psgs_jsonl = []
         line = json_lines[i]
         query = line['text'].replace(' ', '+')
         print(textwrap.fill(query,80))
@@ -46,9 +47,12 @@ def main(args):
         print('Number of retrieved documents: %d' % len(cc_docs))
         cc_doc0 = json.loads(cc_docs[0]['_src_'])
         cc_doc10 = ""
-        for j in range(10):
+        for j in range(args.max_doc):
             cc_doc10 += json.loads(cc_docs[j]['_src_'])['text']
 #        print("--- %s seconds ---" % (time.time() - start_time))
+
+        if len(cc_doc10) > 1000000:
+            continue
         nlp = spacy.load("en_core_web_sm", exclude=["parser"])
         nlp.enable_pipe("senter")
         doc = nlp(cc_doc10)
@@ -65,7 +69,7 @@ def main(args):
                 psg = ''
         num_train = len(json_lines)
         train_psgs = []
-        for i in range(num_train):
+        for j in range(num_train):
             train_dict = {'doc_id': str(i), 'doc_text': json_lines[i]['text'], 'title': ''}
             train_psgs.append(train_dict)
         for psg in cc_psgs:
@@ -74,11 +78,23 @@ def main(args):
                  "metadata": {}
             }
             cc_psgs_jsonl.append(json.dumps(d))
-    print('Start writing to ' + args.aug_file)
-    with open(args.aug_file, 'w') as f:
-        for i in tqdm(range(len(cc_psgs_jsonl))):
-            f.write(cc_psgs_jsonl[i]);
-            f.write('\n')
+#        print('Start writing to ' + args.aug_file)
+
+        with open('aug_unlabeled/' + args.dataset_name + '/%05d.jsonl' % i, 'w') as f:
+            for k in tqdm(range(len(cc_psgs_jsonl))):
+                f.write(cc_psgs_jsonl[k]);
+                f.write('\n')
+        
+        # with open(args.aug_file, 'a+') as f:
+        #     for i in tqdm(range(len(cc_psgs_jsonl))):
+        #         f.write(cc_psgs_jsonl[i]);
+        #         f.write('\n')
+            
+    # print('Start writing to ' + args.aug_file)
+    # with open(args.aug_file, 'w') as f:
+    #     for i in tqdm(range(len(cc_psgs_jsonl))):
+    #         f.write(cc_psgs_jsonl[i]);
+    #         f.write('\n')
     print('Done.')
     # TR = 'tr_' + args.dataset_name
     # CC = 'cc_' + args.dataset_name
@@ -172,16 +188,17 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Data Augmentation Pipeline')
-    # parser.add_argument("--dataset_name", default="02_acl"                     , type=str, help="")
-    # parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_citation_intent.jsonl", type=str, help="")
-    # parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_unlabeled_citation_intent.jsonl", type=str, help="")
+    parser.add_argument("--max_doc", default=10, type=int, help="")    
+    parser.add_argument("--dataset_name", default="02_acl"                     , type=str, help="")
+    parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_citation_intent.jsonl", type=str, help="")
+#    parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_unlabeled_citation_intent.jsonl", type=str, help="")
     # parser.add_argument("--dataset_name", default="04_hyper"                     , type=str, help="")
     # parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_hyperpartisan_news.jsonl", type=str, help="")
     # parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_hyperpartisan_news.jsonl", type=str, help="")
 
-    parser.add_argument("--dataset_name", default="07_imdb"                     , type=str, help="")
-    parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_imdb.jsonl", type=str, help="")
-    parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_imdb.jsonl", type=str, help="")
+    # parser.add_argument("--dataset_name", default="07_imdb"                     , type=str, help="")
+    # parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_imdb.jsonl", type=str, help="")
+    # parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_imdb.jsonl", type=str, help="")
 
 #    parser.add_argument("--train_file"  , default="data/02-acl-arc/train.jsonl", type=str, help="")
 #    parser.add_argument("--emb"         , default="dense" , type=str, help="")
