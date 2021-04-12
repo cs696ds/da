@@ -37,21 +37,40 @@ def main(args):
     for i in tqdm(range(len(json_lines))):
         cc_psgs_jsonl = []
         line = json_lines[i]
-        query = line['text'].replace(' ', '+')
-        print(textwrap.fill(query,80))
-        rp_retrieval = requests.get(solr_select + query).json()
-        if 'response' not in rp_retrieval:
-            print('No Response')
-            continue
-        cc_docs = (rp_retrieval['response']['docs'])
-        print('Number of retrieved documents: %d' % len(cc_docs))
-        cc_doc0 = json.loads(cc_docs[0]['_src_'])
-        cc_doc10 = ""
-        for j in range(args.max_doc):
-            cc_doc10 += json.loads(cc_docs[j]['_src_'])['text']
-#        print("--- %s seconds ---" % (time.time() - start_time))
 
-        if len(cc_doc10) > 1000000:
+        nlp = spacy.load("en_core_web_sm", exclude=["parser"])
+        nlp.enable_pipe("senter")
+        query_doc = nlp(line['text'])
+        queries = []
+        query = ""
+        num_tokens = 0
+        for sent in query_doc.sents:
+            if num_tokens < 100:
+                query += sent.text
+                num_tokens += len(sent)
+            else:
+                queries.append(query)
+                num_tokens = 0
+                query = ""
+
+        cc_doc10 = ""
+        for q in queries:
+            q = q.replace(' ', '+')
+            print(textwrap.fill(q,80))
+            rp_retrieval = requests.get(solr_select + q).json()
+            if 'response' not in rp_retrieval:
+                continue
+            cc_docs = (rp_retrieval['response']['docs'])
+            if len(cc_docs) == 0:
+                continue
+            print('Number of retrieved documents: %d' % len(cc_docs))
+            for j in range(args.max_doc):
+                try:
+                    cc_doc10 += json.loads(cc_docs[j]['_src_'])['text']
+                except ValueError:
+                    continue
+                #        print("--- %s seconds ---" % (time.time() - start_time))
+        if len(cc_doc10) > 1000000 or len(cc_doc10) == 0:
             continue
         nlp = spacy.load("en_core_web_sm", exclude=["parser"])
         nlp.enable_pipe("senter")
@@ -188,16 +207,16 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Data Augmentation Pipeline')
-    parser.add_argument("--max_doc", default=10, type=int, help="")    
-    parser.add_argument("--dataset_name", default="02_acl"                     , type=str, help="")
-    parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_citation_intent.jsonl", type=str, help="")
+    parser.add_argument("--max_doc", default=1, type=int, help="")    
+    # parser.add_argument("--dataset_name", default="02_acl"                     , type=str, help="")
+    # parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_citation_intent.jsonl", type=str, help="")
 #    parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_unlabeled_citation_intent.jsonl", type=str, help="")
     # parser.add_argument("--dataset_name", default="04_hyper"                     , type=str, help="")
     # parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_hyperpartisan_news.jsonl", type=str, help="")
     # parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_hyperpartisan_news.jsonl", type=str, help="")
 
-    # parser.add_argument("--dataset_name", default="07_imdb"                     , type=str, help="")
-    # parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_imdb.jsonl", type=str, help="")
+    parser.add_argument("--dataset_name", default="07_imdb"                     , type=str, help="")
+    parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_imdb.jsonl", type=str, help="")
     # parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_imdb.jsonl", type=str, help="")
 
 #    parser.add_argument("--train_file"  , default="data/02-acl-arc/train.jsonl", type=str, help="")
