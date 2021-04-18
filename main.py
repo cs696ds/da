@@ -11,8 +11,7 @@ import subprocess
 import numpy as np
 import faiss
 import textwrap
-from sklearn.feature_extraction.text import TfidfVectorizer
-
+#from sklearn.feature_extraction.text import Tfidf5Vectorizer
 
 def encode_sparse(X):
     encoder = TfidfVectorizer(stop_words='english', ngram_range=(1, 2), max_df=0.3)
@@ -21,10 +20,8 @@ def encode_sparse(X):
     embedding = encoder.transform(X).toarray()
     return embedding
 
-
 def main(args):
-    pretty = lambda x : json.dumps(x, indent=2, sort_keys=True)
-    solr_select = 'http://localhost:8983/solr/depcc-small/select?q='
+#    pretty = lambda x : json.dumps(x, indent=2, sort_keys=True)
     print('Read Query Files from %s' % args.train_file)
     with open(args.train_file, 'r') as train_file:
         json_lines = []
@@ -32,8 +29,28 @@ def main(args):
         for line in lines:
             j = json.loads(line)
             json_lines.append(j)
+
     print('Start Querying')
     #cc_psgs_jsonl = []
+
+    print("Measure Average Token Length")
+    doc_input_len_arr = []
+    for i in tqdm(range(len(json_lines))):
+        nlp = spacy.load("en_core_web_sm", exclude=["parser"])
+        nlp.enable_pipe("senter")
+        line = json_lines[i]        
+        doc_input = nlp(line['text'])
+        doc_input_len = 0
+        for sent in doc_input.sents:
+            doc_input_len += len(sent)
+        doc_input_len_arr.append(doc_input_len)
+    AVG_TOK_LEN = np.rint(np.mean(doc_input_len_arr))
+    print('Average Token Length: %d' % AVG_TOK_LEN )
+    sys.exit()
+
+
+    # Process input
+    solr_select = 'http://localhost:8983/solr/depcc-small/select?q='
     for i in tqdm(range(len(json_lines))):
         cc_psgs_jsonl = []
         line = json_lines[i]
@@ -44,6 +61,7 @@ def main(args):
         queries = []
         query = ""
         num_tokens = 0
+        
         for sent in query_doc.sents:
             if num_tokens < 100:
                 query += sent.text
@@ -53,6 +71,7 @@ def main(args):
                 num_tokens = 0
                 query = ""
 
+        # QUERY PROCESSING
         cc_doc10 = ""
         for q in queries:
             q = q.replace(' ', '+')
@@ -78,8 +97,11 @@ def main(args):
         cc_psgs = []
         psg = ''
         num_tokens = 0
+
+        # RETRIEVAL PROCESSING
         for sent in doc.sents:
-            if num_tokens < 100:
+            # if num_tokens < 100:
+            if num_tokens < AVG_TOK_LEN:
                 psg += sent.text
                 num_tokens += len(sent)
             else:
@@ -206,20 +228,18 @@ def main(args):
     #     print(textwrap.fill(cc_psgs[closest]['doc_text'],80))
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Data Augmentation Pipeline')
+    parser = argparse.ArgumentParser(description='DA')
     parser.add_argument("--max_doc", default=1, type=int, help="")    
-    # parser.add_argument("--dataset_name", default="02_acl"                     , type=str, help="")
-    # parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_citation_intent.jsonl", type=str, help="")
-#    parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_unlabeled_citation_intent.jsonl", type=str, help="")
-    # parser.add_argument("--dataset_name", default="04_hyper"                     , type=str, help="")
-    # parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_hyperpartisan_news.jsonl", type=str, help="")
-    # parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_hyperpartisan_news.jsonl", type=str, help="")
-
-    parser.add_argument("--dataset_name", default="07_imdb"                     , type=str, help="")
-    parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_imdb.jsonl", type=str, help="")
-    # parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_imdb.jsonl", type=str, help="")
-
-#    parser.add_argument("--train_file"  , default="data/02-acl-arc/train.jsonl", type=str, help="")
-#    parser.add_argument("--emb"         , default="dense" , type=str, help="")
+    #    parser.add_argument("--dataset_name", default="02_acl"                     , type=str, help="")
+    parser.add_argument("--dataset_name", default="04_hyper"                     , type=str, help="")
+    #    parser.add_argument("--dataset_name", default="07_imdb"                     , type=str, help="")
+    #    parser.add_argument("--train_file"  , default="data/02-acl-arc/train.jsonl", type=str, help="")
+    #    parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_citation_intent.jsonl", type=str, help="")
+    parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_hyperpartisan_news.jsonl", type=str, help="")
+    #    parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_imdb.jsonl", type=str, help="")
+    #    parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_unlabeled_citation_intent.jsonl", type=str, help="")
+    #    parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_hyperpartisan_news.jsonl", type=str, help="")
+    #    parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_imdb.jsonl", type=str, help="")
+    #    parser.add_argument("--emb"         , default="dense" , type=str, help="")
     print(parser.parse_args())
     main(parser.parse_args())
