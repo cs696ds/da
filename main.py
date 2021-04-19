@@ -1,3 +1,4 @@
+from sklearn.feature_extraction.text import TfidfVectorizer
 from tqdm import tqdm
 import pdb
 import argparse
@@ -11,7 +12,6 @@ import subprocess
 import numpy as np
 import faiss
 import textwrap
-#from sklearn.feature_extraction.text import Tfidf5Vectorizer
 
 def encode_sparse(X):
     encoder = TfidfVectorizer(stop_words='english', ngram_range=(1, 2), max_df=0.3)
@@ -20,212 +20,266 @@ def encode_sparse(X):
     embedding = encoder.transform(X).toarray()
     return embedding
 
+def sent_tokenize(doc):
+    nlp = spacy.load("en_core_web_sm", exclude=["parser"])
+    nlp.enable_pipe("senter")
+    return nlp(doc)
+        
 def main(args):
-#    pretty = lambda x : json.dumps(x, indent=2, sort_keys=True)
-    print('Read Query Files from %s' % args.train_file)
-    with open(args.train_file, 'r') as train_file:
+    ################################################################################
+    # Read Queries
+    ################################################################################
+    print('Read Query Files from %s' % args.query_files)
+    with open(args.query_files, 'r') as query_files:
         json_lines = []
-        lines = train_file.readlines()
+        lines = query_files.readlines()
         for line in lines:
             j = json.loads(line)
             json_lines.append(j)
 
-    print('Start Querying')
-    #cc_psgs_jsonl = []
-
+    NUM_RAW_QUERIES = len(json_lines)
+    print('NUM_RAW_QUERIES: %d' % NUM_RAW_QUERIES)
+    
+    ################################################################################
+    # Measure Average Token Length
+    ################################################################################
     print("Measure Average Token Length")
-    doc_input_len_arr = []
-    for i in tqdm(range(len(json_lines))):
-        nlp = spacy.load("en_core_web_sm", exclude=["parser"])
-        nlp.enable_pipe("senter")
-        line = json_lines[i]        
-        doc_input = nlp(line['text'])
-        doc_input_len = 0
-        for sent in doc_input.sents:
-            doc_input_len += len(sent)
-        doc_input_len_arr.append(doc_input_len)
-    AVG_TOK_LEN = np.rint(np.mean(doc_input_len_arr))
-    print('Average Token Length: %d' % AVG_TOK_LEN )
+    qlen_vec = []
+    query_docs = []
 
-
-    # Process input
-    solr_select = 'http://localhost:8983/solr/depcc-small/select?q='
-#    solr_select = 'http://localhost:8983/solr/depcc-small/select?fl=score%2C*&q='
-    for i in tqdm(range(len(json_lines))):
-        cc_psgs_jsonl = []
-        line = json_lines[i]
-
-        nlp = spacy.load("en_core_web_sm", exclude=["parser"])
-        nlp.enable_pipe("senter")
-        query_doc = nlp(line['text'])
-        queries = []
-        query = ""
-        num_tokens = 0
-        
+    for i in range(NUM_RAW_QUERIES):
+        cur_len = 0
+        query_doc = sent_tokenize(json_lines[i]['text'])
         for sent in query_doc.sents:
-            if num_tokens < 100:
-                query += sent.text
-                num_tokens += len(sent)
-            else:
-                queries.append(query)
-                num_tokens = 0
-                query = ""
-
-        # QUERY PROCESSING
-        cc_doc10 = ""
-        for q in queries:
-            q = q.replace(' ', '+')
-            print(textwrap.fill(q,80))
-            rp_retrieval = requests.get(solr_select + q).json()
-            if 'response' not in rp_retrieval:
+            cur_len += len(sent)
+        qlen_vec.append(cur_len)
+        query_docs.append(query_doc)
+    AVG_TOK_LEN = np.rint(np.mean(qlen_vec))
+    print('Average Token Length: %d' % AVG_TOK_LEN )
+    ################################################################################
+    # Segment Raw Queries
+    ################################################################################
+    seg_queries = []
+    for i in tqdm(range(NUM_RAW_QUERIES)):
+        if len(query_docs[i]) < 100:
+            seg_queries.append(query_docs[i])
+        else:
+            temp = ''
+            num_tokens = 0
+            for sent in query_docs[i].sents:
+                if num_tokens < 100:
+                    temp += sent.text
+                    num_tokens += len(sent)
+                else:
+                    seg_queries.append(temp)
+                    temp = ''
+                    num_tokens = 0
+            if temp != '':
+                    seg_queries.append(temp)
+                    temp = ''
+                    num_tokens = 0                
+        NUM_SEG_QUERIES = len(seg_queries)
+        print('NUM_SEG_QUERIES: %d' % NUM_SEG_QUERIES)
+        ################################################################################
+        # Retrieve CC documents
+        ################################################################################
+        solr_select = 'http://localhost:8983/solr/depcc/select?q='
+        # solr_select = 'http://localhost:8983/solr/depcc-small/select?q='
+        # solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
+        #    solr_select = 'http://localhost:8983/solr/depcc-small/select?fl=score%2C*&q='
+        cc_psgs = []
+        for j in range(NUM_SEG_QUERIES):
+            q = seg_queries[j].replace(' ', '+')
+            retrieved = requests.get(solr_select + q).json()
+            if 'response' not in retrieved:
                 continue
-
-            cc_docs = (rp_retrieval['response']['docs'])
-            if len(cc_docs) == 0:
+            retrieved_docs = (retrieved['response']['docs'])
+            if len(retrieved_docs) == 0:
                 continue
-            print('Number of retrieved documents: %d' % len(cc_docs))
-            for j in range(args.max_doc):
+            cc_docs_raw = ""
+            for k in range(args.max_doc):
                 try:
-                    cc_doc10 += json.loads(cc_docs[j]['_src_'])['text']
-                    print(cc_docs[j]['score'])
+                    cur = json.loads(retrieved_docs[k]['_src_'])['text']
+                    if len(cc_docs_raw) + len(cur) > 1000000:
+                        break
+                    else:
+                        cc_docs_raw += cur
                 except ValueError:
                     continue
-                #        print("--- %s seconds ---" % (time.time() - start_time))
-        if len(cc_doc10) > 1000000 or len(cc_doc10) == 0:
-            continue
-        nlp = spacy.load("en_core_web_sm", exclude=["parser"])
-        nlp.enable_pipe("senter")
-        doc = nlp(cc_doc10)
-        cc_psgs = []
-        psg = ''
-        num_tokens = 0
-
-        # RETRIEVAL PROCESSING
-        for sent in doc.sents:
-            # if num_tokens < 100:
-            if num_tokens < AVG_TOK_LEN:
-                psg += sent.text
-                num_tokens += len(sent)
+            if len(cc_docs_raw) == 0:
+                continue
+            ################################################################################
+            # Segmented Retrieved Documents into CC passages
+            ################################################################################
+            cc_docs = sent_tokenize(cc_docs_raw)
+            if len(query_docs[i]) < 100:
+                cc_psgs.append({'doc_id' : '', 'doc_text'  : cc_docs,  'title': ''  })
             else:
-                cc_psgs.append({'doc_id' : '', 'doc_text'  : psg,  'title': ''  })
+                temp = ''
                 num_tokens = 0
-                psg = ''
-        num_train = len(json_lines)
-        train_psgs = []
-        for j in range(num_train):
-            train_dict = {'doc_id': str(i), 'doc_text': json_lines[i]['text'], 'title': ''}
-            train_psgs.append(train_dict)
+                for sent in cc_docs.sents:
+                    if num_tokens < AVG_TOK_LEN:
+                        temp += sent.text
+                        num_tokens += len(sent)
+                    else:
+                        cc_psgs.append({'doc_id' : '', 'doc_text'  : temp,  'title': ''  })
+                        temp = ''
+                        num_tokens = 0
+                if temp != '':
+                    cc_psgs.append({'doc_id' : '', 'doc_text'  : temp,  'title': ''  })
+                    temp = ''
+                    num_tokens = 0                
+
+        # END of for j in tqdm(range(NUM_SEG_QUERIES)):
+        print('Length of cc_psgs')
+        print(len(cc_psgs))
+        # for c in cc_psgs:
+        #     print(c)
+        #     print()
+        # sys.exit()
+        ################################################################################
+        # Prepare Train and CC passages for sorting
+        ################################################################################
+
+        # Per raw query
+        query_psgs = []
+        query_dict = {'doc_id': str(i), 'doc_text': json_lines[i]['text'], 'title': ''}
+        query_psgs.append(query_dict)
+
+        # print(query_psgs[0]['doc_text'][:50])
+        # print(cc_psgs[0]['doc_text'][:50])
+
+        TR = 'tr_' + args.dataset_name
+        CC = 'cc_' + args.dataset_name
+        TR_TSV  = 'emb/' + TR + '.tsv' 
+        CC_TSV  = 'emb/' + CC + '.tsv'
+        print(TR)
+        print(textwrap.fill(query_psgs[0]['doc_text'], 80))
+
+        print()
+        with open(TR_TSV, 'w') as output_file:
+            dw = csv.DictWriter(output_file, query_psgs[0].keys(), delimiter='\t')
+            for tp in query_psgs:
+                dw.writerow(tp)
+        with open(CC_TSV, 'w') as output_file:
+            dw = csv.DictWriter(output_file, cc_psgs[0].keys(), delimiter='\t')
+            for psg in cc_psgs:
+                dw.writerow(psg)
+        MAX_TR_PSGS = len(query_psgs)
+        MAX_CC_PSGS = len(cc_psgs)
+        print('MAX_TR_PSGS')
+        print(MAX_TR_PSGS)
+        print('MAX_CC_PSGS')
+        print(MAX_CC_PSGS)
+        nq = len(query_psgs)  # query size
+        nb = len(cc_psgs) # database size
+
+        if args.emb=='dense':
+            subprocess.call(['emb/generate_embedding.sh', TR])
+            subprocess.call(['emb/generate_embedding.sh', CC])
+            train_embeddings = np.load('emb/' + TR + '_0.pkl', allow_pickle=True)
+            cc_embeddings = np.load('emb/' + CC + '_0.pkl', allow_pickle=True)
+            d = train_embeddings[0][1].size
+            xq = np.zeros((nq,d), dtype='float32')
+            for l in range(nq):
+                xq[l] = train_embeddings[l][1]
+            xb = np.zeros((nb,d), dtype='float32')
+            for l in range(nb):
+                xb[l] = cc_embeddings[l][1]
+        # if args.emb=='sparse':
+        #     texts = []
+        #     for dict_tr in query_psgs:
+        #         texts.append(dict_tr['doc_text'])
+        #     for dict_cc in cc_psgs:
+        #         texts.append(dict_cc['doc_text'])
+        #     emb = encode_sparse(texts)
+        #     _, d = emb.shape
+        #     print(emb.shape)
+        #     train_embeddings = emb[:MAX_TR_PSGS]
+        #     cc_embeddings = emb[MAX_TR_PSGS:]
+        #     print(train_embeddings.shape)
+        #     print(cc_embeddings.shape)
+        #     xq = np.array(train_embeddings, dtype='float32')
+        #     xb = np.array(cc_embeddings, dtype='float32')
+        print('Number of query passages: %d' % nq)
+        print(xq)
+        index = faiss.IndexFlatL2(d)   # build the index
+        print('trained? %r' % index.is_trained)
+        index.add(xb)                  # add vectors to the index
+
+        print('Total number of indexed CC passages: ', index.ntotal)
+        print()
+        print('Using an indentical CC set')
+        k = nb                          # we want to see 4 nearest neighbors
+        D, I = index.search(xb[:5], k) # sanity check
+        print('================================================================')
+        print('4 nearest neighbors(sanity check)')
+        print(I)
+        print()
+        print('distances(sanity check)')
+        print(D)
+        print()
+        
+        print('===============================================================')
+        print('Using the query')
+        k = nb
+        D, I = index.search(xq, k)     # actual search
+        print('Nearest neighbors for query')
+        print(I)                 
+        print('\ndistances')
+        print(D)
+        print()
+        print('Train passage')
+        print(textwrap.fill(query_psgs[0]['doc_text'],80))
+        print()
+        
+        # print('CLOSEST passages in CC:')
+        # for l in range(4):
+        #     print('-------------------------------------------------------------')
+        #     print('Closest %d' % i)
+        #     closest = I[0][l]
+        #     print(textwrap.fill(cc_psgs[closest]['doc_text'], 80))
+        #     print('------------------------------------------------------------')
+        # print('...')
+        # for l in range(MAX_CC_PSGS-4, MAX_CC_PSGS):
+        #     print('-------------------------------------------------------------')
+        #     print('Farthest %d' % i)
+        #     closest = I[0][l]
+        #     print(textwrap.fill(cc_psgs[closest]['doc_text'],80))
+
+
+        ################################################################################
+        # Write Augmented Passages
+        ################################################################################
+        knn_indices = I[0].astype(int)
+        print(knn_indices)
+        cc_psgs_jsonl = []
         for psg in cc_psgs:
             d = {"text" : psg['doc_text'],
                  "label"  : "",
                  "metadata": {}
-            }
+                 }
             cc_psgs_jsonl.append(json.dumps(d))
-
-        with open('aug_ranked/' + args.dataset_name + '/%05d.jsonl' % i, 'w') as f:
-            for k in tqdm(range(len(cc_psgs_jsonl))):
+        with open('aug_sorted/' + args.dataset_name + '/%05d.jsonl' % i, 'w') as f:
+            for k in knn_indices:
                 f.write(cc_psgs_jsonl[k]);
                 f.write('\n')
-    # TR = 'tr_' + args.dataset_name
-    # CC = 'cc_' + args.dataset_name
-    # TR_TSV  = 'emb/' + TR + '.tsv' 
-    # CC_TSV  = 'emb/' + CC + '.tsv'
-    # print(TR)
-    # print(textwrap.fill(train_psgs[0]['doc_text'], 80))
-    # print()
-    # with open(TR_TSV, 'w') as output_file:
-    #     dw = csv.DictWriter(output_file, train_psgs[0].keys(), delimiter='\t')
-    #     for tp in train_psgs:
-    #         dw.writerow(tp)
-    # with open(CC_TSV, 'w') as output_file:
-    #     dw = csv.DictWriter(output_file, cc_psgs[0].keys(), delimiter='\t')
-    #     for psg in cc_psgs:
-    #         dw.writerow(psg)
-    # MAX_TR_PSGS = len(train_psgs)
-    # MAX_CC_PSGS = len(cc_psgs)
-    # print(MAX_TR_PSGS)
-    # print(MAX_CC_PSGS)
-    # nq = len(train_psgs)
-    # nb = len(cc_psgs) # database size
-    # if args.emb=='dense':
-    #     subprocess.call(['emb/generate_embedding.sh', TR])
-    #     subprocess.call(['emb/generate_embedding.sh', CC])
-    #     train_embeddings = np.load('emb/' + TR + '_0.pkl', allow_pickle=True)
-    #     cc_embeddings = np.load('emb/' + CC + '_0.pkl', allow_pickle=True)
-    #     d = train_embeddings[0][1].size
-    #     xq = np.zeros((nq,d), dtype='float32')
-    #     for i in range(nq):
-    #         xq[i] = train_embeddings[i][1]
-    #     xb = np.zeros((nb,d), dtype='float32')
-    #     for i in range(nb):
-    #         xb[i] = cc_embeddings[i][1]
-    # if args.emb=='sparse':
-    #     texts = []
-    #     for dict_tr in train_psgs:
-    #         texts.append(dict_tr['doc_text'])
-    #     for dict_cc in cc_psgs:
-    #         texts.append(dict_cc['doc_text'])
-    #     emb = encode_sparse(texts)
-    #     _, d = emb.shape
-    #     print(emb.shape)
-    #     train_embeddings = emb[:MAX_TR_PSGS]
-    #     cc_embeddings = emb[MAX_TR_PSGS:]
-    #     print(train_embeddings.shape)
-    #     print(cc_embeddings.shape)
-    #     xq = np.array(train_embeddings, dtype='float32')
-    #     xb = np.array(cc_embeddings, dtype='float32')
-    # print('Number of train passages: %d' % nq)
-    # print(xq)
-    # index = faiss.IndexFlatL2(d)   # build the index
-    # print('trained? %r' % index.is_trained)
-    # index.add(xb)                  # add vectors to the index
-    # print('Total number of indexed CC passages: ', index.ntotal)
-    # print()
-    # print('Using an indentical CC set')
-    # k = nb                          # we want to see 4 nearest neighbors
-    # D, I = index.search(xb[:5], k) # sanity check
-    # print('================================================================')
-    # print('4 nearest neighbors')
-    # print(I)
-    # print()
-    # print('distances(sanity check)')
-    # print(D)
-    # print()
-    # print('===============================================================')
-    # print('Using the query(train set)')
-    # D, I = index.search(xq, k)     # actual search
-    # print('4 nearest neighbors')
-    # print(I[:5])                   # neighbors of the 5 first queries
-    # print('\ndistances')
-    # print(D)
-    # print()
-    # print('Train passage')
-    # print(textwrap.fill(train_psgs[300]['doc_text'],80))
-    # print()
-    # print('CLOSEST passages in CC:')
-    # for i in range(4):
-    #     print('-------------------------------------------------------------')
-    #     print('Closest %d' % i)
-    #     closest = I[300][i]
-    #     print(textwrap.fill(cc_psgs[closest]['doc_text'], 80))
-    #     print('------------------------------------------------------------')
-    # print('...')
-    # for i in range(MAX_CC_PSGS-4, MAX_CC_PSGS):
-    #     print('-------------------------------------------------------------')
-    #     print('Farthest %d' % i)
-    #     closest = I[300][i]
-    #     print(textwrap.fill(cc_psgs[closest]['doc_text'],80))
+        sys.exit()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='DA')
     parser.add_argument("--max_doc", default=1, type=int, help="")    
-    parser.add_argument("--dataset_name", default="acl", type=str, help="")
-    #parser.add_argument("--dataset_name", default="hyper"                     , type=str, help="")
-    #    parser.add_argument("--dataset_name", default="07_imdb"                     , type=str, help="")
-    parser.add_argument("--train_file"  , default="data/02-acl-arc/train.jsonl", type=str, help="")
-    #    parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_citation_intent.jsonl", type=str, help="")
-    #parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_hyperpartisan_news.jsonl", type=str, help="")
-    #    parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_imdb.jsonl", type=str, help="")
-    #    parser.add_argument("--emb"         , default="dense" , type=str, help="")
+    #parser.add_argument("--dataset_name", default="citation_intent", type=str, help="")
+    parser.add_argument("--dataset_name", default="hyperpartisan_news"                     , type=str, help="")
+    #    parser.add_argument("--dataset_name", default="imdb"                     , type=str, help="")
+#    parser.add_argument("--query_files"  , default="data/citation_intent/train.jsonl", type=str, help="")
+#parser.add_argument("--query_files"  , default="failed_tests_by_base_models/failed_citation_intent.jsonl", type=str, help="")
+    parser.add_argument("--query_files"  , default="failed_tests_by_base_models/failed_hyperpartisan_news.jsonl", type=str, help="")
+    #    parser.add_argument("--query_files"  , default="failed_tests_by_base_models/failed_imdb.jsonl", type=str, help="")
+    # parser.add_argument("--aug_unlabeled"  , default="aug_unlabeled/citation_intent", type=str, help="")
+    # parser.add_argument("--aug_sorted"  , default="aug_sorted/citation_intent", type=str, help="")
+
+    
+    parser.add_argument("--emb"         , default="dense" , type=str, help="")
     print(parser.parse_args())
     main(parser.parse_args())
