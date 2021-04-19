@@ -46,11 +46,11 @@ def main(args):
         doc_input_len_arr.append(doc_input_len)
     AVG_TOK_LEN = np.rint(np.mean(doc_input_len_arr))
     print('Average Token Length: %d' % AVG_TOK_LEN )
-    sys.exit()
 
 
     # Process input
     solr_select = 'http://localhost:8983/solr/depcc-small/select?q='
+#    solr_select = 'http://localhost:8983/solr/depcc-small/select?fl=score%2C*&q='
     for i in tqdm(range(len(json_lines))):
         cc_psgs_jsonl = []
         line = json_lines[i]
@@ -79,6 +79,7 @@ def main(args):
             rp_retrieval = requests.get(solr_select + q).json()
             if 'response' not in rp_retrieval:
                 continue
+
             cc_docs = (rp_retrieval['response']['docs'])
             if len(cc_docs) == 0:
                 continue
@@ -86,6 +87,7 @@ def main(args):
             for j in range(args.max_doc):
                 try:
                     cc_doc10 += json.loads(cc_docs[j]['_src_'])['text']
+                    print(cc_docs[j]['score'])
                 except ValueError:
                     continue
                 #        print("--- %s seconds ---" % (time.time() - start_time))
@@ -119,24 +121,11 @@ def main(args):
                  "metadata": {}
             }
             cc_psgs_jsonl.append(json.dumps(d))
-#        print('Start writing to ' + args.aug_file)
 
-        with open('aug_unlabeled/' + args.dataset_name + '/%05d.jsonl' % i, 'w') as f:
+        with open('aug_ranked/' + args.dataset_name + '/%05d.jsonl' % i, 'w') as f:
             for k in tqdm(range(len(cc_psgs_jsonl))):
                 f.write(cc_psgs_jsonl[k]);
                 f.write('\n')
-        
-        # with open(args.aug_file, 'a+') as f:
-        #     for i in tqdm(range(len(cc_psgs_jsonl))):
-        #         f.write(cc_psgs_jsonl[i]);
-        #         f.write('\n')
-            
-    # print('Start writing to ' + args.aug_file)
-    # with open(args.aug_file, 'w') as f:
-    #     for i in tqdm(range(len(cc_psgs_jsonl))):
-    #         f.write(cc_psgs_jsonl[i]);
-    #         f.write('\n')
-    print('Done.')
     # TR = 'tr_' + args.dataset_name
     # CC = 'cc_' + args.dataset_name
     # TR_TSV  = 'emb/' + TR + '.tsv' 
@@ -230,16 +219,13 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='DA')
     parser.add_argument("--max_doc", default=1, type=int, help="")    
-    #    parser.add_argument("--dataset_name", default="02_acl"                     , type=str, help="")
-    parser.add_argument("--dataset_name", default="04_hyper"                     , type=str, help="")
+    parser.add_argument("--dataset_name", default="acl", type=str, help="")
+    #parser.add_argument("--dataset_name", default="hyper"                     , type=str, help="")
     #    parser.add_argument("--dataset_name", default="07_imdb"                     , type=str, help="")
-    #    parser.add_argument("--train_file"  , default="data/02-acl-arc/train.jsonl", type=str, help="")
+    parser.add_argument("--train_file"  , default="data/02-acl-arc/train.jsonl", type=str, help="")
     #    parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_citation_intent.jsonl", type=str, help="")
-    parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_hyperpartisan_news.jsonl", type=str, help="")
+    #parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_hyperpartisan_news.jsonl", type=str, help="")
     #    parser.add_argument("--train_file"  , default="failed_tests_by_base_models/failed_imdb.jsonl", type=str, help="")
-    #    parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_unlabeled_citation_intent.jsonl", type=str, help="")
-    #    parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_hyperpartisan_news.jsonl", type=str, help="")
-    #    parser.add_argument("--aug_file"    , default="aug_unlabeled/aug_imdb.jsonl", type=str, help="")
     #    parser.add_argument("--emb"         , default="dense" , type=str, help="")
     print(parser.parse_args())
     main(parser.parse_args())
