@@ -61,11 +61,10 @@ def main(args):
     seg_queries = []
     for i in tqdm(range(NUM_RAW_QUERIES)):
         if len(query_docs[i]) < 100:
-            seg_queries.append(query_docs[i])
-            # temp = ''
-            # for sent in query_docs[i].sents:
-            #     temp += sent.text
-            # seg_queries.append(temp)
+            temp = ''
+            for sent in query_docs[i].sents:
+                temp += sent.text
+            seg_queries.append(temp)
         else:
             temp = ''
             num_tokens = 0
@@ -82,7 +81,7 @@ def main(args):
                     temp = ''
                     num_tokens = 0                
         NUM_SEG_QUERIES = len(seg_queries)
-        print('NUM_SEG_QUERIES: %d' % NUM_SEG_QUERIES)
+
         ################################################################################
         # Retrieve CC documents
         ################################################################################
@@ -91,6 +90,7 @@ def main(args):
         # solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
         #    solr_select = 'http://localhost:8983/solr/depcc-small/select?fl=score%2C*&q='
         cc_psgs = []
+        print('Process NUM_SEG_QUERIES: %d' % NUM_SEG_QUERIES)
         for j in range(NUM_SEG_QUERIES):
             q = seg_queries[j].replace(' ', '+')
             retrieved = requests.get(solr_select + q).json()
@@ -103,7 +103,7 @@ def main(args):
             for k in range(args.max_doc):
                 try:
                     cur = json.loads(retrieved_docs[k]['_src_'])['text']
-                    print(retrieved_docs[k]['_src_'])
+                    #print(retrieved_docs[k]['_src_'])
                     if len(cc_docs_raw) + len(cur) > 1000000:
                         break
                     else:
@@ -125,7 +125,7 @@ def main(args):
                 temp = ''
                 num_tokens = 0
                 for sent in cc_docs_tok.sents:
-                    print(sent.text)
+                    #print(sent.text)
                     if num_tokens < AVG_TOK_LEN:
                         temp += sent.text
                         num_tokens += len(sent)
@@ -139,8 +139,8 @@ def main(args):
                     num_tokens = 0                
 
         # END of for j in tqdm(range(NUM_SEG_QUERIES)):
-        print('Length of cc_psgs')
-        print(len(cc_psgs))
+        #print('Length of cc_psgs')
+        #print(len(cc_psgs))
         # for c in cc_psgs:
         #     print(c)
         #     print()
@@ -160,10 +160,9 @@ def main(args):
         CC = 'cc_' + args.dataset_name
         TR_TSV  = 'emb/' + TR + '.tsv' 
         CC_TSV  = 'emb/' + CC + '.tsv'
-        print(TR)
-        print(textwrap.fill(query_psgs[0]['doc_text'], 80))
-
-        print()
+        #print(TR)
+        #print(textwrap.fill(query_psgs[0]['doc_text'], 80))
+        #print()
         with open(TR_TSV, 'w') as output_file:
             dw = csv.DictWriter(output_file, query_psgs[0].keys(), delimiter='\t')
             for tp in query_psgs:
@@ -174,13 +173,13 @@ def main(args):
                 dw.writerow(psg)
         MAX_TR_PSGS = len(query_psgs)
         MAX_CC_PSGS = len(cc_psgs)
-        print('MAX_TR_PSGS')
-        print(MAX_TR_PSGS)
-        print('MAX_CC_PSGS')
-        print(MAX_CC_PSGS)
+        #print('MAX_TR_PSGS')
+        # print(MAX_TR_PSGS)
+        # print('MAX_CC_PSGS')
+        # print(MAX_CC_PSGS)
         nq = len(query_psgs)  # query size
         nb = len(cc_psgs) # database size
-
+        
         if args.emb=='dense':
             subprocess.call(['emb/generate_embedding.sh', TR])
             subprocess.call(['emb/generate_embedding.sh', CC])
@@ -208,37 +207,37 @@ def main(args):
         #     print(cc_embeddings.shape)
         #     xq = np.array(train_embeddings, dtype='float32')
         #     xb = np.array(cc_embeddings, dtype='float32')
-        print('Number of query passages: %d' % nq)
-        print(xq)
+        # print('Number of query passages: %d' % nq)
+        # print(xq)
         index = faiss.IndexFlatL2(d)   # build the index
-        print('trained? %r' % index.is_trained)
+        # print('trained? %r' % index.is_trained)
         index.add(xb)                  # add vectors to the index
 
-        print('Total number of indexed CC passages: ', index.ntotal)
-        print()
-        print('Using an indentical CC set')
+        # print('Total number of indexed CC passages: ', index.ntotal)
+        # print()
+        # print('Using an indentical CC set')
         k = nb                          # we want to see 4 nearest neighbors
         D, I = index.search(xb[:5], k) # sanity check
-        print('================================================================')
-        print('4 nearest neighbors(sanity check)')
-        print(I)
-        print()
-        print('distances(sanity check)')
-        print(D)
-        print()
+        # print('================================================================')
+        # print('4 nearest neighbors(sanity check)')
+        # print(I)
+        # print()
+        # print('distances(sanity check)')
+        # print(D)
+        # print()
         
-        print('===============================================================')
-        print('Using the query')
+        # print('===============================================================')
+        # print('Using the query')
         k = nb
         D, I = index.search(xq, k)     # actual search
-        print('Nearest neighbors for query')
-        print(I)                 
-        print('\ndistances')
-        print(D)
-        print()
-        print('Train passage')
-        print(textwrap.fill(query_psgs[0]['doc_text'],80))
-        print()
+        # print('Nearest neighbors for query')
+        # print(I)                 
+        # print('\ndistances')
+        # print(D)
+        # print()
+        # print('Train passage')
+        # print(textwrap.fill(query_psgs[0]['doc_text'],80))
+        # print()
         
         # print('CLOSEST passages in CC:')
         # for l in range(4):
@@ -259,7 +258,7 @@ def main(args):
         # Write Augmented Passages
         ################################################################################
         knn_indices = I[0].astype(int)
-        print(knn_indices)
+        #        print(knn_indices)
         cc_psgs_jsonl = []
         for psg in cc_psgs:
             d = {"text" : psg['doc_text'],
