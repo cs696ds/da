@@ -47,7 +47,7 @@ def main(args):
     qlen_vec   = []
     query_docs = []
     query_raws  = []
-    NUM_RAW_QUERIES = 10
+#    NUM_RAW_QUERIES = 10
     for i in tqdm(range(NUM_RAW_QUERIES)):
         cur_len = 0
         q_tok = sent_tokenize(json_lines[i]['text'])
@@ -58,8 +58,8 @@ def main(args):
     ################################################################################
     # Segment Raw Queries
     ################################################################################
-    seg_queries = []
     for i in tqdm(range(NUM_RAW_QUERIES)):
+        seg_queries = []
         if len(query_docs[i]) < 100:
             temp = ''
             for sent in query_docs[i].sents:
@@ -163,20 +163,20 @@ def main(args):
         #print(TR)
         #print(textwrap.fill(query_psgs[0]['doc_text'], 80))
         #print()
-        with open(TR_TSV, 'w') as output_file:
-            dw = csv.DictWriter(output_file, query_psgs[0].keys(), delimiter='\t')
-            for tp in query_psgs:
-                dw.writerow(tp)
-        with open(CC_TSV, 'w') as output_file:
-            dw = csv.DictWriter(output_file, cc_psgs[0].keys(), delimiter='\t')
-            for psg in cc_psgs:
-                dw.writerow(psg)
+        with open(TR_TSV, 'w') as q_csv_file:
+            q_dw = csv.DictWriter(q_csv_file, query_psgs[0].keys(), delimiter='\t')
+            for q_psg in query_psgs:
+                q_dw.writerow(q_psg)
+        with open(CC_TSV, 'w') as cc_csv_file:
+            cc_dw = csv.DictWriter(cc_csv_file, cc_psgs[0].keys(), delimiter='\t')
+            for cc_psg in cc_psgs:
+                cc_dw.writerow(cc_psg)
         MAX_TR_PSGS = len(query_psgs)
         MAX_CC_PSGS = len(cc_psgs)
-        #print('MAX_TR_PSGS')
-        # print(MAX_TR_PSGS)
-        # print('MAX_CC_PSGS')
-        # print(MAX_CC_PSGS)
+        print('MAX_TR_PSGS')
+        print(MAX_TR_PSGS)
+        print('MAX_CC_PSGS')
+        print(MAX_CC_PSGS)
         nq = len(query_psgs)  # query size
         nb = len(cc_psgs) # database size
         
@@ -216,8 +216,8 @@ def main(args):
         # print('Total number of indexed CC passages: ', index.ntotal)
         # print()
         # print('Using an indentical CC set')
-        k = nb                          # we want to see 4 nearest neighbors
-        D, I = index.search(xb[:5], k) # sanity check
+        # k = nb                          # we want to see 4 nearest neighbors
+        # D, I = index.search(xb[:5], k) # sanity check
         # print('================================================================')
         # print('4 nearest neighbors(sanity check)')
         # print(I)
