@@ -286,7 +286,7 @@ def main(args):
 #        sys.exit()
         with open('aug_sorted/' + args.dataset_name + '/%05d.jsonl' % i, 'w') as f:
             for i in range(len(sorted_cc_psgs_jsonl)):
-                f.write(cc_psgs_jsonl[k]);
+                f.write(sorted_cc_psgs_jsonl[k]);
                 f.write('\n')
 
             # for k in knn_indices:
