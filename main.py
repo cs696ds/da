@@ -47,7 +47,7 @@ def main(args):
     qlen_vec   = []
     query_docs = []
     query_raws  = []
-    NUM_RAW_QUERIES = 10
+#    NUM_RAW_QUERIES = 10
     for i in tqdm(range(NUM_RAW_QUERIES)):
         cur_len = 0
         q_tok = sent_tokenize(json_lines[i]['text'])
