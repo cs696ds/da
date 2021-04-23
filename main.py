@@ -47,7 +47,7 @@ def main(args):
     qlen_vec   = []
     query_docs = []
     query_raws  = []
-#    NUM_RAW_QUERIES = 10
+    NUM_RAW_QUERIES = 10
     for i in tqdm(range(NUM_RAW_QUERIES)):
         cur_len = 0
         q_tok = sent_tokenize(json_lines[i]['text'])
@@ -85,8 +85,8 @@ def main(args):
         ################################################################################
         # Retrieve CC documents
         ################################################################################
-        solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
-        # solr_select = 'http://localhost:8983/solr/depcc-small/select?q='
+        #solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
+        solr_select = 'http://localhost:8983/solr/depcc-small/select?q='
         # solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
         #    solr_select = 'http://localhost:8983/solr/depcc-small/select?fl=score%2C*&q='
         cc_psgs = []
@@ -183,8 +183,10 @@ def main(args):
         nb = len(cc_psgs) # database size
         
         if args.emb=='dense':
+            # Dense Passage Representation(DPR)
             subprocess.call(['emb/generate_embedding.sh', TR])
             subprocess.call(['emb/generate_embedding.sh', CC])
+            # FAISS Preparation
             train_embeddings = np.load('emb/' + TR + '_0.pkl', allow_pickle=True)
             cc_embeddings = np.load('emb/' + CC + '_0.pkl', allow_pickle=True)
             d = train_embeddings[0][1].size
@@ -261,17 +263,35 @@ def main(args):
         ################################################################################
         knn_indices = I[0].astype(int)
         #        print(knn_indices)
-        cc_psgs_jsonl = []
-        for psg in cc_psgs:
-            d = {"text" : psg['doc_text'],
+#        cc_psgs_jsonl = []
+        sorted_cc_psgs_jsonl = []
+        print(I[0])
+        print(D[0])
+        # sys.exit()
+        # for psg in cc_psgs:
+        #     d = {"text" : psg['doc_text'],
+        #          "label"  : "",
+        #          "metadata": {}
+        #          }
+        #     cc_psgs_jsonl.append(json.dumps(d))
+
+        for k in knn_indices:
+            d = {"text" : cc_psgs[k]['doc_text'],
                  "label"  : "",
-                 "metadata": {}
+                 "metadata": {},
+                 "score": str(D[0][k])
                  }
-            cc_psgs_jsonl.append(json.dumps(d))
+            sorted_cc_psgs_jsonl.append(json.dumps(d))
+#        print(sorted_cc_psgs_jsonl)
+#        sys.exit()
         with open('aug_sorted/' + args.dataset_name + '/%05d.jsonl' % i, 'w') as f:
-            for k in knn_indices:
+            for i in range(len(sorted_cc_psgs_jsonl)):
                 f.write(cc_psgs_jsonl[k]);
                 f.write('\n')
+
+            # for k in knn_indices:
+            #     f.write(cc_psgs_jsonl[k]);
+            #     f.write('\n')
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='DA')
