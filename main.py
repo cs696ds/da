@@ -44,16 +44,15 @@ def main(args):
     # Measure Average Token Length
     ################################################################################
     print("Measure Average Token Length")
-    qlen_vec = []
+    qlen_vec   = []
     query_docs = []
-
-    for i in range(NUM_RAW_QUERIES):
+    query_raws  = []
+    NUM_RAW_QUERIES = 10
+    for i in tqdm(range(NUM_RAW_QUERIES)):
         cur_len = 0
-        query_doc = sent_tokenize(json_lines[i]['text'])
-        for sent in query_doc.sents:
-            cur_len += len(sent)
-        qlen_vec.append(cur_len)
-        query_docs.append(query_doc)
+        q_tok = sent_tokenize(json_lines[i]['text'])
+        qlen_vec.append(len(q_tok))
+        query_docs.append(q_tok)
     AVG_TOK_LEN = np.rint(np.mean(qlen_vec))
     print('Average Token Length: %d' % AVG_TOK_LEN )
     ################################################################################
@@ -63,6 +62,10 @@ def main(args):
     for i in tqdm(range(NUM_RAW_QUERIES)):
         if len(query_docs[i]) < 100:
             seg_queries.append(query_docs[i])
+            # temp = ''
+            # for sent in query_docs[i].sents:
+            #     temp += sent.text
+            # seg_queries.append(temp)
         else:
             temp = ''
             num_tokens = 0
@@ -83,7 +86,7 @@ def main(args):
         ################################################################################
         # Retrieve CC documents
         ################################################################################
-        solr_select = 'http://localhost:8983/solr/depcc/select?q='
+        solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
         # solr_select = 'http://localhost:8983/solr/depcc-small/select?q='
         # solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
         #    solr_select = 'http://localhost:8983/solr/depcc-small/select?fl=score%2C*&q='
@@ -100,6 +103,7 @@ def main(args):
             for k in range(args.max_doc):
                 try:
                     cur = json.loads(retrieved_docs[k]['_src_'])['text']
+                    print(retrieved_docs[k]['_src_'])
                     if len(cc_docs_raw) + len(cur) > 1000000:
                         break
                     else:
@@ -111,13 +115,17 @@ def main(args):
             ################################################################################
             # Segmented Retrieved Documents into CC passages
             ################################################################################
-            cc_docs = sent_tokenize(cc_docs_raw)
-            if len(query_docs[i]) < 100:
-                cc_psgs.append({'doc_id' : '', 'doc_text'  : cc_docs,  'title': ''  })
+            cc_docs_tok = sent_tokenize(cc_docs_raw)
+            # print(cc_docs_raw)
+            # print(cc_docs_tok)
+            # print(len(cc_docs_tok))
+            if len(cc_docs_tok) < 100:
+                cc_psgs.append({'doc_id' : '', 'doc_text'  : cc_docs_raw,  'title': ''  })
             else:
                 temp = ''
                 num_tokens = 0
-                for sent in cc_docs.sents:
+                for sent in cc_docs_tok.sents:
+                    print(sent.text)
                     if num_tokens < AVG_TOK_LEN:
                         temp += sent.text
                         num_tokens += len(sent)
@@ -136,7 +144,6 @@ def main(args):
         # for c in cc_psgs:
         #     print(c)
         #     print()
-        # sys.exit()
         ################################################################################
         # Prepare Train and CC passages for sorting
         ################################################################################
@@ -264,22 +271,20 @@ def main(args):
             for k in knn_indices:
                 f.write(cc_psgs_jsonl[k]);
                 f.write('\n')
-        sys.exit()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='DA')
     parser.add_argument("--max_doc", default=1, type=int, help="")    
-    #parser.add_argument("--dataset_name", default="citation_intent", type=str, help="")
-    parser.add_argument("--dataset_name", default="hyperpartisan_news"                     , type=str, help="")
+    parser.add_argument("--dataset_name", default="citation_intent", type=str, help="")
+#    parser.add_argument("--dataset_name", default="hyperpartisan_news"                     , type=str, help="")
     #    parser.add_argument("--dataset_name", default="imdb"                     , type=str, help="")
 #    parser.add_argument("--query_files"  , default="data/citation_intent/train.jsonl", type=str, help="")
 #parser.add_argument("--query_files"  , default="failed_tests_by_base_models/failed_citation_intent.jsonl", type=str, help="")
-    parser.add_argument("--query_files"  , default="failed_tests_by_base_models/failed_hyperpartisan_news.jsonl", type=str, help="")
+    # parser.add_argument("--query_files"  , default="failed_tests_by_base_models/failed_hyperpartisan_news.jsonl", type=str, help="")
+    parser.add_argument("--query_files"  , default="data/citation_intent/train.jsonl", type=str, help="")
     #    parser.add_argument("--query_files"  , default="failed_tests_by_base_models/failed_imdb.jsonl", type=str, help="")
     # parser.add_argument("--aug_unlabeled"  , default="aug_unlabeled/citation_intent", type=str, help="")
     # parser.add_argument("--aug_sorted"  , default="aug_sorted/citation_intent", type=str, help="")
-
-    
     parser.add_argument("--emb"         , default="dense" , type=str, help="")
     print(parser.parse_args())
     main(parser.parse_args())
