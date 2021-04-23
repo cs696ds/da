@@ -136,8 +136,10 @@ def main(args):
                 if temp != '':
                     cc_psgs.append({'doc_id' : '', 'doc_text'  : temp,  'title': ''  })
                     temp = ''
-                    num_tokens = 0                
-
+                    num_tokens = 0
+        # Handle exception
+        if len(cc_psgs) == 0:
+            continue
         # END of for j in tqdm(range(NUM_SEG_QUERIES)):
         #print('Length of cc_psgs')
         #print(len(cc_psgs))
