@@ -59,7 +59,7 @@ def main(args):
     ################################################################################
     startIdx = 0
     endIdx = NUM_RAW_QUERIES
-    for i in tqdm(range(startIdx, endIdX)):
+    for i in tqdm(range(startIdx, endIdx)):
         seg_queries = []
         if len(query_docs[i]) < 100:
             temp = ''
