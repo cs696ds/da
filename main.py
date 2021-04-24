@@ -41,24 +41,25 @@ def main(args):
     print('NUM_RAW_QUERIES: %d' % NUM_RAW_QUERIES)
     
     ################################################################################
-    # Measure Average Token Length
+    # Tokenize Queries and Measure Average Token Length
     ################################################################################
-    print("Measure Average Token Length")
-    qlen_vec   = []
-    query_docs = []
-    query_raws  = []
-#    NUM_RAW_QUERIES = 10
+    print("Tokenize Queries and Measure Average Token Length")
+    qlen_vec   = [0] * NUM_RAW_QUERIES
+    query_docs = [None] * NUM_RAW_QUERIES
     for i in tqdm(range(NUM_RAW_QUERIES)):
-        cur_len = 0
-        q_tok = sent_tokenize(json_lines[i]['text'])
-        qlen_vec.append(len(q_tok))
-        query_docs.append(q_tok)
+        cur_len       = 0
+        query_docs[i] = sent_tokenize(json_lines[i]['text'])
+        qlen_vec[i]   = len(query_docs[i])
     AVG_TOK_LEN = np.rint(np.mean(qlen_vec))
+    # query_docs[182] = sent_tokenize(json_lines[182]['text'])
+    # AVG_TOK_LEN = 44
     print('Average Token Length: %d' % AVG_TOK_LEN )
     ################################################################################
     # Segment Raw Queries
     ################################################################################
-    for i in tqdm(range(NUM_RAW_QUERIES)):
+    startIdx = 0
+    endIdx = NUM_RAW_QUERIES
+    for i in tqdm(range(startIdx, endIdX)):
         seg_queries = []
         if len(query_docs[i]) < 100:
             temp = ''
@@ -110,6 +111,7 @@ def main(args):
                         cc_docs_raw += cur
                 except ValueError:
                     continue
+            print(cc_docs_raw)
             if len(cc_docs_raw) == 0:
                 continue
             ################################################################################
@@ -181,19 +183,28 @@ def main(args):
         print(MAX_CC_PSGS)
         nq = len(query_psgs)  # query size
         nb = len(cc_psgs) # database size
-        
         if args.emb=='dense':
             # Dense Passage Representation(DPR)
             subprocess.call(['emb/generate_embedding.sh', TR])
             subprocess.call(['emb/generate_embedding.sh', CC])
             # FAISS Preparation
-            train_embeddings = np.load('emb/' + TR + '_0.pkl', allow_pickle=True)
+            query_embeddings = np.load('emb/' + TR + '_0.pkl', allow_pickle=True)
             cc_embeddings = np.load('emb/' + CC + '_0.pkl', allow_pickle=True)
-            d = train_embeddings[0][1].size
+
+            if nq != len(query_embeddings):
+                print('Query Embedding generation failed.')
+                continue
+            if nb != len(cc_embeddings):
+                print('CC Embedding generation failed.')
+                continue
+            
+            d = query_embeddings[0][1].size
             xq = np.zeros((nq,d), dtype='float32')
             for l in range(nq):
-                xq[l] = train_embeddings[l][1]
+                xq[l] = query_embeddings[l][1]
             xb = np.zeros((nb,d), dtype='float32')
+            # print(nb)
+            # print(len(cc_embeddings))
             for l in range(nb):
                 xb[l] = cc_embeddings[l][1]
         # if args.emb=='sparse':
@@ -205,11 +216,11 @@ def main(args):
         #     emb = encode_sparse(texts)
         #     _, d = emb.shape
         #     print(emb.shape)
-        #     train_embeddings = emb[:MAX_TR_PSGS]
+        #     query_embeddings = emb[:MAX_TR_PSGS]
         #     cc_embeddings = emb[MAX_TR_PSGS:]
-        #     print(train_embeddings.shape)
+        #     print(query_embeddings.shape)
         #     print(cc_embeddings.shape)
-        #     xq = np.array(train_embeddings, dtype='float32')
+        #     xq = np.array(query_embeddings, dtype='float32')
         #     xb = np.array(cc_embeddings, dtype='float32')
         # print('Number of query passages: %d' % nq)
         # print(xq)
@@ -265,8 +276,8 @@ def main(args):
         #        print(knn_indices)
 #        cc_psgs_jsonl = []
         sorted_cc_psgs_jsonl = []
-        print(I[0])
-        print(D[0])
+        # print(I[0])
+        # print(D[0])
         # sys.exit()
         # for psg in cc_psgs:
         #     d = {"text" : psg['doc_text'],
@@ -286,8 +297,9 @@ def main(args):
 #        sys.exit()
         with open('aug_sorted/' + args.dataset_name + '/%05d.jsonl' % i, 'w') as f:
             for i in range(len(sorted_cc_psgs_jsonl)):
-                f.write(sorted_cc_psgs_jsonl[k]);
+                f.write(sorted_cc_psgs_jsonl[i]);
                 f.write('\n')
+
 
             # for k in knn_indices:
             #     f.write(cc_psgs_jsonl[k]);
