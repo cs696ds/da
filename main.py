@@ -49,8 +49,7 @@ def main(args):
     query_docs = [None] * NUM_RAW_QUERIES
     for i in tqdm(range(NUM_RAW_QUERIES)):
         cur_len       = 0
-        query_docs[i] = sent_tokenize(json_lines[i]['text'])
-        qlen_vec[i]   = len(query_docs[i])
+        qlen_vec[i]   = len(json_lines[i]['text'].split())
     AVG_TOK_LEN = np.rint(np.mean(qlen_vec))
     print('Average Token Length: %d' % AVG_TOK_LEN )
 
@@ -58,15 +57,13 @@ def main(args):
     # Encode Queries
     ################################################################################
     print("Encode Queries")
-    query_psgs = [None] * NUM_RAW_QUERIES
     TR = 'tr_' + args.dataset_name
     TR_TSV  = 'emb/' + TR + '.tsv' 
     with open(TR_TSV, 'w') as q_csv_file:
         keys = ['doc_id', 'doc_text', 'title']
         q_dw = csv.DictWriter(q_csv_file, keys, delimiter='\t')
         for i in range(NUM_RAW_QUERIES):
-            query_psgs[i] = {'doc_id': str(i), 'doc_text': json_lines[i]['text'], 'title': ''}
-            q_dw.writerow(query_psgs[i])
+            q_dw.writerow({'doc_id': str(i), 'doc_text': json_lines[i]['text'], 'title': ''})
     if args.emb=='dense':
         subprocess.call(['emb/generate_embedding.sh', TR])
     query_embeddings = np.load('emb/' + TR + '_0.pkl', allow_pickle=True)
@@ -74,9 +71,10 @@ def main(args):
     ################################################################################
     # Segment Raw Queries
     ################################################################################
-    startIdx = 0
+    startIdx = 52
     endIdx = NUM_RAW_QUERIES
     for i in tqdm(range(startIdx, endIdx)):
+        query_docs[i] = sent_tokenize(json_lines[i]['text'])
         seg_queries = []
         if len(query_docs[i]) < 100:
             temp = ''
@@ -103,8 +101,8 @@ def main(args):
         ################################################################################
         # Retrieve CC documents
         ################################################################################
-        solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
-        #solr_select = 'http://localhost:8983/solr/depcc-small/select?q='
+        #solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
+        solr_select = 'http://localhost:8983/solr/depcc-small/select?q='
         # solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
         # solr_select = 'http://localhost:8983/solr/depcc-small/select?fl=score%2C*&q='
         cc_psgs = []
@@ -115,10 +113,13 @@ def main(args):
             if 'response' not in retrieved:
                 continue
             retrieved_docs = (retrieved['response']['docs'])
-            if len(retrieved_docs) == 0:
+            NUM_RETRIEVED_DOCS = args.max_doc
+            if args.max_doc > len(retrieved_docs):
+                NUM_RETRIEVED_DOCS = len(retrieved_docs)
+            if NUM_RETRIEVED_DOCS == 0:
                 continue
             cc_docs_raw = ""
-            for k in range(args.max_doc):
+            for k in range(NUM_RETRIEVED_DOCS):
                 try:
                     cur = json.loads(retrieved_docs[k]['_src_'])['text']
                     if len(cc_docs_raw) + len(cur) > 1000000:
@@ -166,7 +167,6 @@ def main(args):
         MAX_CC_PSGS = len(cc_psgs)
         print('MAX_CC_PSGS')
         print(MAX_CC_PSGS)
-        #nq = len(query_psgs)  # query size
         nq = 1
         nb = len(cc_psgs) # database size
         # Dense Passage Representation(DPR)
@@ -224,17 +224,12 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='DA')
-    parser.add_argument("--max_doc", default=1, type=int, help="")    
-    parser.add_argument("--dataset_name", default="citation_intent", type=str, help="")
-#    parser.add_argument("--dataset_name", default="hyperpartisan_news"                     , type=str, help="")
-#    parser.add_argument("--dataset_name", default="imdb"                     , type=str, help="")
-#    parser.add_argument("--query_files"  , default="data/citation_intent/train.jsonl", type=str, help="")
-#parser.add_argument("--query_files"  , default="failed_tests_by_base_models/failed_citation_intent.jsonl", type=str, help="")
-    # parser.add_argument("--query_files"  , default="failed_tests_by_base_models/failed_hyperpartisan_news.jsonl", type=str, help="")
-    parser.add_argument("--query_files"  , default="data/citation_intent/train.jsonl", type=str, help="")
-    #    parser.add_argument("--query_files"  , default="failed_tests_by_base_models/failed_imdb.jsonl", type=str, help="")
-    # parser.add_argument("--aug_unlabeled"  , default="aug_unlabeled/citation_intent", type=str, help="")
-    # parser.add_argument("--aug_sorted"  , default="aug_sorted/citation_intent", type=str, help="")
+    parser.add_argument("--max_doc", default=10, type=int, help="")
     parser.add_argument("--emb"         , default="dense" , type=str, help="")
+#    parser.add_argument("--dataset_name", default="citation_intent", type=str, help="")
+#    parser.add_argument("--query_files"  , default="data/citation_intent/train.jsonl", type=str, help="")
+    parser.add_argument("--dataset_name", default="hyperpartisan_news", type=str, help="")
+    parser.add_argument("--query_files"  , default="data/hyperpartisan_news/train.jsonl", type=str, help="")
+    # parser.add_argument("--aug_unlabeled"  , default="aug_unlabeled/citation_intent", type=str, help="")
     print(parser.parse_args())
     main(parser.parse_args())
