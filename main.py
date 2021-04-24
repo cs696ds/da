@@ -38,6 +38,7 @@ def main(args):
             json_lines.append(j)
 
     NUM_RAW_QUERIES = len(json_lines)
+#    NUM_RAW_QUERIES = 10
     print('NUM_RAW_QUERIES: %d' % NUM_RAW_QUERIES)
     
     ################################################################################
@@ -52,6 +53,24 @@ def main(args):
         qlen_vec[i]   = len(query_docs[i])
     AVG_TOK_LEN = np.rint(np.mean(qlen_vec))
     print('Average Token Length: %d' % AVG_TOK_LEN )
+
+    ################################################################################
+    # Encode Queries
+    ################################################################################
+    print("Encode Queries")
+    query_psgs = [None] * NUM_RAW_QUERIES
+    TR = 'tr_' + args.dataset_name
+    TR_TSV  = 'emb/' + TR + '.tsv' 
+    with open(TR_TSV, 'w') as q_csv_file:
+        keys = ['doc_id', 'doc_text', 'title']
+        q_dw = csv.DictWriter(q_csv_file, keys, delimiter='\t')
+        for i in range(NUM_RAW_QUERIES):
+            query_psgs[i] = {'doc_id': str(i), 'doc_text': json_lines[i]['text'], 'title': ''}
+            q_dw.writerow(query_psgs[i])
+    if args.emb=='dense':
+        subprocess.call(['emb/generate_embedding.sh', TR])
+    query_embeddings = np.load('emb/' + TR + '_0.pkl', allow_pickle=True)
+    print(len(query_embeddings))
     ################################################################################
     # Segment Raw Queries
     ################################################################################
@@ -84,8 +103,8 @@ def main(args):
         ################################################################################
         # Retrieve CC documents
         ################################################################################
-        # solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
-        solr_select = 'http://localhost:8983/solr/depcc-small/select?q='
+        solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
+        #solr_select = 'http://localhost:8983/solr/depcc-small/select?q='
         # solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
         # solr_select = 'http://localhost:8983/solr/depcc-small/select?fl=score%2C*&q='
         cc_psgs = []
@@ -137,47 +156,31 @@ def main(args):
         # Prepare Train and CC passages for sorting
         ################################################################################
 
-        # Per raw query
-        query_psgs = []
-        query_dict = {'doc_id': str(i), 'doc_text': json_lines[i]['text'], 'title': ''}
-        query_psgs.append(query_dict)
-        TR = 'tr_' + args.dataset_name
+
         CC = 'cc_' + args.dataset_name
-        TR_TSV  = 'emb/' + TR + '.tsv' 
         CC_TSV  = 'emb/' + CC + '.tsv'
-        with open(TR_TSV, 'w') as q_csv_file:
-            q_dw = csv.DictWriter(q_csv_file, query_psgs[0].keys(), delimiter='\t')
-            for q_psg in query_psgs:
-                q_dw.writerow(q_psg)
         with open(CC_TSV, 'w') as cc_csv_file:
             cc_dw = csv.DictWriter(cc_csv_file, cc_psgs[0].keys(), delimiter='\t')
             for cc_psg in cc_psgs:
                 cc_dw.writerow(cc_psg)
-        MAX_TR_PSGS = len(query_psgs)
         MAX_CC_PSGS = len(cc_psgs)
-        print('MAX_TR_PSGS')
-        print(MAX_TR_PSGS)
         print('MAX_CC_PSGS')
         print(MAX_CC_PSGS)
-        nq = len(query_psgs)  # query size
+        #nq = len(query_psgs)  # query size
+        nq = 1
         nb = len(cc_psgs) # database size
         # Dense Passage Representation(DPR)
         if args.emb=='dense':
-            subprocess.call(['emb/generate_embedding.sh', TR])
             subprocess.call(['emb/generate_embedding.sh', CC])
             # FAISS Preparation
-            query_embeddings = np.load('emb/' + TR + '_0.pkl', allow_pickle=True)
+
             cc_embeddings = np.load('emb/' + CC + '_0.pkl', allow_pickle=True)
-            if nq != len(query_embeddings):
-                print('Query Embedding generation failed.')
-                continue
             if nb != len(cc_embeddings):
                 print('CC Embedding generation failed.')
                 continue
             d = query_embeddings[0][1].size
             xq = np.zeros((nq,d), dtype='float32')
-            for l in range(nq):
-                xq[l] = query_embeddings[l][1]
+            xq[0] = query_embeddings[i][1]
             xb = np.zeros((nb,d), dtype='float32')
             for l in range(nb):
                 xb[l] = cc_embeddings[l][1]
@@ -198,7 +201,7 @@ def main(args):
         #     xb = np.array(cc_embeddings, dtype='float32')
         index = faiss.IndexFlatL2(d)   # build the index
         index.add(xb)                  # add vectors to the index
-        k = nb
+        k = nb                         # K is equal to the size of the database
         D, I = index.search(xq, k)     # actual search
         ################################################################################
         # Write Augmented Passages
