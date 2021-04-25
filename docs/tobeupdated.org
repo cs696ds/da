@@ -8,7 +8,7 @@
 * Datasets
   - ACL  : Citation Intent Classification
   - Hyper: HyperPartisan News Detection
-  - RCT-sample  : Randomized Controlled Trials
+  - RCT  : Randomized Controlled Trials
 
 ** Size of Datasets
    |------------+-----------+---------+----------+--------------|
@@ -20,7 +20,7 @@
    |------------+-----------+---------+----------+--------------|
    | RCT-sample |       500 |   30212 |    30135 |            5 |
    |------------+-----------+---------+----------+--------------|
-   | RCT-20k    |           |   30212 |    30135 |            5 |
+   | RCT-20k    |    180040 |   30212 |    30135 |            5 |
    |------------+-----------+---------+----------+--------------|
 
 ** Size of Augmented data
@@ -62,16 +62,26 @@
   #+END_SRC
 
 * Augmentation Strategies 
-** Baseline
-   1. random sampling
 
-** Annotation of CC Data
-   1. Use baseline model (Teacher) to perform unsupervised labelling on retrieved CC data
-   2. Use ground truth labels of failed test examples and assign labels to CC data
+* Algorithm
+  #+BEGIN_SRC
+1. Extract failed test examples from the baseline model
+2. Retrieve passages/sentences from Common Crawl 
+3. Apply augmentation strategy (i)-(iii)
+4. Augment all the labelled CC data to the training data
+5. Retrain RoBERTa on the augmented training set 
+  #+END_SRC
 
-** Augmentation Selection of CC Data
-   1. Using a task specific binary classifier, filter out retrieved CC data that is "out-domain"
-   2. Varying number of augmented data using dense passage retrieval(DPR) and KNN(FAISS)
-  
-** Held-out (RCT)
+* Augmentation Strategies 
+- Strategy (i)\\
+  Use baseline model (Teacher) to perform unsupervised labelling on retrieved CC data
+- Strategy (ii)\\
+  Using a task specific binary classifier, 
+  filter out retrieved CC data that is "out-domain"\\
+  Use baseline model (Teacher) to perform unsupervised labelling on the filtered "in-domain" CC data
+- Strategy (iii)\\
+  Using a task specific binary classifier, 
+  filter out retrieved CC data that is "out-domain"\\
+  Use ground truth labels of failed test examples and assign labels to the filtered "in-domain" CC data
+
 
