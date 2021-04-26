@@ -18,13 +18,13 @@
 # cp task5a/hyper_aug/score_max34.jsonl data/aug/hyperpartisan_news/score_max34/train.jsonl
 # cp task5a/hyper_aug/score_max36.jsonl data/aug/hyperpartisan_news/score_max36/train.jsonl
 
-cat data/hyperpartisan_news/train.jsonl >> data/aug/hyperpartisan_news/score_max24/train.jsonl
-cat data/hyperpartisan_news/train.jsonl >> data/aug/hyperpartisan_news/score_max26/train.jsonl
-cat data/hyperpartisan_news/train.jsonl >> data/aug/hyperpartisan_news/score_max28/train.jsonl
-cat data/hyperpartisan_news/train.jsonl >> data/aug/hyperpartisan_news/score_max30/train.jsonl
-cat data/hyperpartisan_news/train.jsonl >> data/aug/hyperpartisan_news/score_max32/train.jsonl
-cat data/hyperpartisan_news/train.jsonl >> data/aug/hyperpartisan_news/score_max34/train.jsonl
-cat data/hyperpartisan_news/train.jsonl >> data/aug/hyperpartisan_news/score_max36/train.jsonl
+# cat data/hyperpartisan_news/train.jsonl >> data/aug/hyperpartisan_news/score_max24/train.jsonl
+# cat data/hyperpartisan_news/train.jsonl >> data/aug/hyperpartisan_news/score_max26/train.jsonl
+# cat data/hyperpartisan_news/train.jsonl >> data/aug/hyperpartisan_news/score_max28/train.jsonl
+# cat data/hyperpartisan_news/train.jsonl >> data/aug/hyperpartisan_news/score_max30/train.jsonl
+# cat data/hyperpartisan_news/train.jsonl >> data/aug/hyperpartisan_news/score_max32/train.jsonl
+# cat data/hyperpartisan_news/train.jsonl >> data/aug/hyperpartisan_news/score_max34/train.jsonl
+# cat data/hyperpartisan_news/train.jsonl >> data/aug/hyperpartisan_news/score_max36/train.jsonl
 
 
 # cp data/hyperpartisan_news/test.jsonl data/aug/hyperpartisan_news/score_max24/test.jsonl
