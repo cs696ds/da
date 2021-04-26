@@ -1,56 +1,127 @@
 #+title: Tasks
 #+OPTIONS: toc:nil
 #+LATEX_HEADER: \usepackage[margin=0.5in]{geometry}
+#+LATEX_HEADER: \usepackage{pgfplots}
+
+
 #+AUTHOR: Hee Hwang and Sudarshan Raghavan
 #+EMAIL: {hhwang, sraghavan}@cs.umass.edu
 #+LATEX_CLASS_OPTIONS: [twocolumn]
 
+
+
 * Datasets
-  - ACL  : Citation Intent Classification
-  - Hyper: HyperPartisan News Detection
-  - RCT  : Randomized Controlled Trials
+ACL  : Citation Intent Classification\\
+Hyper: HyperPartisan News Detection\\
+RCT  : Randomized Controlled Trials
 
 ** Size of Datasets
-   |------------+-----------+---------+----------+--------------|
-   | Task       | train set | dev set | test set | # of Classes |
-   |------------+-----------+---------+----------+--------------|
-   | ACL        |      1688 |     114 |      139 |            6 |
-   |------------+-----------+---------+----------+--------------|
-   | Hyper      |       516 |      64 |       65 |            2 |
-   |------------+-----------+---------+----------+--------------|
-   | RCT-sample |       500 |   30212 |    30135 |            5 |
-   |------------+-----------+---------+----------+--------------|
-   | RCT-20k    |    180040 |   30212 |    30135 |            5 |
-   |------------+-----------+---------+----------+--------------|
+   |------------+--------+-------+-------+---------|
+   | Task       |  train |   dev |  test | Classes |
+   |------------+--------+-------+-------+---------|
+   | ACL        |   1688 |   114 |   139 |       6 |
+   |------------+--------+-------+-------+---------|
+   | Hyper      |    516 |    64 |    65 |       2 |
+   |------------+--------+-------+-------+---------|
+   | RCT-sample |    500 | 30212 | 30135 |       5 |
+   |------------+--------+-------+-------+---------|
+   | RCT-20k    | 180040 | 30212 | 30135 |       5 |
+   |------------+--------+-------+-------+---------|
 
-** Size of Augmented data
-   |------------+----------+------------+-------------+--------------|
-   | Task       | Baseline | Strat. (i) | Strat. (ii) | Strat. (iii) |
-   |------------+----------+------------+-------------+--------------|
-   | ACL        |        0 |            |             |              |
-   |------------+----------+------------+-------------+--------------|
-   | Hyper      |        0 |            |             |              |
-   |------------+----------+------------+-------------+--------------|
-   | RCT-sample |        0 |            |             |              |
-   |------------+----------+------------+-------------+--------------|
+** Size of Augmented Data
+   |-----------+-------------+-------------+-----|
+   | Max Score | ACL         | Hyper       | RCT |
+   |-----------+-------------+-------------+-----|
+   |  Baseline | 1688 (100%) | 516 (100%)  |     |
+   |-----------+-------------+-------------+-----|
+   |        24 | 1746 (103%) | 551 (106%)  |     |
+   |-----------+-------------+-------------+-----|
+   |        26 | 1815 (107%) | 567 (109%)  |     |
+   |-----------+-------------+-------------+-----|
+   |        28 | 1981 (117%) | 606 (117%)  |     |
+   |-----------+-------------+-------------+-----|
+   |        30 | 2253 (133%) | 656 (127%)  |     |
+   |-----------+-------------+-------------+-----|
+   |        32 | 2842 (168%) | 742 (143%)  |     |
+   |-----------+-------------+-------------+-----|
+   |        34 | 3848 (227%) | 911 (176%)  |     |
+   |-----------+-------------+-------------+-----|
+   |        36 | 5819 (344%) | 1127 (218%) |     |
+   |-----------+-------------+-------------+-----|
 
 
-* Results
-  |------------+----------+------------+-------------+--------------|
-  | Task       | Baseline | Strat. (i) | Strat. (ii) | Strat. (iii) |
-  |------------+----------+------------+-------------+--------------|
-  | ACL        |     62.5 |            |             |              |
-  |------------+----------+------------+-------------+--------------|
-  | Hyper      |     85.2 |            |             |              |
-  |------------+----------+------------+-------------+--------------|
-  | RCT-sample |     71.6 |            |             |              |
-  |------------+----------+------------+-------------+--------------|
+* Augmentation
+  # ** Augmentation by size
+  #    |------+-------+---------+-------+-------+-------+-------|
+  #    | Task |   +0% |    +17% |  +35% |  +53% |  +71% |  +88% |
+  #    |------+-------+---------+-------+-------+-------+-------|
+  #    | ACL  | 62.70 | *65.59* | 59.92 | 57.65 | 60.78 | 55.70 |
+  #    |------+-------+---------+-------+-------+-------+-------|
+
+
+** Augmentation by Maximum Similarity Score
+   |-----------+---------+---------+-----|
+   | Max Score |     ACL |   Hyper | RCT |
+   |-----------+---------+---------+-----|
+   |  Baseline |   62.70 |   90.24 |     |
+   |-----------+---------+---------+-----|
+   |        24 | *73.45* | *93.66* |     |
+   |-----------+---------+---------+-----|
+   |        26 |   71.71 |   81.98 |     |
+   |-----------+---------+---------+-----|
+   |        28 |   66.17 |   92.03 |     |
+   |-----------+---------+---------+-----|
+   |        30 |   65.34 |   81.32 |     |
+   |-----------+---------+---------+-----|
+   |        32 |   61.64 |   88.85 |     |
+   |-----------+---------+---------+-----|
+   |        34 |   59.56 |   83.75 |     |
+   |-----------+---------+---------+-----|
+   |        36 |   59.22 |   88.70 |     |
+   |-----------+---------+---------+-----|
+
+
+
+
+   \begin{tikzpicture}
+   \begin{axis}[
+       title={Augmentation by Similarity Score},
+       xlabel={Maximum Similarity Score},
+       ylabel={F1 Score * 100},
+       xmin=20, xmax=38,
+       ymin=55, ymax=110,
+       xtick={22,24,26,28,30,32,34,36,38},
+       ytick={60,70,80,90,100},
+       ymajorgrids=true,
+       grid style=dashed,
+   ]
+   \addplot[ 
+       color=blue, 
+       mark=square, 
+       ]
+       coordinates {
+       (22,62.70)(24,73.45)(26,71.71)(28,66.17)(30,65.34)(32,61.64)(34,59.56)(36,59.22)
+       };
+       \addlegendentry{ACL-ARC}
+
+   \addplot[
+       color=red,
+       mark=square,
+       ]
+       coordinates {
+       (22,90.24)(24,93.66)(26,81.98)(28,92.03)(30,81.32)(32,88.85)(34,83.75)(36,88.70)
+       };
+       \addlegendentry{Hyperpartisan}
+
+   \end{axis}
+   \end{tikzpicture}
+
 
 * Baseline models: 
   - An off-the-shelf RoBERTa model that has been finetuned to perform classification for each of the downstream tasks
 
 * Augmentation Model
-[[./png/da.png]]
+  [[./png/da.png]]
 
 * Algorithm
   #+BEGIN_SRC
@@ -73,15 +144,15 @@
   #+END_SRC
 
 * Augmentation Strategies 
-- Strategy (i)\\
-  Use baseline model (Teacher) to perform unsupervised labelling on retrieved CC data
-- Strategy (ii)\\
-  Using a task specific binary classifier, 
-  filter out retrieved CC data that is "out-domain"\\
-  Use baseline model (Teacher) to perform unsupervised labelling on the filtered "in-domain" CC data
-- Strategy (iii)\\
-  Using a task specific binary classifier, 
-  filter out retrieved CC data that is "out-domain"\\
-  Use ground truth labels of failed test examples and assign labels to the filtered "in-domain" CC data
+  - Strategy (i)\\
+    Use baseline model (Teacher) to perform unsupervised labelling on retrieved CC data
+  - Strategy (ii)\\
+    Using a task specific binary classifier, 
+    filter out retrieved CC data that is "out-domain"\\
+    Use baseline model (Teacher) to perform unsupervised labelling on the filtered "in-domain" CC data
+  - Strategy (iii)\\
+    Using a task specific binary classifier, 
+    filter out retrieved CC data that is "out-domain"\\
+    Use ground truth labels of failed test examples and assign labels to the filtered "in-domain" CC data
 
 
