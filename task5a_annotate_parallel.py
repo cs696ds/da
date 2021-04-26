@@ -4,11 +4,8 @@ import glob
 import multiprocessing
 from tqdm import tqdm
 
-
-
-
-tasks      = ['hyperpartisan_news']
-query_dir  = "data/hyperpartisan_news/train.jsonl"
+tasks      = ['rct-sample']
+query_dir  = "data/rct-sample/train.jsonl"
 aug_dir    = "aug_sorted"
 annotation = "same_label"
 output_dir = 'task5a'
@@ -43,7 +40,7 @@ def annotate_same_label(startIdx, endIdx):
                 filewriter.write('%s\n' % item)
 
 def main():
-    NUM_QUERIES = 516
+    NUM_QUERIES = 500
     p = [None] * 10
     unit = NUM_QUERIES // 10
     for i in range(10):
@@ -52,12 +49,12 @@ def main():
         print(startIdx, endIdx)
         p[i] = multiprocessing.Process(target=annotate_same_label, args=(startIdx,endIdx, ))
         p[i].start()
-    p_last = multiprocessing.Process(target=annotate_same_label, args=(unit * 10, NUM_QUERIES, ))
-    p_last.start()
+    # p_last = multiprocessing.Process(target=annotate_same_label, args=(unit * 10, NUM_QUERIES, ))
+    # p_last.start()
     print(unit * 10, NUM_QUERIES)
     for i in range(10):
         p[i].join()
-    p_last.join()
+    #p_last.join()
     print("Done!")
 main()
 

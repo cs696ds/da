@@ -1,8 +1,8 @@
 import sys
 import json
-dataset_name  = 'hyper'
-in_file       = 'task5a/hyper_aug/hyper_sorted_dedup.jsonl'
-out_file_path = 'task5a/hyper_aug/'
+dataset_name  = 'rct-sample'
+in_file       = 'task5a/rct-sample_sorted_dedup.jsonl'
+out_file_path = 'task5a/rct-sample_aug/'
 seen = set()
 with open(in_file) as f:
     json_lines = []
