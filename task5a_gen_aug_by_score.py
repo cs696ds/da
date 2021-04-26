@@ -1,9 +1,10 @@
 import sys
 import json
-input_file_path = 'aug_citation_intent_all_sorted_and_rm_dups.jsonl'
-output_file_path = 'bm25/citation_intent_bm25_'
+dataset_name  = 'hyper'
+in_file       = 'task5a/hyper_aug/hyper_sorted_dedup.jsonl'
+out_file_path = 'task5a/hyper_aug/'
 seen = set()
-with open(input_file_path) as f:
+with open(in_file) as f:
     json_lines = []
     for line in f:
         json_line = json.loads(line)
@@ -12,9 +13,7 @@ with open(input_file_path) as f:
     NUM_LINES = len(json_lines)
     print(NUM_LINES)
 
-
-
-    scores = [24, 26, 28, 30, 32, 34]
+    scores = [24, 26, 28, 30, 32, 34, 36]
     scores_str = [str(s) for s in scores]
     print(scores)
     print(scores_str)
@@ -30,10 +29,8 @@ with open(input_file_path) as f:
     for s in jsons.keys():
         print(len(jsons[s]))
 
-
-
 for s in scores_str:
-    with open(output_file_path + s + '.jsonl', 'w') as f:
+    with open(out_file_path + dataset_name + '_' + s + '.jsonl', 'w') as f:
         for json_line in jsons[s]:
             f.write('%s\n' % json.dumps(json_line))
     

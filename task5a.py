@@ -7,9 +7,9 @@ from tqdm import tqdm
 
 
 
-tasks = ['citation_intent']
-query_dir = "data/citation_intent/train.jsonl"
-aug_dir = "aug_sorted"
+tasks      = ['hyperpartisan_news']
+query_dir  = "data/hyperpartisan_news/train.jsonl"
+aug_dir    = "aug_sorted"
 annotation = "same_label"
 output_dir = 'task5a'
 
@@ -43,23 +43,22 @@ def annotate_same_label(startIdx, endIdx):
                 filewriter.write('%s\n' % item)
 
 def main():
-    NUM_QUERIES = 1688
+    NUM_QUERIES = 516
     p = [None] * 10
-    unit = 1688 // 10
+    unit = NUM_QUERIES // 10
     for i in range(10):
         startIdx = i * unit
         endIdx   = startIdx + unit
         print(startIdx, endIdx)
         p[i] = multiprocessing.Process(target=annotate_same_label, args=(startIdx,endIdx, ))
         p[i].start()
-    p_last = multiprocessing.Process(target=annotate_same_label, args=(1680,1688, ))
+    p_last = multiprocessing.Process(target=annotate_same_label, args=(unit * 10, NUM_QUERIES, ))
     p_last.start()
-    print(1680, 1688)
+    print(unit * 10, NUM_QUERIES)
     for i in range(10):
         p[i].join()
     p_last.join()
     print("Done!")
-
 main()
 
                         
