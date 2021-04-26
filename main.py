@@ -71,9 +71,13 @@ def main(args):
     ################################################################################
     # Segment Raw Queries
     ################################################################################
-    startIdx = 52
+    startIdx = 117
     endIdx = NUM_RAW_QUERIES
+
     for i in tqdm(range(startIdx, endIdx)):
+        # Error skip
+        if args.dataset_name == 'hyperpartisan_news' and i == 116:
+            continue
         query_docs[i] = sent_tokenize(json_lines[i]['text'])
         seg_queries = []
         if len(query_docs[i]) < 100:
@@ -221,6 +225,7 @@ def main(args):
             for j in range(len(sorted_cc_psgs_jsonl)):
                 f.write(sorted_cc_psgs_jsonl[j]);
                 f.write('\n')
+        print('Wrote aug_sorted/%s/%05d.jsonl' % (args.dataset_name,i))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='DA')
@@ -228,8 +233,9 @@ if __name__ == "__main__":
     parser.add_argument("--emb"         , default="dense" , type=str, help="")
    # parser.add_argument("--dataset_name", default="citation_intent", type=str, help="")
    # parser.add_argument("--query_files"  , default="data/citation_intent/train.jsonl", type=str, help="")
-    parser.add_argument("--dataset_name", default="hyperpartisan_news", type=str, help="")
-    parser.add_argument("--query_files"  , default="data/hyperpartisan_news/train.jsonl", type=str, help="")
-    # parser.add_argument("--aug_unlabeled"  , default="aug_unlabeled/citation_intent", type=str, help="")
+    # parser.add_argument("--dataset_name", default="hyperpartisan_news", type=str, help="")
+    # parser.add_argument("--query_files"  , default="data/hyperpartisan_news/train.jsonl", type=str, help="")
+    parser.add_argument("--dataset_name", default="rct-sample", type=str, help="")
+    parser.add_argument("--query_files"  , default="data/rct-sample/train.jsonl", type=str, help="")
     print(parser.parse_args())
     main(parser.parse_args())
