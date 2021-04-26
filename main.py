@@ -71,7 +71,7 @@ def main(args):
     ################################################################################
     # Segment Raw Queries
     ################################################################################
-    startIdx = 117
+    startIdx = 0
     endIdx = NUM_RAW_QUERIES
 
     for i in tqdm(range(startIdx, endIdx)):
