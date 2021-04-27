@@ -105,8 +105,8 @@ def main(args):
         ################################################################################
         # Retrieve CC documents
         ################################################################################
-        #solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
-        solr_select = 'http://localhost:8983/solr/depcc-small/select?q='
+        solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
+        #solr_select = 'http://localhost:8983/solr/depcc-small/select?q='
         # solr_select = 'http://localhost:8983/solr/depcc-large/select?q='
         # solr_select = 'http://localhost:8983/solr/depcc-small/select?fl=score%2C*&q='
         cc_psgs = []
@@ -221,21 +221,21 @@ def main(args):
                  "score": str(D[0][j])
                  }
             sorted_cc_psgs_jsonl.append(json.dumps(d))
-        with open('aug_sorted/' + args.dataset_name + '/%05d.jsonl' % i, 'w') as f:
+        with open('aug_large/' + args.dataset_name + '/%05d.jsonl' % i, 'w') as f:
             for j in range(len(sorted_cc_psgs_jsonl)):
                 f.write(sorted_cc_psgs_jsonl[j]);
                 f.write('\n')
-        print('Wrote aug_sorted/%s/%05d.jsonl' % (args.dataset_name,i))
+        print('Wrote aug_large/%s/%05d.jsonl' % (args.dataset_name,i))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='DA')
     parser.add_argument("--max_doc", default=10, type=int, help="")
     parser.add_argument("--emb"         , default="dense" , type=str, help="")
-   # parser.add_argument("--dataset_name", default="citation_intent", type=str, help="")
-   # parser.add_argument("--query_files"  , default="data/citation_intent/train.jsonl", type=str, help="")
+    parser.add_argument("--dataset_name", default="citation_intent", type=str, help="")
+    parser.add_argument("--query_files"  , default="data/citation_intent/train.jsonl", type=str, help="")
     # parser.add_argument("--dataset_name", default="hyperpartisan_news", type=str, help="")
     # parser.add_argument("--query_files"  , default="data/hyperpartisan_news/train.jsonl", type=str, help="")
-    parser.add_argument("--dataset_name", default="rct-sample", type=str, help="")
-    parser.add_argument("--query_files"  , default="data/rct-sample/train.jsonl", type=str, help="")
+    # parser.add_argument("--dataset_name", default="rct-sample", type=str, help="")
+    # parser.add_argument("--query_files"  , default="data/rct-sample/train.jsonl", type=str, help="")
     print(parser.parse_args())
     main(parser.parse_args())
