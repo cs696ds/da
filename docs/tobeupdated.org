@@ -114,7 +114,7 @@ RCT  : Randomized Controlled Trials
 *** Size Table
    #+attr_latex: :align |c|c|c|c|
    |--------------+-------------+-------------+------------|
-   | Max Distance | ACL         | Hyper       |        RCT |
+   | Max Distance | ACL         | Hyper       |      RCT^* |
    |--------------+-------------+-------------+------------|
    |     Baseline | 1688 (100%) | 516 (100%)  |  500(100%) |
    |--------------+-------------+-------------+------------|
@@ -193,7 +193,7 @@ RCT  : Randomized Controlled Trials
 *** F1 Table
    #+attr_latex: :align |c|c|c|c|
    |--------------+---------+---------+---------|
-   | Max Distance |     ACL |   Hyper |     RCT |
+   | Max Distance |     ACL |   Hyper |   RCT^* |
    |--------------+---------+---------+---------|
    |     Baseline |   62.70 |   90.24 | *73.60* |
    |--------------+---------+---------+---------|
@@ -283,7 +283,7 @@ RCT  : Randomized Controlled Trials
 *** F1 Table
    #+attr_latex: :align |c|c|c|c|c|
    |-----------+---------+---------+---------+----------|
-   | Dataset # |     ACL |   Hyper |     RCT | Interval |
+   | Dataset # |     ACL |   Hyper |   RCT^* | Interval |
    |-----------+---------+---------+---------+----------|
    |  Baseline |   62.70 |   90.24 | *73.60* |        - |
    |-----------+---------+---------+---------+----------|

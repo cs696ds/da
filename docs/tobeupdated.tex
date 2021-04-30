@@ -1,4 +1,4 @@
-% Created 2021-04-29 Thu 18:26
+% Created 2021-04-30 Fri 13:56
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -36,13 +36,13 @@
 
 
 \section{Baseline}
-\label{sec:org1e5a201}
+\label{sec:org72a443b}
 ACL  : Citation Intent Classification\\
 Hyper: HyperPartisan News Detection\\
 RCT  : Randomized Controlled Trials
 
 \subsection{Baseline}
-\label{sec:orge3973ea}
+\label{sec:orgde167fe}
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
@@ -63,16 +63,16 @@ RCT-200k & 180040 & 30212 & 30135 & 5\\
 
 
 \section{Tables \& Plots}
-\label{sec:org732747b}
+\label{sec:org49dd8ac}
 
 \subsection{Augmentation by Distance}
-\label{sec:org9936a54}
+\label{sec:orga79a951}
 \subsubsection{Size Table}
-\label{sec:org72fbbe4}
+\label{sec:org80e6f12}
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
-Max Distance & ACL & Hyper & RCT\\
+Max Distance & ACL & Hyper & RCT\(^{\text{*}}\)\\
 \hline
 Baseline & 1688 (100\%) & 516 (100\%) & 500(100\%)\\
 \hline
@@ -93,7 +93,7 @@ Baseline & 1688 (100\%) & 516 (100\%) & 500(100\%)\\
 \end{tabular}
 \end{center}
 \subsubsection{Size Plot}
-\label{sec:org5135fa3}
+\label{sec:org827e4d4}
 
 
 \begin{tikzpicture}
@@ -152,11 +152,11 @@ Baseline & 1688 (100\%) & 516 (100\%) & 500(100\%)\\
 
 
 \subsubsection{F1 Table}
-\label{sec:org38dc177}
+\label{sec:org47aaa94}
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
-Max Distance & ACL & Hyper & RCT\\
+Max Distance & ACL & Hyper & RCT\(^{\text{*}}\)\\
 \hline
 Baseline & 62.70 & 90.24 & \textbf{73.60}\\
 \hline
@@ -178,7 +178,7 @@ Baseline & 62.70 & 90.24 & \textbf{73.60}\\
 \end{center}
 
 \subsubsection{F1 Plot}
-\label{sec:orge9a8ff9}
+\label{sec:orge55075c}
 \begin{tikzpicture}[thick,scale=2.0]
 \begin{axis}[
     title={Augmentation by Maximum Distance},
@@ -223,13 +223,13 @@ Baseline & 62.70 & 90.24 & \textbf{73.60}\\
 
 
 \subsection{Augmentation by Fixed Size}
-\label{sec:org8623128}
+\label{sec:org556e7f6}
 \subsubsection{F1 Table}
-\label{sec:org29a4e44}
+\label{sec:org72748f5}
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-Dataset \# & ACL & Hyper & RCT & Interval\\
+Dataset \# & ACL & Hyper & RCT\(^{\text{*}}\) & Interval\\
 \hline
 Baseline & 62.70 & 90.24 & \textbf{73.60} & -\\
 \hline
@@ -257,7 +257,7 @@ Baseline & 62.70 & 90.24 & \textbf{73.60} & -\\
 \end{center}
 
 \subsubsection{F1 Plot}
-\label{sec:org363ce8e}
+\label{sec:org4bc7f5e}
 \begin{tikzpicture}[thick,scale=2.0]
 \begin{axis}[
     title={Augmentation by Size (Non-cumulative)},
@@ -304,20 +304,20 @@ Baseline & 62.70 & 90.24 & \textbf{73.60} & -\\
 
 
 \section{Baseline models:}
-\label{sec:org043eda7}
+\label{sec:org3f08245}
 \begin{itemize}
 \item An off-the-shelf RoBERTa model that has been finetuned to perform classification for each of the downstream tasks
 \end{itemize}
 
 \section{Augmentation Model}
-\label{sec:orge7956d4}
+\label{sec:org09e3c61}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./png/da.png}
 \end{center}
 
 
 \section{Algorithm}
-\label{sec:orgc8950b2}
+\label{sec:org9445bbf}
 \begin{verbatim}
 1. Extract failed test examples from the baseline model
 2. Retrieve passages/sentences from Common Crawl 
@@ -327,7 +327,7 @@ Baseline & 62.70 & 90.24 & \textbf{73.60} & -\\
 \end{verbatim}
 
 \section{Augmentation Strategies}
-\label{sec:org14cc945}
+\label{sec:orgacb31c8}
 \begin{itemize}
 \item Strategy (i)\\
 Use baseline model (Teacher) to perform unsupervised labelling on retrieved CC data
