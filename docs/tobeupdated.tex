@@ -1,4 +1,4 @@
-% Created 2021-04-30 Fri 14:10
+% Created 2021-05-12 Wed 14:08
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -36,13 +36,13 @@
 
 
 \section{Baseline}
-\label{sec:org1530c08}
+\label{sec:org85b9722}
 ACL  : Citation Intent Classification\\
 Hyper: HyperPartisan News Detection\\
 RCT  : Randomized Controlled Trials
 
 \subsection{Baseline}
-\label{sec:org6d28154}
+\label{sec:orgd55cbbc}
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
@@ -63,12 +63,12 @@ RCT-200k & 180040 & 30212 & 30135 & 5\\
 
 
 \section{Tables \& Plots}
-\label{sec:org694a868}
+\label{sec:orgf21a570}
 
 \subsection{Augmentation by Distance}
-\label{sec:orgef21dcf}
+\label{sec:org5891a92}
 \subsubsection{Size Table}
-\label{sec:org043fc07}
+\label{sec:org75617dd}
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
@@ -93,7 +93,7 @@ Baseline & 1688 (100\%) & 516 (100\%) & 500(100\%)\\
 \end{tabular}
 \end{center}
 \subsubsection{Size Plot}
-\label{sec:orgbf90d04}
+\label{sec:orgf821eb4}
 
 
 \begin{tikzpicture}
@@ -152,117 +152,126 @@ Baseline & 1688 (100\%) & 516 (100\%) & 500(100\%)\\
 
 
 \subsubsection{F1 Table}
-\label{sec:org434e136}
+\label{sec:org47718b9}
 \begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline
 Max Distance & ACL & Hyper & RCT\(_{\emph{sample}}\)\\
 \hline
-Baseline & 62.70 & 90.24 & \textbf{73.60}\\
+Baseline & 62.70 & 90.24 & 73.60\\
 \hline
-24 & \textbf{73.45} & \textbf{93.66} & 70.06\\
+24 & 65.77(\textpm{} 7.40) & 92.68(\textpm{} 3.29) & 69.33(\textpm{} 0.73)\\
 \hline
-26 & 71.71 & 81.98 & 69.19\\
+26 & 66.79(\textpm{} 3.07) & 90.63(\textpm{} 5.92) & 67.31(\textpm{} 1.96)\\
 \hline
-28 & 66.17 & 92.03 & 64.50\\
+28 & 63.93(\textpm{} 3.67) & 92.66(\textpm{} 4.39) & 63.91(\textpm{} 1.25)\\
 \hline
-30 & 65.34 & 81.32 & 60.57\\
+30 & 62.57(\textpm{} 2.70) & 89.60(\textpm{} 5.04) & 60.43(\textpm{} 0.64)\\
 \hline
-32 & 61.64 & 88.85 & 58.77\\
+32 & 64.83(\textpm{} 5.28) & 90.15(\textpm{} 5.22) & 57.23(\textpm{} 1.27)\\
 \hline
-34 & 59.56 & 83.75 & 53.47\\
+34 & 57.06(\textpm{} 3.05) & 88.36(\textpm{} 3.26) & 54.36(\textpm{} 1.31)\\
 \hline
-36 & 59.22 & 88.70 & 53.27\\
+36 & 56.20(\textpm{} 4.21) & 89.49(\textpm{} 2.40) & 52.76(\textpm{} 0.85)\\
 \hline
 \end{tabular}
 \end{center}
 
 \subsubsection{F1 Plot}
-\label{sec:org0459dce}
+\label{sec:orgeaeb413}
 \begin{tikzpicture}[thick,scale=2.0]
 \begin{axis}[
     title={Augmentation by Maximum Distance},
-    xlabel={$Max.\ Distance$},
-    ylabel={$F1\ Score * 100$},
+    xlabel={Max. Distance},
+    ylabel={F1 Score $\times$ 100},
     xmin=20, xmax=38,
            ymin=50, ymax=120,
     xtick={24,26,28,30,32,34,36},
     ytick={50,60,70,80,90,100},
     ymajorgrids=true,
-    grid style=dashed,
+    grid style=dashed,       
 ]
-\addplot[ 
-    color=blue, 
-    mark=square,
-    ]
+\addplot+ [error bars/.cd, y dir=both, y explicit,]
     coordinates {
-    (22,62.70)(24,73.45)(26,71.71)(28,66.17)(30,65.34)(32,61.64)(34,59.56)(36,59.22)
+    (22,62.70)
+    (24,65.77) +- (0,7.40)
+    (26,66.79) +- (0,3.07)
+    (28,63.93) +- (0,3.67) 
+    (30,62.57) +- (0,2.70)
+    (32,64.83) +- (0,5.28)
+    (34,57.06) +- (0,3.05)
+    (36,56.20) +- (0,4.21)
     };
     \addlegendentry{ACL-ARC}
-
-\addplot[
-    color=red,
-    mark=square,
-    ]
+\addplot+ [error bars/.cd, y dir=both, y explicit,]
     coordinates {
-    (22,90.24)(24,93.66)(26,81.98)(28,92.03)(30,81.32)(32,88.85)(34,83.75)(36,88.70)
+    (22,90.24)
+    (24,92.68) +- (0,3.29)
+    (26,90.63) +- (0,5.92)
+    (28,92.66) +- (0,4.39)
+    (30,89.60) +- (0,5.04)
+    (32,90.15) +- (0,5.22)
+    (34,88.36) +- (0,3.26)
+    (36,89.49) +- (0,2.40)
     };
     \addlegendentry{Hyperpartisan}
-
-\addplot[
-    color=green,
-    mark=square,
-    ]
+\addplot+ [error bars/.cd, y dir=both, y explicit,]
     coordinates {
-    (22,73.60)(24,70.06)(26,69.19)(28,64.50)(30,60.57)(32,58.77)(34,53.47)(36,53.27)
+    (22,73.60)
+    (24,69.33) +- (0,0.73)
+    (26,67.31) +- (0,1.96)
+    (28,63.91) +- (0,1.25)
+    (30,60.43) +- (0,0.64)
+    (32,57.23) +- (0,1.27)
+    (34,54.36) +- (0,1.31)
+    (36,52.76) +- (0,0.85)
     };
     \addlegendentry{RCT-sample}
-
 \end{axis}
 \end{tikzpicture}
 
 
 \subsection{Augmentation by Fixed Size}
-\label{sec:org37867b8}
+\label{sec:org47655dc}
 \subsubsection{F1 Table}
-\label{sec:orgb185765}
+\label{sec:orgb98bf1e}
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-Dataset \# & ACL & Hyper & RCT\(_{\emph{sample}}\) & Interval\\
+Aug Data & ACL & Hyper & RCT\(_{\emph{sample}}\)\\
 \hline
-Baseline & 62.70 & 90.24 & \textbf{73.60} & -\\
+Baseline & 62.70 & 90.24 & 73.60\\
 \hline
-1 & 66.24 & 90.38 & 73.26 & 0-3\%\\
+1 & 65.28(\textpm{} 5.05) & 89.12(\textpm{} 7.31) & 71.65(\textpm{} 1.97)\\
 \hline
-2 & 62.01 & 84.16 & 70.29 & 3-6\%\\
+2 & 64.71(\textpm{} 3.61) & 90.74(\textpm{} 3.94) & 71.20(\textpm{} 0.99)\\
 \hline
-3 & 60.48 & 86.99 & 71.89 & 6-9\%\\
+3 & 66.73(\textpm{} 3.72) & 90.94(\textpm{} 4.54) & 72.04(\textpm{} 0.20)\\
 \hline
-4 & 61.68 & \textbf{98.40} & 72.59 & 9-12\%\\
+4 & 65.26(\textpm{} 3.20) & 92.64(\textpm{} 4.59) & 72.27(\textpm{} 1.31)\\
 \hline
-5 & \textbf{69.66} & 95.22 & 71.69 & 12-15\%\\
+5 & 65.80(\textpm{} 3.10) & 93.28(\textpm{} 2.62) & 71.68(\textpm{} 0.71)\\
 \hline
-6 & 65.31 & 95.22 & 72.51 & 15-18\%\\
+6 & 65.39(\textpm{} 4.23) & 89.11(\textpm{} 5.22) & 71.96(\textpm{} 0.87)\\
 \hline
-7 & 65.00 & 93.50 & 71.66 & 18-21\%\\
+7 & 63.25(\textpm{} 2.51) & 89.90(\textpm{} 4.97) & 71.78(\textpm{} 1.07)\\
 \hline
-8 & 66.22 & 77.82 & 71.99 & 21-24\%\\
+8 & 65.81(\textpm{} 2.13) & 87.84(\textpm{} 6.20) & 71.75(\textpm{} 0.66)\\
 \hline
-9 & 58.84 & 91.93 & 70.14 & 24-27\%\\
+9 & 66.85(\textpm{} 6.14) & 91.23(\textpm{} 2.50) & 71.77(\textpm{} 0.97)\\
 \hline
-10 & 57.61 & 86.78 & 70.44 & 27-30\%\\
+10 & 62.68(\textpm{} 3.29) & 91.54(\textpm{} 4.01) & 71.32(\textpm{} 0.54)\\
 \hline
 \end{tabular}
 \end{center}
 
 \subsubsection{F1 Plot}
-\label{sec:org0d26c4e}
+\label{sec:org8ae0013}
 \begin{tikzpicture}[thick,scale=2.0]
 \begin{axis}[
     title={Augmentation by Size (Non-cumulative)},
-    xlabel={$Aug.\ Dataset$},
-    ylabel={$F1\ Score * 100$},
+    xlabel={Aug. Dataset},
+    ylabel={F1 Score $\times$ 100},
     xmin=-1, xmax=11,
     ymin=50, ymax=120,
     xtick={1,2,3,4,5,6,7,8,9,10},
@@ -271,30 +280,51 @@ Baseline & 62.70 & 90.24 & \textbf{73.60} & -\\
     grid style=dashed,
 ]
 
-\addplot[ 
-    color=blue, 
-    mark=square, 
-    ]
+\addplot+ [error bars/.cd, y dir=both, y explicit,]
     coordinates {
-    (0,62.70)(1,66.24)(2,62.01)(3,60.48)(4,61.68)(5,69.66)(6,65.31)(7,65.00)(8,66.22)(9,58.84)(10,57.61)
+    (0,62.70)
+    (1,65.28)  +- (0,5.05)
+    (2,64.71)  +- (0,3.61)
+    (3,66.73)  +- (0,3.72)
+    (4,65.26)  +- (0,3.20)
+    (5,65.80)  +- (0,3.10)
+    (6,65.39)  +- (0,4.23)
+    (7,63.25)  +- (0,2.51)
+    (8,65.81)  +- (0,2.13)
+    (9,66.85)  +- (0,6.14)
+    (10,62.68) +- (0,3.29)
     };
     \addlegendentry{ACL-ARC}
 
- \addplot[
-     color=red,
-     mark=square,
-     ]
+\addplot+ [error bars/.cd, y dir=both, y explicit,]
      coordinates {
-     (0,90.24)(1,90.38)(2,84.16)(3,86.99)(4,98.40)(5,95.22)(6,95.22)(7,93.50)(8,77.82)(9,91.93)(10,86.78)
+     (0,90.24)
+     (1,89.12)  +- (0,7.31)
+     (2,90.74)  +- (0,3.94)
+     (3,90.94)  +- (0,4.54)
+     (4,92.64)  +- (0,4.59)
+     (5,93.28)  +- (0,2.62)
+     (6,89.11)  +- (0,5.22)
+     (7,89.90)  +- (0,4.97)
+     (8,87.84)  +- (0,6.20)
+     (9,91.23)  +- (0,2.50)
+     (10,91.54) +- (0,4.01)
      };
      \addlegendentry{Hyperpartisan}
 
- \addplot[
-     color=green,
-     mark=square,
-     ]
+\addplot+ [error bars/.cd, y dir=both, y explicit,]
      coordinates {
-     (0,73.60)(1,73.26)(2,70.29)(3,71.89)(4,72.59)(5,71.69)(6,72.51)(7,71.66)(8,71.99)(9,70.14)(10,70.44)
+     (0,73.60)   
+     (1,71.65)  +- (0,1.97)
+     (2,71.20)  +- (0,0.99)
+     (3,72.04)  +- (0,0.20)
+     (4,72.27)  +- (0,1.31) 
+     (5,71.68)  +- (0,0.71)
+     (6,71.96)  +- (0,0.87)
+     (7,71.78)  +- (0,1.07)
+     (8,71.75)  +- (0,0.66)
+     (9,71.77)  +- (0,0.97)
+     (10,71.32) +- (0,0.54)
      };
      \addlegendentry{RCT-sample}
 
@@ -304,20 +334,20 @@ Baseline & 62.70 & 90.24 & \textbf{73.60} & -\\
 
 
 \section{Baseline models:}
-\label{sec:org1f8017c}
+\label{sec:org6a8d233}
 \begin{itemize}
 \item An off-the-shelf RoBERTa model that has been finetuned to perform classification for each of the downstream tasks
 \end{itemize}
 
 \section{Augmentation Model}
-\label{sec:org837e04a}
+\label{sec:org2d61b07}
 \begin{center}
 \includegraphics[width=.9\linewidth]{./png/da.png}
 \end{center}
 
 
 \section{Algorithm}
-\label{sec:org50245a5}
+\label{sec:org51e74ee}
 \begin{verbatim}
 1. Extract failed test examples from the baseline model
 2. Retrieve passages/sentences from Common Crawl 
@@ -327,7 +357,7 @@ Baseline & 62.70 & 90.24 & \textbf{73.60} & -\\
 \end{verbatim}
 
 \section{Augmentation Strategies}
-\label{sec:org62fcc82}
+\label{sec:org59de0c0}
 \begin{itemize}
 \item Strategy (i)\\
 Use baseline model (Teacher) to perform unsupervised labelling on retrieved CC data
