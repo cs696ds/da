@@ -10,9 +10,25 @@ import json
 # out_file_path = 'task5a/'
 # NUM_LINES = 516
 
+# dataset_name  = 'rct-sample'
+# in_file       = 'task5a/rct-sample_aug/rct-sample_sorted_dedup.jsonl'
+# out_file_path = 'task5a/'
+# NUM_LINES = 500
+
+
+# dataset_name  = 'citation_intent'
+# in_file       = '../aug_hard_to_predict/citation_intent/sorted_dedup.jsonl'
+# out_file_path = '../aug_hard_to_predict/citation_intent/'
+# NUM_LINES = 1688
+
+# dataset_name  = 'hyperpartisan_news'
+# in_file       = '../aug_hard_to_predict/hyperpartisan_news/sorted_dedup.jsonl'
+# out_file_path = '../aug_hard_to_predict/hyperpartisan_news/'
+# NUM_LINES = 516
+
 dataset_name  = 'rct-sample'
-in_file       = 'task5a/rct-sample_aug/rct-sample_sorted_dedup.jsonl'
-out_file_path = 'task5a/'
+in_file       = '../aug_hard_to_predict/rct-sample/sorted_dedup.jsonl'
+out_file_path = '../aug_hard_to_predict/rct-sample/'
 NUM_LINES = 500
 
 
